@@ -1,0 +1,14 @@
+{
+  "title": "PatternFly 4 Workshop",
+  "description": "PatternFly 4 Workshop",
+  "paid": false,
+  "courses": [
+    {
+      "title": "Learn PatternFly Layouts",
+      "description": "Learn how to use Layouts within PatternFly 4",
+      "course_id": "patternfly-4-layouts",
+      "pathway_id": "node",
+      "id": "hello-world"
+    }
+  ]
+}
