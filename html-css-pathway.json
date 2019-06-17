@@ -4,12 +4,12 @@
   "icon": "fa-jedi",
   "courses": [
     {
-      "course_id": "html-css-hello-world",
+      "course_id": "hello-world",
       "title": "Layouts Hello world",
       "description": "PatternFly Layouts description..."
     },
     {
-      "course_id": "html-css-layouts",
+      "course_id": "layouts",
       "title": "Layouts",
       "description": "PatternFly Layouts description..."
     }

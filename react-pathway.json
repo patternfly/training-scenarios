@@ -4,7 +4,7 @@
   "icon": "fa-galactic-republic",
   "courses": [
     {
-      "course_id": "react-hello-world",
+      "course_id": "hello-world",
       "title": "Layouts Hello world",
       "description": "PatternFly Layouts description..."
     }
