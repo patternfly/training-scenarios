@@ -4,11 +4,14 @@
   "paid": false,
   "courses": [
     {
-      "title": "Learn PatternFly Layouts",
-      "description": "Learn how to use Layouts within PatternFly 4",
-      "course_id": "hello-world",
-      "pathway_id": "node",
-      "id": "hello-world"
+      "title": "PatternFly HTML CSS Pathway",
+      "description": "Learn how to use HTML and CSS within PatternFly 4",
+      "id": "html-css"
+    },
+    {
+      "title": "PatternFly React Pathway",
+      "description": "Learn how to use PatternFly React",
+      "id": "react"
     }
   ]
 }
