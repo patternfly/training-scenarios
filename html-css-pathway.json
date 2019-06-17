@@ -1,0 +1,17 @@
+{
+  "title": "PatternFly HTML CSS",
+  "description": "training description...",
+  "icon": "fa-jedi",
+  "courses": [
+    {
+      "course_id": "hello-world",
+      "title": "Layouts Hello world",
+      "description": "PatternFly Layouts description..."
+    },
+    {
+      "course_id": "layouts",
+      "title": "Layouts",
+      "description": "PatternFly Layouts description..."
+    }
+  ]
+}

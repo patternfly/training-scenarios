@@ -1,0 +1,14 @@
+{
+  "courses": [
+    {
+      "title": "PatternFly HTML CSS Pathway",
+      "description": "Learn how to use HTML and CSS within PatternFly 4",
+      "id": "html-css"
+    },
+    {
+      "title": "PatternFly React Pathway",
+      "description": "Learn how to use PatternFly React",
+      "id": "react"
+    }
+  ]
+}
