@@ -2,9 +2,9 @@ The Flex Layout is based on the CSS Flex properties where the layout determines 
 
 ##Task: Use the flex layout to layout items in the card
 
-a. The parent container should be set to pf-l-flex (add that to the card)
+a. Add the class `pf-l-flex` to the parent container.
 
-b. Also add `pf-m-column` to the container with pf-l-flex so that all child elements are positioned vertically in the container. This will also apply a margin-bottom to each child.
+b. Also add `pf-m-column` to the container with `pf-l-flex` so that all child elements are positioned vertically in the container. This will also apply a margin-bottom to each child.
 
 c. For each child `<div>` also apply the pf-l-flex class to the container so that they each get the flex layout applied to them. 
 
