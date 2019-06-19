@@ -63,10 +63,10 @@
       "text": "finish.md"
     }
   },
-  "files": ["Makefile"],
+  "files": ["index.html"],
   "environment": {
     "uilayout": "editor-iframe-split",
-    "uisettings": "makefile"
+    "uisettings": "html"
   },
   "backend": {
     "imageid": "node",
