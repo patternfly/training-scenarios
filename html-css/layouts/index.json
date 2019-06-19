@@ -48,14 +48,10 @@
     "app.js", "step1.html"
   ],
   "environment": {
-        "hideintro": false,
-        "showdashboard": true,
-        "hidefinish": false,
-        "uilayout": "editor-terminal",
-        "uisettings": "html"
+    "uilayout": "editor-iframe-split"
   },
   "backend": {
     "imageid": "node",
-    "port": 80
+    "port": 3000
   }
 }
