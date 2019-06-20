@@ -4,6 +4,7 @@ The Grid Layout is based on CSS Grid’s two-dimensional system of columns and r
 
 a. Copy this file to the editor:
 
+<pre class="file" data-filename="layout.html" data-target="replace">
 &lt;div class=&quot;pf-c-card&quot;&gt;
   &lt;div class=&quot;pf-c-card__body&quot;&gt;
 &lt;form novalidate class=&quot;pf-c-form&quot;&gt;
@@ -66,6 +67,7 @@ a. Copy this file to the editor:
 &lt;/form&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+</pre>
 
 b. Add `pf-l-grid` to the `pf-c-card` container.
 
@@ -74,4 +76,3 @@ c. For every `pf-c-form__group` add `pf-l-grid__item` to the class so that it be
 d. Change the widths of the containers.
   a. For the email and phone number inputs with `pf-c-form__group` add `pf-m-6-col`.
   b. For state, zip code and country inputs with `pf-c-form__group` add `pf-m-4-col`.
-  
