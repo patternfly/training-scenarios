@@ -6,55 +6,49 @@
   "details": {
     "intro": {
       "text": "intro.md",
+      "code": "env-init.sh",
       "credits": ""
     },
     "steps": [
       {
         "title": "Layout 1: Bullseye Layout",
         "text": "step1-instructions.md",
-        "code": "step1-code.html",
         "verify": "step1-verify.html",
         "answer": "step1-answer.md"
       },
       {
         "title": "Layout 2: Flex Layout",
         "text": "step2-instructions.md",
-        "code": "step2-code.html",
         "verify": "step2-verify.html",
         "answer": "step2-answer.md"
       },
       {
         "title": "Layout 3: Gallery Layout",
         "text": "step3-instructions.md",
-        "code": "step3-code.html",
         "verify": "step3-verify.html",
         "answer": "step3-answer.md"
       },
       {
         "title": "Layout 4: Grid Layout",
         "text": "step4-instructions.md",
-        "code": "step4-code.html",
         "verify": "step4-verify.html",
         "answer": "step4-answer.md"
       },
       {
         "title": "Layout 5: Level Layout",
         "text": "step5-instructions.md",
-        "code": "step5-code.html",
         "verify": "step5-verify.html",
         "answer": "step5-answer.md"
       },
       {
         "title": "Layout 6: Split Layout",
         "text": "step6-instructions.md",
-        "code": "step6-code.html",
         "verify": "step6-verify.html",
         "answer": "step6-answer.md"
       },
       {
         "title": "Layout 7: Stack Layout",
         "text": "step7-instructions.md",
-        "code": "step7-code.html",
         "verify": "step7-verify.html",
         "answer": "step7-answer.md"
       }
@@ -63,8 +57,12 @@
       "text": "finish.md"
     }
   },
-  "files": ["index.html"],
+  "files": ["layout.html"],
   "environment": {
+    "showdashboard": true,
+    "dashboards": [
+      {"name": "Web Application", "port": 3000}
+    ],
     "uilayout": "editor-iframe-split",
     "uisettings": "html"
   },
