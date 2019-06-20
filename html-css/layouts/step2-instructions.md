@@ -2,14 +2,52 @@ The Flex Layout is based on the CSS Flex properties where the layout determines 
 
 ##Task: Use the flex layout to layout items in the card
 
-a. Add the class `pf-l-flex` to the parent container.
+This example begins with a card component with two card bodies and a card footer.
 
-b. Also add `pf-m-column` to the container with `pf-l-flex` so that all child elements are positioned vertically in the container. This will also apply a margin-bottom to each child.
+a. Copy this file to the editor:
 
-c. For each child `<div>` also apply the pf-l-flex class to the container so that they each get the flex layout applied to them. 
+<pre class="file" data-filename="layout.html" data-target="replace">
+    &lt;div class=&quot;pf-c-card&quot; style=&quot;width: 450px&quot;&gt; 
+    &lt;div class=&quot;pf-c-card__body&quot;&gt;
+        &lt;span&gt;
+        &lt;h2&gt;Patternfly-Elements&lt;/h2&gt;
+        &lt;p&gt;Working repo for Patternfly 4&lt;/p&gt;
+        &lt;/span&gt;
+        &lt;button class=&quot;pf-c-button pf-m-primary&quot;&gt;
+        Primary
+        &lt;/button&gt;
 
-d. For the first `<div>` child add the class `pf-m-column` so that it displays as image and then text below it.
+    &lt;/div&gt;
+    &lt;div class=&quot;pf-c-card__body&quot;&gt;
+        &lt;span&gt;
+        &lt;h2&gt;Patternfly-Elements&lt;/h2&gt;
+        &lt;p&gt;Working repo for Patternfly 4&lt;/p&gt;
+        &lt;/span&gt;
+        &lt;button class=&quot;pf-c-button pf-m-primary&quot;&gt;
+        Primary
+        &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;pf-c-card__footer&quot;&gt;
+        &lt;button class=&quot;pf-c-button pf-m-secondary&quot;&gt;
+        Secondary
+        &lt;/button&gt;
+            &lt;button class=&quot;pf-c-button pf-m-secondary&quot;&gt;
+        Secondary
+        &lt;/button&gt;
+            &lt;button class=&quot;pf-c-button pf-m-secondary&quot;&gt;
+        Secondary
+        &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+</div>
 
-e. To the rest of the `<div>'s` add `pf-m-row`, so that the contents inside of those divs display horizontally.
+b. Lets make the first card body layout horizontally. For (`pf-c-card__body`):
+    a. set its layout to be flex. Add `pf-l-flex` to the `pf-c-card__body`.
+    b. set its direction to be row. Add `pf-m-row` to the `pf-c-card__body`.
+    c. add space between the text and the button. Add `pf-m-justify-content-space-between` to the `pf-c-card__body`.
 
-f. Go back to the first child `<div>` and add `pf-m-grow`, so that container will now grow to fill the available space.
+c. Repeat step b for the second card body.
+
+d. Lets make the card footer layout the buttons. For (`pf-c-card__footer`):
+    a. set its layout to be flex. Add `pf-l-flex` to the `pf-c-card__footer`.
+    b. add space between the buttons. Add `pf-m-justify-content-space-between` to the `pf-c-card__footer`.

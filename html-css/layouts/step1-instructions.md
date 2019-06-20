@@ -4,9 +4,7 @@ The Bullseye Layout is designed to both horizontally and vertically center a sin
 
 Center the Modal Component inside of the Page.
 
-a. Add `pf-l-bullseye` to the parent container with the class `pf-c-backdrop`
-
-Copy file to editor:
+a. Copy this file to the editor:
 
 <pre class="file" data-filename="layout.html" data-target="replace">&lt;div class=&quot;pf-c-backdrop&quot;&gt;
   &lt;div class=&quot;pf-c-modal-box&quot; role=&quot;dialog&quot; aria-modal=&quot;true&quot; aria-labelledby=&quot;modal-title&quot; aria-describedby=&quot;modal-description&quot;&gt;
@@ -26,4 +24,6 @@ Copy file to editor:
 &lt;/div&gt;
 </pre>
 
-b. You will see that the modal is now centered in that div on the x and y axes. 
+b. Add `pf-l-bullseye` to the parent container with the class `pf-c-backdrop`.
+
+c. You will see that the modal is now centered in the div on the x and y axes.
