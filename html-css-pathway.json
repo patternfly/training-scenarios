@@ -4,14 +4,24 @@
   "icon": "fa-jedi",
   "courses": [
     {
-      "course_id": "hello-world",
-      "title": "Layouts Hello world",
-      "description": "PatternFly Layouts description..."
+      "course_id": "module-1",
+      "title": "module 1",
+      "description": "Description here..."
     },
     {
-      "course_id": "layouts",
-      "title": "Layouts",
-      "description": "PatternFly Layouts description..."
+      "course_id": "module-2",
+      "title": "module 2",
+      "description": "Description here..."
+    },
+    {
+      "course_id": "module-3",
+      "title": "module 3",
+      "description": "Description here..."
+    },
+    {
+      "course_id": "module-4",
+      "title": "module 4",
+      "description": "Description here..."
     }
   ]
 }
