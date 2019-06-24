@@ -1,11 +1,25 @@
 The Stack Layout is designed to position items vertically, with one item filling the available vertical space. 
 
-a. Add `pf-l-stack` to the parent container.
+a. Add this code to the editor:
 
-b. To the first child (the toolbar component) add the class `pf-l-stack__item`
+<pre class="file" data-filename="layout.html" data-target="replace">
+  &lt;div class=&quot;pf-c-card&quot; style=&quot;height: 450px; width: 300px;&quot;&gt;
+  &lt;div class=&quot;pf-c-card__body&quot;&gt;
+      &lt;h1 class=&quot;pf-c-title pf-m-2xl&quot;&gt;
+          This is a title
+      &lt;/h1&gt;
+      &lt;div&gt;
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      &lt;/div&gt;
+      &lt;button class=&quot;pf-c-button pf-m-link pf-m-inline&quot;&gt;
+      Footer Link Button
+      &lt;/button&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+</pre>
 
-c. To the second child (the data list) add the class `pf-l-stack__item`
+b. Add `pf-l-stack` to the parent container. Hint: `pf-c-card__body`.
 
-d. To the third child (the pagination component) add the class `pf-l-stack__item`
+c. Add `pf-l-split__item` to all of the children inside of the container. Hint: `pf-c-title` , `<div>` , `pf-c-button`.
 
-e. To the data list add `pf-m-fill`. This will force the data list component to take up the available vertical space.
+d. To the middle `<div>` add the class `pf-m-fill` next to the `pf-l-split__item` class that is already there. This will that div to fill up the remaining space.
