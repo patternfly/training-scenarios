@@ -1,0 +1,36 @@
+{
+  "title": "Patternfly-Core General Overview",
+  "description": "This course will cover a general overview of Patternfly Core. ",
+  "difficulty": "beginner",
+  "time": "20 minutes",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "code": "env-init.sh",
+      "credits": ""
+    },
+    "steps": [
+      {
+        "title": "Enter title here",
+        "text": "step1-instructions.md",
+        "answer": "step1-answer.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "files": ["layout.html"],
+  "environment": {
+    "showdashboard": true,
+    "dashboards": [
+      {"name": "Web Application", "port": 3000}
+    ],
+    "uilayout": "editor-iframe-split",
+    "uisettings": "html"
+  },
+  "backend": {
+    "imageid": "node",
+    "port": 3000
+  }
+}
