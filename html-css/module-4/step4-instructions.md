@@ -1,50 +1,27 @@
-The Grid Layout is based on CSS Grid’s two-dimensional system of columns and rows. This layout styles the parent element and its children to achieve responsive column and row spans as well as gutters.
+The Stack Layout is designed to position items vertically, with one item filling the available vertical space. 
 
-## Task: Layout form components using grid
+## Task: Edit the card body so that the text fills the available vertical space.
 
-a. Copy this file to the editor:
+a. Copy code to the editor:
 
 <pre class="file" data-filename="layout.html" data-target="replace">
-&lt;div class=&quot;pf-c-card&quot;&gt;
+&lt;div class=&quot;pf-c-card&quot; style=&quot;height: 450px; width: 300px;&quot;&gt;
   &lt;div class=&quot;pf-c-card__body&quot;&gt;
-&lt;form class=&quot;pf-c-form&quot;&gt;
-  &lt;div class=&quot;pf-c-form__group&quot;&gt;
-    &lt;label class=&quot;pf-c-form__label&quot;&gt;Name&lt;/label&gt;
-    &lt;input class=&quot;pf-c-form-control&quot; required&gt;
+    &lt;h1 class=&quot;pf-c-title pf-m-2xl&quot;&gt;
+      This is a title
+    &lt;/h1&gt;
+    &lt;div&gt;
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    &lt;/div&gt;
+    &lt;button class=&quot;pf-c-button pf-m-link pf-m-inline&quot;&gt;
+      Footer Link Button
+    &lt;/button&gt;
   &lt;/div&gt;
-  &lt;div class=&quot;pf-c-form__group&quot;&gt;
-    &lt;label class=&quot;pf-c-form__label&quot;&gt;Email&lt;/label&gt;
-    &lt;input class=&quot;pf-c-form-control&quot; required&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;pf-c-form__group&quot;&gt;
-    &lt;label class=&quot;pf-c-form__label&quot;&gt;Phone number&lt;/label&gt;
-    &lt;input class=&quot;pf-c-form-control&quot; placeholder=&quot;555-555-5555&quot;&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;pf-c-form__group&quot;&gt;
-    &lt;label class=&quot;pf-c-form__label&quot;&gt;Street Address&lt;/label&gt;
-    &lt;input class=&quot;pf-c-form-control&quot; placeholder=&quot;123 A Street&quot;&gt;
-  &lt;/div&gt;
-   &lt;div class=&quot;pf-c-form__group&quot;&gt;
-    &lt;label class=&quot;pf-c-form__label&quot;&gt;State&lt;/label&gt;
-    &lt;input class=&quot;pf-c-form-control&quot; placeholder=&quot;MA&quot;&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;pf-c-form__group&quot;&gt;
-    &lt;label class=&quot;pf-c-form__label&quot;&gt;Zip Code&lt;/label&gt;
-    &lt;input class=&quot;pf-c-form-control&quot; placeholder=&quot;12345&quot;&gt;
-  &lt;/div&gt;
-    &lt;div class=&quot;pf-c-form__group&quot;&gt;
-    &lt;label class=&quot;pf-c-form__label&quot;&gt;Country&lt;/label&gt;
-    &lt;input class=&quot;pf-c-form-control&quot; placeholder=&quot;United States&quot;&gt;
-  &lt;/div&gt;
-&lt;/form&gt;
-&lt;/div&gt;
 &lt;/div&gt;
 </pre>
 
-b. Add `pf-l-grid` to the `pf-c-card` container.
+b. Add `pf-l-stack` to the parent container. Hint: `pf-c-card__body`.
 
-c. For every `pf-c-form__group` add `pf-l-grid__item` to the class so that it becomes a grid item.
+c. Add `pf-l-split__item` to all of the children inside of the container. Hint: `pf-c-title` , `<div>` , `pf-c-button`.
 
-d. Change the widths of the containers.
-  a. For the email and phone number inputs with `pf-c-form__group` add `pf-m-6-col`.
-  b. For state, zip code and country inputs with `pf-c-form__group` add `pf-m-4-col`.
+d. To the middle `<div>` add the class `pf-m-fill` next to the `pf-l-split__item` class that is already there. This will allow that div to fill the available vertical space.

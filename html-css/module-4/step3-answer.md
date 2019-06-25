@@ -1,34 +1,11 @@
-<pre class="file" data-filename="layout.html" data-target="replace">
-  <div class="pf-l-gallery pf-m-gutter">
-    <div class="pf-c-card"> 
-      <div class="pf-c-card__body">
-        This is a card.
-      </div>
-    </div>
-    <div class="pf-c-card"> 
-        <div class="pf-c-card__body">
-          This is a card.
-        </div>
-      </div>
-      <div class="pf-c-card"> 
-        <div class="pf-c-card__body">
-          This is a card.
-        </div>
-      </div>
-      <div class="pf-c-card"> 
-        <div class="pf-c-card__body">
-          This is a card.
-        </div>
-      </div>
-      <div class="pf-c-card"> 
-        <div class="pf-c-card__body">
-          This is a card.
-        </div>
-      </div>
-      <div class="pf-c-card"> 
-        <div class="pf-c-card__body">
-          This is a card.
-        </div>
-      </div>
+<header class="pf-l-split">
+  <div class="pf-l-split__item">
+    Align left.
   </div>
-</pre>
+  <div class="pf-l-split__item pf-m-fill">
+    This element should fill the remaining space between the left and right elements.
+  </div>
+  <div class="pf-l-split__item">
+    Align right.
+  </div>
+</header>
