@@ -1,25 +1,50 @@
-The Split Layout is designed to position items horizontally, with one item filling the available horizontal space.
+The Grid Layout is based on CSS Grid’s two-dimensional system of columns and rows. This layout styles the parent element and its children to achieve responsive column and row spans as well as gutters.
 
-## Task: Make a version of the Page Header that uses the Split Layout 
+## Task: Layout form components using grid.
 
-a. Copy this file to the editor:
+a. Copy code to the editor:
 
 <pre class="file" data-filename="layout.html" data-target="replace">
-    &lt;header class=&quot;pf-c-page__headerclass&quot;&gt;
-    &lt;div class=&quot;pf-c-page__header-left&quot;&gt;
-        Toggle goes here
-    &lt;/div&gt;
-    &lt;div class=&quot;pf-c-page__header-middle&quot;&gt;
-        Nav goes here and it should fill the remaining space.
-    &lt;/div&gt;
-    &lt;div class=&quot;pf-c-page__header-right&quot;&gt;
-        User menu goes here
-    &lt;/div&gt;
-    &lt;/header&gt;
+&lt;div class=&quot;pf-c-card&quot;&gt;
+  &lt;div class=&quot;pf-c-card__body&quot;&gt;
+    &lt;form class=&quot;pf-c-form&quot;&gt;
+      &lt;div class=&quot;pf-c-form__group&quot;&gt;
+        &lt;label class=&quot;pf-c-form__label&quot;&gt;Name&lt;/label&gt;
+        &lt;input class=&quot;pf-c-form-control&quot; required&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;pf-c-form__group&quot;&gt;
+        &lt;label class=&quot;pf-c-form__label&quot;&gt;Email&lt;/label&gt;
+        &lt;input class=&quot;pf-c-form-control&quot; required&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;pf-c-form__group&quot;&gt;
+        &lt;label class=&quot;pf-c-form__label&quot;&gt;Phone number&lt;/label&gt;
+        &lt;input class=&quot;pf-c-form-control&quot; placeholder=&quot;555-555-5555&quot;&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;pf-c-form__group&quot;&gt;
+        &lt;label class=&quot;pf-c-form__label&quot;&gt;Street Address&lt;/label&gt;
+        &lt;input class=&quot;pf-c-form-control&quot; placeholder=&quot;123 A Street&quot;&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;pf-c-form__group&quot;&gt;
+        &lt;label class=&quot;pf-c-form__label&quot;&gt;State&lt;/label&gt;
+        &lt;input class=&quot;pf-c-form-control&quot; placeholder=&quot;MA&quot;&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;pf-c-form__group&quot;&gt;
+        &lt;label class=&quot;pf-c-form__label&quot;&gt;Zip Code&lt;/label&gt;
+        &lt;input class=&quot;pf-c-form-control&quot; placeholder=&quot;12345&quot;&gt;
+      &lt;/div&gt;
+        &lt;div class=&quot;pf-c-form__group&quot;&gt;
+        &lt;label class=&quot;pf-c-form__label&quot;&gt;Country&lt;/label&gt;
+        &lt;input class=&quot;pf-c-form-control&quot; placeholder=&quot;United States&quot;&gt;
+      &lt;/div&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 </pre>
 
-b. Add `pf-l-split` to the parent container. Hint: `pf-c-page__headerclass`.
+b. Add `pf-l-grid` next to the `pf-c-form` class.
 
-c. Add `pf-l-split__item` to all of the children inside of the container. Hint: `pf-c-page__header-left` , `pf-c-page__header-middle` , `pf-c-page__header-right`.
+c. For every `pf-c-form__group` class add `pf-l-grid__item` next to it so that it becomes a grid item.
 
-d. Add `pf-m-fill` to the split item in the middle. This will allow the page nav to fill the available horizontal space in the nav. Hint: `pf-c-page__header-middle`.
+d. Change the widths of the containers.
+  i. For the email and phone number inputs with `pf-c-form__group` add `pf-m-6-col` next to `pf-l-grid__item`.
+  ii. For state, zip code and country inputs with `pf-c-form__group` add `pf-m-4-col` next to `pf-l-grid__item`.

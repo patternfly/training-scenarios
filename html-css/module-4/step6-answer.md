@@ -1,11 +1,34 @@
-<header class="pf-c-page__headerclass pf-l-split">
-  <div class="pf-c-page__header-left pf-l-split__item">
-    Toggle goes here
+<div class="pf-c-card">
+  <div class="pf-c-card__body">
+    <form class="pf-c-form pf-l-grid">
+      <div class="pf-c-form__group pf-l-grid__item">
+        <label class="pf-c-form__label">Name</label>
+        <input class="pf-c-form-control" required>
+      </div>
+      <div class="pf-c-form__group pf-l-grid__item pf-m-6-col">
+        <label class="pf-c-form__label">Email</label>
+        <input class="pf-c-form-control" required>
+      </div>
+      <div class="pf-c-form__group pf-l-grid__item pf-m-6-col">
+        <label class="pf-c-form__label">Phone number</label>
+        <input class="pf-c-form-control" placeholder="555-555-5555">
+      </div>
+      <div class="pf-c-form__group pf-l-grid__item">
+        <label class="pf-c-form__label">Street Address</label>
+        <input class="pf-c-form-control" placeholder="123 A Street">
+      </div>
+      <div class="pf-c-form__group pf-l-grid__item pf-m-4-col">
+        <label class="pf-c-form__label">State</label>
+        <input class="pf-c-form-control" placeholder="MA">
+      </div>
+      <div class="pf-c-form__group pf-l-grid__item pf-m-4-col">
+        <label class="pf-c-form__label">Zip Code</label>
+        <input class="pf-c-form-control" placeholder="12345">
+      </div>
+        <div class="pf-c-form__group pf-l-grid__item pf-m-4-col">
+        <label class="pf-c-form__label">Country</label>
+        <input class="pf-c-form-control" placeholder="United States">
+      </div>
+    </form>
   </div>
-  <div class="pf-c-page__header-middle pf-l-split__item pf-m-fill">
-    Nav goes here and it should fill the remaining space.
-  </div>
-  <div class="pf-c-page__header-right pf-l-split__item">
-    User menu goes here
-  </div>
-</header>
+</div>

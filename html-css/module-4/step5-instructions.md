@@ -1,22 +1,44 @@
-The Level Layout is designed to distribute space between children evenly and center them on the x-axis. By default the children are placed horizontally and wrap responsively.
+The Gallery Layout is designed so that all of its children are of uniform size, displayed horizontally and wrap responsively.
 
-## Task: Position text and buttons within the header
+## Task: Layout cards using in the gallery format.
 
-a. Copy this to the editor:
+a. Copy code to the editor:
+
 <pre class="file" data-filename="layout.html" data-target="replace">
-&lt;div class=&quot;pf-c-card&quot;&gt;
-  &lt;div class=&quot;pf-c-card__body&quot;&gt;
-    &lt;h1 class=&quot;pf-c-title pf-m-xl&quot;&gt;
-      Large title
-    &lt;/h1&gt;
-    &lt;button class=&quot;pf-c-button pf-m-primary&quot;&gt;
-      Click me
-    &lt;/button&gt;
+&lt;div&gt;
+  &lt;div class=&quot;pf-c-card&quot;&gt; 
+    &lt;div class=&quot;pf-c-card__body&quot;&gt;
+      This is a card.
+    &lt;/div&gt;
   &lt;/div&gt;
+  &lt;div class=&quot;pf-c-card&quot;&gt; 
+      &lt;div class=&quot;pf-c-card__body&quot;&gt;
+        This is a card.
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;pf-c-card&quot;&gt; 
+      &lt;div class=&quot;pf-c-card__body&quot;&gt;
+        This is a card.
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;pf-c-card&quot;&gt; 
+      &lt;div class=&quot;pf-c-card__body&quot;&gt;
+        This is a card.
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;pf-c-card&quot;&gt; 
+      &lt;div class=&quot;pf-c-card__body&quot;&gt;
+        This is a card.
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;pf-c-card&quot;&gt; 
+      &lt;div class=&quot;pf-c-card__body&quot;&gt;
+        This is a card.
+      &lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 </pre>
 
-b. Add `pf-l-level` to the parent `<div>` of the title and button elements. Hint it is `.pf-c-card__body`.
+b. Add `pf-l-gallery` to the parent wrapper `<div>`. This will structure any children inside of the gallery into a grid layout, whereby the columns don’t extend beyond 250px in width, and when this happens they add more columns and wrap.
 
-c. You should see the title and button are now aligned on the x-axis.
-
+c. Add `pf-m-gutter` next to the `pf-l-gallery`class. This will add vertical and horizontal spacing of 24px between the card elements.
