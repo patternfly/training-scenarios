@@ -1,0 +1,36 @@
+{
+  "title": "Overriding and extending variables.",
+  "description": "Practice overriding and extending PatternFly variables to make new designs.",
+  "difficulty": "beginner",
+  "time": "20 minutes",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "code": "env-init.sh",
+      "credits": ""
+    },
+    "steps": [
+      {
+        "title": "Step 1",
+        "text": "step1-instructions.md",
+        "answer": "step1-answer.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "files": ["layout.html"],
+  "environment": {
+    "showdashboard": true,
+    "dashboards": [
+      {"name": "Web Application", "port": 3000}
+    ],
+    "uilayout": "editor-iframe-split",
+    "uisettings": "html"
+  },
+  "backend": {
+    "imageid": "node",
+    "port": 3000
+  }
+}
