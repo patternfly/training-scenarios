@@ -1,4 +1,4 @@
-curl -L https://www.dropbox.com/s/u1ofp8ch795zkvr/pf-express.tar.gz?dl=0 > ~/pf-express.tar.gz
+curl -L https://raw.githubusercontent.com/patternfly/training-scenarios/master/site/pf-express.tar.gz > ~/pf-express.tar.gz
 tar -xvzf ~/pf-express.tar.gz -C ~/tutorial
 cd ~/tutorial
 npm install
