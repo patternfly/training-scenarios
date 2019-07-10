@@ -22,6 +22,11 @@
       "course_id": "module-4",
       "title": "module 4",
       "description": "Description here..."
+    },
+    {
+      "course_id": "module-5",
+      "title": "Overriding and Extending Variables",
+      "description": "Practice overriding and extending PatternFly variables to make new designs."
     }
   ]
 }
