@@ -20,7 +20,7 @@
       "text": "finish.md"
     }
   },
-  "files": ["layout.html", "css/layout.css"],
+  "files": ["card.html", "css/card.scss"],
   "environment": {
     "showdashboard": true,
     "dashboards": [
