@@ -4,7 +4,7 @@ The Level Layout is designed to distribute space between children evenly and cen
 
 a. Copy code to the editor:
 
-<pre class="file" data-filename="index.html" data-target="replace">
+<pre class="file" data-filename="layout.html" data-target="replace">
 &lt;div class=&quot;pf-c-card&quot;&gt;
   &lt;div class=&quot;pf-c-card__body&quot;&gt;
     &lt;h1 class=&quot;pf-c-title pf-m-xl&quot;&gt;

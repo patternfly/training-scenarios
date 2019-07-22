@@ -4,7 +4,7 @@ The Flex Layout is based on the CSS Flex properties where the layout determines 
 
 a. Copy code to the editor:
 
-<pre class="file" data-filename="index.html" data-target="replace">
+<pre class="file" data-filename="layout.html" data-target="replace">
 &lt;div class=&quot;pf-c-card&quot; style=&quot;width: 450px&quot;&gt; 
   &lt;div class=&quot;pf-c-card__body&quot;&gt;
     &lt;span&gt;
