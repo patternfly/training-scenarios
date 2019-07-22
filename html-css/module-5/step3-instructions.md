@@ -1,10 +1,8 @@
 ## Utilize Patternfly layout classes to achieve new layouts
 
-![Card Three] (/site/devconf-artboard-3.jpg)
-
 In this step you will apply a gallery layout to multiple cards.
 
-(1) Copy code into the card.html file:
+1) <strong>Copy code into the card.html file:</copy>
 
 <pre class="file" data-filename="index.html" data-target="replace">
 &lt;div class=&quot;pf-c-card pf-m-hoverable&quot;&gt;
@@ -116,13 +114,19 @@ PatternFly is an open source design system created to enable consistency and usa
 &lt;/div&gt;
 </pre>
 
-(2) Multiple cards were just added and we need to create a wrapper around them. Add an opening `<div>` tag to the first line, and a closing `</div>` tag to the bottom of the file.
+2) <strong>Create a wrapper around the cards:</strong>
 
-(3) To the opening `<div>` tag, add the gallery layout class: `pf-l-gallery`.
+Multiple cards were just added and we need to create a wrapper around them. Add an opening `<div>` tag to the first line, and a closing `</div>` tag to the bottom of the file.
+
+(3) <strong>Add a layout class:</strong> 
+
+To the opening `<div>` tag, add the gallery layout class: `pf-l-gallery`.
 
 Hint: `<div class="pf-l-gallery">`
 
-(4) Modify the gallery layout so that it includes a gutter. To the same opening `<div>` tag add the class `pf-m-gutter`.
+(4) <strong>Add a gutter modifier:</strong>
+
+Modify the gallery layout so that it includes a gutter. To the same opening `<div>` tag add the class `pf-m-gutter`.
 
 Hint: `<div class="pf-l-gallery pf-m-gutter">`
 
