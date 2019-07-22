@@ -1,7 +1,5 @@
 ## Override Patternfly variables to achieve a new theme
 
-![Card One] (/site/devconf-artboard-1.jpg)
-
 1) <strong>Copy code into the index.html file:</strong>
 
 <pre class="file" data-filename="index.html" data-target="replace">
