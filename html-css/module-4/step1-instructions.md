@@ -6,7 +6,7 @@ Center the Modal Component inside of the Page.
 
 a. Copy code to the editor:
 
-<pre class="file" data-filename="layout.html" data-target="replace">
+<pre class="file" data-filename="index.html" data-target="replace">
 &lt;div class=&quot;pf-c-backdrop&quot;&gt;
   &lt;div class=&quot;pf-c-modal-box&quot;&gt;
     &lt;div class=&quot;pf-c-modal-box__body&quot;&gt;
