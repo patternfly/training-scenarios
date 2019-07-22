@@ -37,7 +37,7 @@ app.get('/iframe', function(req, res) {
       title:  'PatternFly'
     },
     partials: {
-      partial: '/layout'
+      partial: '/index'
     }
   });
 });
