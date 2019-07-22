@@ -4,7 +4,7 @@ The Split Layout is designed to position items horizontally, with one item filli
 
 a. Copy code to the editor:
 
-<pre class="file" data-filename="index.html" data-target="replace">
+<pre class="file" data-filename="layout.html" data-target="replace">
 &lt;header&gt;
   &lt;div&gt;
     Align left.

@@ -4,7 +4,7 @@ The Stack Layout is designed to position items vertically, with one item filling
 
 a. Copy code to the editor:
 
-<pre class="file" data-filename="index.html" data-target="replace">
+<pre class="file" data-filename="layout.html" data-target="replace">
 &lt;div class=&quot;pf-c-card&quot; style=&quot;height: 450px; width: 300px;&quot;&gt;
   &lt;div class=&quot;pf-c-card__body&quot;&gt;
     &lt;h1 class=&quot;pf-c-title pf-m-2xl&quot;&gt;

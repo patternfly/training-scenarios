@@ -1,8 +1,8 @@
 ## Override Patternfly variables to achieve a new theme
 
-1) <strong>Copy code into the index.html file:</strong>
+1) <strong>Copy code into the layout.html file:</strong>
 
-<pre class="file" data-filename="index.html" data-target="replace">
+<pre class="file" data-filename="layout.html" data-target="replace">
 &lt;div class=&quot;pf-c-card pf-m-hoverable&quot;&gt;
   &lt;div class=&quot;pf-c-card__head&quot;&gt;
     &lt;img class=&quot;pf-c-brand&quot; src=&quot;https://pf4.patternfly.org/assets/images/pf-logo-small.svg&quot; alt=&quot;Patternfly Logo&quot;&gt;
@@ -149,7 +149,7 @@ Hint: `--pf-global--link--Color: var(--card-theme--Color);`
 
 5) <strong>Override the font-size of the title in the card header. </strong>
 
-For this step, search in `index.html` for `pf-c-card__header pf-c-title pf-m-md` and replace `pf-m-md` with `pf-m-xl`.
+For this step, search in `layout.html` for `pf-c-card__header pf-c-title pf-m-md` and replace `pf-m-md` with `pf-m-xl`.
 
 Hint: `<div class="pf-c-card__header pf-c-title pf-m-xl">`
 
