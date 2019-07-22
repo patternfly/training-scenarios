@@ -1,20 +1,19 @@
 ## Utilize Patternfly layout classes to achieve new layouts
 
-We are going to copy the card multiple times and then add a gallery layout.
+![Card Three] (/site/devconf-artboard-3.jpg)
 
-1. Copy code into the card.html file:
+In this step you will apply a gallery layout to multiple cards.
 
-<pre class="file" data-filename="layout.html" data-target="replace">
+(1) Copy code into the card.html file:
+
+<pre class="file" data-filename="index.html" data-target="replace">
 &lt;div class=&quot;pf-c-card pf-m-hoverable&quot;&gt;
   &lt;div class=&quot;pf-c-card__head&quot;&gt;
     &lt;img class=&quot;pf-c-brand&quot; src=&quot;https://pf4.patternfly.org/assets/images/pf-logo-small.svg&quot; alt=&quot;Patternfly Logo&quot;&gt;
     &lt;div class=&quot;pf-c-card__actions&quot;&gt;
-      &lt;div class=&quot;pf-c-dropdown&quot;&gt;
-        &lt;button class=&quot;pf-c-dropdown__toggle pf-m-plain&quot;&gt;
-          &lt;i class=&quot;fas fa-ellipsis-v&quot;&gt;&lt;/i&gt;
-        &lt;/button&gt;
-      &lt;/div&gt;
-      &lt;input type=&quot;checkbox&quot;&gt;
+     &lt;button class=&quot;pf-c-button pf-m-plain&quot;&gt;
+  &lt;i class=&quot;fas fa-times&quot;&gt;&lt;/i&gt;
+&lt;/button&gt;
     &lt;/div&gt;
    &lt;/div&gt;
    &lt;div class=&quot;pf-c-card__header pf-c-title pf-m-xl&quot;&gt;
@@ -48,12 +47,9 @@ PatternFly is an open source design system created to enable consistency and usa
   &lt;div class=&quot;pf-c-card__head&quot;&gt;
     &lt;img class=&quot;pf-c-brand&quot; src=&quot;https://pf4.patternfly.org/assets/images/pf-logo-small.svg&quot; alt=&quot;Patternfly Logo&quot;&gt;
     &lt;div class=&quot;pf-c-card__actions&quot;&gt;
-      &lt;div class=&quot;pf-c-dropdown&quot;&gt;
-        &lt;button class=&quot;pf-c-dropdown__toggle pf-m-plain&quot;&gt;
-          &lt;i class=&quot;fas fa-ellipsis-v&quot;&gt;&lt;/i&gt;
-        &lt;/button&gt;
-      &lt;/div&gt;
-      &lt;input type=&quot;checkbox&quot;&gt;
+     &lt;button class=&quot;pf-c-button pf-m-plain&quot;&gt;
+        &lt;i class=&quot;fas fa-times&quot;&gt;&lt;/i&gt;
+      &lt;/button&gt;
     &lt;/div&gt;
    &lt;/div&gt;
    &lt;div class=&quot;pf-c-card__header pf-c-title pf-m-xl&quot;&gt;
@@ -87,12 +83,9 @@ PatternFly is an open source design system created to enable consistency and usa
   &lt;div class=&quot;pf-c-card__head&quot;&gt;
     &lt;img class=&quot;pf-c-brand&quot; src=&quot;https://pf4.patternfly.org/assets/images/pf-logo-small.svg&quot; alt=&quot;Patternfly Logo&quot;&gt;
     &lt;div class=&quot;pf-c-card__actions&quot;&gt;
-      &lt;div class=&quot;pf-c-dropdown&quot;&gt;
-        &lt;button class=&quot;pf-c-dropdown__toggle pf-m-plain&quot;&gt;
-          &lt;i class=&quot;fas fa-ellipsis-v&quot;&gt;&lt;/i&gt;
-        &lt;/button&gt;
-      &lt;/div&gt;
-      &lt;input type=&quot;checkbox&quot;&gt;
+     &lt;button class=&quot;pf-c-button pf-m-plain&quot;&gt;
+        &lt;i class=&quot;fas fa-times&quot;&gt;&lt;/i&gt;
+      &lt;/button&gt;
     &lt;/div&gt;
    &lt;/div&gt;
    &lt;div class=&quot;pf-c-card__header pf-c-title pf-m-xl&quot;&gt;
@@ -123,13 +116,13 @@ PatternFly is an open source design system created to enable consistency and usa
 &lt;/div&gt;
 </pre>
 
-2. Add a div wrapper around all cards. Add an opening `<div>` tag to the first line, and a closing `</div>` tag to the bottom of the file.
+(2) Multiple cards were just added and we need to create a wrapper around them. Add an opening `<div>` tag to the first line, and a closing `</div>` tag to the bottom of the file.
 
-3. To the opening `<div>` tag, add the gallery layout class `pf-l-gallery`.
+(3) To the opening `<div>` tag, add the gallery layout class: `pf-l-gallery`.
 
 Hint: `<div class="pf-l-gallery">`
 
-4. Modify the gallery layout so that it includes a gutter. To the same opening `<div>` tag add the class `pf-m-gutter`.
+(4) Modify the gallery layout so that it includes a gutter. To the same opening `<div>` tag add the class `pf-m-gutter`.
 
 Hint: `<div class="pf-l-gallery pf-m-gutter">`
 

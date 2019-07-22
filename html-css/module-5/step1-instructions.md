@@ -1,18 +1,17 @@
 ## Override Patternfly variables to achieve a new theme
 
-1. Copy code into the card.html file:
+![Card One] (/site/devconf-artboard-1.jpg)
 
-<pre class="file" data-filename="layout.html" data-target="replace">
+1) <strong>Copy code into the index.html file:</strong>
+
+<pre class="file" data-filename="index.html" data-target="replace">
 &lt;div class=&quot;pf-c-card pf-m-hoverable&quot;&gt;
   &lt;div class=&quot;pf-c-card__head&quot;&gt;
     &lt;img class=&quot;pf-c-brand&quot; src=&quot;https://pf4.patternfly.org/assets/images/pf-logo-small.svg&quot; alt=&quot;Patternfly Logo&quot;&gt;
     &lt;div class=&quot;pf-c-card__actions&quot;&gt;
-      &lt;div class=&quot;pf-c-dropdown&quot;&gt;
-        &lt;button class=&quot;pf-c-dropdown__toggle pf-m-plain&quot;&gt;
-          &lt;i class=&quot;fas fa-ellipsis-v&quot;&gt;&lt;/i&gt;
-        &lt;/button&gt;
-      &lt;/div&gt;
-      &lt;input type=&quot;checkbox&quot;&gt;
+      &lt;button class=&quot;pf-c-button pf-m-plain&quot;&gt;
+        &lt;i class=&quot;fas fa-times&quot;&gt;&lt;/i&gt;
+      &lt;/button&gt;
     &lt;/div&gt;
    &lt;/div&gt;
    &lt;div class=&quot;pf-c-card__header pf-c-title pf-m-md&quot;&gt;
@@ -35,7 +34,7 @@ PatternFly is an open source design system created to enable consistency and usa
 &lt;/div&gt;
 </pre>
 
-2. Copy code into the card.scss file:
+(2) <strong>Copy code into the card.scss file:</strong>
 
 <pre class="file" data-filename="card.scss" data-target="replace">
 .pf-c-card {
@@ -140,15 +139,15 @@ PatternFly is an open source design system created to enable consistency and usa
 }
 </pre>
 
-3. Add a new color variable to use in the card. After the first line of `card.scss` (`.pf-c-card`) make a new variable name called `--card-theme--Color` and assign it to be purple: `#6200EE`.
+(3) <strong>Add a new color variable to use in the card. On line 3 of `card.scss` make a new variable name called `--card-theme--Color` and assign it to be purple: `#6200EE`.</strong>
 
 Hint: `--card-theme--Color: #6200EE;`
 
-4. Override the color of the link buttons in the footer, by overriding the global link color to be the color that we set in step 3.
+(4) <strong>Override the global link color that is set on the buttons in the footer, to be the new color that was set in step 3. Add this on line 4.</strong>
 
 Hint: `--pf-global--link--Color: var(--card-theme--Color);`
 
-5. Override the font-size of the title in the card header. For this step, search in the `card.html` file for `pf-c-card__header pf-c-title pf-m-md` and replace `pf-m-md` with `pf-m-xl`.
+(5) <strong>Override the font-size of the title in the card header. For this step, search in `index.html` for `pf-c-card__header pf-c-title pf-m-md` and replace `pf-m-md` with `pf-m-xl`.</strong>
 
 Hint: `<div class="pf-c-card__header pf-c-title pf-m-xl">`
 

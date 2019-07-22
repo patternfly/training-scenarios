@@ -4,7 +4,7 @@ The Grid Layout is based on CSS Grid’s two-dimensional system of columns and r
 
 a. Copy code to the editor:
 
-<pre class="file" data-filename="layout.html" data-target="replace">
+<pre class="file" data-filename="index.html" data-target="replace">
 &lt;div class=&quot;pf-c-card&quot;&gt;
   &lt;div class=&quot;pf-c-card__body&quot;&gt;
     &lt;form class=&quot;pf-c-form&quot;&gt;
