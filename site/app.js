@@ -16,7 +16,6 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'css')));
 app.use(
   sass({
     src: __dirname + '/',    // Input SASS files
@@ -24,6 +23,7 @@ app.use(
     debug: true
   })
 );
+app.use(express.static(path.join(__dirname, 'css')));
 
 app.get('/', function(req, res) {
   // res.header('Cache-Control', 'private, no-cache, no-store, must-revalidate');
