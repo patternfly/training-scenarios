@@ -1,39 +1,24 @@
-## Extend Patternfly variables to achieve a new design
+## Override Patternfly variables to achieve a new theme
 
-The goal is to create a separator element that sits inside of the card body:
 
-1) <strong>Add the html markup:</strong> 
 
-In `index.html` add the html markup for the separator element that sits inside of the `pf-c-card__body` element so that it receives the same padding as that element. Add this block between `pf-c-card__header` and `pf-c-card__body` and `pf-c-card__body` and `pf-c-card__footer`.
+1) <strong>Add a new color variable to use in the card. </strong> Add a new variable that you can use to customize the card in your app.
 
-```
-<div class="pf-c-card__body">
-  <div class="pf-c-card__body-separator">
-  </div>
-</div>
-```
+On line 3 of `card.scss` make a new variable name called `--my-app-card-theme--Color` and assign it to be purple: `#6200EE`.
 
-2) <strong>Add a variable for the height: </strong> 
+Hint: `--card-theme--Color: #6200EE;`
 
-In the `card.scss` file, we will add new styles for `pf-c-card__body-separator`. The first variable to add is for height and it should use Patternfly's global variable for small border width, and go under the variable declarations at the top of the file.
+2) <strong>Override the global link color. </strong> The buttons in the card footer currently use the global link color. Override this color to be the new color that was set in step 3. 
 
-```
---pf-c-card__body-separator--Height: var(--pf-global--BorderWidth--sm);
-```
+On line 4 of `card.scss` set the global variable `--pf-global--link--Color` to use the value defined in the custom variable `--my-app-card-theme--Color`. 
+Note that variables defined inside the css file of a component are scoped to that component. Therefore, the value assigned to a global variable inside `card.scss` will only apply to the Card component, and not other components.
 
-3) <strong>Add a variable for background color:</strong> The second variable to add is for background color and it should use Patternfly's global variable for border color.
+Hint: `--pf-global--link--Color: var(--card-theme--Color);`
 
-```
---pf-c-card__body-separator--BackgroundColor: var(--pf-global--BorderColor--100);
-```
+3) <strong>Change the font-size of the title in the card header.</strong> Not all changes require custom css. Many components include modifier classes that enable you to customize the appearrance of a component. For this update, we'll use a modifier class available for the Title component. 
 
-4) <strong>Assign the variables for the separator:</strong>  At the bottom of `card.scss` assign the variables that were declared to the height and background-color style properties:
+Search in `index.html` for `<div class="pf-c-card__header pf-c-title pf-m-md">`. Replace `pf-m-md` with `pf-m-xl`.
 
-```
-.pf-c-card__body {
-  .pf-c-card__body-separator {
-    background-color: var(--pf-c-card__body-separator--BackgroundColor);
-    height: var(--pf-c-card__body-separator--Height);
-  }
-}
-```
+Hint: `<div class="pf-c-card__header pf-c-title pf-m-xl">`
+
+Remember to click the <strong>Reload</strong> button above the preview panel to see how these contents after you make changes.

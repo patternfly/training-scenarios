@@ -13,7 +13,6 @@
       {
         "title": "Step 1",
         "text": "step1-instructions.md",
-        "answer": "step1-answer.md"
       },
       {
         "title": "Step 2",
@@ -24,6 +23,11 @@
         "title": "Step 3",
         "text": "step3-instructions.md",
         "answer": "step3-answer.md"
+      },
+      {
+        "title": "Step 34",
+        "text": "step4-instructions.md",
+        "answer": "step4-answer.md"
       }
     ],
     "finish": {
