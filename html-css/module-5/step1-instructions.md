@@ -2,6 +2,8 @@
 
 Before we can get started, we need to add some code to the workspace that we can modify. 
 
+<strong>Note:</strong> Whenever you make changes to files, click <strong>Reload</strong> button above the preview panel to see the updates you made.
+
 1) <strong>Copy code into the index.html file</strong>
 
 Click the <strong>Copy to Editor</strong> button below to add html for a Card to the index.html file.
