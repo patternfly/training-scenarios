@@ -4,7 +4,7 @@ The goal is to create a separator element that sits inside of the card body:
 
 1) <strong>Add the html markup:</strong> 
 
-In `layout.html` add the html markup for the separator element that sits inside of the `pf-c-card__body` element so that it receives the same padding as that element. Add this block between `pf-c-card__header` and `pf-c-card__body` and `pf-c-card__body` and `pf-c-card__footer`.
+In `index.html` add the html markup for the separator element that sits inside of the `pf-c-card__body` element so that it receives the same padding as that element. Add this block between `pf-c-card__header` and `pf-c-card__body` and `pf-c-card__body` and `pf-c-card__footer`.
 
 ```
 <div class="pf-c-card__body">

@@ -30,7 +30,7 @@
       "text": "finish.md"
     }
   },
-  "files": ["layout.html", "css/card.scss"],
+  "files": ["index.html", "css/card.scss"],
   "environment": {
     "showdashboard": true,
     "dashboards": [

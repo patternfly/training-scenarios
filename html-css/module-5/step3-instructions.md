@@ -4,7 +4,7 @@ In this step you will apply a gallery layout to multiple cards.
 
 1) <strong>Copy code into the card.html file:</copy>
 
-<pre class="file" data-filename="layout.html" data-target="replace">
+<pre class="file" data-filename="index.html" data-target="replace">
 &lt;div class=&quot;pf-c-card pf-m-hoverable&quot;&gt;
   &lt;div class=&quot;pf-c-card__head&quot;&gt;
     &lt;img class=&quot;pf-c-brand&quot; src=&quot;https://pf4.patternfly.org/assets/images/pf-logo-small.svg&quot; alt=&quot;Patternfly Logo&quot;&gt;
