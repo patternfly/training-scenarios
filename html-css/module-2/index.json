@@ -20,7 +20,7 @@
       "text": "finish.md"
     }
   },
-  "files": ["layout.html"],
+  "files": ["index.html"],
   "environment": {
     "showdashboard": true,
     "dashboards": [

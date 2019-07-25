@@ -4,7 +4,7 @@ The Gallery Layout is designed so that all of its children are of uniform size, 
 
 a. Copy code to the editor:
 
-<pre class="file" data-filename="layout.html" data-target="replace">
+<pre class="file" data-filename="index.html" data-target="replace">
 &lt;div&gt;
   &lt;div class=&quot;pf-c-card&quot;&gt; 
     &lt;div class=&quot;pf-c-card__body&quot;&gt;
