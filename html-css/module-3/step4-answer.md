@@ -1,3 +1,4 @@
+```
 <!--Label.html-->
 <span class="pf-c-label">
   Default Label
@@ -42,3 +43,4 @@ border-radius: var(--pf-c-label--BorderRadius);
 --pf-c-label--BackgroundColor: var(--pf-c-label--m-warning--BackgroundColor);
 }
 }
+```

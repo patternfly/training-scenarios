@@ -1,3 +1,4 @@
+```
 <div class="pf-c-alert pf-m-success">
   <div class="pf-c-alert__icon">
     <i class="fas fa-info-circle"></i>
@@ -24,3 +25,4 @@
     Alert three
   </h4>
 </div>
+```
