@@ -1,4 +1,4 @@
-## Utilize Patternfly layout classes to achieve new layouts
+## Add a PatternFly class for the layout
 
 Now that we have an updated card design, let's add several cards and use the gallery layout to organize them on the page. 
 
@@ -6,7 +6,7 @@ Now that we have an updated card design, let's add several cards and use the gal
 
 Click the <strong>Copy to Editor</strong> button below to add html for a Card to the index.html file.
 
-Then click the <strong>Reload</strong> button above the preview panel to see how the cards display on the page. 
+Then click the <strong>Reload</strong> button above the preview panel to see how the cards display on the page.
 
 <pre class="file" data-filename="index.html" data-target="replace">
 &lt;div class=&quot;pf-c-card pf-m-hoverable&quot;&gt;
