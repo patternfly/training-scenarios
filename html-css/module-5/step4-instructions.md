@@ -1,4 +1,4 @@
-## Utilize Patternfly layout classes to achieve new layouts
+## Add a PatternFly class for the layout
 
 Now that we have an updated card design, let's add several cards and use the gallery layout to organize them on the page. 
 

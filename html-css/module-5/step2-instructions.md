@@ -4,13 +4,13 @@ Now that we have a card on our page, let's customize some of the styles applied 
 
 1) <strong>Add a new color variable to use in the card.</strong> In PatternFly, all the css values we use are first assigned to variables. We recommend doing the same when making customizations in your application.
 
-On line 3 of `card.scss` make a new variable name called `--my-app-card-theme--Color` and assign it to be purple: `#6200EE`.
+In `myapp.scss` make a new variable name called `--my-app-card-theme--Color` and assign it to be purple: `#6200EE`.
 
 <strong>Hint:</strong> `--my-app-card-theme--Color: #6200EE;`
 
 2) <strong>Override the global link color. </strong> In our current example of the card, the buttons in the card footer use the global link color. We can reassign the global link color variable to use our new custom color variable, so that all properties that use the global link color variable in the card will now use this color.
 
-On line 4 of `card.scss` set the global variable `--pf-global--link--Color` to use the value defined in the custom variable `--my-app-card-theme--Color`. 
+On line 4 of `myapp.scss` set the global variable `--pf-global--link--Color` to use the value defined in the custom variable `--my-app-card-theme--Color`. 
 
 <strong>Hint:</strong> `--pf-global--link--Color: var(--my-app-card-theme--Color);`
 
