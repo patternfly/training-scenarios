@@ -4,9 +4,50 @@ Making your own modifier class is easy and will save you time. Choose which comp
 a. Let’s create a “warning” variation of the label component by creating a modifier class.
 
 b. Copy code to label.html
-
+```
+<!--Label.html-->
+<span class="pf-c-label">
+  Default Label
+</span>
+<span class="pf-c-label">
+  Warning Label
+</span>
+```
 c. Copy code to label.scss
+```
+<!--Label.scss-->
+.pf-c-label {
+// Component
+--pf-c-label--PaddingTop: var(--pf-global--spacer--xs);
+--pf-c-label--PaddingRight: var(--pf-global--spacer--sm);
+--pf-c-label--PaddingBottom: var(--pf-global--spacer--xs);
+--pf-c-label--PaddingLeft: var(--pf-global--spacer--sm);
+--pf-c-label--BorderRadius: var(--pf-global--BorderRadius--sm);
 
+// Color
+--pf-c-label--BackgroundColor: var(--pf-global--primary-color--100);
+--pf-c-label--Color: var(--pf-global--Color--light-100);
+
+// Font
+--pf-c-label--FontSize: var(--pf-global--FontSize--sm);
+
+// Modifiers
+--pf-c-label--m-compact--FontSize: var(--pf-global--FontSize--xs);
+
+display: inline-block;
+padding: var(--pf-c-label--PaddingTop) var(--pf-c-label--PaddingRight) var(--pf-c-label--PaddingBottom) var(--pf-c-label--PaddingLeft);
+font-size: var(--pf-c-label--FontSize);
+color: var(--pf-c-label--Color);
+text-align: center;
+white-space: nowrap;
+background-color: var(--pf-c-label--BackgroundColor);
+border-radius: var(--pf-c-label--BorderRadius);
+
+&.pf-m-compact {
+--pf-c-label--FontSize: var(--pf-c-label--m-compact--FontSize);
+}
+}
+```
 d. In label.scss underneath the block for pf-m-compact, add the modifier for pf-m-warning: 
 &.pf-m-warning { }
 
