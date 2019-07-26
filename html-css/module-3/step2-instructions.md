@@ -1,5 +1,3 @@
-# Modify Larger Component
-
 Patternfly is based on the BEM system, whereby modifiers are tied to an “element” rather than the entire “block”, therefore a modifier class can only work with a specific element class in the component. In the Badge we saw that the modifier was set on the component class, which is also possible, but let’s look at a larger component to see how the modifier classes are applied to different elements in the component.
 
 ## Task: Add modifiers to the dropdown component
