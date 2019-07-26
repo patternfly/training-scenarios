@@ -4,6 +4,11 @@
   "icon": "fa-galactic-republic",
   "courses": [
     {
+      "course_id": "module-1",
+      "title": "module 1",
+      "description": "Description here..."
+    },
+    {
       "course_id": "hello-world",
       "title": "Layouts Hello world",
       "description": "PatternFly Layouts description..."
