@@ -13,27 +13,27 @@
       {
         "title": "Modify simple component",
         "text": "step1-instructions.md",
-        "answer": "step1-answer.md"
+        "answer": "step1-answer.html"
       },
       {
         "title": "Modify larger component",
         "text": "step2-instructions.md",
-        "answer": "step2-answer.md"
+        "answer": "step2-answer.html"
       },
       {
         "title": "More practice with modifiers",
         "text": "step3-instructions.md",
-        "answer": "step3-answer.md"
+        "answer": "step3-answer.html"
       },
       {
         "title": "Create your own modifier class",
         "text": "step4-instructions.md",
-        "answer": "step4-answer.md"
+        "answer": "step4-answer.html"
       },
       {
         "title": "Using utility classes",
         "text": "step5-instructions.md",
-        "answer": "step5-answer.md"
+        "answer": "step5-answer.html"
       }
     ],
     "finish": {
