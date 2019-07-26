@@ -2,7 +2,7 @@
 
 Before we can get started, we need to add some code to the workspace that we can modify. 
 
-<strong>Note:</strong> Whenever you make changes to files, click <strong>Reload</strong> button above the preview panel to see the updates you made.
+<strong>Note:</strong> Whenever you make changes to files, click the <strong>Reload</strong> button above the preview panel to see the updates you made.
 
 1) <strong>Copy code into the index.html file</strong>
 
@@ -145,4 +145,4 @@ Click the <strong>Copy to Editor</strong> button below to add css for the Card c
 }
 </pre>
 
-Now you can click the <strong>Reload</strong> button above the preview panel to see how these contents look before making any further changes.
+Now click the <strong>Reload</strong> button above the preview panel to see how these contents look before making any further changes.

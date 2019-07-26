@@ -14,7 +14,7 @@ On line 4 of `card.scss` set the global variable `--pf-global--link--Color` to u
 
 <strong>Hint:</strong> `--pf-global--link--Color: var(--card-theme--Color);`
 
-<strong>Note:</strong> Variables defined inside the css file of a component are scoped to that component. Therefore, the value assigned to a global variable inside `card.scss` will only apply to the Card component, and not other components.
+<strong>Note:</strong> Variable definitions declared for a component `.pf-c-` class selector are scoped to that component. So even though we are assigning a new value to the global variable, that value will only apply to the Card component, and not other components.
 
 3) <strong>Change the font-size of the title in the card header.</strong> Not all changes require custom css. Many components include modifier classes that enable you to customize the appearance of a component. For this update, we'll use a modifier class available for the Title component. 
 
@@ -22,4 +22,4 @@ Search in `index.html` for `<div class="pf-c-card__header pf-c-title pf-m-md">`.
 
 <strong>Hint:</strong> `<div class="pf-c-card__header pf-c-title pf-m-xl">`
 
-Remember to click the <strong>Reload</strong> button above the preview panel to see how the styles change after you make changes.
+Remember to click the <strong>Reload</strong> button above the preview panel to see how the styles change after you make updates.
