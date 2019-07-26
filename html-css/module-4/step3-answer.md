@@ -1,3 +1,4 @@
+```
 <header class="pf-l-split">
   <div class="pf-l-split__item">
     Align left.
@@ -9,3 +10,4 @@
     Align right.
   </div>
 </header>
+```
