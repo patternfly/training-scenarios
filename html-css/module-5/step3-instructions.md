@@ -1,133 +1,43 @@
-## Utilize Patternfly layout classes to achieve new layouts
+## Extend a Patternfly component to achieve a new design
 
-In this step you will apply a gallery layout to multiple cards.
+Let's create a separator element that can be added to the card body.
 
-1) <strong>Copy code into the card.html file:</copy>
+1) <strong>Add the html markup.</strong> 
 
-<pre class="file" data-filename="index.html" data-target="replace">
-&lt;div class=&quot;pf-c-card pf-m-hoverable&quot;&gt;
-  &lt;div class=&quot;pf-c-card__head&quot;&gt;
-    &lt;img class=&quot;pf-c-brand&quot; src=&quot;https://pf4.patternfly.org/assets/images/pf-logo-small.svg&quot; alt=&quot;Patternfly Logo&quot;&gt;
-    &lt;div class=&quot;pf-c-card__actions&quot;&gt;
-     &lt;button class=&quot;pf-c-button pf-m-plain&quot;&gt;
-  &lt;i class=&quot;fas fa-times&quot;&gt;&lt;/i&gt;
-&lt;/button&gt;
-    &lt;/div&gt;
-   &lt;/div&gt;
-   &lt;div class=&quot;pf-c-card__header pf-c-title pf-m-xl&quot;&gt;
-    &lt;p&gt;Patternfly&lt;/p&gt;
-    &lt;div class=&quot;pf-c-content&quot;&gt;
-      &lt;small&gt;Provided by Red Hat&lt;/small&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;pf-c-card__body&quot;&gt;
-  &lt;div class=&quot;pf-c-card__body-separator&quot;&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-  &lt;div class=&quot;pf-c-card__body&quot;&gt;
-PatternFly is an open source design system created to enable consistency and usability across a wide range of applications and use cases. PatternFly provides clear standards, guidance, and tools that help designers and developers work together more efficiently and build better user experiences.
-  &lt;/div&gt;
-  &lt;div class=&quot;pf-c-card__body&quot;&gt;
-  &lt;div class=&quot;pf-c-card__body-separator&quot;&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-  &lt;div class=&quot;pf-c-card__footer pf-l-flex&quot;&gt;
-   &lt;button class=&quot;pf-c-button pf-m-inline pf-m-link&quot;&gt;
-    Link to Patternfly
-   &lt;/button&gt;
-   &lt;button class=&quot;pf-c-button pf-m-inline pf-m-link&quot;&gt;
-    Link to home
-   &lt;/button&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
+In `index.html` add the html markup for the separator element that sits inside of the `pf-c-card__body` element so that it receives the same padding as that element. Add this block between `pf-c-card__header` and `pf-c-card__body` and `pf-c-card__body` and `pf-c-card__footer`.
 
-&lt;div class=&quot;pf-c-card pf-m-hoverable&quot;&gt;
-  &lt;div class=&quot;pf-c-card__head&quot;&gt;
-    &lt;img class=&quot;pf-c-brand&quot; src=&quot;https://pf4.patternfly.org/assets/images/pf-logo-small.svg&quot; alt=&quot;Patternfly Logo&quot;&gt;
-    &lt;div class=&quot;pf-c-card__actions&quot;&gt;
-     &lt;button class=&quot;pf-c-button pf-m-plain&quot;&gt;
-        &lt;i class=&quot;fas fa-times&quot;&gt;&lt;/i&gt;
-      &lt;/button&gt;
-    &lt;/div&gt;
-   &lt;/div&gt;
-   &lt;div class=&quot;pf-c-card__header pf-c-title pf-m-xl&quot;&gt;
-    &lt;p&gt;Patternfly&lt;/p&gt;
-    &lt;div class=&quot;pf-c-content&quot;&gt;
-      &lt;small&gt;Provided by Red Hat&lt;/small&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;pf-c-card__body&quot;&gt;
-  &lt;div class=&quot;pf-c-card__body-separator&quot;&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-  &lt;div class=&quot;pf-c-card__body&quot;&gt;
-PatternFly is an open source design system created to enable consistency and usability across a wide range of applications and use cases. PatternFly provides clear standards, guidance, and tools that help designers and developers work together more efficiently and build better user experiences.
-  &lt;/div&gt;
-  &lt;div class=&quot;pf-c-card__body&quot;&gt;
-  &lt;div class=&quot;pf-c-card__body-separator&quot;&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-  &lt;div class=&quot;pf-c-card__footer pf-l-flex&quot;&gt;
-   &lt;button class=&quot;pf-c-button pf-m-inline pf-m-link&quot;&gt;
-    Link to Patternfly
-   &lt;/button&gt;
-   &lt;button class=&quot;pf-c-button pf-m-inline pf-m-link&quot;&gt;
-    Link to home
-   &lt;/button&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
+```
+<div class="pf-c-card__body">
+  <div class="pf-c-card__body-separator">
+  </div>
+</div>
+```
 
-&lt;div class=&quot;pf-c-card pf-m-hoverable&quot;&gt;
-  &lt;div class=&quot;pf-c-card__head&quot;&gt;
-    &lt;img class=&quot;pf-c-brand&quot; src=&quot;https://pf4.patternfly.org/assets/images/pf-logo-small.svg&quot; alt=&quot;Patternfly Logo&quot;&gt;
-    &lt;div class=&quot;pf-c-card__actions&quot;&gt;
-     &lt;button class=&quot;pf-c-button pf-m-plain&quot;&gt;
-        &lt;i class=&quot;fas fa-times&quot;&gt;&lt;/i&gt;
-      &lt;/button&gt;
-    &lt;/div&gt;
-   &lt;/div&gt;
-   &lt;div class=&quot;pf-c-card__header pf-c-title pf-m-xl&quot;&gt;
-    &lt;p&gt;Patternfly&lt;/p&gt;
-    &lt;div class=&quot;pf-c-content&quot;&gt;
-      &lt;small&gt;Provided by Red Hat&lt;/small&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;pf-c-card__body&quot;&gt;
-  &lt;div class=&quot;pf-c-card__body-separator&quot;&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-  &lt;div class=&quot;pf-c-card__body&quot;&gt;
-PatternFly is an open source design system created to enable consistency and usability across a wide range of applications and use cases. PatternFly provides clear standards, guidance, and tools that help designers and developers work together more efficiently and build better user experiences.
-  &lt;/div&gt;
-  &lt;div class=&quot;pf-c-card__body&quot;&gt;
-  &lt;div class=&quot;pf-c-card__body-separator&quot;&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-  &lt;div class=&quot;pf-c-card__footer pf-l-flex&quot;&gt;
-   &lt;button class=&quot;pf-c-button pf-m-inline pf-m-link&quot;&gt;
-    Link to Patternfly
-   &lt;/button&gt;
-   &lt;button class=&quot;pf-c-button pf-m-inline pf-m-link&quot;&gt;
-    Link to home
-   &lt;/button&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-</pre>
+2) <strong>Add a variable for the height.</strong> 
 
-2) <strong>Create a wrapper around the cards:</strong>
+In the `card.scss` file, we will add new styles for `pf-c-card__body-separator`. The first variable to add is for height and it should use Patternfly's global variable for small border width, and go under the variable declarations at the top of the file.
 
-Multiple cards were just added and we need to create a wrapper around them. Add an opening `<div>` tag to the first line, and a closing `</div>` tag to the bottom of the file.
+```
+--pf-c-card__body-separator--Height: var(--pf-global--BorderWidth--sm);
+```
 
-(3) <strong>Add a layout class:</strong> 
+3) <strong>Add a variable for background color.</strong> The second variable to add is for background color and it should use Patternfly's global variable for border color.
 
-To the opening `<div>` tag, add the gallery layout class: `pf-l-gallery`.
+```
+--pf-c-card__body-separator--BackgroundColor: var(--pf-global--BorderColor--100);
+```
 
-Hint: `<div class="pf-l-gallery">`
+4) <strong>Assign the variables for the separator.</strong>
 
-(4) <strong>Add a gutter modifier:</strong>
+At the bottom of `card.scss` assign the variables that were declared to the height and background-color style properties:
 
-Modify the gallery layout so that it includes a gutter. To the same opening `<div>` tag add the class `pf-m-gutter`.
+```
+.pf-c-card__body {
+  .pf-c-card__body-separator {
+    background-color: var(--pf-c-card__body-separator--BackgroundColor);
+    height: var(--pf-c-card__body-separator--Height);
+  }
+}
+```
 
-Hint: `<div class="pf-l-gallery pf-m-gutter">`
-
-
+Remember to click the <strong>Reload</strong> button above the preview panel to see how the styles change after you make updates.

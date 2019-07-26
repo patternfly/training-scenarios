@@ -1,6 +1,12 @@
-## Override Patternfly variables to achieve a new theme
+## Add some code to the workspace
 
-1) <strong>Copy code into the index.html file:</strong>
+Before we get started, let's add some code to the workspace that we can modify. 
+
+<strong>Note:</strong> Whenever you make changes to files, click the <strong>Reload</strong> button above the preview panel to see the updates you made.
+
+1) <strong>Copy code into the index.html file.</strong>
+
+Click the <strong>Copy to Editor</strong> button below to add html for a Card to the index.html file.
 
 <pre class="file" data-filename="index.html" data-target="replace">
 &lt;div class=&quot;pf-c-card pf-m-hoverable&quot;&gt;
@@ -32,7 +38,9 @@ PatternFly is an open source design system created to enable consistency and usa
 &lt;/div&gt;
 </pre>
 
-2) <strong>Copy code into the card.scss file:</strong>
+2) <strong>Copy code into the card.scss file.</strong>
+
+Click the <strong>Copy to Editor</strong> button below to add css for the Card component to the card.scss file.
 
 <pre class="file" data-filename="card.scss" data-target="replace">
 .pf-c-card {
@@ -137,19 +145,4 @@ PatternFly is an open source design system created to enable consistency and usa
 }
 </pre>
 
-3) <strong>Add a new color variable to use in the card. </strong>
-
-On line 3 of `card.scss` make a new variable name called `--card-theme--Color` and assign it to be purple: `#6200EE`.
-
-Hint: `--card-theme--Color: #6200EE;`
-
-4) <strong>Override the global link color. </strong> The global link color is set on the buttons in the footer -- override this color to be the new color that was set in step 3. Add this on line 4.
-
-Hint: `--pf-global--link--Color: var(--card-theme--Color);`
-
-5) <strong>Override the font-size of the title in the card header. </strong>
-
-For this step, search in `index.html` for `pf-c-card__header pf-c-title pf-m-md` and replace `pf-m-md` with `pf-m-xl`.
-
-Hint: `<div class="pf-c-card__header pf-c-title pf-m-xl">`
-
+Now click the <strong>Reload</strong> button above the preview panel to see how these contents look before making any further changes.
