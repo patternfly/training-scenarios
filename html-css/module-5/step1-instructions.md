@@ -1,10 +1,10 @@
 ## Add some code to the workspace
 
-Before we can get started, we need to add some code to the workspace that we can modify. 
+Before we get started, let's add some code to the workspace that we can modify. 
 
 <strong>Note:</strong> Whenever you make changes to files, click the <strong>Reload</strong> button above the preview panel to see the updates you made.
 
-1) <strong>Copy code into the index.html file</strong>
+1) <strong>Copy code into the index.html file.</strong>
 
 Click the <strong>Copy to Editor</strong> button below to add html for a Card to the index.html file.
 
@@ -38,7 +38,7 @@ PatternFly is an open source design system created to enable consistency and usa
 &lt;/div&gt;
 </pre>
 
-2) <strong>Copy code into the card.scss file</strong>
+2) <strong>Copy code into the card.scss file.</strong>
 
 Click the <strong>Copy to Editor</strong> button below to add css for the Card component to the card.scss file.
 

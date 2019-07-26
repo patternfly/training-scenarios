@@ -13,7 +13,7 @@ In `index.html` add the html markup for the separator element that sits inside o
 </div>
 ```
 
-2) <strong>Add a variable for the height: </strong> 
+2) <strong>Add a variable for the height.</strong> 
 
 In the `card.scss` file, we will add new styles for `pf-c-card__body-separator`. The first variable to add is for height and it should use Patternfly's global variable for small border width, and go under the variable declarations at the top of the file.
 
