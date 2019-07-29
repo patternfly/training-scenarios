@@ -3,7 +3,10 @@ Let’s continue to practice how to add modifier classes to components.
 ## Task: Add modifier classes to the alert component
 a. Using the documentation at this link https://pf4.patternfly.org/components/Alert/examples/, follow the instructions to modify the three alert components.
 
-b. Copy code to the editor
+b. Copy code to the editor.
+
+Click the <strong>Copy to Editor</strong> button below to add html for an Alert to the index.html file.
+
 ```
 <div class="pf-c-alert">
     <div class="pf-c-alert__icon">

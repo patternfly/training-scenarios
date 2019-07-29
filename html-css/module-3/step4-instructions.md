@@ -4,6 +4,9 @@ Making your own modifier class is easy and will save you time. Choose which comp
 a. Let’s create a “warning” variation of the label component by creating a modifier class.
 
 b. Copy code to label.html
+
+Click the <strong>Copy to Editor</strong> button below to add html for a Label to the index.html file.
+
 ```
 <!--Label.html-->
 <span class="pf-c-label">
@@ -14,6 +17,9 @@ b. Copy code to label.html
 </span>
 ```
 c. Copy code to label.scss
+
+Click the <strong>Copy to Editor</strong> button below to add CSS for a Label to the layout.scss file.
+
 ```
 <!--Label.scss-->
 .pf-c-label {
