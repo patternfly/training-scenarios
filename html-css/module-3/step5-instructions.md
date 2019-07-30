@@ -1,4 +1,3 @@
-# Using utility classes
 
 The main difference between modifiers and utility classes is that modifiers are specific to the component and layout, that is, only that specific component can use the modifiers within its component structure, whereas utility classes can be applied across the entire system.
 Patternfly is built so Utilities shouldn’t be required but when you need them they are there. For those instances, utility classes are supplied to assist in allowing minor styling changes without creating the need for adding custom CSS. In some cases, the utility classes use Patternfly’s predefined global variables as the values. E.g. spacing and box-shadow.

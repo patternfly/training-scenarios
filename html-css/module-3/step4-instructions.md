@@ -1,4 +1,3 @@
-# Create your own modifier class 
  
 Making your own modifier class is easy and will save you time. Choose which component you would like to add a modifier class and then select an element that you wish to modify. Create a modifier class name that represents the new style, and add the new styles to the stylesheet, as well as the new modifier class to the html. Here is a list of modifiers that we have in patternfly: https://pf4.patternfly.org/modifiers
 

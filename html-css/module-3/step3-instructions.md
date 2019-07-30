@@ -1,4 +1,3 @@
-# More Practice with Modifiers 
 
 Let’s continue to practice how to add modifier classes to components.
 
