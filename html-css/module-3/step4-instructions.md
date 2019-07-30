@@ -7,7 +7,7 @@ b. Copy code to label.html
 
 Click the <strong>Copy to Editor</strong> button below to add html for a Label to the index.html file.
 
-<pre class=&quot;file&quot; data-filename=&quot;index.html&quot; data-target=&quot;replace&quot;>
+<pre class="file" data-filename="index.html" data-target="replace">
 &lt;!--Label.html--&gt;
 &lt;span class=&quot;pf-c-label&quot;&gt;
   Default Label
