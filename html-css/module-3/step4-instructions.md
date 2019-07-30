@@ -7,15 +7,16 @@ b. Copy code to label.html
 
 Click the <strong>Copy to Editor</strong> button below to add html for a Label to the index.html file.
 
-```
-<!--Label.html-->
-<span class="pf-c-label">
+<pre class=&quot;file&quot; data-filename=&quot;index.html&quot; data-target=&quot;replace&quot;>
+&lt;!--Label.html--&gt;
+&lt;span class=&quot;pf-c-label&quot;&gt;
   Default Label
-</span>
-<span class="pf-c-label">
+&lt;/span>
+&lt;span class=&quot;pf-c-label&quot;&gt;
   Warning Label
-</span>
-```
+&lt;/span>
+</pre>
+
 c. Copy code to label.scss
 
 Click the <strong>Copy to Editor</strong> button below to add CSS for a Label to the layout.scss file.

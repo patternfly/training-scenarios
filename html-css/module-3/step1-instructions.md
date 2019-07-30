@@ -9,15 +9,17 @@ Note: the badge is a component that requires a modifier.
 b. Copy code to the editor.
 
 Click the <strong>Copy to Editor</strong> button below to add html for a Badge to the index.html file.
-```
-<!--Badge.html-->
-<span class="pf-c-badge pf-m-unread">
+
+<pre class="file" data-filename="index.html" data-target="replace">
+&lt;!--Badge.html--&gt;
+&lt;span class=&quot;pf-c-badge pf-m-unread&quot;&gt;
   200
-</span>
-<span class="pf-c-badge pf-m-unread">
+&lt;/span&gt;
+&lt;span class=&quot;pf-c-badge pf-m-unread&quot;&gt;
   300
-</span>
-```
+&lt;/span&gt;
+</pre>
+
 c. You should see two badges appear with the background-color of blue. The modifier class: `pf-m-unread` modifies its styles to be “unread”
 
 d .The badge also has a “read” state. Your task is to update the second badge so that it has the modifier for “read”. What did the background color change to?
