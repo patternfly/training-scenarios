@@ -4,12 +4,12 @@ Patternfly is built so Utilities shouldn’t be required but when you need them 
 Ideally you should consider changing a component variable or global variable before using utility classes. As of now modifier styles ship with the main patternfly package and the utility styles are another package that you can import.
 
 ## Task: Use the box-shadow utility
-1) Let’s look at the box-shadow utility for example. It’s very possible that when you are developing your product, you need to add in extra box-shadows to components.
+a. Let’s look at the box-shadow utility for example. It’s very possible that when you are developing your product, you need to add in extra box-shadows to components.
 
-2) At this link: https://pf4.patternfly.org/utilities/BoxShadow/examples/ you can see the different box-shadow options.
+b. At this link: https://pf4.patternfly.org/utilities/BoxShadow/examples/ you can see the different box-shadow options.
 
-3) Let's practice adding a box-shadow utility on the clipboard-copy component.
+c. Let's practice adding a box-shadow utility on the clipboard-copy component.
 
-4) To `pf-c-clipboard-copy` add the class `pf-u-box-shadow-sm` next to it. You should now see that the component has a box-shadow around it. 
+d. To `pf-c-clipboard-copy` add the class `pf-u-box-shadow-sm` next to it. You should now see that the component has a box-shadow around it. 
 
 Remember to click the <strong>Reload</strong> button above the preview panel to see how the layout changes after you make updates.
