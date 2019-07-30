@@ -6,7 +6,7 @@ var logger = require('morgan');
 var es6Renderer = require('express-es6-template-engine');
 var sass = require('node-sass-middleware');
 var app = express();
-
+var browserSync = require('browser-sync');
 // view engine setup
 app.engine('html', es6Renderer);
 app.set('views', path.join(__dirname, '.'));
@@ -65,5 +65,15 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('server/views/error');
 });
+
+// browsersync
+// .init starts the server
+browserSync.init({
+  injectChanges: true,
+  server: "./app"
+});
+
+bs.reload();
+app.use(require('connect-browser-sync')(bs));
 
 module.exports = app;
