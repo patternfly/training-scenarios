@@ -34,7 +34,7 @@ Click the <strong>Copy to Editor</strong> button below to add html for an Alert 
         Alert three
     &lt;/h4>
 &lt;/div&gt;
-</pre>;
+</pre>
 
 c. Modify the first alert to be “success”
 
