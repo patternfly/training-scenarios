@@ -12,3 +12,5 @@ Ideally you should consider changing a component variable or global variable bef
 3) Let's practice adding a box-shadow utility on the clipboard-copy component.
 
 4) To `pf-c-clipboard-copy` add the class `pf-u-box-shadow-sm` next to it. You should now see that the component has a box-shadow around it. 
+
+Remember to click the <strong>Reload</strong> button above the preview panel to see how the layout changes after you make updates.

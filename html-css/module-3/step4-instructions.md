@@ -68,3 +68,4 @@ Making your own modifier class is easy and will save you time. Choose which comp
 8) Now in the label.html add the new example for the warning modifier. 
 `<span class=”pf-c-label pf-m-warning”> Warning Label </span>`
 
+Remember to click the <strong>Reload</strong> button above the preview panel to see how the layout changes after you make updates.

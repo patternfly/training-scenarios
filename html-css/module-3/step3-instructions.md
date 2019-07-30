@@ -41,3 +41,5 @@ Let’s continue to practice how to add modifier classes to components.
 4) <strong>Modify the second alert to be “inline” and “warning”</strong> 
 
 5) <strong>Modify the third alert to be “info” but also “danger”.</strong>  What did you notice with this last example?
+
+Remember to click the <strong>Reload</strong> button above the preview panel to see how the styles change after you make updates.
