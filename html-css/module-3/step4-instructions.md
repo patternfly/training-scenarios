@@ -21,7 +21,7 @@ c. Copy code to label.scss
 
 Click the <strong>Copy to Editor</strong> button below to add CSS for a Label to the layout.scss file.
 
-```
+<pre class="file" data-filename="myapp.scss" data-target="replace">
 <!--Label.scss-->
 .pf-c-label {
 // Component
@@ -54,7 +54,8 @@ border-radius: var(--pf-c-label--BorderRadius);
 --pf-c-label--FontSize: var(--pf-c-label--m-compact--FontSize);
 }
 }
-```
+</pre>
+
 d. In label.scss underneath the block for pf-m-compact, add the modifier for pf-m-warning: 
 &.pf-m-warning { }
 
