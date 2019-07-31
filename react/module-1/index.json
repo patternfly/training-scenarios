@@ -1,19 +1,19 @@
 {
-  "title": "Patternfly-React General Overview",
-  "description": "This course will cover a general overview of PatternFly React.",
+  "title": "Intro to PatternFly React components",
+  "description": "Practice using PatternFly 4 React components to recreate a design",
   "difficulty": "beginner",
   "time": "20 minutes",
   "details": {
     "intro": {
       "text": "intro.md",
-      "code": "env-init.sh",
-      "credits": ""
+      "code": "env-init.sh"
     },
     "steps": [
-      {
-        "title": "Enter title here",
-        "text": "step1-instructions.md",
-        "answer": "step1-answer.md"
+      { "title": "Add a card",
+        "text": "step1.md"
+      },
+      { "title": "Add content to your card",
+        "text": "step2.md"
       }
     ],
     "finish": {
