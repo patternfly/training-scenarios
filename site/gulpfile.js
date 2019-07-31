@@ -12,19 +12,19 @@ gulp.task('sass', function() {
 
 // compile scss into css
 function style () {
-    return gulp.src('./scss/**/*.scss').pipe(sass()).pipe(gulp.dest('./css'))
+    return gulp.src('./scss/*.scss').pipe(sass()).pipe(gulp.dest('./css'))
     .pipe(browserSync.stream())
 }
 
 function watch () {
     browserSync.init({
         server: {
-            baseDir: './',
+            baseDir: './app'
         }
     })
-    gulp.watch('./scss/**/*.scss', style);
-    gulp.watch('./*.html').on('change', browserSync.reload);
-    gulp.watch('./js/**/*.js').on('change', browserSync.reload);
+    gulp.watch('./scss/*.scss', style);
+    gulp.watch('./**/*.html', './*.html').on('change', browserSync.reload());
+    gulp.watch('./js/**/*.js').on('change', browserSync.reload());
 
 }
 exports.style = style;

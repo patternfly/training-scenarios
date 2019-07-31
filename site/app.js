@@ -66,14 +66,4 @@ app.use(function(err, req, res, next) {
   res.render('server/views/error');
 });
 
-// browsersync
-// .init starts the server
-browserSync.init({
-  injectChanges: true,
-  server: "./app"
-});
-
-bs.reload();
-app.use(require('connect-browser-sync')(bs));
-
 module.exports = app;
