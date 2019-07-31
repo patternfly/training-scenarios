@@ -1,3 +1,8 @@
-body.h1 {
-  background: lightcoral;
+body {
+  background: #7e6caf;
   color: white; }
+
+div {
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700; }
