@@ -1,42 +1,44 @@
+
 Let’s continue to practice how to add modifier classes to components.
 
 ## Task: Add modifier classes to the alert component
-a. Using the documentation at this link https://pf4.patternfly.org/components/Alert/examples/, follow the instructions to modify the three alert components.
+a. Using the documentation at this link https://pf4.patternfly.org/components/Alert/examples/, <strong> follow the instructions </strong> to modify the three alert components.
 
-b. Copy code to the editor.
+b. <strong> Copy code to the editor.</strong> Click the <strong>Copy to Editor</strong> button below to add html for an Alert to the index.html file.
 
-Click the <strong>Copy to Editor</strong> button below to add html for an Alert to the index.html file.
-
-```
-<div class="pf-c-alert">
-    <div class="pf-c-alert__icon">
-        <i class="fas fa-info-circle"></i>
-    </div>
-    <h4 class="pf-c-alert__title">
+<pre class="file" data-filename="index.html" data-target="replace">
+&lt;div class=&quot;pf-c-alert&quot;&gt;
+    &lt;div class=&quot;pf-c-alert__icon&quot;&gt;
+        &lt;i class=&quot;fas fa-info-circle&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;h4 class=&quot;pf-c-alert__title&quot;&gt;
         Alert one
-    </h4>
-</div>
+    &lt;/h4>
+&lt;/div>
 
-<div class="pf-c-alert">
-    <div class="pf-c-alert__icon">
-        <i class="fas fa-info-circle"></i>
-    </div>
-    <h4 class="pf-c-alert__title">
+&lt;div class=&quot;pf-c-alert&quot;>
+    &lt;div class=&quot;pf-c-alert__icon&quot;&gt;
+        &lt;i class=&quot;fas fa-info-circle&quot;>&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;h4 class=&quot;pf-c-alert__title&quot;&gt;
         Alert two
-    </h4>
-</div>
+    &lt;/h4&gt;
+&lt;/div&gt;
 
-<div class="pf-c-alert">
-    <div class="pf-c-alert__icon">
-        <i class="fas fa-info-circle"></i>
-    </div>
-    <h4 class="pf-c-alert__title">
+&lt;div class=&quot;pf-c-alert&quot;&gt;
+    &lt;div class=&quot;pf-c-alert__icon&quot;&gt;
+        &lt;i class=&quot;fas fa-info-circle&quot;>&lt;/i&gt;
+    &lt;/div>
+    &lt;h4 class=&quot;pf-c-alert__title&quot;&gt;
         Alert three
-    </h4>
-</div>
-```
-c. Modify the first alert to be “success”
+    &lt;/h4>
+&lt;/div&gt;
+</pre>
 
-d. Modify the second alert to be “inline” and “warning”
+c. <strong>Modify the first alert to be “success”</strong> 
 
-e. Modify the third alert to be “info” but also “danger”. What did you notice with this last example?
+d. <strong>Modify the second alert to be “inline” and “warning”</strong> 
+
+e. <strong>Modify the third alert to be “info” but also “danger”.</strong>  What did you notice with this last example?
+
+Remember to click the <strong>Reload</strong> button above the preview panel to see how the styles change after you make updates.

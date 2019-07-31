@@ -1,26 +1,24 @@
+ 
 Making your own modifier class is easy and will save you time. Choose which component you would like to add a modifier class and then select an element that you wish to modify. Create a modifier class name that represents the new style, and add the new styles to the stylesheet, as well as the new modifier class to the html. Here is a list of modifiers that we have in patternfly: https://pf4.patternfly.org/modifiers
 
 ## Task: Create a modifier class for the Label component:
-a. Let’s create a “warning” variation of the label component by creating a modifier class.
+a. <strong>Let’s create a “warning” variation of the label component by creating a modifier class.</strong>
 
-b. Copy code to label.html
+b. <strong>Copy code to label.html</strong> Click the <strong>Copy to Editor</strong> button below to add html for a Label to the index.html file.
 
-Click the <strong>Copy to Editor</strong> button below to add html for a Label to the index.html file.
-
-```
-<!--Label.html-->
-<span class="pf-c-label">
+<pre class="file" data-filename="index.html" data-target="replace">
+&lt;!--Label.html--&gt;
+&lt;span class=&quot;pf-c-label&quot;&gt;
   Default Label
-</span>
-<span class="pf-c-label">
+&lt;/span>
+&lt;span class=&quot;pf-c-label&quot;&gt;
   Warning Label
-</span>
-```
-c. Copy code to label.scss
+&lt;/span>
+</pre>
 
-Click the <strong>Copy to Editor</strong> button below to add CSS for a Label to the layout.scss file.
+c. <strong>Copy code to label.scss</strong> Click the <strong>Copy to Editor</strong> button below to add CSS for a Label to the layout.scss file.
 
-```
+<pre class="file" data-filename="myapp.scss" data-target="replace">
 <!--Label.scss-->
 .pf-c-label {
 // Component
@@ -53,7 +51,8 @@ border-radius: var(--pf-c-label--BorderRadius);
 --pf-c-label--FontSize: var(--pf-c-label--m-compact--FontSize);
 }
 }
-```
+</pre>
+
 d. In label.scss underneath the block for pf-m-compact, add the modifier for pf-m-warning: 
 &.pf-m-warning { }
 
@@ -68,3 +67,4 @@ g. And under the last line, assign the new variable to override the original var
 h. Now in the label.html add the new example for the warning modifier. 
 `<span class=”pf-c-label pf-m-warning”> Warning Label </span>`
 
+Remember to click the <strong>Reload</strong> button above the preview panel to see how the layout changes after you make updates.
