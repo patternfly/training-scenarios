@@ -43,4 +43,4 @@ We'll be using the `link` variant and adding an `isInline` prop so that the butt
 </pre>
 
 When these steps are complete - the finished card should look like this:
-![Step 8 card](assets/step8.png)
+![Step 8 card](module-1/assets/step8.png)

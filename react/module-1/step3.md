@@ -20,6 +20,6 @@ Now we'll add content to the `CardBody` of our card..
 </pre>
 
 Once the preview reloads - it should look like this:
-![Step 1 card](assets/step1.png)
+![Step 1 card](module-1/assets/step1.png)
 
 CardBody is the React component used to place content into the body of the Card.  We'll continue to add more details to the card header in the next step.
