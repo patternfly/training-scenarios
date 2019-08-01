@@ -59,3 +59,6 @@ TextContent is used to wrap Text components and provides text with extra spacing
   &lt;/TextContent&gt;
 &lt;/CardHeader&gt;
 </pre>
+
+When these steps are complete - the header and card should look like this:
+![Step 4 card](assets/step5.png)

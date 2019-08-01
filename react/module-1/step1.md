@@ -1,7 +1,7 @@
 PatternFly React is made up of Components, Layouts and Demos. 
 
-Ut in ante semper, luctus dui nec, vulputate dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi a tincidunt quam. Maecenas at neque enim. Duis eget sagittis metus. In molestie tellus sit amet magna egestas cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat volutpat. Ut et placerat velit. Nam lacinia magna nibh, ut imperdiet erat iaculis in. Donec tempus, tortor eu ornare vulputate, sem justo efficitur risus, non commodo nisl libero at mi. Integer rhoncus, diam at feugiat blandit, arcu odio blandit tortor, ac condimentum elit risus in felis. Duis erat ipsum, tincidunt quis ultricies et, aliquet at diam. Curabitur nec magna sollicitudin, ultrices leo sed, tempor nibh.
+The PatternFly React library provides a collection of React components you can use to build interfaces with consistent markup, styling, and behavior.  In this course, we're going to build a PatternFly card together - starting with content, adding a header and some actions and concluding with a card footer.  You'll learn a little bit about React and how to use PatternFly components together to build a consistent experience.  We'll also show how to use PatternFly layouts to put the components together.
 
-Call out link to getting started
+[Get started with PatternFly](https://www.patternfly.org/v4/get-started/developers)
 
-Call out link to documentation
+[Read the documentation](https://www.patternfly.org/v4/documentation/react/components/card/)

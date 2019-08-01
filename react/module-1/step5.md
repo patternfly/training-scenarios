@@ -41,3 +41,6 @@ We'll be using the `link` variant and adding an `isInline` prop so that the butt
 <pre class="file" data-target="clipboard">
 &lt;Split gutter="md"&gt;
 </pre>
+
+When these steps are complete - the finished card should look like this:
+![Step 8 card](assets/step8.png)

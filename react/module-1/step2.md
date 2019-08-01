@@ -2,7 +2,9 @@ A card is a flexible element for containing any kind of content. Cards are used 
 
 In this exercise, we'll be creating a card with an image, action, header, body, and footer.
 
-In PatternFly 4, separate components are used to demarcate the different regions of a card so it can be fully customized. For example, images are placed in CardHead, actions in CardActions, and the header in CardHeader.
+In PatternFly 4, separate components are used to demarcate the different regions of a card so it can be fully customized. For example, images are placed in CardHead, actions in CardActions, and the header in CardHeader.  We'll a PatternFly card  - the image below is what we'll end up with when we are done. 
+
+![Final card](assets/step8.png)
 
 ## Task
 Katacoda is setting up a new React application for you. You'll be ready to code once the server starts and you can see "Welcome to PatternFly" on the lower pane.
@@ -54,3 +56,6 @@ function App() {
 
 export default App;
 </pre>
+
+Once it reloads - it should look like this:
+![Step 1 card](assets/step1.png)
