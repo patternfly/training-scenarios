@@ -56,6 +56,3 @@ function App() {
 
 export default App;
 </pre>
-
-Once it reloads - it should look like this:
-![Step 1 card](module-1/assets/step1.png)
