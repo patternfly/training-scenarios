@@ -65,10 +65,10 @@
       {"name": "Web Application", "port": 3000}
     ],
     "uilayout": "editor-iframe-split",
-    "uisettings": "javascript"
+    "uisettings": "javascript",
+    "exclusionPatterns": ["._*", "package.json", "package-lock.json", "node_modules*", "public*", "serviceWorker*"],
+    "hideHiddenFiles": true
   },
-  "exclusionPatterns": ["._*", "package.json", "package-lock.json", "node_modules*", "public*", "serviceWorker*"],
-  "hideHiddenFiles": true,
   "backend": {
     "imageid": "node",
     "port": 3000
