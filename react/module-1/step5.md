@@ -20,8 +20,6 @@ In this exercise, we'll be using a split layout to separate a pair of buttons in
 
 2) Add a button to the first `SplitItem` component
 
-Buttons communicate and trigger actions a user can take in an application or website. They come in several variations, such as `primary`, `secondary`, `danger`, `plain`, and `link`.
-
 We'll be using the `link` variant and adding an `isInline` prop so that the buttons are inline rather than block elements.
 
 <pre class="file" data-target="clipboard">
@@ -45,4 +43,4 @@ We'll be using the `link` variant and adding an `isInline` prop so that the butt
 </pre>
 
 When these steps are complete - the finished card should look like this:
-![Step 8 card](module-1/assets/step8.png)
+<img src="module-1/assets/final-card.png" alt="Completed card component with header, icon, body, and footer links" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
