@@ -1,1 +1,1 @@
-You've completed your first Katacoda scenario!
+Congratulations - you finished the getting started with PatternFly React course!
