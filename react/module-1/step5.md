@@ -5,15 +5,17 @@ Now we'll add content to the `CardFooter` to complete our card.
 
 PatternFly 4 offers several layout options, including grid, bullseye, and split layouts.
 
-In this exercise, we'll be using a split layout to separate a pair of buttons in the footer of our card. We'll be adding a `<SplitItem>` component inside `<Split>` for each item in the layout.
+In this exercise, we'll be using a split layout to separate a pair of buttons in the footer of our card. The split layout is designed to position items horizontally.  We'll be adding a `<SplitItem>` component inside `<Split>` for each item in the layout.
 
 <pre class="file" data-target="clipboard">
-&lt;Split&gt;
-  &lt;SplitItem&gt;
-  &lt;/SplitItem&gt;
-  &lt;SplitItem&gt;
-  &lt;/SplitItem&gt;
-&lt;/Split&gt;
+&lt;CardFooter&gt;
+  &lt;Split&gt;
+    &lt;SplitItem&gt;
+    &lt;/SplitItem&gt;
+    &lt;SplitItem&gt;
+    &lt;/SplitItem&gt;
+  &lt;/Split&gt;
+&lt;/CardFooter&gt;
 </pre>
 
 2) Add a button to the first `SplitItem` component

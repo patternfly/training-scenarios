@@ -31,7 +31,7 @@ The brand component is used to place a product logotype on a screen. All you nee
 &lt;/CardHead&gt;
 </pre>
 
-3) Add a plain close button to the card component in the `CardAction` component
+3) Add a plain close button to the card component in the `CardActions` component
 
 PatternFly React provides a variety of icons as well as components, layouts, charts, and demos. They're just as easy to use and they compile into svgs. You can use them inside buttons and other components.
 
@@ -50,7 +50,7 @@ TextContent is used to wrap Text components and provides text with extra spacing
 <pre class="file" data-target="clipboard">
 &lt;CardHeader&gt;
   &lt;Text component={TextVariants.p}&gt;
-    Patternfly
+    PatternFly
   &lt;/Text&gt;
   &lt;TextContent&gt;
     &lt;Text component={TextVariants.small}&gt;
