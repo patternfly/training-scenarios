@@ -2,7 +2,7 @@ Now we'll add content to the `CardBody` of our card..
 
 ## Task
 
-1) Make sure the app.js file is still open
+1) Make sure the App.js file is still open
 
 2) Locate the code that looks like the following:
 
