@@ -1,45 +1,58 @@
 const gulp = require('gulp');
+const browserSync = require('browser-sync');
+const fileinclude = require('gulp-file-include');
 const sass = require('gulp-sass');
-const browserSync = require('browser-sync').create();
+const server = browserSync.create();
 
+const paths = {
+  html: {
+    src: [ '**/*.html', '!node_modules', '!node_modules/**', '!dist/**'],
+    dest: 'dist/'
+  },
+  sass: {
+    src: ['*.scss'],
+    dest: 'dist/'
+  }
+};
 
-gulp.task('sass', function() {
-    return gulp.src('.scss/styles.scss')
-    .pipe(sass())
-    .pipe(gulp.dest('./css'))
-    .pipe(browserSync.stream())
-});
+function html() {
+  return gulp.src(paths.html.src)
+    .pipe(gulp.dest(paths.html.dest));
+}
 
-gulp.task('default', function() {
-    var files = [
-            './**/*'
-        ];
-    browserSync.init({
-        files : files,
-        proxy : 'localhost:3000',
-        watchOptions : {
-            ignored : 'node_modules/*',
-            ignoreInitial : true
-        }
-    });
-});
+function reload(done) {
+  server.reload();
+  done();
+}
 
-// compile scss into css
+function fileInclude() {
+  return gulp.src(['server/template.html'])
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: './'
+    }))
+    .pipe(gulp.dest(paths.html.dest + 'server'));
+}
+
 function style () {
-    return gulp.src('./scss/*.scss').pipe(sass()).pipe(gulp.dest('./css'))
-    .pipe(browserSync.stream())
+  return gulp.src('./*.scss')
+    .pipe(sass())
+    .pipe(gulp.dest('./dist/css'));
 }
 
-function watch () {
-    browserSync.init({
-        injectChanges: true,
-        server:"./app" 
-
-    })
-    gulp.watch('./scss/*.scss', style).on('change', browserSync.reload);
-    gulp.watch('./**/*.html').on('change', browserSync.reload);
-    gulp.watch('./js/**/*.js').on('change', browserSync.reload);
-
+function serve(done) {
+  server.init({
+    injectChanges: true,
+    server: {
+      baseDir: './dist'
+    },
+    index: 'server/template.html'
+  });
+  done();
 }
-exports.style = style;
-exports.watch = watch;
+
+const watch = () => gulp.watch(paths.html.src, gulp.series(html, fileInclude, reload));
+const sassWatch = () => gulp.watch(paths.sass.src, gulp.series(style, reload));
+
+const dev = gulp.series(html, fileInclude, style, serve, sassWatch, watch);
+exports.default = dev;
