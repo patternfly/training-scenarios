@@ -1,58 +1,45 @@
 const gulp = require('gulp');
-const browserSync = require('browser-sync');
-const fileinclude = require('gulp-file-include');
 const sass = require('gulp-sass');
-const server = browserSync.create();
+const browserSync = require('browser-sync').create();
 
-const paths = {
-  html: {
-    src: [ '**/*.html', '!node_modules', '!node_modules/**', '!dist/**'],
-    dest: 'dist/'
-  },
-  sass: {
-    src: ['*.scss'],
-    dest: 'dist/'
-  }
-};
 
-function html() {
-  return gulp.src(paths.html.src)
-    .pipe(gulp.dest(paths.html.dest));
-}
-
-function reload(done) {
-  server.reload();
-  done();
-}
-
-function fileInclude() {
-  return gulp.src(['server/template.html'])
-    .pipe(fileinclude({
-      prefix: '@@',
-      basepath: './'
-    }))
-    .pipe(gulp.dest(paths.html.dest + 'server'));
-}
-
-function style () {
-  return gulp.src('./*.scss')
+gulp.task('sass', function() {
+    return gulp.src('.scss/styles.scss')
     .pipe(sass())
-    .pipe(gulp.dest('./dist/css'));
+    .pipe(gulp.dest('./css'))
+    .pipe(browserSync.stream())
+});
+
+gulp.task('default', function() {
+    var files = [
+            './**/*'
+        ];
+    browserSync.init({
+        files : files,
+        proxy : 'localhost:3000',
+        watchOptions : {
+            ignored : 'node_modules/*',
+            ignoreInitial : true
+        }
+    });
+});
+
+// compile scss into css
+function style () {
+    return gulp.src('./scss/*.scss').pipe(sass()).pipe(gulp.dest('./css'))
+    .pipe(browserSync.stream())
 }
 
-function serve(done) {
-  server.init({
-    injectChanges: true,
-    server: {
-      baseDir: './dist'
-    },
-    index: 'server/template.html'
-  });
-  done();
+function watch () {
+    browserSync.init({
+        injectChanges: true,
+        server:"./app" 
+
+    })
+    gulp.watch('./scss/*.scss', style).on('change', browserSync.reload);
+    gulp.watch('./**/*.html').on('change', browserSync.reload);
+    gulp.watch('./js/**/*.js').on('change', browserSync.reload);
+
 }
-
-const watch = () => gulp.watch(paths.html.src, gulp.series(html, fileInclude, reload));
-const sassWatch = () => gulp.watch(paths.sass.src, gulp.series(style, reload));
-
-const dev = gulp.series(html, fileInclude, style, serve, gulp.parallel(sassWatch, watch));
-exports.default = dev;
+exports.style = style;
+exports.watch = watch;
