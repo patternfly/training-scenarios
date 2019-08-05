@@ -8,13 +8,8 @@
   "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.26.7",
-<<<<<<< HEAD
-    "express-es6-template-engine": "^2.1.9",
-    "gulp": "^4.0.2",
-=======
     "gulp": "^4.0.2",
     "gulp-file-include": "^2.1.0",
->>>>>>> gulp-dana
     "gulp-sass": "^4.0.2"
   }
 }
