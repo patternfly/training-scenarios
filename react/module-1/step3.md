@@ -2,7 +2,7 @@ Now we'll add content to the `CardBody` of our card..
 
 ## Task
 
-1) Make sure the app.js file is still open
+1) Make sure the App.js file is still open
 
 2) Locate the code that looks like the following:
 
@@ -20,6 +20,6 @@ Now we'll add content to the `CardBody` of our card..
 </pre>
 
 Once the preview reloads - it should look like this:
-![Step 1 card](module-1/assets/step1.png)
+<img src="module-1/assets/card-with-body.png" alt="Card with body content" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
 
 CardBody is the React component used to place content into the body of the Card.  We'll continue to add more details to the card header in the next step.
