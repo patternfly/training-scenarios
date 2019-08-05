@@ -54,5 +54,5 @@ function serve(done) {
 const watch = () => gulp.watch(paths.html.src, gulp.series(html, fileInclude, reload));
 const sassWatch = () => gulp.watch(paths.sass.src, gulp.series(style, reload));
 
-const dev = gulp.series(html, fileInclude, style, serve, sassWatch, watch);
+const dev = gulp.series(html, fileInclude, style, serve, gulp.parallel(sassWatch, watch));
 exports.default = dev;
