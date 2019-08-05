@@ -40,5 +40,3 @@ c. <strong>Modify the first alert to be “success”</strong>
 d. <strong>Modify the second alert to be “inline” and “warning”</strong> 
 
 e. <strong>Modify the third alert to be “info” but also “danger”.</strong>  What did you notice with this last example?
-
-Remember to click the <strong>Reload</strong> button above the preview panel to see how the styles change after you make updates.

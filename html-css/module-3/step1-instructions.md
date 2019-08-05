@@ -21,5 +21,3 @@ Click the <strong>Copy to Editor</strong> button below to add html for a Badge t
 c. You should see <strong>two badges</strong> appear with the background-color of blue. The modifier class: `pf-m-unread` modifies its styles to be “unread”.
 
 d. The badge also has a “read” state. <strong>Your task is to update the second badge so that it has the modifier for “read”.</strong> What did the background color change to?
-
-Click the <strong>Reload</strong> button above the preview panel to see how these contents look.

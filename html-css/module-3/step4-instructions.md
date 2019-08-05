@@ -66,5 +66,3 @@ g. And under the last line, assign the new variable to override the original var
 
 h. Now in the label.html add the new example for the warning modifier. 
 `<span class=”pf-c-label pf-m-warning”> Warning Label </span>`
-
-Remember to click the <strong>Reload</strong> button above the preview panel to see how the layout changes after you make updates.
