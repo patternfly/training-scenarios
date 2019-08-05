@@ -10,5 +10,3 @@ c. Let’s try another modifier. Add `pf-m-plain` to `pf-c-dropdown__toggle` so 
 
 d. Now add `pf-m-plain` to `pf-c-dropdown__menu`. What happens? <strong> Nothing should happen</strong>  because the styles associated with the modifier class are not scoped to `pf-c-dropdown__menu`, they are only scoped to `pf-c-dropdown__toggle`.
 Always remember to refer to the documentation!
-
-Remember to click the <strong>Reload</strong> button above the preview panel to see how the styles change after you make updates.
