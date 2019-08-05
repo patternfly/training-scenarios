@@ -1,1 +1,1 @@
-Intro goes here..
+In this scenario, you will learn how to use PatternFly 4 React components for the first time.

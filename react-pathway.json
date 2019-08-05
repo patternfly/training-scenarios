@@ -1,17 +1,11 @@
 {
   "title": "PatternFly React",
-  "description": "training description...",
-  "icon": "fa-galactic-republic",
+  "description": "These courses are designed to introduced you to PatternFly React - a set of React components that encapsulate the PatternFly patterns for re-use.",
   "courses": [
     {
       "course_id": "module-1",
-      "title": "module 1",
-      "description": "Description here..."
-    },
-    {
-      "course_id": "hello-world",
-      "title": "Layouts Hello world",
-      "description": "PatternFly Layouts description..."
+      "title": "PatternFly React Components",
+      "description": "Introduction to PatternFly React components"
     }
   ]
 }
