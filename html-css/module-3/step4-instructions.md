@@ -64,5 +64,5 @@ f. First you need to declare the variables, so under the `//Modifiers` section a
 g. And under the last line, assign the new variable to override the original variable:
 `&.pf-m-warning { --pf-c-label--BackgroundColor: --pf-c-label--m-warning--BackgroundColor )`
 
-h. Now in the label.html add the new example for the warning modifier. 
+h. Now in the label.html add the new example for the warning modifier.
 `<span class=”pf-c-label pf-m-warning”> Warning Label </span>`

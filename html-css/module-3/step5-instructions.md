@@ -10,6 +10,4 @@ b. At this link: https://pf4.patternfly.org/utilities/BoxShadow/examples/ you ca
 
 c. Let's practice adding a box-shadow utility on the clipboard-copy component.
 
-d. To `pf-c-clipboard-copy` add the class `pf-u-box-shadow-sm` next to it. You should now see that the component has a box-shadow around it. 
-
-Remember to click the <strong>Reload</strong> button above the preview panel to see how the layout changes after you make updates.
+d. To `pf-c-clipboard-copy` add the class `pf-u-box-shadow-sm` next to it. You should now see that the component has a box-shadow around it.
