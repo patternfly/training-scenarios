@@ -40,7 +40,7 @@
       "text": "finish.md"
     }
   },
-  "files": ["index.html"],
+  "files": ["index.html", "layout.scss"],
   "environment": {
     "showdashboard": true,
     "dashboards": [
