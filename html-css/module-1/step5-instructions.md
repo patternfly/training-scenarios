@@ -4,7 +4,7 @@ Demos show how Patternfly’s components and layouts can be put together to buil
 
 a. In this workshop we will create a form demo.
 
-b. Let’s stack five components on the page. Copy this code to the editor five times.
+b. Let’s stack five components on the page. **Copy this code to the editor five times.**
 
 <pre class="file" data-filename="index.html" data-target="replace">
 &lt;form class=&quot;pf-c-form&quot;&gt;
@@ -19,12 +19,14 @@ b. Let’s stack five components on the page. Copy this code to the editor five 
 &lt;/form&gt;
 </pre>
 
-c. Now that we have added the components let's add the layout class around all of the form components. For this scenario we should use the grid layout. Wrap all of the form components in a div with the class `pf-l-grid` to add the layout block.
+c. Now that we have added the components let's add the layout class around all of the form components. For this scenario we should use the **grid layout**. Wrap all of the form components in a div with the class `pf-l-grid` to add the layout block.
+
 Hint: `<div class=”pf-l-grid”>`
 
 d. The next step is to wrap each form component in the class `pf-l-grid__item` to add the layout elements. In the grid layout, the layout elements represent the cells in the grid. Add `<div class=”pf-l-grid__item”></div>` around each form component.
 
 e. We want to modify this demo a little so that the form lays out better on the page. First add the modifier `pf-m-gutter` next to the class `pf-l-grid`, so that spacing is added between the `pf-l-grid__item` elements.
+
 Hint: `<div class=”pf-l-grid pf-m-gutter”>`
 
 f. Next we can add a modifier class to the `pf-l-grid__item` **element**  to control how many columns the element should span. To modify the width of a grid layout element use `pf-m-[number from 1 - 12]`. The number you use defines how many columns the element should span in a 12 column grid, and the numbers you use across a row should add up to 12.  

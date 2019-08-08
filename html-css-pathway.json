@@ -5,8 +5,8 @@
   "courses": [
     {
       "course_id": "module-1",
-      "title": "module 1",
-      "description": "Description here..."
+      "title": "The Building Blocks for Patternfly Core",
+      "description": "This module will cover the guiding principles behind the three major parts of PatternFly Core—components, layouts, and demos and how they interact with each other."
     },
     {
       "course_id": "module-2",
