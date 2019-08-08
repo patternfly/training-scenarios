@@ -26,6 +26,6 @@ c. It’s important to follow the documentation for layouts. For example here is
 
 d. In this case we want to **center the card component within the outer div**. To the first line `<div>` add the class: `pf-l-bullseye`.
 
-Hint: <div class=”pf-l-bullseye”>
+Hint: `<div class=”pf-l-bullseye”>`
 
 e. You should see that the card is now centered in the middle of the page!
