@@ -1,7 +1,7 @@
 {
-  "title": "Patternfly-Core General Overview",
-  "description": "This course will cover a general overview of Patternfly Core. ",
-  "difficulty": "beginner",
+  "title": "The Building Blocks for Patternfly Core",
+  "description": "This module will cover the guiding principles behind the three major parts of PatternFly Core—components, layouts, and demos and how they interact with each other.",
+  "difficulty": "Beginner",
   "time": "20 minutes",
   "details": {
     "intro": {
@@ -11,9 +11,29 @@
     },
     "steps": [
       {
-        "title": "Enter title here",
+        "title": "Patternfly Components (Atoms)",
         "text": "step1-instructions.md",
         "answer": "step1-answer.md"
+      },
+      {
+        "title": "Patternfly Components (Molecules)",
+        "text": "step2-instructions.md",
+        "answer": "step2-answer.md"
+      },
+      {
+        "title": "Semantic Markup",
+        "text": "step3-instructions.md",
+        "answer": "step3-answer.md"
+      },
+      {
+        "title": "Patternfly Layouts",
+        "text": "step4-instructions.md",
+        "answer": "step4-answer.md"
+      },
+      {
+        "title": "Patternfly Demos",
+        "text": "step5-instructions.md",
+        "answer": "step5-answer.md"
       }
     ],
     "finish": {
