@@ -10,8 +10,8 @@
     },
     {
       "course_id": "module-2",
-      "title": "module 2",
-      "description": "Description here..."
+      "title": "BEM Naming Principles",
+      "description": "In this scenario you will utilize BEM to create component and global variables and also override them."
     },
     {
       "course_id": "module-3",
