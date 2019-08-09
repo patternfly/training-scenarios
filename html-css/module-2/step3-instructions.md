@@ -46,6 +46,7 @@ j. Let's add that to the selector in the codepen.
 }`
 
 k. Since BEM allows us to avoid nesting, let's create a new selector in the codepen in the global scope (outside of the existing .pf-c-label selector) to apply the margin styles to.
+
 `.pf-c-label__icon { 
 }`
 
