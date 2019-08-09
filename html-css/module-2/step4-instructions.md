@@ -37,23 +37,23 @@ j. And finally add the property that the custom property represents.
 k. Now create a declaration with the global variable you added as the value for your new custom property.
 `--pf-c-title--m-5xl--FontSize: var(--pf-global--FontSize--5xl);`
 l. Adding that declaration to the codepen, we should have.
-.pf-c-title {
+`.pf-c-title {
   --pf-c-title--m-5xl--FontSize: var(--pf-global--FontSize--5xl);
-}
+}`
 
 m. Next we need to write a CSS selector for the new 5xl variation. Knowing that the modifier .pf-m-5xl will apply to the title component, let's use the & in SCSS nested inside of .pf-c-title to create .pf-c-title.pf-m-5xl.
-.pf-c-title {
+`.pf-c-title {
   --pf-c-title--m-5xl--FontSize: var(--pf-global--FontSize--5xl);
 
   &.pf-m-5xl {
   }
-}
+}`
 
 n. Last all we need to do is create a declaration within the modifier to define the font-size property with a value of the new title component custom property we created for this variation
-.pf-c-title {
+`.pf-c-title {
   --pf-c-title--m-5xl--FontSize: var(--pf-global--FontSize--5xl);
   
   &.pf-m-5xl {
     font-size: var(--pf-c-title--m-5xl--FontSize);
   }
-}
+}`
