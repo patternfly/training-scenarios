@@ -1,1 +1,1 @@
-You've completed your first Katacoda scenario!
+Congratulations on successfully finishing this module.
