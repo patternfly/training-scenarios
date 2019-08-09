@@ -1,0 +1,45 @@
+{
+  "title": "Intro to PatternFly React demos and customization",
+  "description": "Practice using a PatternFly 4 React demo and customizing components",
+  "difficulty": "beginner",
+  "time": "20 minutes",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "code": "env-init.sh"
+    },
+    "steps": [
+      { "title": "Introducing PatternFly React demos",
+        "text": "step1.md"
+      },
+      { "title": "Add a page demo",
+        "text": "step2.md"
+      },
+      { "title": "Add content to your cards",
+        "text": "step3.md"
+      },
+      { "title": "Modify the cards",
+        "text": "step4.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+
+  "files": [],
+  "environment": {
+    "showdashboard": true,
+    "dashboards": [
+      {"name": "Web Application", "port": 3000}
+    ],
+    "uilayout": "editor-iframe-split",
+    "uisettings": "javascript",
+    "exclusionPatterns": ["._*", "package.json", "package-lock.json", "node_modules*", "public*", "serviceWorker*"],
+    "hideHiddenFiles": true
+  },
+  "backend": {
+    "imageid": "node",
+    "port": 3000
+  }
+}
