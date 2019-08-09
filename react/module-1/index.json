@@ -2,7 +2,7 @@
   "title": "Intro to PatternFly React components",
   "description": "Practice using PatternFly 4 React components to recreate a design",
   "difficulty": "beginner",
-  "time": "20 minutes",
+  "time": "10 minutes",
   "details": {
     "intro": {
       "text": "intro.md",
@@ -28,28 +28,16 @@
     "assets": {
       "client": [
         {
-          "file": "step1.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
+          "file": "card-with-body.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
         },
         {
-          "file": "step2.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
+          "file": "empty-card.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
         },
         {
-          "file": "step3.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
+          "file": "card-with-header.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
         },
         {
-          "file": "step4.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
-        },
-        {
-          "file": "step5.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
-        },
-        {
-          "file": "step6.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
-        },
-        {
-          "file": "step7.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
-        },
-        {
-          "file": "step8.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
+          "file": "final-card.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
         }
       ]
     },
