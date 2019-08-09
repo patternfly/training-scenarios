@@ -18,7 +18,7 @@ b. <strong>Copy code to label.html</strong> Click the <strong>Copy to Editor</st
 
 c. <strong>Copy code to label.scss</strong> Click the <strong>Copy to Editor</strong> button below to add CSS for a Label to the layout.scss file.
 
-<pre class="file" data-filename="myapp.scss" data-target="replace">
+<pre class="file" data-filename="layout.scss" data-target="replace">
 <!--Label.scss-->
 .pf-c-label {
 // Component
