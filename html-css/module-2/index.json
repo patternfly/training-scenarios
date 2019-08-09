@@ -1,7 +1,7 @@
 {
-  "title": "BEM Naming System",
-  "description": "This course will cover Patternfly's BEM Naming System. ",
-  "difficulty": "beginner",
+  "title": "BEM Naming Principles",
+  "description": "In this scenario you will utilize BEM to create component and global variables and also override them.",
+  "difficulty": "Beginner",
   "time": "20 minutes",
   "details": {
     "intro": {
@@ -11,9 +11,24 @@
     },
     "steps": [
       {
-        "title": "Enter title here",
+        "title": "Override Component Variables",
         "text": "step1-instructions.md",
         "answer": "step1-answer.md"
+      },
+      {
+        "title": "Override Global Variables",
+        "text": "step2-instructions.md",
+        "answer": "step2-answer.md"
+      },
+      {
+        "title": "Create component variables using BEM",
+        "text": "step3-instructions.md",
+        "answer": "step3-answer.md"
+      },
+      {
+        "title": "Create global variables using BEM",
+        "text": "step4-instructions.md",
+        "answer": "step4-answer.md"
       }
     ],
     "finish": {
