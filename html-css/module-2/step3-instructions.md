@@ -5,21 +5,21 @@ As we have seen, in order to override variables its important to understand how 
 a. We are going to add a custom icon element to the label component and apply a margin-right of 8px (--pf-global--spacer--sm)
 
 b. Let's assume there is a common use case for adding an icon to the left of text in the label component when used in your application. Start out by adding a label component.
-<span class="pf-c-label">
+`<span class="pf-c-label">
     My custom label
-</span>
+</span>`
 
 c. Then place an icon before the label text
-<span class="pf-c-label">
+`<span class="pf-c-label">
   <i class="fas fa-plus"></i>
   My custom label
-</span>
+</span>`
 
 d. The label component only styles the label itself and the text inside. While this looks OK, we need to add space between the icon and the text beside it. To do this the BEM way, let's assign a BEM element class to the icon.
-<span class="pf-c-label">
+`<span class="pf-c-label">
   <i class="pf-c-label__icon fas fa-plus"></i>
   My custom label
-</span>
+</span>`
 
 e. Now we need to style the label icon and apply the margin to it. Begin by writing the selector for the label component in the CSS panel of the codepen so that you can apply CSS that is scoped to the component.
 `.pf-c-label {
