@@ -1,4 +1,4 @@
-<h1 class="pf-c-title pf-m-5xl">
+```<h1 class="pf-c-title pf-m-5xl">
   5xl title
 </h1>
 
@@ -12,4 +12,4 @@
   &.pf-m-5xl {
     font-size: var(--pf-c-title--m-5xl--FontSize);
   }
-}
+}```

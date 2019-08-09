@@ -42,18 +42,18 @@ l. Adding that declaration to the codepen, we should have.
 }`
 
 m. Next we need to write a CSS selector for the new 5xl variation. Knowing that the modifier .pf-m-5xl will apply to the title component, let's use the & in SCSS nested inside of .pf-c-title to create .pf-c-title.pf-m-5xl.
-`.pf-c-title {
+```.pf-c-title {
   --pf-c-title--m-5xl--FontSize: var(--pf-global--FontSize--5xl);
 
   &.pf-m-5xl {
   }
-}`
+}```
 
 n. Last all we need to do is create a declaration within the modifier to define the font-size property with a value of the new title component custom property we created for this variation
-`.pf-c-title {
+```.pf-c-title {
   --pf-c-title--m-5xl--FontSize: var(--pf-global--FontSize--5xl);
   
   &.pf-m-5xl {
     font-size: var(--pf-c-title--m-5xl--FontSize);
   }
-}`
+}```
