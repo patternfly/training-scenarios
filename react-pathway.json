@@ -6,6 +6,11 @@
       "course_id": "module-1",
       "title": "PatternFly React Components",
       "description": "Introduction to PatternFly React components"
+    },
+    {
+      "course_id": "module-2",
+      "title": "PatternFly React Advanced",
+      "description": "Advanced PatternFly React component usage"
     }
   ]
 }

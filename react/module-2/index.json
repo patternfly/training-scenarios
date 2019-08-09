@@ -22,18 +22,28 @@
         "text": "step4.md"
       }
     ],
+    "assets": {
+      "client": [
+        {
+          "file": "header.jsx", "target": "~/tutorial/src/components/", "chmod": "+r"
+        },
+        {
+          "file": "toolbar.jsx", "target": "~/tutorial/src/components/", "chmod": "+r"
+        }
+      ]
+    },
     "finish": {
       "text": "finish.md"
     }
   },
 
-  "files": [],
+  "files": [",~/tutorial/src/App.js"],
   "environment": {
     "showdashboard": true,
     "dashboards": [
       {"name": "Web Application", "port": 3000}
     ],
-    "uilayout": "editor-iframe-split",
+    "uilayout": "editor-terminal",
     "uisettings": "javascript",
     "exclusionPatterns": ["._*", "package.json", "package-lock.json", "node_modules*", "public*", "serviceWorker*"],
     "hideHiddenFiles": true
