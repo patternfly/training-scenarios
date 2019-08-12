@@ -13,7 +13,17 @@ Add the following code to the `Card` component:
 </pre>
 
 
-2) Add a brand to the `CardHead` component
+2) Change the button in the `CardFooter` component into a blue action button
+
+You can change the variant to get different kinds of buttons.
+
+Replace the `CardFooter` component with the following code:
+
+<pre class="file" data-target="clipboard">
+&lt;CardFooter&gt;
+  &lt;Button variant="primary"&gt;Link to PatternFly&lt;/Button&gt;
+&lt;/CardFooter&gt;
+</pre>
 
 
-When these steps are complete - the header and card should look like this:
+When these steps are complete, a card should look like this:
