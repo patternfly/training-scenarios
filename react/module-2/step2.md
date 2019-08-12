@@ -9,10 +9,7 @@ The image below is what we'll end up with when we are done.
 ## Task
 Katacoda is setting up a new React application for you. You'll be ready to code once the server starts and you can see "Welcome to PatternFly" on the lower pane.
 
-1) Navigate to the `src` folder and open `App.js`
-`App.js`{{open}}
-`./src/App.js`{{open}}
-`src/App.js`{{open}}
+1) Navigate to the `src` folder and open `src/App.js`{{open}}
 
 2) Next, we'll set up the general structure of the card and the necessary import statements.
 
