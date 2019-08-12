@@ -48,3 +48,6 @@ In `myapp.scss` assign the variables that were declared to the height, backgroun
   margin: var(--my-app-c-card__body-separator--Margin);
 }
 ```
+
+When the server reloads, you should see something like this:
+<img src="module-1/assets/devconf-artboard-3.jpg" alt="Empty card" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
