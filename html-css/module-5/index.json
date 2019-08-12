@@ -27,6 +27,19 @@
         "text": "step4-instructions.md"
       }
     ],
+    "assets": {
+      "client": [
+        {
+          "file": "devconf-artboard-1.jpg", "target": "~/tutorial/assets/images/", "chmod": "+r"
+        },
+        {
+          "file": "devconf-artboard-2.jpg", "target": "~/tutorial/assets/images/", "chmod": "+r"
+        },
+        {
+          "file": "devconf-artboard-3.jpg", "target": "~/tutorial/assets/images/", "chmod": "+r"
+        }
+      ]
+    },
     "finish": {
       "text": "finish.md"
     }
