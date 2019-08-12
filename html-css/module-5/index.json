@@ -30,13 +30,13 @@
     "assets": {
       "client": [
         {
-          "file": "devconf-artboard-1.jpg", "target": "~/tutorial/assets/images/", "chmod": "+r"
+          "file": "devconf-artboard-1.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
         },
         {
-          "file": "devconf-artboard-2.jpg", "target": "~/tutorial/assets/images/", "chmod": "+r"
+          "file": "devconf-artboard-2.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
         },
         {
-          "file": "devconf-artboard-3.jpg", "target": "~/tutorial/assets/images/", "chmod": "+r"
+          "file": "devconf-artboard-3.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
         }
       ]
     },
