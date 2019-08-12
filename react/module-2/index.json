@@ -20,6 +20,10 @@
       },
       { "title": "Modify the cards",
         "text": "step4.md"
+      },
+      {
+        "title": "Customize with CSS variables",
+        "text": "step5.md"
       }
     ],
     "assets": {

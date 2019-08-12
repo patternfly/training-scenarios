@@ -19,11 +19,23 @@ Copy the following code into the App.js file, replacing all of the content there
 import React from 'react';
 import "@patternfly/react-core/dist/styles/base.css";
 import {
+  Brand,
+  Button,
   Card,
+  CardActions,
+  CardHead,
+  CardHeader,
   CardBody,
+  CardFooter,
   Gallery,
   GalleryItem,
+  Text,
+  TextContent,
+  TextVariants
 } from '@patternfly/react-core';
+import {
+  TimesIcon
+} from '@patternfly/react-icons';
 import AppPage from './components/page';
 
 class PageLayoutSimpleNav extends React.Component {
@@ -51,7 +63,6 @@ class PageLayoutSimpleNav extends React.Component {
 }
 
 export default PageLayoutSimpleNav;
-
 </pre>
 
 When the server reloads, you should see something like this:
