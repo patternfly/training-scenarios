@@ -50,7 +50,7 @@
     "dashboards": [
       {"name": "Web Application", "port": 3000}
     ],
-    "uilayout": "editor-iframe-split",
+    "uilayout": "editor-terminal",
     "uisettings": "html"
   },
   "backend": {
