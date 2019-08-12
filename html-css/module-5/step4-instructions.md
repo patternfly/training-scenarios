@@ -130,4 +130,4 @@ Hint: `<div class="pf-l-gallery">`
 
 Modify the gallery layout so that it includes a gutter. To the same opening `<div>` tag add the class `pf-m-gutter`.
 
-<strong>Hint: `<div class="pf-l-gallery pf-m-gutter">`</strong>
+<strong>Hint:</strong> `<div class="pf-l-gallery pf-m-gutter">`

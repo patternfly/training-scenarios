@@ -4,7 +4,7 @@ Before we get started, let's add some code to the workspace that we can modify.
 
 1) <strong>Copy code into the index.html file.</strong>
 
-Click the <strong>Copy to Editor</strong> button below to add html for a Card to the index.html file.
+Click the <strong>Copy to Editor</strong> button below to add html for a card to the `index.html` file.
 
 <pre class="file" data-filename="index.html" data-target="replace">
 &lt;div class=&quot;pf-c-card pf-m-hoverable&quot;&gt;
@@ -38,7 +38,7 @@ PatternFly is an open source design system created to enable consistency and usa
 
 2) <strong>Set up your new styles file for overriding styles in the card component.</strong> There are two blocks in this file: `:root` targets styles across the entire application and `.pf-c-card` targets styles specifically in the card component.
 
-Click the <strong>Copy to Editor</strong> button below to add css for the Card component to the myapp.scss file.
+Click the <strong>Copy to Editor</strong> button below to add code for the card component to the myapp.scss file.
 
 <pre class="file" data-filename="myapp.scss" data-target="replace">
 :root {

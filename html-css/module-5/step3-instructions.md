@@ -4,7 +4,7 @@ Now that we have practiced overriding variables, let's practice extending Patter
 
 1) <strong>Add the html markup.</strong> 
 
-In `index.html` add the html markup for the separator element that is a sibling to the `pf-c-card__body` element. Add this block between `pf-c-card__header` and `pf-c-card__body` and `pf-c-card__body` and `pf-c-card__footer`. We will prefix the variable name with `my-app` so that it can be easily distinguished from the Patternfly codebase.
+In `index.html` add the html markup for the separator element that is a sibling to the `pf-c-card__body` element. Add this new code between `pf-c-card__header` and `pf-c-card__body` and `pf-c-card__body` and `pf-c-card__footer`. We will prefix the variable name with `my-app` so that it can be easily distinguished from the Patternfly codebase.
 
 ```
 <div class="my-app-c-card__body-separator">
@@ -39,7 +39,7 @@ In the `myapp.scss` file, we will add new styles for `my-app-c-card__body-separa
 
 5) <strong>Assign the variables for the separator.</strong>
 
-In `myapp.scss` assign the variables that were declared to the height, background-color and margin style properties:
+In `myapp.scss` assign the variables that were declared to the height, background-color and margin style properties. Add this as a new block under `.pf-c-card`:
 
 ```
 .my-app-c-card__body-separator {
