@@ -6,8 +6,6 @@ Now that we have an updated card design, let's add several cards and use the gal
 
 Click the <strong>Copy to Editor</strong> button below to add html for a Card to the index.html file.
 
-Then click the <strong>Reload</strong> button above the preview panel to see how the cards display on the page.
-
 <pre class="file" data-filename="index.html" data-target="replace">
 &lt;div class=&quot;pf-c-card pf-m-hoverable&quot;&gt;
   &lt;div class=&quot;pf-c-card__head&quot;&gt;
@@ -132,6 +130,4 @@ Hint: `<div class="pf-l-gallery">`
 
 Modify the gallery layout so that it includes a gutter. To the same opening `<div>` tag add the class `pf-m-gutter`.
 
-Hint: `<div class="pf-l-gallery pf-m-gutter">`
-
-Remember to click the <strong>Reload</strong> button above the preview panel to see how the layout changes after you make updates.
+<strong>Hint: `<div class="pf-l-gallery pf-m-gutter">`</strong>

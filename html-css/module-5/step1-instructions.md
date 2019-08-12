@@ -1,8 +1,6 @@
 ## Add some code to the workspace
 
-Before we get started, let's add some code to the workspace that we can modify. 
-
-<strong>Note:</strong> Whenever you make changes to files, click the <strong>Reload</strong> button above the preview panel to see the updates you made.
+Before we get started, let's add some code to the workspace that we can modify.
 
 1) <strong>Copy code into the index.html file.</strong>
 
@@ -38,14 +36,16 @@ PatternFly is an open source design system created to enable consistency and usa
 &lt;/div&gt;
 </pre>
 
-2) <strong>Set up your new styles file for overriding styles in the card component.</strong>
+2) <strong>Set up your new styles file for overriding styles in the card component.</strong> There are two blocks in this file: `:root` targets styles across the entire application and `.pf-c-card` targets styles specifically in the card component.
 
 Click the <strong>Copy to Editor</strong> button below to add css for the Card component to the myapp.scss file.
 
 <pre class="file" data-filename="myapp.scss" data-target="replace">
+:root {
+  // Add global variables here
+}
+
 .pf-c-card {
-  // Add styles here
+  // Add card component variables here
 }
 </pre>
-
-Now click the <strong>Reload</strong> button above the preview panel to see how these contents look before making any further changes.

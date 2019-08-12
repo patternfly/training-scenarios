@@ -16,18 +16,15 @@
       },
       {
         "title": "Step 2",
-        "text": "step2-instructions.md",
-        "answer": "step3-answer.md"
+        "text": "step2-instructions.md"
       },
       {
         "title": "Step 3",
-        "text": "step3-instructions.md",
-        "answer": "step3-answer.md"
+        "text": "step3-instructions.md"
       },
       {
         "title": "Step 4",
-        "text": "step4-instructions.md",
-        "answer": "step4-answer.md"
+        "text": "step4-instructions.md"
       }
     ],
     "finish": {
