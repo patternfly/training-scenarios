@@ -17,7 +17,7 @@ Click the <strong>Copy to Editor</strong> button below to add html for a Card to
     &lt;/div&gt;
    &lt;/div&gt;
    &lt;div class=&quot;pf-c-card__header pf-c-title pf-m-xl&quot;&gt;
-    &lt;p&gt;Patternfly&lt;/p&gt;
+    &lt;p&gt;PatternFly&lt;/p&gt;
     &lt;div class=&quot;pf-c-content&quot;&gt;
       &lt;small&gt;Provided by Red Hat&lt;/small&gt;
     &lt;/div&gt;
@@ -35,7 +35,7 @@ PatternFly is an open source design system created to enable consistency and usa
 &lt;/div&gt;
   &lt;div class=&quot;pf-c-card__footer pf-l-flex&quot;&gt;
    &lt;button class=&quot;pf-c-button pf-m-inline pf-m-link&quot;&gt;
-    Link to Patternfly
+    Link to PatternFly
    &lt;/button&gt;
    &lt;button class=&quot;pf-c-button pf-m-inline pf-m-link&quot;&gt;
     Link to home
@@ -53,7 +53,7 @@ PatternFly is an open source design system created to enable consistency and usa
     &lt;/div&gt;
    &lt;/div&gt;
    &lt;div class=&quot;pf-c-card__header pf-c-title pf-m-xl&quot;&gt;
-    &lt;p&gt;Patternfly&lt;/p&gt;
+    &lt;p&gt;PatternFly&lt;/p&gt;
     &lt;div class=&quot;pf-c-content&quot;&gt;
       &lt;small&gt;Provided by Red Hat&lt;/small&gt;
     &lt;/div&gt;
@@ -71,7 +71,7 @@ PatternFly is an open source design system created to enable consistency and usa
 &lt;/div&gt;
   &lt;div class=&quot;pf-c-card__footer pf-l-flex&quot;&gt;
    &lt;button class=&quot;pf-c-button pf-m-inline pf-m-link&quot;&gt;
-    Link to Patternfly
+    Link to PatternFly
    &lt;/button&gt;
    &lt;button class=&quot;pf-c-button pf-m-inline pf-m-link&quot;&gt;
     Link to home
@@ -81,7 +81,7 @@ PatternFly is an open source design system created to enable consistency and usa
 
 &lt;div class=&quot;pf-c-card pf-m-hoverable&quot;&gt;
   &lt;div class=&quot;pf-c-card__head&quot;&gt;
-    &lt;img class=&quot;pf-c-brand&quot; src=&quot;https://pf4.patternfly.org/assets/images/pf-logo-small.svg&quot; alt=&quot;Patternfly Logo&quot;&gt;
+    &lt;img class=&quot;pf-c-brand&quot; src=&quot;https://pf4.patternfly.org/assets/images/pf-logo-small.svg&quot; alt=&quot;PatternFly Logo&quot;&gt;
     &lt;div class=&quot;pf-c-card__actions&quot;&gt;
      &lt;button class=&quot;pf-c-button pf-m-plain&quot;&gt;
         &lt;i class=&quot;fas fa-times&quot;&gt;&lt;/i&gt;
@@ -89,7 +89,7 @@ PatternFly is an open source design system created to enable consistency and usa
     &lt;/div&gt;
    &lt;/div&gt;
    &lt;div class=&quot;pf-c-card__header pf-c-title pf-m-xl&quot;&gt;
-    &lt;p&gt;Patternfly&lt;/p&gt;
+    &lt;p&gt;PatternFly&lt;/p&gt;
     &lt;div class=&quot;pf-c-content&quot;&gt;
       &lt;small&gt;Provided by Red Hat&lt;/small&gt;
     &lt;/div&gt;
@@ -107,7 +107,7 @@ PatternFly is an open source design system created to enable consistency and usa
 &lt;/div&gt;
   &lt;div class=&quot;pf-c-card__footer pf-l-flex&quot;&gt;
    &lt;button class=&quot;pf-c-button pf-m-inline pf-m-link&quot;&gt;
-    Link to Patternfly
+    Link to PatternFly
    &lt;/button&gt;
    &lt;button class=&quot;pf-c-button pf-m-inline pf-m-link&quot;&gt;
     Link to home
