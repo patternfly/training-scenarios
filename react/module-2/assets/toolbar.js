@@ -25,7 +25,7 @@ class AppToolbar extends React.Component {
       activeItem: 0
     };
   }
-  //
+
   onDropdownToggle = isDropdownOpen => {
     this.setState({
       isDropdownOpen

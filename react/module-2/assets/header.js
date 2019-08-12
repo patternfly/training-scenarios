@@ -3,6 +3,7 @@ import {
   Brand,
   PageHeader,
 } from '@patternfly/react-core';
+import AppToolbar from './toolbar';
 
 class AppHeader extends React.Component {
   constructor(props) {
@@ -13,7 +14,7 @@ class AppHeader extends React.Component {
     return (
       <PageHeader
         logo={<Brand src="https://pf4.patternfly.org/assets/images/pf-logo-small.svg" alt="Patternfly Logo" />}
-        toolbar={}
+        toolbar={<AppToolbar />}
         showNavToggle
       />
     );

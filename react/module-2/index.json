@@ -25,10 +25,13 @@
     "assets": {
       "client": [
         {
-          "file": "header.jsx", "target": "~/tutorial/src/components/", "chmod": "+r"
+          "file": "header.js", "target": "~/tutorial/src/components/", "chmod": "+r"
         },
         {
-          "file": "toolbar.jsx", "target": "~/tutorial/src/components/", "chmod": "+r"
+          "file": "toolbar.js", "target": "~/tutorial/src/components/", "chmod": "+r"
+        },
+        {
+          "file": "page.js", "target": "~/tutorial/src/components/", "chmod": "+r"
         }
       ]
     },
@@ -37,7 +40,7 @@
     }
   },
 
-  "files": [",~/tutorial/src/App.js"],
+  "files": [],
   "environment": {
     "showdashboard": true,
     "dashboards": [
