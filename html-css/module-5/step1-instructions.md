@@ -51,4 +51,4 @@ Click the <strong>Copy to Editor</strong> button below to add code for the card 
 </pre>
 
 When the server reloads, you should see something like this:
-<img src="module-1/assets/devconf-artboard-1.jpg" alt="Empty card" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
+<img src="module-1/assets/devconf-artboard-1.png" alt="card initial" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
