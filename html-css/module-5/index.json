@@ -44,7 +44,7 @@
       "text": "finish.md"
     }
   },
-  "files": ["index.html", "css/myapp.scss"],
+  "files": ["index.html", "myapp.scss"],
   "environment": {
     "showdashboard": true,
     "dashboards": [
