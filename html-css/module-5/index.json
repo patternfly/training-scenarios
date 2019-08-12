@@ -44,13 +44,13 @@
       "text": "finish.md"
     }
   },
-  "files": ["index.html", "css/myapp.scss"],
+  "files": ["index.html", "myapp.scss"],
   "environment": {
     "showdashboard": true,
     "dashboards": [
       {"name": "Web Application", "port": 3000}
     ],
-    "uilayout": "editor-terminal",
+    "uilayout": "editor-iframe-split",
     "uisettings": "html"
   },
   "backend": {
