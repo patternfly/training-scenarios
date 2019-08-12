@@ -1,8 +1,8 @@
 ## Override PatternFly variables to achieve a new theme
 
-Now that we have a card on our page, let's customize some of the styles applied to it.
+Now that we have a card on our page, let's customize the styles applied to it.
 
-1) <strong>Add a new color variable to use in the card.</strong> Let's make the links in the card purple! In PatternFly, all the css values we use are first assigned to variables. We recommend doing the same when making customizations in your application.
+1) <strong>Add a new color variable to use in the card.</strong> Let's make the links in the card purple! In PatternFly, all of the css values we use are first assigned to variables. We recommend doing the same when making customizations in your application.
 
 In `myapp.scss` inside of the `:root` block make a new variable name called `--my-app-card-theme--Color` and assign it to be purple: `#6200EE`.
 
