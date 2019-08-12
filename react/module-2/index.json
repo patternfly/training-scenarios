@@ -22,6 +22,19 @@
         "text": "step4.md"
       }
     ],
+    "assets": {
+      "client": [
+        {
+          "file": "header.js", "target": "~/tutorial/src/components/", "chmod": "+r"
+        },
+        {
+          "file": "toolbar.js", "target": "~/tutorial/src/components/", "chmod": "+r"
+        },
+        {
+          "file": "page.js", "target": "~/tutorial/src/components/", "chmod": "+r"
+        }
+      ]
+    },
     "finish": {
       "text": "finish.md"
     }
