@@ -46,7 +46,7 @@ Click the <strong>Copy to Editor</strong> button below to add code for the card 
 }
 
 .pf-c-card {
-  // Add card component variables here
+  // Add Card component variables here
 }
 </pre>
 
