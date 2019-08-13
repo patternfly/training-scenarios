@@ -3,5 +3,6 @@ tar -xvzf ~/pf-express.tar.gz -C ~/tutorial
 cd ~/tutorial
 npm install
 export CHOKIDAR_USEPOLLING=true
+touch ./src/app.css
 echo "Starting... this will block the rest of the commands from running..."
 npm start

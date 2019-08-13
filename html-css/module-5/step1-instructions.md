@@ -17,7 +17,7 @@ Click the <strong>Copy to Editor</strong> button below to add html for a card to
     &lt;/div&gt;
    &lt;/div&gt;
    &lt;div class=&quot;pf-c-card__header pf-c-title pf-m-md&quot;&gt;
-    &lt;p&gt;Patternfly&lt;/p&gt;
+    &lt;p&gt;PatternFly&lt;/p&gt;
     &lt;div class=&quot;pf-c-content&quot;&gt;
       &lt;small&gt;Provided by Red Hat&lt;/small&gt;
     &lt;/div&gt;
@@ -27,7 +27,7 @@ PatternFly is an open source design system created to enable consistency and usa
   &lt;/div&gt;
   &lt;div class=&quot;pf-c-card__footer pf-l-flex&quot;&gt;
    &lt;button class=&quot;pf-c-button pf-m-inline pf-m-link&quot;&gt;
-    Link to Patternfly
+    Link to PatternFly
    &lt;/button&gt;
    &lt;button class=&quot;pf-c-button pf-m-inline pf-m-link&quot;&gt;
     Link to home
