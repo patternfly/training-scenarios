@@ -45,8 +45,8 @@ In `myapp.scss` assign the variables that were declared to the height, backgroun
 .my-app-c-card__body-separator {
   background-color: var(--my-app-c-card__body-separator--BackgroundColor);
   height: var(--my-app-c-card__body-separator--Height);
-  margin-right: var(--my-app-c-card__body-separator--Margin);
   margin-top: var(--my-app-c-card__body-separator--Margin);
+  margin-right: var(--my-app-c-card__body-separator--Margin);
   margin-left: var(--my-app-c-card__body-separator--Margin);
 }
 ```
