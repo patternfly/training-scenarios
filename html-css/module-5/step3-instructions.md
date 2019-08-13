@@ -33,7 +33,7 @@ In the `myapp.scss` file, we will add new styles for `my-app-c-card__body-separa
 
 ```
 .pf-c-card {
-  --my-app-c-card__body-separator--Margin: var(--pf-global--spacer--md);
+  --my-app-c-card__body-separator--Margin: var(--pf-global--spacer--lg);
 }
 ```
 
@@ -45,7 +45,9 @@ In `myapp.scss` assign the variables that were declared to the height, backgroun
 .my-app-c-card__body-separator {
   background-color: var(--my-app-c-card__body-separator--BackgroundColor);
   height: var(--my-app-c-card__body-separator--Height);
-  margin: var(--my-app-c-card__body-separator--Margin);
+  margin-right: var(--my-app-c-card__body-separator--Margin);
+  margin-top: var(--my-app-c-card__body-separator--Margin);
+  margin-left: var(--my-app-c-card__body-separator--Margin);
 }
 ```
 
