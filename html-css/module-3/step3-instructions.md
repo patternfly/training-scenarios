@@ -1,10 +1,9 @@
-
 Let’s continue to practice how to add modifier classes to components.
 
-## Task: Add modifier classes to the alert component
-a. Using the documentation at this link https://pf4.patternfly.org/components/Alert/examples/, <strong> follow the instructions </strong> to modify the three alert components.
+## Task: Apply visual and state modifiers to the Alert component.
+a. In this example we will show you how you can apply visual modifiers and state modifiers to the same component or element. Using the documentation at this link https://pf4.patternfly.org/components/Alert/examples/, <strong> follow the instructions </strong> to modify the three Alert components.
 
-b. <strong> Copy code to the editor.</strong> Click the <strong>Copy to Editor</strong> button below to add html for an Alert to the index.html file.
+b. <strong>Copy code to the editor.</strong> Click the <strong>Copy to Editor</strong> button below to add html for three Alert components to the index.html file.
 
 <pre class="file" data-filename="index.html" data-target="replace">
 &lt;div class=&quot;pf-c-alert&quot;&gt;
@@ -35,8 +34,16 @@ b. <strong> Copy code to the editor.</strong> Click the <strong>Copy to Editor</
 &lt;/div&gt;
 </pre>
 
-c. <strong>Modify the first alert to be “success”</strong> 
+c. Using the documentation from the "Usage" table at the link above modify the first Alert to be a “success” variation.
 
-d. <strong>Modify the second alert to be “inline” and “warning”</strong> 
+<strong>Hint:</strong> `<div class="pf-c-alert pf-m-success">`
 
-e. <strong>Modify the third alert to be “info” but also “danger”.</strong>  What did you notice with this last example?
+d. Modify the second Alert to have “inline” and “warning” variations.
+
+<strong>Hint:</strong> `<div class="pf-c-alert pf-m-inline pf-m-warning">`
+
+e. Modify the third Alert to have “danger” and "info" variations.
+
+<strong>Hint:</strong> `<div class="pf-c-alert pf-m-danger pf-m-info">`
+
+<strong>Pro Tip</strong>You should notice that the color of the third Alert changes to blue. Why didn't it change to red for danger? The reason is because `pf-m-info` and `pf-m-danger` both modify the color of an Alert and `pf-m-info` comes before `pf-m-danger` in the code. You should only every apply one modifier class to an element class when those modifier classes change the same styles.
