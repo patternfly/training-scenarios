@@ -22,12 +22,12 @@ Click the <strong>copy code to the editor</strong> button below to add html for 
       &lt;small&gt;Provided by Red Hat&lt;/small&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-  &lt;div class=&quot;my-app-c-card__body-separator&quot;&gt;
+  &lt;div class=&quot;my-app-c-card__separator&quot;&gt;
   &lt;/div&gt;
   &lt;div class=&quot;pf-c-card__body&quot;&gt;
 PatternFly is an open source design system created to enable consistency and usability across a wide range of applications and use cases. PatternFly provides clear standards, guidance, and tools that help designers and developers work together more efficiently and build better user experiences.
   &lt;/div&gt;
-  &lt;div class=&quot;my-app-c-card__body-separator&quot;&gt;
+  &lt;div class=&quot;my-app-c-card__separator&quot;&gt;
   &lt;/div&gt;
   &lt;div class=&quot;pf-c-card__footer pf-l-flex&quot;&gt;
    &lt;button class=&quot;pf-c-button pf-m-inline pf-m-link&quot;&gt;
@@ -53,12 +53,12 @@ PatternFly is an open source design system created to enable consistency and usa
       &lt;small&gt;Provided by Red Hat&lt;/small&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-  &lt;div class=&quot;my-app-c-card__body-separator&quot;&gt;
+  &lt;div class=&quot;my-app-c-card__separator&quot;&gt;
   &lt;/div&gt;
   &lt;div class=&quot;pf-c-card__body&quot;&gt;
 PatternFly is an open source design system created to enable consistency and usability across a wide range of applications and use cases. PatternFly provides clear standards, guidance, and tools that help designers and developers work together more efficiently and build better user experiences.
   &lt;/div&gt;
-  &lt;div class=&quot;my-app-c-card__body-separator&quot;&gt;
+  &lt;div class=&quot;my-app-c-card__separator&quot;&gt;
   &lt;/div&gt;
   &lt;div class=&quot;pf-c-card__footer pf-l-flex&quot;&gt;
    &lt;button class=&quot;pf-c-button pf-m-inline pf-m-link&quot;&gt;
@@ -84,12 +84,12 @@ PatternFly is an open source design system created to enable consistency and usa
       &lt;small&gt;Provided by Red Hat&lt;/small&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-  &lt;div class=&quot;my-app-c-card__body-separator&quot;&gt;
+  &lt;div class=&quot;my-app-c-card__separator&quot;&gt;
   &lt;/div&gt;
   &lt;div class=&quot;pf-c-card__body&quot;&gt;
 PatternFly is an open source design system created to enable consistency and usability across a wide range of applications and use cases. PatternFly provides clear standards, guidance, and tools that help designers and developers work together more efficiently and build better user experiences.
   &lt;/div&gt;
-  &lt;div class=&quot;my-app-c-card__body-separator&quot;&gt;
+  &lt;div class=&quot;my-app-c-card__separator&quot;&gt;
   &lt;/div&gt;
   &lt;div class=&quot;pf-c-card__footer pf-l-flex&quot;&gt;
    &lt;button class=&quot;pf-c-button pf-m-inline pf-m-link&quot;&gt;
@@ -115,12 +115,12 @@ PatternFly is an open source design system created to enable consistency and usa
       &lt;small&gt;Provided by Red Hat&lt;/small&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-  &lt;div class=&quot;my-app-c-card__body-separator&quot;&gt;
+  &lt;div class=&quot;my-app-c-card__separator&quot;&gt;
   &lt;/div&gt;
   &lt;div class=&quot;pf-c-card__body&quot;&gt;
 PatternFly is an open source design system created to enable consistency and usability across a wide range of applications and use cases. PatternFly provides clear standards, guidance, and tools that help designers and developers work together more efficiently and build better user experiences.
   &lt;/div&gt;
-  &lt;div class=&quot;my-app-c-card__body-separator&quot;&gt;
+  &lt;div class=&quot;my-app-c-card__separator&quot;&gt;
   &lt;/div&gt;
   &lt;div class=&quot;pf-c-card__footer pf-l-flex&quot;&gt;
    &lt;button class=&quot;pf-c-button pf-m-inline pf-m-link&quot;&gt;

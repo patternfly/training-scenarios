@@ -18,7 +18,6 @@ Inside of the `.pf-c-card` block of `myapp.scss` set the global variable `--pf-g
 <strong>Hint:</strong>
 ```
   --pf-global--link--Color: var(--my-app-card-theme--Color);
-}
 ```
 
 <strong>Note:</strong> Variable definitions declared for a component `.pf-c-[component name]` class selector are scoped to that component. So even though we are assigning a new value to the global variable, that value will only apply to the Card component, and not other components.
