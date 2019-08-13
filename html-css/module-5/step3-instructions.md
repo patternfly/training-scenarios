@@ -16,25 +16,19 @@ In `index.html` add the html markup for the separator element that is a sibling 
 In the `myapp.scss` file, we will add new styles for `my-app-c-card__body-separator`. The first variable to add is for height and it should use PatternFly's global variable for small border width, and go under the variable declarations inside the `.pf-c-card` block.
 
 ```
-.pf-c-card {
   --my-app-c-card__body-separator--Height: var(--pf-global--BorderWidth--sm);
-}
 ```
 
 3) <strong>Add a variable for background color.</strong> The second variable to add is for background color and it should use PatternFly's global variable for border color.
 
 ```
-.pf-c-card {
   --my-app-c-card__body-separator--BackgroundColor: var(--pf-global--BorderColor--100);
-}
 ```
 
 4) <strong>Add a variable for the margin.</strong> The third variable to add is for the margin and it should use PatternFly's global variable for spacing.
 
 ```
-.pf-c-card {
   --my-app-c-card__body-separator--Margin: var(--pf-global--spacer--lg);
-}
 ```
 
 5) <strong>Assign the variables for the separator.</strong>
@@ -45,8 +39,8 @@ In `myapp.scss` assign the variables that were declared to the height, backgroun
 .my-app-c-card__body-separator {
   background-color: var(--my-app-c-card__body-separator--BackgroundColor);
   height: var(--my-app-c-card__body-separator--Height);
-  margin-top: var(--my-app-c-card__body-separator--Margin);
   margin-right: var(--my-app-c-card__body-separator--Margin);
+  margin-bottom: var(--my-app-c-card__body-separator--Margin);
   margin-left: var(--my-app-c-card__body-separator--Margin);
 }
 ```
