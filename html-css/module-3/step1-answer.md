@@ -1,5 +1,4 @@
 ```
-<!--Badge.html-->
 <span class="pf-c-badge pf-m-unread">
   200
 </span>

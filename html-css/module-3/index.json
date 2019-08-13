@@ -29,18 +29,13 @@
         "title": "Create your own modifier class",
         "text": "step4-instructions.md",
         "answer": "step4-answer.md"
-      },
-      {
-        "title": "Using utility classes",
-        "text": "step5-instructions.md",
-        "answer": "step5-answer.md"
       }
     ],
     "finish": {
       "text": "finish.md"
     }
   },
-  "files": ["index.html", "layout.scss"],
+  "files": ["index.html", "myapp.scss"],
   "environment": {
     "showdashboard": true,
     "dashboards": [

@@ -1,4 +1,4 @@
-## Add some code to the workspace
+## Add code to the workspace
 
 Before we get started, let's add some code to the workspace that we can modify.
 
