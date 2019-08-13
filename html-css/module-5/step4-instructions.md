@@ -1,10 +1,10 @@
 ## Add a PatternFly class for the layout
 
-Now that we have an updated card design, let's add several cards and use the gallery layout to organize them on the page. 
+Now that we have an updated Card design, let's add several Cards and use the gallery layout to organize them on the page. 
 
-1) <strong>Copy code into the card.html file.</strong>
+1) <strong>Copy code into the index.html file.</strong>
 
-Click the <strong>Copy to Editor</strong> button below to add html for a Card to the index.html file.
+Click the <strong>copy code to the editor</strong> button below to add html for multiple Cards to the index.html file.
 
 <pre class="file" data-filename="index.html" data-target="replace">
 &lt;div class=&quot;pf-c-card pf-m-hoverable&quot;&gt;
@@ -116,7 +116,7 @@ PatternFly is an open source design system created to enable consistency and usa
 &lt;/div&gt;
 </pre>
 
-2) <strong>Create a wrapper around the cards.</strong> Multiple cards were just added and we need to create a wrapper around them. 
+2) <strong>Create a wrapper around the Cards.</strong> Multiple Cards were just added and we need to create a wrapper around them. 
 
 Add an opening `<div>` tag to the first line, and a closing `</div>` tag to the bottom of the file.
 

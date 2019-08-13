@@ -8,9 +8,7 @@ In `myapp.scss` inside of the `:root` block make a new variable name called `--m
 
 <strong>Hint:</strong> 
 ```
-:root {
   --my-app-card-theme--Color: #6200EE;
-}
 ```
 
 2) <strong>Override the global link color. </strong> In our current example of the card, the buttons in the card footer use the global link color. We can reassign the global link color variable to use our new custom color variable, so that all properties that use the global link color variable in the card will now use this color.
@@ -19,8 +17,7 @@ Inside of the `.pf-c-card` block of `myapp.scss` set the global variable `--pf-g
 
 <strong>Hint:</strong>
 ```
-.pf-c-card {
-    --pf-global--link--Color: var(--my-app-card-theme--Color);
+  --pf-global--link--Color: var(--my-app-card-theme--Color);
 }
 ```
 
