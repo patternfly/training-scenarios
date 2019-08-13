@@ -18,6 +18,7 @@ Copy the following code into the App.js file, replacing all of the content there
 <pre class="file" data-filename="App.js" data-target="replace">
 import React from 'react';
 import "@patternfly/react-core/dist/styles/base.css";
+import "./app.css";
 import {
   Brand,
   Button,
