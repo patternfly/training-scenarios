@@ -12,18 +12,8 @@ Copy the following code into the app.css file, replacing all of the content ther
   --my-app-card-theme--Color: #DC143C;
 }
 
-.pf-c-page {
-  --pf-c-page__main-section--PaddingTop: var(--pf-global--spacer--md);
-  --pf-c-page__main-section--PaddingRight: var(--pf-global--spacer--md);
-  --pf-c-page__main-section--PaddingBottom: var(--pf-global--spacer--md);
+.pf-c-page.myPageClass {
   --pf-global--link--Color: var(--my-app-card-theme--Color);
-}
-
-.pf-c-page__header {
-  --pf-c-page__header-nav--BackgroundColor: #6495ED;
-}
-
-.pf-c-card {
-  --pf-global--link--Color: var(--my-app-card-theme--Color);
+  --pf-c-page--BackgroundColor: purple;
 }
 </pre>

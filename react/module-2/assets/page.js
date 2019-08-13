@@ -67,6 +67,7 @@ class AppPage extends React.Component {
         isManagedSidebar
         skipToContent={PageSkipToContent}
         mainContainerId={pageId}
+        className="myPageClass"
       >
         <PageSection variant={PageSectionVariants.light}>
           <TextContent>
