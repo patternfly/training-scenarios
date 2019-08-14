@@ -36,6 +36,18 @@
         },
         {
           "file": "page.js", "target": "~/tutorial/src/components/", "chmod": "+r"
+        },
+        {
+          "file": "step1.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
+        },
+        {
+          "file": "step2.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
+        },
+        {
+          "file": "step3.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
+        },
+        {
+          "file": "step4.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
         }
       ]
     },
