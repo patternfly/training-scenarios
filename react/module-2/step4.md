@@ -26,5 +26,6 @@ Replace the `CardFooter` component with the following code:
 </pre>
 
 When these steps are complete, your page should look like this when you hover over a card:
-<img src="module-1/assets/step3.png" alt="Page demo with cards and hover effect" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
+
+<img src="module-2/assets/step3.png" alt="Page demo with cards and hover effect" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
 

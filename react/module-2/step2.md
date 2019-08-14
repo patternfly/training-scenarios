@@ -6,7 +6,7 @@ In this exercise, we'll be using a page demo to create a new page for a web appl
 
 The image below is what we'll end up with when we are done:
 
-<img src="module-1/assets/step4.png" alt="Completed and customized page demo" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
+<img src="module-2/assets/step4.png" alt="Completed and customized page demo" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
 
 ## Task
 Katacoda is setting up a new React application for you. You'll be ready to code once the server starts and you can see "Welcome to PatternFly" on the lower pane.
@@ -69,4 +69,5 @@ export default PageLayoutSimpleNav;
 </pre>
 
 When the server reloads, you should see something like this:
-<img src="module-1/assets/step1.png" alt="Page demo" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
+
+<img src="module-2/assets/step1.png" alt="Page demo" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
