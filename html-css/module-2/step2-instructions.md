@@ -7,16 +7,33 @@ Global custom properties follow these rules.
  * and a `state` is something like `hover`, or `expanded`.
 They are concepts, never tied to an element or component. This is incorrect: `--pf-global--h1--FontSize`, this is correct: `--pf-global--FontSize--3xl`.
 
-## Workshop: Override the global link color custom property for danger
+## Workshop: Override the global link color custom property for "danger"
 
-a. In this workshop we are going to change the global link color custom property to var(--pf-global--danger-color--100).Since global custom properties are prefixed with the word “global”, let’s write the beginning of the selector:
-`--pf-global`
+In this workshop we are going to change the global link color custom property to `var(--pf-global--danger-color--100)`.
 
-b. The concept for a link color is “link”. Knowing that the concept comes next, let’s add that to our custom property:
-`--pf-global--link`
+1) <strong>Copy code into the myapp.scss file.</strong>
 
-c. Since we’re modifying the color, we need to add the color property
-`--pf-global--link--Color`
+Click the <strong>Copy to Editor</strong> button below to set up your stylesheet in the `myapp.scss` file.
 
-d. Now that we have the custom property name, we simply need to create a declaration with the danger color referenced above as the value:
+<pre class="file" data-filename="myapp.scss" data-target="replace">
+:root {
+  // Add global variables here
+}
+</pre>
+
+2) Since global custom properties are prefixed with the word “global”, let’s write the beginning of the selector:
+
+<strong>Hint: </strong>`--pf-global`
+
+3) The concept for a link color is “link”. Knowing that the concept comes next, let’s add that to our custom property:
+
+<strong>Hint: </strong>`--pf-global--link`
+
+4) Since we’re modifying the color, we need to add the color property.
+
+<strong>Hint: </strong>`--pf-global--link--Color`
+
+5) Now that we have the <strong>custom property name</strong>, we simply need to create a declaration with the danger color referenced above as the value:
+
+This is the one line that you should add inside of the `:root{}` block:
 `--pf-global--link--Color: var(--pf-global--danger-color--100);`

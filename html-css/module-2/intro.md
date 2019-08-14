@@ -1,4 +1,4 @@
-Patternfly Core is based on the principles of Atomic design (http://bradfrost.com/blog/post/atomic-web-design/) and BEM (Block, Element, Modifier) (http://getbem.com/introduction/).
+PatternFly Core is based on the principles of Atomic design (http://bradfrost.com/blog/post/atomic-web-design/) and BEM (Block, Element, Modifier) (http://getbem.com/introduction/).
 
 BEM (Block, Element Modifier) is a popular CSS methodology for building modular, scalable applications. It provides scope, avoids inheritance, and reduces reducing CSS specificity and conflicts. To learn more, visit http://getbem.com/introduction/.
 

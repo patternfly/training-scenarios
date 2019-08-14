@@ -12,25 +12,43 @@ Similarly, component-level custom properties follow this general formula `--pf-c
 
 ## Workshop: Override the title color custom property in the success variation of the alert component.
 
-a. We want to change the success variation’s title color to PatternFly’s danger color `var(--pf-global--danger-color--100)`. To find the BEM class for the success variation of the alert component, and the alert title, visit https://www.patternfly.org/v4/documentation/core/components/alert.
+1) <strong>Copy code into the myapp.scss file.</strong>
 
-b. Scroll to the bottom to view the Alert component’s documentation and note the class for the success variation is **.pf-m-success**, and the class for the title is **.pf-c-alert__title**.
+Click the <strong>Copy to Editor</strong> button below to set up your stylesheet in the `myapp.scss` file.
 
-c. To override the color, we want to override the custom property defined for the success variation’s title color. Since component level custom properties are defined in the top-level component selector, use .pf-c-alert as the selector for your overrides. Write the following in the CSS file
-`.pf-c-alert {
-}`
+<pre class="file" data-filename="myapp.scss" data-target="replace">
+:root {
+  // Add global variables here
+}
 
-d. Let’s start with the component part of the custom property name:
-`--pf-c-alert`
+.pf-c-alert {
+  // Add Alert component variables here
+}
+</pre>
 
-e. Referencing the documentation, we can see that the success variation class **.pf-m-success** applies to **.pf-c-alert**, so we need to add that modifier to the custom property:
-`--pf-c-alert--m-success`
+<strong>Note:</strong> The task is to change the success variation’s title color to PatternFly’s danger color. To find the BEM class for the success variation of the alert component, and the alert title, visit https://www.patternfly.org/v4/documentation/core/components/alert.
 
-f. Next we want to find the title’s element name and add that:
-`--pf-c-alert--m-success__title`
+Scroll to the bottom to view the Alert component’s documentation and note the class for the success variation is **.pf-m-success**, and the class for the title is **.pf-c-alert__title**.
 
-g. And finally, we want to modify the color property, so let’s add that:
-`--pf-c-alert--m-success__title--Color`
+2) To override the success variation’s title color, we need to override its custom property. In the `myapp.scss` file, in the `.pf-c-alert{}`block, let's begin writing the custom property name. Start with the component part of the custom property name:
 
-h. Now that we have the custom property name, we simply need to create a declaration with the danger color referenced above as the value:
+<strong>Hint: </strong> `--pf-c-alert`
+
+3) Lets add the modifier to the custom property name.
+
+<strong>Note: </strong> In this step you will need to reference the documentation. In it we can see that the success variation class **.pf-m-success** applies to **.pf-c-alert**, so we need to add that modifier to the custom property:
+
+<strong>Hint: </strong>`--pf-c-alert--m-success`
+
+4) Next we want to find the title’s element name and add that:
+
+<strong>Hint: </strong>`--pf-c-alert--m-success__title`
+
+5) And finally, we want to modify the color property, so let’s add that:
+
+<strong>Hint: </strong>`--pf-c-alert--m-success__title--Color`
+
+6) Now that we have the <strong>custom property name</strong>, we simply need to create a declaration with the danger color referenced above as the value:
+
+This is the one line that you should add inside of the `.pf-c-alert{}` block:
 `--pf-c-alert--m-success__title--Color: var(--pf-global--danger-color--100);`

@@ -4,7 +4,7 @@ Now that we have an updated Card design, let's add several Cards and use the gal
 
 1) <strong>Copy code into the index.html file.</strong>
 
-Click the <strong>copy code to the editor</strong> button below to add html for multiple Cards to the index.html file.
+Click the <strong>Copy to Editor</strong> button below to add html for multiple Cards to the index.html file.
 
 <pre class="file" data-filename="index.html" data-target="replace">
 &lt;div class=&quot;pf-c-card pf-m-hoverable&quot;&gt;

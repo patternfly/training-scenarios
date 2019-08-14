@@ -2,7 +2,9 @@ The Grid Layout is based on CSS Grid’s two-dimensional system of columns and r
 
 ## Task: Layout form components using grid.
 
-a. Copy code to the editor:
+1) <strong>Copy code into the index.html file.</strong>
+
+Click the <strong>Copy to Editor</strong> button below to add code in the `index.html` file.
 
 <pre class="file" data-filename="index.html" data-target="replace">
 &lt;div class=&quot;pf-c-card&quot;&gt;
@@ -41,10 +43,8 @@ a. Copy code to the editor:
 &lt;/div&gt;
 </pre>
 
-b. Add `pf-l-grid` next to the `pf-c-form` class.
+2) Add `pf-l-grid` next to the `pf-c-form` class.
 
-c. For every `pf-c-form__group` class add `pf-l-grid__item` next to it so that it becomes a grid item.
+3) For every `pf-c-form__group` class add `pf-l-grid__item` next to it so that it becomes a grid item.
 
-d. Change the widths of the containers.
-  i. For the email and phone number inputs with `pf-c-form__group` add `pf-m-6-col` next to `pf-l-grid__item`.
-  ii. For state, zip code and country inputs with `pf-c-form__group` add `pf-m-4-col` next to `pf-l-grid__item`.
+4) Change the widths of `pf-l-grid__item`. To the first two Form Groups add `pf-m-6-col` next to `pf-l-grid__item`. For the last three Form Groups add `pf-m-4-col` next to `pf-l-grid__item`.

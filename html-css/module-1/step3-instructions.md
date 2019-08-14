@@ -5,48 +5,59 @@ Leveraging semantic markup enhances accessibility, searchability, internationali
 
 ## Workshop: Update the Nav component to use semantic html
 
-a. For a component that is originally not using semantic markup, we are going to update its html markup to use semantic elements, to make improvements.
+Lets update the Nav component so that the html is semantic.
 
-b. Copy this code to the editor:
+1) <strong>Copy code into the index.html file.</strong>
+
+Click the <strong>Copy to Editor</strong> button below to add html for a Nav component to the `index.html` file.
 
 <pre class="file" data-filename="index.html" data-target="replace">
 &lt;div class=&quot;pf-c-nav&quot;&gt;
   &lt;div class=&quot;pf-c-nav__simple-list&quot;&gt;
     &lt;div class=&quot;pf-c-nav__item&quot;&gt;
       &lt;div href=&quot;#&quot; class=&quot;pf-c-nav__link pf-m-current&quot;&gt;
-        Current link
+        I am a link
       &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class=&quot;pf-c-nav__item&quot;&gt;
       &lt;div href=&quot;#&quot; class=&quot;pf-c-nav__link&quot;&gt;
-        Link 2
+        I am a link
       &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class=&quot;pf-c-nav__item&quot;&gt;
       &lt;div href=&quot;#&quot; class=&quot;pf-c-nav__link&quot;&gt;
-        Link 3
+        I am a link
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 </pre>
 
-c. You can probably tell from the classes that this is the nav component. It’s important that a nav component uses semantic markup for all of its elements. 
+In your editor you should see the Nav component marked up by div's, which is semantically incorrect.
 
-d. For the class `pf-c-nav`, replace the outer `<div>`  with `<nav>`. This tag defines a set of navigation links, so now a screen reader knows that this is the navigation.
+2) Search for the class `pf-c-nav` in the editor. Change the opening bracket's `<div>`  to `<nav>` and do the same for the closing bracket.
 
-Hint: `<nav class="pf-c-nav">`
+<strong>Note:</strong> Now `pf-c-nav` is semantic and a screen reader will understand that it is a navigational component.
 
-e. For the class `pf-c-nav__simple-list` replace the outer `<div>` with a `<ul>` which stands for unordered list. Now the screen reader will know that there is a list of items.
+<strong>Hint:</strong> `<nav class="pf-c-nav"></nav>`
 
-Hint: `<ul class=”pf-c-nav__simple-list”>`
+3) Search for the class `pf-c-nav__simple-list` in the editor. Change the opening bracket's `<div>` to a `<ul>` and do the same for the closing bracket.
 
-f. For the three classes `pf-c-nav__item` replace the outer `<div>`s with an `<li>` which stands for list item. Now the screen reader will know that this class is an item inside of a list.
+<strong>Note:</strong> Now `pf-c-nav__simple-list` is semantic and a screen reader will understand that it is an unordered list.
 
-Hint: `<li class=”pf-c-nav__item”>`
+<strong>Hint:</strong> `<ul class="pf-c-nav__simple-list"></ul>`
 
-g. Do you notice that when you try to click on a link the cursor still appears instead of an arrow, which would indicate that it is clickable? This is because `<divs>` aren’t clickable, in this context, the content inside of the list items needs to be an `<a>` link. For the classes `pf-c-nav__link` let's replace the `<div>` tag with an `<a>` tag.
+4) Search for the class `pf-c-nav__item` in the editor, <strong>there will be three of them!</strong> Change the opening bracket's `<div>` to an `<li>` and do the same for the closing bracket, and all three of the classes.
 
-Hint: `<a href="#" class="pf-c-nav__link">`
+<strong>Note:</strong> Now `pf-c-nav__item` is semantic and a screen reader will understand that it is a nav item.
 
-h. Do you notice that the links are now clickable?
+<strong>Hint:</strong> `<li class="pf-c-nav__item"></li>`
+
+<strong>Note: </strong> When you try click on a link, you'll notice that the link isn't "clickable". This is because `<div's>` and all links should use the `<a>` tag. 
+
+5) <strong>Let's make the links clickable. </strong> Search for the class `pf-c-nav__link` in the editor. Change the opening bracket's `<div>` to an `<a>` and do the same for the closing bracket, and all three of the classes.
+
+<strong>Note:</strong> Now `pf-c-nav__link` is semantic and clickable!
+
+<strong>Hint:</strong> `<a href="#" class="pf-c-nav__link"></a>`
+

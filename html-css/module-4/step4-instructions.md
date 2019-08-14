@@ -2,7 +2,9 @@ The Stack Layout is designed to position items vertically, with one item filling
 
 ## Task: Edit the card body so that the text fills the available vertical space.
 
-a. Copy code to the editor:
+1) <strong>Copy code into the index.html file.</strong>
+
+Click the <strong>Copy to Editor</strong> button below to add a Card component in the `index.html` file.
 
 <pre class="file" data-filename="index.html" data-target="replace">
 &lt;div class=&quot;pf-c-card&quot; style=&quot;height: 450px; width: 300px;&quot;&gt;
@@ -20,8 +22,12 @@ a. Copy code to the editor:
 &lt;/div&gt;
 </pre>
 
-b. Add `pf-l-stack` to the parent container. Hint: `pf-c-card__body`.
+2) Add `pf-l-stack` to the parent container.
 
-c. Add `pf-l-split__item` to all of the children inside of the container. Hint: `pf-c-title` , `<div>` , `pf-c-button`.
+<strong>Hint: </strong>`pf-c-card__body`
 
-d. To the middle `<div>` add the class `pf-m-fill` next to the `pf-l-split__item` class that is already there. This will allow that div to fill the available vertical space.
+3) Add `pf-l-stack__item` to all of the children inside of the container. 
+
+<strong>Hint: </strong>`pf-c-title` , `<div>` , `pf-c-button`.
+
+4) To the middle `<div>` add the class `pf-m-fill` next to the `pf-l-stack__item` class that is already there. This will allow that div to fill the available vertical space.

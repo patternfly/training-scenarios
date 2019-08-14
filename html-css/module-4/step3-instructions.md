@@ -2,7 +2,9 @@ The Split Layout is designed to position items horizontally, with one item filli
 
 ## Task: Make a simplified page header where the "nav" fills the available horizontal space.
 
-a. Copy code to the editor:
+1) <strong>Copy code into the index.html file.</strong>
+
+Click the <strong>Copy to Editor</strong> button below to add code in the `index.html` file.
 
 <pre class="file" data-filename="index.html" data-target="replace">
 &lt;header&gt;
@@ -18,8 +20,10 @@ a. Copy code to the editor:
 &lt;/header&gt;
 </pre>
 
-b. Add `pf-l-split` to the parent container. Hint: `<header>`.
+2) Add `pf-l-split` to the parent container. 
 
-c. Add the class `pf-l-split__item` to all of the children inside of the parent container. Hint: there are three children.
+<strong>Hint: </strong> Add it to `<header>`
 
-d. Add `pf-m-fill` to the split item in the middle. This will allow the page nav to fill the available horizontal space in the nav.
+3) Add the class `pf-l-split__item` to all of the children inside of the parent container. There are three children.
+
+4) Add `pf-m-fill` to the split item in the middle. This will allow the page nav to fill the available horizontal space in the nav.

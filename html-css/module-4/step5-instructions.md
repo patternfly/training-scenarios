@@ -2,7 +2,9 @@ The Gallery Layout is designed so that all of its children are of uniform size, 
 
 ## Task: Layout cards using in the gallery format.
 
-a. Copy code to the editor:
+1) <strong>Copy code into the index.html file.</strong>
+
+Click the <strong>Copy to Editor</strong> button below to add Card components in the `index.html` file.
 
 <pre class="file" data-filename="index.html" data-target="replace">
 &lt;div&gt;
@@ -39,6 +41,8 @@ a. Copy code to the editor:
 &lt;/div&gt;
 </pre>
 
-b. Add `pf-l-gallery` to the parent wrapper `<div>`. This will structure any children inside of the gallery into a grid layout, whereby the columns don’t extend beyond 250px in width, and when this happens they add more columns and wrap.
+2) Add `pf-l-gallery` to the parent wrapper `<div>`.
 
-c. Add `pf-m-gutter` next to the `pf-l-gallery`class. This will add vertical and horizontal spacing of 24px between the card elements.
+<strong>Note: </strong> This will structure any children inside of the gallery into a grid layout, whereby the columns don’t extend beyond 250px in width, and when this happens they add more columns and wrap.
+
+3) Add `pf-m-gutter` next to the `pf-l-gallery`class. This will add vertical and horizontal spacing of 24px between the card elements.

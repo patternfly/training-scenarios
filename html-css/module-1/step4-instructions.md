@@ -1,10 +1,12 @@
- In Patternfly, layouts are the containers that allow for organizing and grouping elements.  There are seven different layouts in Patternfly, but in this module we will cover just one. You can explore our other module which does a deep dive into layouts.
+ In PatternFly, layouts are the containers that allow for organizing and grouping elements.  There are seven different layouts in PatternFly, but in this module we will cover just one. You can explore our other module which does a deep dive into layouts.
 
-## Workshop: Add a layout class
+## Workshop: Practice using layout classes
 
-a. Let's add a simple layout class to the html markup to demonstrate that we don’t need to add any css styling.
+Let's add a Bullseye layout class to the html markup to demonstrate the power of using PatternFly's layout classes.
 
-b. **Copy this code into the editor:**
+1) <strong>Copy code into the index.html file.</strong>
+
+Click the <strong>Copy to Editor</strong> button below to add html for a Card component to the `index.html` file.
 
 <pre class="file" data-filename="index.html" data-target="replace">
 &lt;div&gt;
@@ -22,10 +24,10 @@ b. **Copy this code into the editor:**
 &lt;/div&gt;
 </pre>
 
-c. It’s important to follow the documentation for layouts. For example here is the documentation for the bullseye layout: https://pf4.patternfly.org/layouts/Bullseye/examples/ . In the documentation it specifies that you should add the class `pf-l-bullseye` to the parent container of its child.
+2) Let's add the bullseye class to the editor so that the Card is centered horizontally and vertically.
 
-d. In this case we want to **center the card component within the outer div**. To the first line `<div>` add the class: `pf-l-bullseye`.
+<strong>Note: </strong>It’s important to follow the documentation for layouts. Here is a link to the documentation for the Bullseye layout: https://pf4.patternfly.org/layouts/Bullseye/examples/. In the documentation it specifies that you should add the class `pf-l-bullseye` to the parent container of its child.
 
-Hint: `<div class=”pf-l-bullseye”>`
+3) On line 1 is the outer `<div>` wrapper. Replace this line with `<div class="pf-l-bullseye">`
 
-e. You should see that the card is now centered in the middle of the page!
+Once the browser reloads, you should see that the card is now centered in the middle of the page!
