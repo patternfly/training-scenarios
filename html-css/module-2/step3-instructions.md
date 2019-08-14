@@ -14,27 +14,46 @@ Click the <strong>Copy to Editor</strong> button below to add a Label component 
 &lt;/span&gt;
 </pre>
 
-2) 
-c. Then place an icon before the label text
+2) Copy code into the index.html file to place an icon before the label text
 
-`<span class="pf-c-label">
-  <i class="fas fa-plus"></i>
+Click the <strong>Copy to Editor</strong> button below to add a Label and Icon in the `index.html` file.
+
+<pre class="file" data-filename="index.html" data-target="replace">
+&lt;span class=&quot;pf-c-label&quot;&gt;
+  &lt;i class=&quot;fas fa-plus&quot;&gt;&lt;/i&gt;
   My custom label
-</span>`
+&lt;/span&gt;
+</pre>
 
-d. The label component only styles the label itself and the text inside. While this looks OK, we need to add space between the icon and the text beside it. To do this the BEM way, let's assign a BEM element class to the icon.
+3) The label component only styles the label itself and the text inside. While this looks OK, we need to add space between the icon and the text beside it. To do this the BEM way, let's assign a BEM element class to the icon.
 
-`<span class="pf-c-label">
+Search for `<i class="fas fa-plus"></i>`. Before the `fas` add the class `pf-c-label__icon`.
+
+<strong>Hint: </strong>
+```
+<span class="pf-c-label">
   <i class="pf-c-label__icon fas fa-plus"></i>
   My custom label
-</span>`
+</span>
+```
 
-e. Now we need to style the label icon and apply the margin to it. Begin by writing the selector for the label component in the CSS panel of the codepen so that you can apply CSS that is scoped to the component.
-`.pf-c-label {
-}`
+Now we need to style the label icon and apply the margin to it.
 
-f. Since we know that we never apply global custom properties as the value for property in a component's CSS, we need to start by creating a new variable to represent the icon's margin. Start by defining the beginning of the custom property. From the previous exercise we know this is the name of the component.
-`--pf-c-label`
+5) <strong>Copy code into the myapp.scss file.</strong>
+
+Click the <strong>Copy to Editor</strong> button below to add a stylesheet in the `myapp.scss` file.
+
+<pre class="file" data-filename="myapp.scss" data-target="replace">
+.pf-c-label {
+  // Add Label component variables here
+}
+</pre>
+
+<strong>Pro Tip: </strong>Since we know that we never apply global custom properties as the value for property in a component's CSS, we need to start by creating a new variable to represent the icon's margin. 
+
+6) Within the `myapp.scss` file, in the `.pf-c-label{}` block, start by defining the beginning of the custom property. From the previous exercise we know this is the name of the component.
+
+<strong>Hint: </strong>`--pf-c-label`
 
 g. Then define the element that the custom property applies to.
 `--pf-c-label__icon`
