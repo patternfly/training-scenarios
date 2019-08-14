@@ -2,7 +2,7 @@
   "title": "Intro to PatternFly React demos and customization",
   "description": "Practice using a PatternFly 4 React demo and customizing components",
   "difficulty": "beginner",
-  "time": "20 minutes",
+  "time": "5 minutes",
   "details": {
     "intro": {
       "text": "intro.md",

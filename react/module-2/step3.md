@@ -44,4 +44,5 @@ Now we'll add content to our cards.
 </pre>
 
 Once the preview reloads - it should look like this:
-<img src="module-1/assets/step2.png" alt="Page demo with cards" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
+
+<img src="module-2/assets/step2.png" alt="Page demo with cards" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
