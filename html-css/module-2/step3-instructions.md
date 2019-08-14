@@ -1,15 +1,20 @@
-As we have seen, in order to override variables its important to understand how BEM is used to name them. It’s just as important when creating variables.
+As we have seen in previous steps, in order to override variables its important to understand how BEM is used to name them. It’s just as important when creating variables.
 
-## Workshop: Add a BEM element and custom styles with CSS custom property to support an icon element in the Label component
+## Workshop: Add a BEM element and custom styles with CSS custom properties to support an icon element in the Label component
 
-a. We are going to add a custom icon element to the label component and apply a margin-right of 8px (--pf-global--spacer--sm)
+For this workshop let's assume there is a common use case for adding an icon to the left of text in the label component when used in your application. When we add the custom icon element to the label component we should also apply a margin-right of 8px.
 
-b. Let's assume there is a common use case for adding an icon to the left of text in the label component when used in your application. Start out by adding a label component.
+1) <strong>Copy code into the index.html file.</strong>
 
-`<span class="pf-c-label">
-    My custom label
-</span>`
+Click the <strong>Copy to Editor</strong> button below to add a Label component in the `index.html` file.
 
+<pre class="file" data-filename="index.html" data-target="replace">
+&lt;span class=&quot;pf-c-label&quot;&gt;
+  My custom label
+&lt;/span&gt;
+</pre>
+
+2) 
 c. Then place an icon before the label text
 
 `<span class="pf-c-label">
