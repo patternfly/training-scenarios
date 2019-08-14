@@ -1,4 +1,4 @@
-In PatternFly 4, demos are used to show how Patternfly’s components and layouts can be put together to build more complex structures.
+In PatternFly 4, demos are used to show how PatternFly’s components and layouts can be put together to build more complex structures.
 
 They're made entirely from components and layouts.
 
@@ -13,7 +13,7 @@ Katacoda is setting up a new React application for you. You'll be ready to code 
 
 1) Navigate to the `src` folder and open `src/App.js`{{open}}
 
-2) Next, we'll set up the general structure of the card and the necessary import statements.
+2) Next, we'll set up the general structure of the demo and the necessary import statements.
 
 Copy the following code into the App.js file, replacing all of the content there:
 
