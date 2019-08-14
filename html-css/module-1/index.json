@@ -1,5 +1,5 @@
 {
-  "title": "The Building Blocks for Patternfly Core",
+  "title": "The Building Blocks for PatternFly Core",
   "description": "This module will cover the guiding principles behind the three major parts of PatternFly Core—components, layouts, and demos and how they interact with each other.",
   "difficulty": "Beginner",
   "time": "20 minutes",
@@ -11,12 +11,12 @@
     },
     "steps": [
       {
-        "title": "Patternfly Components (Atoms)",
+        "title": "PatternFly Components (Atoms)",
         "text": "step1-instructions.md",
         "answer": "step1-answer.md"
       },
       {
-        "title": "Patternfly Components (Molecules)",
+        "title": "PatternFly Components (Molecules)",
         "text": "step2-instructions.md",
         "answer": "step2-answer.md"
       },
@@ -26,12 +26,12 @@
         "answer": "step3-answer.md"
       },
       {
-        "title": "Patternfly Layouts",
+        "title": "PatternFly Layouts",
         "text": "step4-instructions.md",
         "answer": "step4-answer.md"
       },
       {
-        "title": "Patternfly Demos",
+        "title": "PatternFly Demos",
         "text": "step5-instructions.md",
         "answer": "step5-answer.md"
       }

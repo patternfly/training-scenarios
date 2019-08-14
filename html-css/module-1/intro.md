@@ -1,4 +1,4 @@
-Patternfly Core is based on the principles of Atomic design (http://bradfrost.com/blog/post/atomic-web-design/) and BEM (Block, Element, Modifier) (http://getbem.com/introduction/).
+PatternFly Core is based on the principles of Atomic design (http://bradfrost.com/blog/post/atomic-web-design/) and BEM (Block, Element, Modifier) (http://getbem.com/introduction/).
 
 Atomic design is a methodology for creating design systems, where page designs are broken down into reusable components that can be assembled to create reusable interaction patterns that can be assembled to create page designs.
 

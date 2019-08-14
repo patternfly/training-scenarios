@@ -10,7 +10,7 @@ a. Copy code to the editor:
 &lt;div class=&quot;pf-c-backdrop&quot;&gt;
   &lt;div class=&quot;pf-c-modal-box&quot;&gt;
     &lt;div class=&quot;pf-c-modal-box__body&quot;&gt;
-      This is a Patternfly Modal
+      This is a PatternFly Modal
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;

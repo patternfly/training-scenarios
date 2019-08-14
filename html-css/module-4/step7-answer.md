@@ -2,8 +2,8 @@
 <div class="pf-c-card" style="width: 450px"> 
   <div class="pf-c-card__body pf-l-flex pf-m-row pf-m-justify-content-space-between">
     <span>
-      <h2>Patternfly-Elements</h2>
-      <p>Working repo for Patternfly 4</p>
+      <h2>PatternFly-Elements</h2>
+      <p>Working repo for PatternFly 4</p>
     </span>
     <button class="pf-c-button pf-m-primary">
       Primary
@@ -11,8 +11,8 @@
   </div>
   <div class="pf-c-card__body pf-l-flex pf-m-row pf-m-justify-content-space-between">
     <span>
-      <h2>Patternfly-Elements</h2>
-      <p>Working repo for Patternfly 4</p>
+      <h2>PatternFly-Elements</h2>
+      <p>Working repo for PatternFly 4</p>
     </span>
     <button class="pf-c-button pf-m-primary">
       Primary

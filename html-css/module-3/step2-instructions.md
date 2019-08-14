@@ -1,5 +1,5 @@
 
-Patternfly is based on the BEM naming system, whereby modifiers are tied to a component's "block" and “element” classes. In the Badge we saw that the modifier was set on the "block" class, but let’s look at a more complex component to see how the modifier classes are applied to different elements in the component. To learn more, visit http://getbem.com/introduction/.
+PatternFly is based on the BEM naming system, whereby modifiers are tied to a component's "block" and “element” classes. In the Badge we saw that the modifier was set on the "block" class, but let’s look at a more complex component to see how the modifier classes are applied to different elements in the component. To learn more, visit http://getbem.com/introduction/.
 
 ## Task: Modify the dropdown for the expanded state, then change the dropdown toggle to the plain variation
 a. This is a link to the documentation for the dropdown component. <strong> At the bottom of the page, under the "Usage" section table, you will see the documentation for the modifier classes under “class” and the classes they apply to under “applied”.</strong>  https://pf4.patternfly.org/components/Dropdown/examples/

@@ -2,7 +2,13 @@ Just as atoms can be combined to create molecules, the smaller, simpler componen
 
 ## Workshop: Add a badge component to the chip component
 
-a. **Copy this code to the editor for the chip component.** This is the default chip component that already has another component in it, the button! So the chip is already a molecule.
+Lets add a chip component and then add the code for a badge inside.
+
+1) <strong>Copy code into the index.html file.</strong>
+
+Click the <strong>Copy to Editor</strong> button below to add html for a Chip component to the `index.html` file.
+
+<strong>Note:</strong> This is the default chip component that already has another component in it: the button! So the chip is already a "molecule" as per the description above.
 
 <pre class="file" data-filename="index.html" data-target="replace">
 &lt;div class=&quot;pf-c-chip&quot;&gt;
@@ -15,8 +21,14 @@ a. **Copy this code to the editor for the chip component.** This is the default 
 &lt;/div&gt;
 </pre>
 
-b. Let’s make a variation of the default chip component by **adding the badge component** into the chip component. Remember this is a component and not a demo because the chip component includes styles that handle how the badge looks within the chip. For example,  when the badge component is added to the chip it gets a margin-left. **Add this block under the closing bracket for the text and before the button.**
+2) Now that we have a Chip component, lets add the Badge component inside. 
 
-`<span class="pf-c-badge pf-m-read">
-        7
-</span>`
+<strong>Pro Tip:</strong> Remember this is a component and not a demo because the chip component includes styles that handle how the badge looks within the chip. For example, when the badge component is added to the Chip it receives a margin-left. You can read more in the documentation here: https://www.patternfly.org/v4/documentation/core/components/chip
+
+3) Add the Badge inside of the Chip. Add the block of code below, between `pf-c-chip__text` and `pf-c-button`.
+
+```
+<span class="pf-c-badge pf-m-read">
+  7
+</span>
+```

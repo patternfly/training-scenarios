@@ -8,8 +8,8 @@ a. Copy code to the editor:
 &lt;div class=&quot;pf-c-card&quot; style=&quot;width: 450px&quot;&gt; 
   &lt;div class=&quot;pf-c-card__body&quot;&gt;
     &lt;span&gt;
-      &lt;h2&gt;Patternfly-Elements&lt;/h2&gt;
-      &lt;p&gt;Working repo for Patternfly 4&lt;/p&gt;
+      &lt;h2&gt;PatternFly-Elements&lt;/h2&gt;
+      &lt;p&gt;Working repo for PatternFly 4&lt;/p&gt;
     &lt;/span&gt;
     &lt;button class=&quot;pf-c-button pf-m-primary&quot;&gt;
       Primary
@@ -17,8 +17,8 @@ a. Copy code to the editor:
   &lt;/div&gt;
   &lt;div class=&quot;pf-c-card__body&quot;&gt;
     &lt;span&gt;
-      &lt;h2&gt;Patternfly-Elements&lt;/h2&gt;
-      &lt;p&gt;Working repo for Patternfly 4&lt;/p&gt;
+      &lt;h2&gt;PatternFly-Elements&lt;/h2&gt;
+      &lt;p&gt;Working repo for PatternFly 4&lt;/p&gt;
     &lt;/span&gt;
     &lt;button class=&quot;pf-c-button pf-m-primary&quot;&gt;
       Primary
