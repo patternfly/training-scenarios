@@ -2,7 +2,9 @@ The Level Layout is designed to distribute space between children evenly and cen
 
 ## Task: Layout title and button horizontally.
 
-a. Copy code to the editor:
+1) <strong>Copy code into the index.html file.</strong>
+
+Click the <strong>Copy to Editor</strong> button below to add a Card component in the `index.html` file.
 
 <pre class="file" data-filename="index.html" data-target="replace">
 &lt;div class=&quot;pf-c-card&quot;&gt;
@@ -17,6 +19,8 @@ a. Copy code to the editor:
 &lt;/div&gt;
 </pre>
 
-b. Add `pf-l-level` to the parent `<div>` of the title and button elements. Hint it is `pf-c-card__body`.
+2) Add `pf-l-level` to the parent `<div>` of the title and button elements. 
 
-c. The title and button are now aligned on the x-axis.
+<strong>Hint: </strong>Add it to `pf-c-card__body`.
+
+The title and button should now aligned on the x-axis.

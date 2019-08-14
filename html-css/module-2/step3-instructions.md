@@ -49,32 +49,43 @@ Click the <strong>Copy to Editor</strong> button below to add a stylesheet in th
 }
 </pre>
 
-<strong>Pro Tip: </strong>Since we know that we never apply global custom properties as the value for property in a component's CSS, we need to start by creating a new variable to represent the icon's margin. 
+<strong>Pro Tip: </strong>Since we know that we never apply global custom properties as the value for property in a component's CSS, we need to start by creating a new variable to represent the icon's margin.
 
 6) Within the `myapp.scss` file, in the `.pf-c-label{}` block, start by defining the beginning of the custom property. From the previous exercise we know this is the name of the component.
 
 <strong>Hint: </strong>`--pf-c-label`
 
-g. Then define the element that the custom property applies to.
-`--pf-c-label__icon`
+7) Then define the element that the custom property applies to.
 
-h. Next add the property that the custom property applies to.
-`--pf-c-label__icon--MarginRight`
+<strong>Hint: </strong>`--pf-c-label__icon`
 
-i. Now create the declaration using the 8px global custom property referenced above.
-`--pf-c-label__icon--MarginRight: var(--pf-global--spacer--sm);`
+8) Next add the property that the custom property applies to.
 
-j. Let's add that to the selector in the codepen.
-`.pf-c-label {
---pf-c-label__icon--MarginRight: var(--pf-global--spacer--sm);
-}`
+<strong>Hint: </strong>`--pf-c-label__icon--MarginRight`
 
-k. Since BEM allows us to avoid nesting, let's create a new selector in the codepen in the global scope (outside of the existing .pf-c-label selector) to apply the margin styles to.
+9) Now create the declaration using the global variable for 8px of space: `--pf-global--spacer--sm`
 
-`.pf-c-label__icon { 
-}`
+<strong>Hint: </strong>`--pf-c-label__icon--MarginRight: var(--pf-global--spacer--sm);`
 
-l. Now all we need is a margin-right declaration that gives our icon the spacing we need.
-`.pf-c-label__icon {
-  margin-right: var(--pf-c-label__icon--MarginRight);
-}`
+10) Make sure the line from step 9 is included inside of the `.pf-c-label{}` selector block like this:
+
+```
+.pf-c-label {
+  --pf-c-label__icon--MarginRight: var(--pf-global--spacer--sm);
+}
+```
+
+11) Since BEM allows us to avoid nesting, let's create a new selector block in `myapp.scss` in the global scope (outside of the existing .pf-c-label selector) to apply the margin styles to.
+
+<strong>Hint: </strong>Copy this block and paste it underneath `.pf-c-label{}`
+
+```
+.pf-c-label__icon {
+  // Add styles here
+}
+```
+
+12) Now all we need is a margin-right declaration that gives our icon the spacing we need. Inside of `.pf-c-label__icon{}` add this line:
+
+`margin-right: var(--pf-c-label__icon--MarginRight);`
+

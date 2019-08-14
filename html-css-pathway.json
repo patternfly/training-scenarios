@@ -5,13 +5,13 @@
   "courses": [
     {
       "course_id": "module-1",
-      "title": "The Building Blocks for Patternfly Core",
+      "title": "The Building Blocks for PatternFly Core",
       "description": "This module will cover the guiding principles behind the three major parts of PatternFly Core—components, layouts, and demos and how they interact with each other."
     },
     {
       "course_id": "module-2",
       "title": "BEM Naming Principles",
-      "description": "In this scenario you will utilize BEM to create component and global variables and also override them."
+      "description": "This module will utilize BEM to create component and global variables and also override them."
     },
     {
       "course_id": "module-3",
@@ -20,8 +20,8 @@
     },
     {
       "course_id": "module-4",
-      "title": "module 4",
-      "description": "Description here..."
+      "title": "PatternFly Layouts",
+      "description": "This module will cover the seven different PatternFly layouts"
     },
     {
       "course_id": "module-5",

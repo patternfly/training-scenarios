@@ -2,19 +2,12 @@ The Flex Layout is based on the CSS Flex properties where the layout determines 
 
 ## Task: Layout items in a card using flex.
 
-a. Copy code to the editor:
+1) <strong>Copy code into the index.html file.</strong>
+
+Click the <strong>Copy to Editor</strong> button below to add code in the `index.html` file.
 
 <pre class="file" data-filename="index.html" data-target="replace">
 &lt;div class=&quot;pf-c-card&quot; style=&quot;width: 450px&quot;&gt; 
-  &lt;div class=&quot;pf-c-card__body&quot;&gt;
-    &lt;span&gt;
-      &lt;h2&gt;PatternFly-Elements&lt;/h2&gt;
-      &lt;p&gt;Working repo for PatternFly 4&lt;/p&gt;
-    &lt;/span&gt;
-    &lt;button class=&quot;pf-c-button pf-m-primary&quot;&gt;
-      Primary
-    &lt;/button&gt;
-  &lt;/div&gt;
   &lt;div class=&quot;pf-c-card__body&quot;&gt;
     &lt;span&gt;
       &lt;h2&gt;PatternFly-Elements&lt;/h2&gt;
@@ -38,13 +31,16 @@ a. Copy code to the editor:
 &lt;/div&gt;
 </pre>
 
-b. Lets make the first card body layout horizontally. For (`pf-c-card__body`):
-  i. set its layout to be flex. Add `pf-l-flex` to the `pf-c-card__body`.
-  ii. set its direction to be row. Add `pf-m-row` to the `pf-c-card__body`.
-  iii. add space between the text and the button. Add `pf-m-justify-content-space-between` to the `pf-c-card__body`.
+Lets make the first card body layout horizontally. For `pf-c-card__body`:
 
-c. Repeat step b for the second card body.
+2) Set its layout to be flex. Add `pf-l-flex` to the `pf-c-card__body`.
 
-d. Lets make the card footer layout the buttons. For (`pf-c-card__footer`):
-  i. set its layout to be flex. Add `pf-l-flex` to the `pf-c-card__footer`.
-  ii. add space between the buttons. Add `pf-m-justify-content-space-between` to the `pf-c-card__footer`.
+3) Set its direction to be row. Add `pf-m-row` to the `pf-c-card__body`.
+
+4) Add space between the text and the button, this can be done using the modifier: `pf-m-justify-content-space-between`.
+
+Lets make the card footer layout the buttons. For `pf-c-card__footer`:
+
+5) Set its layout to be flex. Add `pf-l-flex` to the `pf-c-card__footer`.
+
+6) Add space between the buttons. Add `pf-m-justify-content-space-between` to the `pf-c-card__footer`.
