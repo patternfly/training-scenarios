@@ -50,7 +50,7 @@
       "text": "finish.md"
     }
   },
-  "files": ["index.html"],
+  "files": ["index.html", "myapp.scss"],
   "environment": {
     "showdashboard": true,
     "dashboards": [
