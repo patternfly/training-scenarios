@@ -11,6 +11,11 @@
       "course_id": "module-2",
       "title": "PatternFly React Advanced",
       "description": "Advanced PatternFly React component usage"
+    },
+    {
+      "course_id": "module-3",
+      "title": "PatternFly React Charts",
+      "description": "Introduction to PatternFly React chart components"
     }
   ]
 }
