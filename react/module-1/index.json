@@ -49,7 +49,7 @@
   "files": [],
   "environment": {
     "showdashboard": true,
-    "delayToSaveFileAfterStopTypingMilliseconds": 1000,
+    "delayToSaveFileAfterStopTypingMilliseconds": 2000,
     "dashboards": [
       {"name": "Web Application", "port": 3000}
     ],
