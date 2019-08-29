@@ -1,0 +1,3 @@
+PatternFly React charts are based on the Victory chart library, along with additional functionality and theming for PatternFly.
+
+The PatternFly React chart library provides a collection of React components you can use to build interfaces with consistent markup, styling, and behavior.  In this course, we're going to build a PatternFly bar chart together - starting with a simple chart, adding multiple datasets, tooltips, axis labels, a legend, and concluding by changing the theme color. You'll learn a little bit about React and how to use PatternFly components together to build a consistent experience.
