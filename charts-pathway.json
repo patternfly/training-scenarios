@@ -1,0 +1,51 @@
+{
+  "title": "PatternFly React Charts",
+  "description": "These courses are designed to introduced you to PatternFly React charts",
+  "courses": [
+    {
+      "course_id": "module-area",
+      "title": "Area Chart",
+      "description": "Introduction to PatternFly React bar chart components"
+    },
+    {
+      "course_id": "module-bar",
+      "title": "Bar Chart",
+      "description": "Introduction to PatternFly React bar chart components"
+    },
+    {
+      "course_id": "module-bullet",
+      "title": "Bullet Chart",
+      "description": "Introduction to PatternFly React bullet chart components"
+    },
+    {
+      "course_id": "module-donut",
+      "title": "Donut Chart",
+      "description": "Introduction to PatternFly React donut chart components"
+    },
+    {
+      "course_id": "module-donut-utilization",
+      "title": "Donut utilization Chart",
+      "description": "Introduction to PatternFly React donut utilization chart components"
+    },
+    {
+      "course_id": "module-line",
+      "title": "Line Chart",
+      "description": "Introduction to PatternFly React line chart components"
+    },
+    {
+      "course_id": "module-pie",
+      "title": "Pie Chart",
+      "description": "Introduction to PatternFly React pie chart components"
+    },
+    {
+      "course_id": "module-stack",
+      "title": "Stack Chart",
+      "description": "Introduction to PatternFly React stack chart components"
+    },
+    {
+      "course_id": "module-sparkline",
+      "title": "Sparkline Chart",
+      "description": "Introduction to PatternFly React sparkline chart components"
+    }
+  ]
+}
