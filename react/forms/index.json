@@ -1,0 +1,61 @@
+{
+  "title": "Intro to PatternFly React forms",
+  "description": "Practice using a PatternFly 4 React form",
+  "difficulty": "beginner",
+  "time": "10 minutes",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "code": "env-init.sh"
+    },
+    "steps": [
+      { "title": "Introducing PatternFly React forms",
+        "text": "step1.md"
+      },
+      { "title": "Add a form demo",
+        "text": "step2.md"
+      },
+      { "title": "Add content to your form",
+        "text": "step3.md"
+      },
+      { "title": "Modify the form",
+        "text": "step4.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "assets": {
+    "client": [
+      {
+        "file": "page.js", "target": "~/tutorial/src/components/", "chmod": "+r"
+      },
+      {
+        "file": "step1.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
+      },
+      {
+        "file": "step2.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
+      },
+      {
+        "file": "step3.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
+      }
+    ]
+  },
+  "files": [],
+  "environment": {
+    "showdashboard": true,
+    "dashboards": [
+      {"name": "Web Application", "port": 3000}
+    ],
+    "uilayout": "editor-iframe-split",
+    "delayToSaveFileAfterStopTypingMilliseconds": 2000,
+    "uisettings": "javascript",
+    "exclusionPatterns": ["._*", "package.json", "package-lock.json", "node_modules*", "public*", "serviceWorker*"],
+    "hideHiddenFiles": true
+  },
+  "backend": {
+    "imageid": "node",
+    "port": 3000
+  }
+}
