@@ -43,6 +43,7 @@ function style () {
 function serve(done) {
   server.init({
     injectChanges: true,
+    notify: false,
     server: {
       baseDir: './dist'
     },
