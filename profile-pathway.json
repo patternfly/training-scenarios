@@ -9,6 +9,11 @@
       "title": "PatternFly React Pathway",
       "description": "Learn how to use PatternFly React",
       "id": "react"
+    },
+    {
+      "title": "PatternFly React Charts Pathway",
+      "description": "Learn how to use PatternFly React Charts",
+      "id": "charts"
     }
   ]
 }
