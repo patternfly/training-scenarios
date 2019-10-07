@@ -1,1 +1,3 @@
-Congratulations on finishing this module. For more resources check out patternfly components here: https://www.patternfly.org/v4/documentation/core/components/aboutmodalbox , layouts here: https://www.patternfly.org/v4/documentation/core/layouts/bullseye and demos here: https://www.patternfly.org/v4/documentation/core/demos/aboutmodal
+Congratulations - you finished the Building Blocks for PatternFly Core!
+
+[Please fill out a quick survey here](https://redhatdg.co1.qualtrics.com/jfe/form/SV_bIRZRHYJyGsKBSt)
