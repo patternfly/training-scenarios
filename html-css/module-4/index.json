@@ -13,7 +13,8 @@
       {
         "title": "Bullseye Layout",
         "text": "step1-instructions.md",
-        "answer": "step1-answer.md"
+        "answer": "step1-answer.md",
+        "verify": "step1-verify.sh"
       },
       {
         "title": "Level Layout",
@@ -54,6 +55,7 @@
   "environment": {
     "showdashboard": true,
     "delayToSaveFileAfterStopTypingMilliseconds": 2000,
+    "autoFormatEnable": true,
     "dashboards": [
       {"name": "Web Application", "port": 3000}
     ],
