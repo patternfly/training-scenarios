@@ -1,0 +1,108 @@
+{
+  "title": "Intro to Patternfly React Table",
+  "description": "Practice building a Patternfly 4 React Table",
+  "difficulty": "beginner",
+  "time": "< 30 minutes",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "code": "env-init.sh"
+    },
+    "steps": [
+      {
+        "title": "Introducing Patternfly React Table",
+        "text": "step1.md"
+      },
+      {
+        "title": "Initialize a basic Table",
+        "text": "step2.md"
+      },
+      {
+        "title": "Express column and row data as objects",
+        "text": "step3.md"
+      },
+      {
+        "title": "Set the table in compact mode",
+        "text": "step4.md"
+      },
+      {
+        "title": "Move your data to an external file",
+        "text": "step5.md"
+      },
+      {
+        "title": "Add the Pagination component",
+        "text": "step6.md"
+      },
+      {
+        "title": "Add some state properties for pagination",
+        "text": "step7.md"
+      },
+      {
+        "title": "Ensure rows reflect current pagination settings",
+        "text": "step8.md"
+      },
+      {
+        "title": "Cleanup, bugs and lint warnings",
+        "text": "step9.md"
+      }
+    ],
+    "assets": {
+      "client": [
+        {
+          "file": "step-2-complete.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
+        },
+        {
+          "file": "step-3-complete.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
+        },
+        {
+          "file": "step-4-complete.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
+        },
+        {
+          "file": "step-5-complete.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
+        },
+        {
+          "file": "step-6-complete.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
+        },
+        {
+          "file": "step-7-complete.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
+        },
+        {
+          "file": "step-8-complete.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
+        },
+        {
+          "file": "step-9-complete.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
+        }
+      ]
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "files": [],
+  "environment": {
+    "showdashboard": true,
+    "delayToSaveFileAfterStopTypingMilliseconds": 2000,
+    "autoFormatEnable": true,
+    "dashboards": [
+      {
+        "name": "Web Application",
+        "port": 3000
+      }
+    ],
+    "uilayout": "editor-iframe-split",
+    "uisettings": "javascript",
+    "exclusionPatterns": [
+      "._*",
+      "package.json",
+      "package-lock.json",
+      "node_modules",
+      "public*",
+      "serviceWorker*"
+    ],
+    "hideHiddenFiles": true
+  },
+  "backend": {
+    "imageid": "node",
+    "port": 3000
+  }
+}
