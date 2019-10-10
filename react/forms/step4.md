@@ -27,11 +27,24 @@ this.handleTextInputChange2 = value3 => {
 3) Next, we'll add `isValid` to the state declaration in the `render()` method:
 
 <pre class="file" data-target="clipboard">
-render() {
-    const { value1, value2, value3, value4, isValid } = this.state;
+const { value1, value2, value3, value4, isValid } = this.state;
 </pre>
 
 4) Finally, we'll add the `helperTextInvalid` prop to the email `FormGroup` and `isValid` props to the email `FormGroup` and `TextInput` components:
+
+Locate the code that looks like this:
+
+```
+<FormGroup
+  label="Email"
+  isRequired
+  fieldId="simple-form-email"
+>
+  ...
+</FormGroup>
+```
+
+Replace it with the following code:
 
 <pre class="file" data-target="clipboard">
 &lt;FormGroup

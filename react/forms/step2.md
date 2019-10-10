@@ -1,7 +1,3 @@
-In PatternFly 4, demos are used to show how Patternfly’s components and layouts can be put together to build more complex structures.
-
-They're made entirely from components and layouts.
-
 In this exercise, we'll be using a form demo to create a new form for a web application.
 
 The image below is what we'll end up with when we are done:

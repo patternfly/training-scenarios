@@ -6,6 +6,16 @@ Now we'll modify our form to include a title dropdown.
 
 2) To create a title dropdown, we'll add a new `value1` attribute to state and a `this.options` array in the constructor.
 
+Locate the code that looks like the following:
+
+```
+constructor(props) {
+...
+}
+```
+
+Replace it with the following code:
+
 <pre class="file" data-target="clipboard">
 constructor(props) {
   super(props);
@@ -42,11 +52,10 @@ constructor(props) {
 3) Next, we'll add `value1` to the state declaration in the `render()` method:
 
 <pre class="file" data-target="clipboard">
-render() {
-    const { value1, value2, value3, value4 } = this.state;
+const { value1, value2, value3, value4 } = this.state;
 </pre>
 
-4) Next, we'll add a new `FormGroup` containing a `FormSelect` and `FormSelectOptions`:
+4) Next, we'll add a new `FormGroup` containing a `FormSelect` and `FormSelectOptions` ahead of the existing `FormGroup` code blocks:
 
 <pre class="file" data-target="clipboard">
 &lt;FormGroup label="Title" fieldId="simple-form-title"&gt;

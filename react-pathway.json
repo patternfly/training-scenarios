@@ -11,6 +11,11 @@
       "course_id": "module-2",
       "title": "PatternFly React Advanced",
       "description": "Advanced PatternFly React component usage"
+    },
+    {
+      "course_id": "forms",
+      "title": "Intro to PatternFly React forms",
+      "description": "Practice using a PatternFly 4 React form"
     }
   ]
 }
