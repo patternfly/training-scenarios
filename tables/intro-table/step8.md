@@ -62,7 +62,7 @@ At this point, you should see basic pagination in place. Nice! There is some imp
 
 Your rendered output should look something like the screenshot below;
 
-<img src="module-1/assets/step-8-complete.png" alt="Image of what table looks like at the end of step 8." style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
+<img src="intro-table/assets/step-8-complete.png" alt="Image of what table looks like at the end of step 8." style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
 
 Your component implementation should look something like the following;
 

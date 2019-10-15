@@ -65,18 +65,71 @@ export const defaultRows = [
 
 <strong>Note: </strong> Don't forget to add a commas where necessary between row entries if you're copying and pasting from the example snippets!
 
-3) Navigate back to the `src` folder and open `src/App.js`{{open}} and import your new row/column definitions
+3) Navigate back to the `src` folder and open `src/App.js`{{open}} and import your new row/column definitions. Place the import statement just below the last import at the top of the file.
 
 <pre class="file" data-target="clipboard">
 import { columns, defaultRows } from './data';
 </pre>
 
-4) Locate the previous rows definition you created (`const defaultRows = ....`), delete it.
+4) Delete the rows and columns definitions you created earlier (roughly lines 6 - 32)
 
-5) Locate the previous columns definition you created (`const columns = ...`), delete it.
+The code you are deleting should look like the following
+
+<pre class="file">
+const columns = [
+  { title: "First column" },
+  { title: "Second column" },
+  { title: "Third column" }
+];
+const defaultRows = [
+  {
+    cells: [
+      { title: "Row 1 column 1" },
+      { title: "Row 1 column 2" },
+      { title: "Row 1 column 3" }
+    ]
+  },
+  {
+    cells: [
+      { title: "Row 2 column 1" },
+      { title: "Row 2 column 2" },
+      { title: "Row 2 column 3" }
+    ]
+  },
+  {
+    cells: [
+      { title: "Row 3 column 1" },
+      { title: "Row 3 column 2" },
+      { title: "Row 3 column 3" }
+    ]
+  }
+];
+</pre>
+
 
 <strong>Note: </strong> You may need to click the refresh button at the top right of the preview pane or wait for the environment to finish updating before you see the latest changes.
 
-Your Table implementation should look like the same as it did before, except with a few more rows;
+Your Table implementation should look somewhat like the following;
 
-<img src="module-1/assets/step-5-complete.png" alt="Image of what table looks like at the end of step 5." style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
+<pre class="file" data-target="clipboard">
+import * as React from &quot;react&quot;;
+import * as ReactDOM from &quot;react-dom&quot;;
+import &quot;@patternfly/react-core/dist/styles/base.css&quot;;
+import { Table, TableHeader, TableBody } from &quot;@patternfly/react-table&quot;;
+import { columns, defaultRows } from &#39;./data&#39;;
+const App = () =&gt; {
+  return (
+    &lt;React.Fragment&gt;
+      &lt;Table variant=&quot;compact&quot; caption=&quot;Patternfly React Table&quot; cells={columns} rows={defaultRows}&gt;
+        &lt;TableHeader /&gt;
+        &lt;TableBody /&gt;
+      &lt;/Table&gt;
+    &lt;/React.Fragment&gt;
+  );
+};
+export default App;
+</pre>
+
+Your Table should render like the same as it did before, except with a few more rows;
+
+<img src="intro-table/assets/step-5-complete.png" alt="Image of what table looks like at the end of step 5." style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />

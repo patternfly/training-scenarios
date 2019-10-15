@@ -2,7 +2,7 @@ Now that you have the basic table structure and imports in place, let's express 
 
 ## Task
 
-1) Locate the following code `const columns = [...]`
+1) Locate the following code just below the last import statement `const columns = ["First column", "Second column", "Third column"];`.
 
 2) For each of the column headers in the array, replace the string with an object and set the object’s title property to the string value you had previously.
 
@@ -61,4 +61,4 @@ const defaultRows = [
 
 The table should appear exactly as it did before;
 
-<img src="module-1/assets/step-3-complete.png" alt="Image of what table looks like at the end of step 3." style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
+<img src="intro-table/assets/step-3-complete.png" alt="Image of what table looks like at the end of step 3." style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
