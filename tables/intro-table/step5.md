@@ -113,7 +113,6 @@ Your Table implementation should look somewhat like the following;
 
 <pre class="file" data-target="clipboard">
 import * as React from &quot;react&quot;;
-import * as ReactDOM from &quot;react-dom&quot;;
 import &quot;@patternfly/react-core/dist/styles/base.css&quot;;
 import { Table, TableHeader, TableBody } from &quot;@patternfly/react-table&quot;;
 import { columns, defaultRows } from &#39;./data&#39;;

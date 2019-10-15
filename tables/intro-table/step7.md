@@ -45,7 +45,6 @@ At this point, you should be able to select between 2 and 3 in the dropdown and 
 
 <pre class="file">
 import * as React from &quot;react&quot;;
-import * as ReactDOM from &quot;react-dom&quot;;
 import { Pagination } from &quot;@patternfly/react-core&quot;;
 import { Table, TableHeader, TableBody } from &quot;@patternfly/react-table&quot;;
 import { columns, defaultRows } from &quot;./data&quot;;

@@ -28,7 +28,6 @@ Your component implementation should look like the following;
 
 <pre class="file">
 import * as React from &quot;react&quot;;
-import * as ReactDOM from &quot;react-dom&quot;;
 import &quot;@patternfly/react-core/dist/styles/base.css&quot;;
 import { Table, TableHeader, TableBody } from &quot;@patternfly/react-table&quot;;
 import { Pagination } from &#39;@patternfly/react-core&#39;;

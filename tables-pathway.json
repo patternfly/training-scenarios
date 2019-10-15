@@ -4,8 +4,13 @@
   "courses": [
     {
       "course_id": "intro-table",
-      "title": "PatternFly React Table",
+      "title": "PatternFly React Table Basics",
       "description": "Introduction to PatternFly React Table"
+    },
+    {
+      "course_id": "customize-table",
+      "title": "Customizing PatternFly React Table",
+      "description": "Basic customization techniques for PatternFly React Table"
     }
   ]
 }
