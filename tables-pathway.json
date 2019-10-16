@@ -1,0 +1,11 @@
+{
+  "title": "PatternFly React Table",
+  "description": "These courses are designed to introduced you to the PatternFly React Table package - a set of tools for building composable tables.",
+  "courses": [
+    {
+      "course_id": "intro-table",
+      "title": "PatternFly React Table",
+      "description": "Introduction to PatternFly React Table"
+    }
+  ]
+}
