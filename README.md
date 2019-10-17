@@ -1,19 +1,15 @@
 # Interactive Katacoda Scenarios
 
-[![](http://shields.katacoda.com/katacoda/cmolloy/count.svg)](https://www.katacoda.com/cmolloy "Get your profile on Katacoda.com")
+Thanks for contributing to PatternFly Developer Training! Listed below are steps to follow when adding a training scenario.
 
 ### Writing Scenarios
 Visit https://www.katacoda.com/docs to learn more about creating Katacoda scenarios
-
 For examples, visit https://github.com/katacoda/scenario-example
 
-Follow this document for guidelines when writing scenarios: https://docs.google.com/document/d/1pHckYqqrXtozpW8Bjj1DLaeN0Ghi4zC7Ds4DS3KRdek/edit?usp=sharing
-
-
-# Guidelines to follow when adding scenarios
+We have put together a [template](https://docs.google.com/document/d/1pHckYqqrXtozpW8Bjj1DLaeN0Ghi4zC7Ds4DS3KRdek/edit?usp=sharing) to use when putting together a scenario, feel free to Make a Copy of this document.
 
 **Consistent structure for step instructions**
-This is a way that I think we can structure the contents of a step for consistency. Having a consistent structure will help users skim the contents to find the chunks of info they're looking for without having to read more than they want to. 
+Having a consistent structure will help users skim the contents to find the chunks of info they're looking for without having to read more than they want to. 
 
 ## Step title, written as imperative that describes at a high level the theme for this step (e.g. overriding variables)
 
@@ -30,3 +26,6 @@ Then, another imperative statement, as needed to complete this task.
 <strong>Note:</strong> Include a note for a sub-task if it's possible that a user could be confused about something. This is a place to include additional explanation about a concept that would be too much to include with the sub-task description.
 
 <pre>Code to manually copy or with the "click to copy" button, if needed</pre>
+
+## Scenario Feedback
+In the `finish.md` file add a link to our qualtrics survey so that feedback can be recorded. Use this link: https://redhatdg.co1.qualtrics.com/jfe/form/SV_bIRZRHYJyGsKBSt?Module= and at the end of `Module=` add the title of the scenario so that we can target feedback.
