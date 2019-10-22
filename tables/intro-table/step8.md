@@ -2,7 +2,7 @@ In this step, we'll add in the heart of pagination functionality. We'll add a ne
 
 ## Task
 
-1) Create a new state property to represent our dynamic rows, call it "rows". Set the initial value to the defaultRows constant that you defined earlier.
+1) Create a new state property to represent our dynamic rows, call it "rows". Set the initial value to the defaultRows constant that you defined earlier. Place this code just above the handlePerPageSelect function you added in the last step.
 
 <pre class="file" data-target="clipboard">
 const [rows, setRows] = React.useState(defaultRows);
@@ -34,7 +34,7 @@ const updateList = value => {
 updateList(currentPage);
 </pre>
 
-5) Add a useEffect hook inside your component that we'll teach to only run when certain properties change. This effects hook will ultimately ensure `numPerPage` and `rows` stay in sync. Inside this effect, make a call to handlePerPageSelect, pass null for the first param (event) and pass numPerPage as the second param.
+5) Add a useEffect hook inside your component that we'll teach to only run when certain properties change. This effects hook will ultimately ensure `numPerPage` and `rows` stay in sync. Inside this effect, make a call to handlePerPageSelect, pass null for the first param (event) and pass numPerPage as the second param. Place this code just above the return statement in your App component.
 
 <pre class="file" data-target="clipboard">
 React.useEffect(() => {
@@ -42,7 +42,7 @@ React.useEffect(() => {
 }, []);
 </pre>
 
-6) Locate the empty dependency array for the useEffect hook you just created, it's the second parameter (`[]`) that was passed to useEffect. This represents an array of the function's dependencies.
+6) Locate the empty dependency array for the useEffect hook you just created, it's the second parameter (`[]`) that was passed to useEffect. This second parameter to useEffect represents an array of the function's dependencies.
 
 7) Specify numPerPage and handlePerPageSelect as <a href="https://reactjs.org/docs/hooks-reference.html#conditionally-firing-an-effect" target="_blank">effect dependencies</a> by listing them in the dependency array from the previous step. Replace the empty array with the following;
 
@@ -60,17 +60,17 @@ onSetPage={(_evt, value) => {
 
 At this point, you should see basic pagination in place. Nice! There is some important cleanup left to do, which we'll get to in the next step.
 
-Your rendered output should look something like the screenshot below;
+Your rendered output should look something like the screenshot below:
 
 <img src="intro-table/assets/step-8-complete.png" alt="Image of what table looks like at the end of step 8." style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
 
-Your component implementation should look something like the following;
+Your component implementation should look something like the following:
 
 <pre class="file">
 import * as React from &quot;react&quot;;
-import * as ReactDOM from &quot;react-dom&quot;;
-import { Pagination } from &quot;@patternfly/react-core&quot;;
+import &quot;@patternfly/react-core/dist/styles/base.css&quot;;
 import { Table, TableHeader, TableBody } from &quot;@patternfly/react-table&quot;;
+import { Pagination } from &quot;@patternfly/react-core&quot;;
 import { columns, defaultRows } from &quot;./data&quot;;
 const App = () =&gt; {
   const [numPerPage, setNumPerPage] = React.useState(2);

@@ -53,4 +53,4 @@ const updateList = React.useCallback(
 
 The look of your table hasn't changed much, but it now functions much better and will pass the basic code quality test if you're using the react-hooks/exhaustive-deps lint plugin.
 
-This is a good point in time to copy your code into a file in case you want to be able to reference it quickly later, the next step concludes this tutorial.
+This is a good point in time to copy your code somewhere in case you want to be able to reference this table implementation later. This concludes the tutorial.

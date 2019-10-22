@@ -10,7 +10,6 @@ Next, we'll set up the general structure of an empty table and add the necessary
 
 <pre class="file" data-filename="App.js" data-target="replace">
 import * as React from &quot;react&quot;;
-import * as ReactDOM from &quot;react-dom&quot;;
 import &quot;@patternfly/react-core/dist/styles/base.css&quot;;
 import { Table, TableHeader, TableBody } from &quot;@patternfly/react-table&quot;;
 const App = () =&gt; {
@@ -26,7 +25,7 @@ const App = () =&gt; {
 export default App;
 </pre>
 
-3) Now, declare two constants, outside of the React "App" component (below the last import statement at the top, above the line starting with `const App = () =`), to represent a set of columns and rows.
+3) Now, declare two constants, outside of the React "App" component (below the last import statement at the top, above the line starting with `const App = () => {`), to represent a set of columns and rows.
 
 <pre class="file" data-target="clipboard">
 const columns = ["First column", "Second column", "Third column"];
@@ -43,6 +42,6 @@ const defaultRows = [
 cells={columns} rows={defaultRows}
 </pre>
 
-Your table should now look like;
+Your table should now look like the following:
 
 <img src="intro-table/assets/step-2-complete.png" alt="Image of what table looks like at the end of step 2." style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
