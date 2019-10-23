@@ -21,4 +21,4 @@ Copy the following code into the app.css file, replacing all of the content ther
 
 When these steps are complete, your page should look like this:
 
-<img src="module-2/assets/step4.png" alt="Completed custom page demo" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
+<img src="components-advanced/assets/step4.png" alt="Completed custom page demo" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />

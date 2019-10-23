@@ -65,4 +65,4 @@ TextContent is used to wrap Text components and provides text with extra spacing
 </pre>
 
 When these steps are complete - the header and card should look like this:
-<img src="module-1/assets/card-with-header.png" alt="Card with logo, close button, and header" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
+<img src="components-intro/assets/card-with-header.png" alt="Card with logo, close button, and header" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
