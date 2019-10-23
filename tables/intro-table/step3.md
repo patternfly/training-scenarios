@@ -8,7 +8,7 @@ Now that you have the basic table structure and imports in place, let's express 
 
 For example: `"First column"` becomes `{ title: "First column" }`
 
-Your columns definition should now look like:
+The columns definition in your table, should look like the image below:
 
 <pre class="file">
 const columns = [
@@ -32,7 +32,7 @@ For example: `["Row 1 column 1", "Row 1 column 2", "Row 1 column 3"]` becomes
 }
 </pre>
 
-Your rows definition should now look like:
+The rows definition in your table should now look like the code snippet below:
 <pre class="file">
 const defaultRows = [
   {

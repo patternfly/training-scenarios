@@ -1,4 +1,4 @@
-As we mentioned earlier, we can handle the case for large datasets on the interaction side, also. We can do this by incorporating pagination controls that give users more granular control over their view of the data.
+As mentioned in step 4, we can handle the case for large datasets on the interaction side, also. We can do this by incorporating pagination controls that give users more granular control over their view of the data.
 
 ## Task
 
@@ -51,6 +51,6 @@ const App = () =&gt; {
 export default App;
 </pre>
 
-Here's what the rendered output should look like:
+The rendered output should look like the image below:
 
 <img src="intro-table/assets/step-6-complete.png" alt="Image of what table looks like at the end of step 6." style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />

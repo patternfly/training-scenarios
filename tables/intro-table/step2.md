@@ -42,6 +42,6 @@ const defaultRows = [
 cells={columns} rows={defaultRows}
 </pre>
 
-Your table should now look like the following:
+Your table should now look like the image below:
 
 <img src="intro-table/assets/step-2-complete.png" alt="Image of what table looks like at the end of step 2." style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
