@@ -3,7 +3,7 @@ PatternFly is based on the BEM naming system, whereby modifiers are tied to a co
 
 ## Task: Modify the Dropdown for the expanded state, then change the dropdown toggle to the plain variation
 
-In this step we will modify the dropdown component. This is a link to the documentation for the dropdown component. <strong> At the bottom of the page, under the "Usage" section table, you will see the documentation for the modifier classes under “class” and the classes they apply to under “applied”.</strong>  https://pf4.patternfly.org/components/Dropdown/examples/
+In this step we will modify the dropdown component. This is a link to the documentation for the dropdown component. <strong> At the bottom of the page, under the "Usage" section table, you will see the documentation for the modifier classes under “class” and the classes they apply to under “applied”.</strong>  https://www.patternfly.org/v4/documentation/core/components/dropdown
 
 1) <strong>Copy code to the editor.</strong>
 
