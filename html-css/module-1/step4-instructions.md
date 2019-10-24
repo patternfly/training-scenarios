@@ -26,7 +26,7 @@ Click the <strong>Copy to Editor</strong> button below to add html for a Card co
 
 2) Let's add the bullseye class to the editor so that the Card is centered horizontally and vertically.
 
-<strong>Note: </strong>It’s important to follow the documentation for layouts. Here is a link to the documentation for the Bullseye layout: https://pf4.patternfly.org/layouts/Bullseye/examples/. In the documentation it specifies that you should add the class `pf-l-bullseye` to the parent container of its child.
+<strong>Note: </strong>It’s important to follow the documentation for layouts. Here is a link to the documentation for the Bullseye layout: https://www.patternfly.org/v4/documentation/core/layouts/bullseye. In the documentation it specifies that you should add the class `pf-l-bullseye` to the parent container of its child.
 
 3) On line 1 is the outer `<div>` wrapper. Replace this line with `<div class="pf-l-bullseye">`
 

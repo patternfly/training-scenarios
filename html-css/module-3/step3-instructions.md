@@ -2,9 +2,9 @@ Let’s continue to practice how to add modifier classes to components.
 
 ## Task: Apply visual and state modifiers to the Alert component.
 
-In this workshop we will apply visual modifiers and state modifiers to the same component or element. Using the documentation at this link https://pf4.patternfly.org/components/Alert/examples/, <strong> follow the instructions </strong> to modify the three Alert components.
+In this workshop we will apply visual modifiers and state modifiers to the same component or element. Using the documentation at this link https://www.patternfly.org/v4/documentation/core/components/alert, <strong> follow the instructions </strong> to modify the three Alert components.
 
-1) <strong>Copy code to the editor.</strong> 
+1) <strong>Copy code to the editor.</strong>
 
 Click the <strong>Copy to Editor</strong> button below to add html for three Alert components to the index.html file.
 
