@@ -1,4 +1,4 @@
-In this step, we'll move our row/column definitions to an external file and add three more rows of stub data to make the next part of the lesson more interesting.
+In this step, we'll move our row/column definitions to an external file and add three more rows of sample data to make the next part of the lesson more interesting.
 
 ## Task
 
