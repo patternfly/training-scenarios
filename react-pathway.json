@@ -11,6 +11,11 @@
       "course_id": "components-advanced",
       "title": "PatternFly React Advanced",
       "description": "Advanced PatternFly React component usage"
+    },
+    {
+      "course_id": "filter-toolbar",
+      "title": "PatternFly Filter Toolbar",
+      "description": "Building a PatternFly React Filter Toolbar"
     }
   ]
 }
