@@ -2,7 +2,7 @@ In this next step, we'll add the state properties we need to track how many rows
 
 ## Task
 
-1) Create two state properties within your component, numPerPage and currentPage, setting their values to 2 and 1, respectivly. Place this code inside of the App component (just below the line that starts with `const App = () => {` ).
+1) In your `src/App.js`{{open}} file create two state properties within your component, `numPerPage` and `currentPage`, setting their values to 2 and 1, respectivly. Place this code inside of the App component, just below the line that starts with `const App = () => {`.
 
 <pre class="file">
 const [numPerPage, setNumPerPage] = React.useState(2);
@@ -11,15 +11,27 @@ const [currentPage, setCurrentPage] = React.useState(1);
 
 <strong>Note: </strong> The second parameter in the destructured array coming from React.useState() is the setter for the state variable you're creating.
 
-2) Set the `perPage` prop of the Pagination component to the `numPerPage` state property you just created, and similarly set the `page` prop to the `currentPage` state property.
+2) Set the `perPage` prop of the Pagination component to the `numPerPage` state property you just created.
 
 <pre class="file">
-perPage={numPerPage} page={currentPage}
+perPage={numPerPage}
+</pre>
+
+3) Similarly, set the `page` prop of the Pagination component to the `currentPage` state property.
+
+<pre class="file">
+page={currentPage}
+</pre>
+
+Your Pagination component should look like the code snippet below:
+
+<pre class="file">
+&lt;Pagination perPage={numPerPage} page={currentPage} itemCount={defaultRows.length} /&gt;
 </pre>
 
 <strong>Note: </strong> At this point, the Pagination component is aware that we should only be showing 1 - 2 of 6 items, and that we should be on page 1 of 3. We haven’t updated our rows yet to reflect this. Don't worry, we’ll do this shortly.
 
-3) Set the `perPageOptions` prop for the Pagination component so that we have two options in the dropdown. 2 and 3
+4) Set the `perPageOptions` prop of the Pagination component so that we have two options in the dropdown. 2 and 3
 
 <pre class="file">
 perPageOptions={[{ title: "2", value: 2 }, { title: "3", value: 3 }]}
@@ -29,7 +41,7 @@ Notice the "per page options" dropdown now reflect options of 2 and 3 per page.
 
 <img src="intro-table/assets/step-7-perPageOptions-complete.png" alt="Image of what table looks like after step 7 sub-step 2." style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
 
-4) Create the handler function "handlePerPageSelect" inside your component definition (just below the state properties you added earlier) and set the numPerPage property when it is invoked by passing setNumPerPage the value that's passed as the second parameter.
+5) Create the handler function `handlePerPageSelect` inside your component definition (just below the `currentPage` state property you added in the first step). Inside this function set the `numPerPage` state property to the value selected in the dropdown by calling setNumPerPage and passing it the value that is received as the second parameter in handlePerPageSelect.
 
 <pre class="file">
 const handlePerPageSelect = (event, value) => {
@@ -37,7 +49,7 @@ const handlePerPageSelect = (event, value) => {
 };
 </pre>
 
-5) Set the `onPerPageSelect` property of the Pagination component to the function "handlePerPageSelect" you just created.
+6) Set the `onPerPageSelect` prop of the Pagination component to the function "handlePerPageSelect" you just created.
 
 <pre class="file">
 onPerPageSelect={handlePerPageSelect}

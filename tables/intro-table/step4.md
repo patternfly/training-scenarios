@@ -2,7 +2,7 @@ A common case for Table is the need to handle large datasets elegantly. This can
 
 ## Task
 
-1) Locate the code for the Table component (`<Table caption="Patternfly React Table" cells={columns} rows={defaultRows}>`)
+1) Locate the code for the Table component `<Table caption="Patternfly React Table" cells={columns} rows={defaultRows}>`
 
 2) Add a `variant` <a href="https://reactjs.org/docs/components-and-props.html" target="_blank">prop</a> to the Table component, and set its value to `"compact"`.
 

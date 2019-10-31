@@ -14,7 +14,7 @@ import { Pagination } from '@patternfly/react-core';
   &lt;Pagination /&gt;
 </pre>
 
-3) Set the `itemCount` prop of the Pagination component to the total number of rows in your dataset
+3) Set the `itemCount` prop of the Pagination component to the total number of rows in your dataset.
 
 <pre class="file">
 itemCount={defaultRows.length}
