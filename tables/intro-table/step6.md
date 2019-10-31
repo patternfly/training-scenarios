@@ -4,19 +4,19 @@ As mentioned in step 4, we can handle the case for large datasets on the interac
 
 1) Import Pagination component from react-core right after your imports from  `@patternfly/react-table`.
 
-<pre class="file" data-target="clipboard">
+<pre class="file">
 import { Pagination } from '@patternfly/react-core';
 </pre>
 
 2) Render the Pagination component just above the `<Table>` component, as a sibling in the component tree.
 
-<pre class="file" data-target="clipboard">
+<pre class="file">
   &lt;Pagination /&gt;
 </pre>
 
 3) Set the `itemCount` prop of the Pagination component to the total number of rows in your dataset
 
-<pre class="file" data-target="clipboard">
+<pre class="file">
 itemCount={defaultRows.length}
 </pre>
 

@@ -4,13 +4,13 @@ In this step, we'll add in the heart of pagination functionality. We'll add a ne
 
 1) Create a new state property to represent our dynamic rows, call it "rows". Set the initial value to the defaultRows constant that you defined earlier. Place this code just above the handlePerPageSelect function you added in the last step.
 
-<pre class="file" data-target="clipboard">
+<pre class="file">
 const [rows, setRows] = React.useState(defaultRows);
 </pre>
 
 2) Locate the code that sets the rows for the table (`rows={defaultRows}`), and update it to reference the new rows state property you just created.
 
-<pre class="file" data-target="clipboard">
+<pre class="file">
 rows={rows}
 </pre>
 
@@ -30,13 +30,13 @@ const updateList = value => {
 
 4) Inside the handlePerPageSelect handler, make a call to updateList and pass it the currentPage state property.
 
-<pre class="file" data-target="clipboard">
+<pre class="file">
 updateList(currentPage);
 </pre>
 
 5) Add a useEffect hook inside your component that we'll teach to only run when certain properties change. This effects hook will ultimately ensure `numPerPage` and `rows` stay in sync. Inside this effect, make a call to handlePerPageSelect, pass null for the first param (event) and pass numPerPage as the second param. Place this code just above the return statement in your App component.
 
-<pre class="file" data-target="clipboard">
+<pre class="file">
 React.useEffect(() => {
   handlePerPageSelect(null, numPerPage);
 }, []);
@@ -46,13 +46,13 @@ React.useEffect(() => {
 
 7) Specify numPerPage and handlePerPageSelect as <a href="https://reactjs.org/docs/hooks-reference.html#conditionally-firing-an-effect" target="_blank">effect dependencies</a> by listing them in the dependency array from the previous step. Replace the empty array with the following;
 
-<pre class="file" data-target="clipboard">
+<pre class="file">
 [numPerPage, handlePerPageSelect]
 </pre>
 
 8) Locate the `<Pagination>` component and set the `onSetPage` prop to an inline arrow function, and within this function make a call to updateList, pass updateList the value you receive as a second parameter.
 
-<pre class="file" data-target="clipboard">
+<pre class="file">
 onSetPage={(_evt, value) => {
   updateList(value);
 }}

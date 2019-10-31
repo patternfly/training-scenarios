@@ -38,7 +38,7 @@ const defaultRows = [
 
 4) Now, locate the line `<Table caption="Patternfly React Table" cells={[]} rows={[]}>` and replace the references to empty arrays (`cells={[]} rows={[]}`) with the row/column definitions you just created.
 
-<pre class="file" data-target="clipboard">
+<pre class="file">
 cells={columns} rows={defaultRows}
 </pre>
 

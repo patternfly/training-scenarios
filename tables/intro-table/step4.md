@@ -6,7 +6,7 @@ A common case for Table is the need to handle large datasets elegantly. This can
 
 2) Add a `variant` <a href="https://reactjs.org/docs/components-and-props.html" target="_blank">prop</a> to the Table component, and set its value to `"compact"`.
 
-<pre class="file" data-target="clipboard">
+<pre class="file">
 variant="compact"
 </pre>
 

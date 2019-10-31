@@ -59,13 +59,13 @@ export const defaultRows = [
 ];
 </pre>
 
-2) Navigate back to the `src` folder and open `src/App.js`{{open}} and import your new row/column definitions. Place the import statement just below the last import at the top of the file.
+3) Navigate back to the `src` folder and open `src/App.js`{{open}} and import your new row/column definitions. Place the import statement just below the last import at the top of the file.
 
-<pre class="file" data-target="clipboard">
+<pre class="file">
 import { columns, defaultRows } from './data';
 </pre>
 
-3) Delete the rows and columns definitions you created earlier (roughly lines 6 - 32)
+4) Delete the rows and columns definitions you created earlier (roughly lines 6 - 32)
 
 The code you are deleting should look like the following
 

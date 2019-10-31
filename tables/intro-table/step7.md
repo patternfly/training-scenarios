@@ -4,7 +4,7 @@ In this next step, we'll add the state properties we need to track how many rows
 
 1) Create two state properties within your component, numPerPage and currentPage, setting their values to 2 and 1, respectivly. Place this code inside of the App component (just below the line that starts with `const App = () => {` ).
 
-<pre class="file" data-target="clipboard">
+<pre class="file">
 const [numPerPage, setNumPerPage] = React.useState(2);
 const [currentPage, setCurrentPage] = React.useState(1);
 </pre>
@@ -13,7 +13,7 @@ const [currentPage, setCurrentPage] = React.useState(1);
 
 2) Set the `perPage` prop of the Pagination component to the `numPerPage` state property you just created, and similarly set the `page` prop to the `currentPage` state property.
 
-<pre class="file" data-target="clipboard">
+<pre class="file">
 perPage={numPerPage} page={currentPage}
 </pre>
 
@@ -21,7 +21,7 @@ perPage={numPerPage} page={currentPage}
 
 3) Set the `perPageOptions` prop for the Pagination component so that we have two options in the dropdown. 2 and 3
 
-<pre class="file" data-target="clipboard">
+<pre class="file">
 perPageOptions={[{ title: "2", value: 2 }, { title: "3", value: 3 }]}
 </pre>
 
@@ -31,7 +31,7 @@ Notice the "per page options" dropdown now reflect options of 2 and 3 per page.
 
 4) Create the handler function "handlePerPageSelect" inside your component definition (just below the state properties you added earlier) and set the numPerPage property when it is invoked by passing setNumPerPage the value that's passed as the second parameter.
 
-<pre class="file" data-target="clipboard">
+<pre class="file">
 const handlePerPageSelect = (event, value) => {
   setNumPerPage(value);
 };
@@ -39,7 +39,7 @@ const handlePerPageSelect = (event, value) => {
 
 5) Set the `onPerPageSelect` property of the Pagination component to the function "handlePerPageSelect" you just created.
 
-<pre class="file" data-target="clipboard">
+<pre class="file">
 onPerPageSelect={handlePerPageSelect}
 </pre>
 
