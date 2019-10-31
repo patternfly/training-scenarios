@@ -8,21 +8,48 @@ Now that you have the basic table structure and imports in place, let's express 
 
 For example: `"First column"` becomes `{ title: "First column" }`
 
-2) Now apply this same type of transformation to each of your row definitions.
+The columns definition in your table, should look like the image below:
 
-You're ultimately replacing the string array with an array of objects, where the cell property of the object is the row array you had previously.
+<pre class="file">
+const columns = [
+  { title: "First column" },
+  { title: "Second column" },
+  { title: "Third column" }
+];
+</pre>
+
+Next we'll apply a similar type of transformation to convert each of your row definitions into object representations.
+
+3) Locate the following code just below your columns definition `const defaultRows = [`. Notice that each row in your table is defined by a simple string array, for example `["Row 1 column 1", "Row 1 column 2", "Row 1 column 3"]`.
+
+4) For each of these three row definitions, replace the entire string array with an object and set the object's `cells` property to the string array you had previously.
 
 For example: `["Row 1 column 1", "Row 1 column 2", "Row 1 column 3"]` becomes
 
-<pre class="file" data-target="clipboard">
+<pre class="file">
 {
   cells: ["Row 1 column 1", "Row 1 column 2", "Row 1 column 3"]
 }
 </pre>
 
-3) For each item in the cells array, replace the string value with an object whose title property is the cell data (a simple string in this case), just like you did in the previous two steps.
+The rows definition in your table should now look like the code snippet below:
+<pre class="file">
+const defaultRows = [
+  {
+    cells: ["Row 1 column 1", "Row 1 column 2", "Row 1 column 3"]
+  },
+  {
+    cells: ["Row 2 column 1", "Row 2 column 2", "Row 2 column 3"]
+  },
+  {
+    cells: ["Row 3 column 1", "Row 3 column 2", "Row 3 column 3"]
+  }
+];
+</pre>
 
-So `"Row 1 column 1"` becomes `{ title: "Row 1 column 1" }`
+5) For each item in each of your rows `cells` array, replace the string value with an object whose title property is the string you had previously.
+
+So `"Row 1 column 1"` becomes `{ title: "Row 1 column 1" }`, and so on.
 
 Your new column and row definitions should now look something like this.
 
@@ -59,6 +86,6 @@ const defaultRows = [
 
 <strong>Note: </strong> You can mix string and object definitions for your table data.
 
-The table should appear exactly as it did before;
+The table should appear exactly as it did before:
 
 <img src="intro-table/assets/step-3-complete.png" alt="Image of what table looks like at the end of step 3." style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />

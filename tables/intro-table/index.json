@@ -67,6 +67,9 @@
           "file": "step-7-complete.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
         },
         {
+          "file": "step-7-perPageOptions-complete.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
+        },
+        {
           "file": "step-8-complete.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
         },
         {

@@ -1,4 +1,13 @@
-The PatternFly React Table package provides a collection of React components you can use to build tables with consistent markup, styling, and behavior. In this course, we're going to build a PatternFly Table together - starting with creating a basic column/row structure, then converting those row/column definitions into object representations, and concluding with adding pagination. You'll learn a little bit about React and a few simple but effective patterns to build tables that are both extendable and maintainable.
+The PatternFly React Table package provides a collection of React components you can use to build tables with consistent markup, styling, and behavior. In this course, we're going to build a PatternFly Table together. We'll start with creating a basic table with simple column/row structures. Then we'll look at how to convert those row/column definitions into object representations, which will be useful for more complex tables later. We'll  conclude with setting the table into compact mode and adding pagination so that our basic table works well with lots of data. Let's dive right in.
+
+The following is an example of what a table implementation looks like:
+
+<pre class="file">
+&lt;Table caption=&quot;Empty Table&quot; cells={columnsDefinition} rows={rowsDefinition}&gt;
+  &lt;TableHeader /&gt;
+  &lt;TableBody /&gt;
+&lt;/Table&gt;
+</pre>
 
 Your columns can be expressed as an array of strings or an array of objects which match the type "ICell". The columns definition is passed to the `cells` prop of the Table component which can take the form of `Array<ICell | string>`. Below is what an ICell looks like.
 
@@ -36,4 +45,3 @@ export interface IRow extends RowType {
   selected?: boolean;
 }
 </pre>
-

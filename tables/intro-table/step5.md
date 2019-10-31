@@ -1,4 +1,4 @@
-In this step, we'll move our row/column definitions to an external file and add more stub data to make the next part of the lesson more interesting. This will also help keep our component file simple and readable.
+In this step, we'll move our row/column definitions to an external file and add three more rows of sample data to make the next part of the lesson more interesting.
 
 ## Task
 
@@ -33,13 +33,7 @@ export const defaultRows = [
       { title: "Row 3 column 2" },
       { title: "Row 3 column 3" }
     ]
-  }
-];
-</pre>
-
-2) Add three more same-type rows to your rows definition, and update the text within them to reflect which row they belong to.
-
-<pre class="file" data-target="clipboard">
+  },
   {
     cells: [
       { title: "Row 4 column 1" },
@@ -61,13 +55,13 @@ export const defaultRows = [
       { title: "Row 6 column 3" }
     ]
   }
-</pre>
 
-<strong>Note: </strong> Don't forget to add a commas where necessary between row entries if you're copying and pasting from the example snippets!
+];
+</pre>
 
 3) Navigate back to the `src` folder and open `src/App.js`{{open}} and import your new row/column definitions. Place the import statement just below the last import at the top of the file.
 
-<pre class="file" data-target="clipboard">
+<pre class="file">
 import { columns, defaultRows } from './data';
 </pre>
 
@@ -113,7 +107,6 @@ Your Table implementation should look somewhat like the following;
 
 <pre class="file" data-target="clipboard">
 import * as React from &quot;react&quot;;
-import * as ReactDOM from &quot;react-dom&quot;;
 import &quot;@patternfly/react-core/dist/styles/base.css&quot;;
 import { Table, TableHeader, TableBody } from &quot;@patternfly/react-table&quot;;
 import { columns, defaultRows } from &#39;./data&#39;;
@@ -130,6 +123,6 @@ const App = () =&gt; {
 export default App;
 </pre>
 
-Your Table should render like the same as it did before, except with a few more rows;
+Your Table should render the same as it did before, except with a few more rows:
 
 <img src="intro-table/assets/step-5-complete.png" alt="Image of what table looks like at the end of step 5." style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />

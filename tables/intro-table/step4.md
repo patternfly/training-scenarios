@@ -1,4 +1,4 @@
-Even basic tables need to be able to account for the case of large dataset. In this step, we'll look at how we can address this from a styling perspective.
+A common case for Table is the need to handle large datasets elegantly. This can be addressed on both the styling and interactivity side. In this step, we'll look at how we can address the case of large datasets from a styling perspective.
 
 ## Task
 
@@ -6,11 +6,11 @@ Even basic tables need to be able to account for the case of large dataset. In t
 
 2) Add a `variant` <a href="https://reactjs.org/docs/components-and-props.html" target="_blank">prop</a> to the Table component, and set its value to `"compact"`.
 
-<pre class="file" data-target="clipboard">
+<pre class="file">
 variant="compact"
 </pre>
 
-Your Table definition should now lo
+Your Table definition should now look like the following:
 
 <pre class="file" data-target="clipboard">
 &lt;Table variant=&quot;compact&quot; caption=&quot;Patternfly React Table&quot; cells={columns} rows={defaultRows}&gt;

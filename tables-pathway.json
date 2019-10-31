@@ -4,7 +4,7 @@
   "courses": [
     {
       "course_id": "intro-table",
-      "title": "PatternFly React Table",
+      "title": "PatternFly React Table Basics",
       "description": "Introduction to PatternFly React Table"
     }
   ]
