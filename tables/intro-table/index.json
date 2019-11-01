@@ -2,7 +2,7 @@
   "title": "Intro to Patternfly React Table",
   "description": "Practice building a Patternfly 4 React Table",
   "difficulty": "beginner",
-  "time": "< 30 minutes",
+  "time": "< 45 minutes",
   "details": {
     "intro": {
       "text": "intro.md",

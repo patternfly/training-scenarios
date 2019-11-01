@@ -7,20 +7,21 @@ In this step, we'll find and treat a bug that you may or may not have already no
 2) Locate the `handlePerPageSelect` handler function and replace the call to `updateList(currentPage);` with the following logic.
 
 <pre class="file" data-target="clipboard">
-    // when a user reaches end of pagination, and sets numPerPage to a value
-    // that requires more data than we have available, reset pagination to page 1
-    if (value > numPerPage && currentPage === defaultRows.length / numPerPage) {
-      updateList(1);
-    } else {
-      updateList(currentPage);
-    }
+// when a user reaches end of pagination, and sets numPerPage to a value
+// that requires more data than we have available, reset pagination to page 1
+if (value > numPerPage && currentPage === defaultRows.length / numPerPage) {
+  updateList(1);
+} else {
+  updateList(currentPage);
+}
 </pre>
 
 <strong>Disclaimer: </strong> We've handled the case of pagination overflow here in a basic way to keep this tutorial short and simple. In a production application it might make sense to instead add logic that reverts a user to the last and closest page index that will allow for displaying the number of items per page being selected.
 
-3) Now convert handlePerPageSelect to a callback hook by stuffing the function signature inside a call to React.useCallback(), and specify an array of dependencies for this callback hook like you did earlier for handlePerPageSelect. Omitting the specifics, it should generally look like `const handlePerPageSelect = React.useCallback(FN, [DEPS]);`, where FN is your callback function and DEPS represents an array of any state properties or other callback functions (that themselves use state properties) this callback requires.
+3) Now convert `handlePerPageSelect` to a callback hook by passing the function signature as the first parameter to React.useCallback(), and specify an array of dependencies for this callback hook like you did earlier for `handlePerPageSelect`. Omitting the specifics, it should generally take the form of: `const handlePerPageSelect = React.useCallback(FN, [DEPS]);`, where FN is your callback function and DEPS represents an array of any state properties or other callback functions.
 
-When you're done, it should look like the following. Notice we specify numPerPage, currentPage, and updateList as dependencies of this function.
+
+4) When you're done, verify that your code looks like the following code snippet below. Notice we specify `numPerPage`, `currentPage`, and `updateList` as dependencies of the `handlePerPageSelect` callback hook.
 
 <pre class="file" data-target="clipboard">
 const handlePerPageSelect = React.useCallback((event, value) => {
@@ -36,7 +37,7 @@ const handlePerPageSelect = React.useCallback((event, value) => {
 }, [numPerPage, currentPage, updateList]);
 </pre>
 
-4) As a final step, we need to give the same treatment to updateList as we just did for handlePerPageSelect. Replace the value of updateList with another call to React.useCallback() and pass updateList's function signature as the first parameter and provide an array of dependencies as the second parameter. updateList only depends on the numPerPage state property.
+5) As a final step, we need to give the same treatment to updateList as we just did for `handlePerPageSelect`. Replace the value of updateList with another call to React.useCallback() and pass updateList's function signature as the first parameter and provide an array of dependencies as the second parameter. updateList only depends on the numPerPage state property.
 
 <pre class="file" data-target="clipboard">
 const updateList = React.useCallback(
