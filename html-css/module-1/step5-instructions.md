@@ -65,7 +65,7 @@ Now that we have added the components let's add a layout. In this case we will u
 
 2) Add a wrapper around all of the form components that uses the class `pf-l-grid`.
 
-<strong>Hint:<strong> `<div class="pf-l-grid"></div>`
+<strong>Hint:</strong> `<div class="pf-l-grid"></div>`
 
 3) Wrap each form component in a "Grid Item" class. Search for `pf-c-form` and around that block, wrap it in this block (remember to do all five): 
 
