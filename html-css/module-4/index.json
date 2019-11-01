@@ -13,8 +13,7 @@
       {
         "title": "Bullseye Layout",
         "text": "step1-instructions.md",
-        "answer": "step1-answer.md",
-        "verify": "step1-verify.sh"
+        "answer": "step1-answer.md"
       },
       {
         "title": "Level Layout",
