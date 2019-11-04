@@ -54,5 +54,8 @@
   "backend": {
     "imageid": "node",
     "port": 3000
+  },
+  "actions": {
+    "hideprogressbar": {}
   }
 }
