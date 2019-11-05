@@ -62,6 +62,9 @@
           "file": "wide-view-with-chip-groups.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
         },
         {
+          "file": "toolbar-content.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
+        },
+        {
           "file": "toolbar-items.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
         },
         {

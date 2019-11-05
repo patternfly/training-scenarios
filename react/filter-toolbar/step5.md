@@ -3,10 +3,39 @@ One particular type of Data toolbar group is called the toggle group. A `DataToo
 Using a `DataToolbarToggleGroup` requires both a `toggleIcon` and `breakpoint` property. The `toggleIcon` is a ReactNode which is displayed instead of the children of `DataToolbarToggleGroup` once the viewport width shrinks below the passed in breakpoint.
 
 ## Task
-1) Wrap both the "search-filter" `DataToolbarItem` and the "filter-group" `DataToolbarGroup` in the same `DataToolbarToggleGroup`. Provide both the `toggleIcon` and `breakpoint` properties to the `DataToolbarToggleGroup`.
+1) Locate the following "search-filter" `DataToolbarItem` and the "filter-group" `DataToolbarGroup`:
+
+<pre class="file">
+  &lt;DataToolbarItem variant=&quot;search-filter&quot;&gt;
+    &lt;Input value=&quot;&quot; id=&quot;step2Input&quot; ariaLabel=&quot;Step 2 input&quot; /&gt;
+  &lt;/DataToolbarItem&gt;
+  &lt;DataToolbarGroup variant=&quot;filter-group&quot;&gt;
+    &lt;DataToolbarItem&gt;
+      &lt;CheckboxSelect
+        onSelect={this.onSelect}
+        type=&quot;Status&quot;
+        selections={filters.status}
+        options={statusOptions}
+      /&gt;
+    &lt;/DataToolbarItem&gt;
+    &lt;DataToolbarItem&gt;
+      &lt;CheckboxSelect
+        onSelect={this.onSelect}
+        type=&quot;Risk&quot;
+        selections={filters.risk}
+        options={riskOptions}
+      /&gt;
+    &lt;/DataToolbarItem&gt;
+  &lt;/DataToolbarGroup&gt;
+</pre>
+
+2) Wrap both the `DataToolbarItem` and the `DataToolbarGroup` in the same `DataToolbarToggleGroup`. Provide both the `toggleIcon` and `breakpoint` properties to the `DataToolbarToggleGroup`.
 
 <pre class="file" data-target="clipboard">
-  &lt;DataToolbarToggleGroup toggleIcon={&lt;FilterIcon /&gt;} breakpoint=&quot;xl&quot;&gt;
+  &lt;DataToolbarToggleGroup 
+    toggleIcon={&lt;FilterIcon /&gt;} 
+    breakpoint=&quot;xl&quot;
+    &gt;
     &lt;DataToolbarItem variant=&quot;search-filter&quot;&gt;
       &lt;Input value=&quot;&quot; id=&quot;step2Input&quot; ariaLabel=&quot;Step 2 input&quot; /&gt;
     &lt;/DataToolbarItem&gt;

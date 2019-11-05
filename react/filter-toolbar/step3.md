@@ -2,9 +2,16 @@ The individual components placed inside of a toolbar are each wrapped in a `Data
 
 ## Task
 
-1) We will use the state of our ToolbarDemoApp to manage some of the items in our `DataToolbar`.
+We will use the state of our ToolbarDemoApp to manage some of the items in our `DataToolbar`.
 
-Replace ToolbarDemoApp constructor with the following snippet.
+1) Locate the code that looks like the following:
+<pre class="file">
+  constructor(props) {
+    super(props);
+  }
+</pre>
+
+2) Replace ToolbarDemoApp constructor with the following snippet.
 
 <pre class="file" data-target="clipboard">
   constructor(props) {
@@ -19,7 +26,7 @@ Replace ToolbarDemoApp constructor with the following snippet.
   }
 </pre>
 
-2) Copy the following onSearch and onSelect event handlers and add them to the ToolbarDemoApp class.
+3) Copy the following onSearch and onSelect event handlers and add them to the ToolbarDemoApp class below your update constructor.
 
 <pre class="file" data-target="clipboard">
   onSearch = (value) =&gt; {
@@ -49,7 +56,17 @@ Replace ToolbarDemoApp constructor with the following snippet.
   };
 </pre>
 
-3) Add the following constants to the top of the render function.
+4) Locate the code that looks like the following:
+
+<pre class="file">
+  render() {
+    return (
+      ...
+    );
+  }
+</pre>
+
+5) Add the following constants inside the top of the render function above the return statement.
 
 <pre class="file" data-target="clipboard">
   const { filters } = this.state;
@@ -58,7 +75,15 @@ Replace ToolbarDemoApp constructor with the following snippet.
 </pre>
 
 
-4) Replace the contents of the `DataToolbarContent` with the following six items.
+6) Locate the code that looks like the following:
+
+<pre class="file">
+  &lt;DataToolbar id=&quot;tutorial-toolbar&quot;&gt;
+    &lt;DataToolbarContent&gt;Toolbar Demo&lt;/DataToolbarContent&gt;
+  &lt;/DataToolbar&gt;
+</pre>
+
+7) Replace the contents of the `DataToolbarContent` with the following six items.
 
 In this case, the first of the items we are going to add is going be `variant='search-filter'`.
 

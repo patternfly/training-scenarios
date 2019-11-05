@@ -9,7 +9,6 @@ Next, we'll set up the general structure of an empty toolbar and add the necessa
 
 <pre class="file" data-filename="App.js" data-target="replace">
 import React from &quot;react&quot;;
-import ReactDOM from &quot;react-dom&quot;;
 import &quot;@patternfly/react-core/dist/styles/base.css&quot;;
 import { Button } from &quot;@patternfly/react-core&quot;;
 import {
@@ -39,9 +38,7 @@ class ToolbarDemoApp extends React.Component {
   render() {
     return (
       &lt;React.Fragment&gt;
-        &lt;DataToolbar id=&quot;tutorial-toolbar&quot;&gt;
-          Toolbar Demo
-        &lt;/DataToolbar&gt;
+        Toolbar Demo
       &lt;/React.Fragment&gt;
     );
   }
@@ -50,8 +47,15 @@ class ToolbarDemoApp extends React.Component {
 export default ToolbarDemoApp;
 </pre>
 
-3) Each toolbar contains one or more content rows. Copy the following snippet into the `DataToolbar`.
+3) Each toolbar must contain one or more content rows. Wrap the "Toolbar Demo" text in a `DataToolbarContent` component and place that `DataToolbarContent` into a `DataToolbar`.
 
 <pre class="file" data-target="clipboard">
-  &lt;DataToolbarContent&gt;Toolbar&lt;/DataToolbarContent&gt;
+  &lt;DataToolbar id=&quot;tutorial-toolbar&quot;&gt;
+    &lt;DataToolbarContent&gt;
+      Toolbar Demo
+    &lt;/DataToolbarContent&gt;
+  &lt;/DataToolbar&gt;
 </pre>
+
+Once the preview reloads - it should look like this:
+<img src="filter-toolbar/assets/toolbar-content.png" alt="toolbar with data toolbar content" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
