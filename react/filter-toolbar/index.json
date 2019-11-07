@@ -1,0 +1,112 @@
+{
+  "title": "Patternfly Filter Toolbar",
+  "description": "Building a PatternFly React Filter Toolbar",
+  "difficulty": "beginner",
+  "time": "~ 30 minutes",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "code": "env-init.sh"
+    },
+    "steps": [
+      {
+        "title": "Introducing Patternfly React Toolbar",
+        "text": "step1.md"
+      },
+      {
+        "title": "Adding Content Rows",
+        "text": "step2.md"
+      },
+      {
+        "title": "Toolbar Items",
+        "text": "step3.md"
+      },
+      {
+        "title": "Toolbar Groups",
+        "text": "step4.md"
+      },
+      {
+        "title": "Toggle Groups",
+        "text": "step5.md"
+      },
+      {
+        "title": "Toolbar Filters",
+        "text": "step6.md"
+      },
+      {
+        "title": "Attaching Toolbar Filters to a React Table",
+        "text": "step7.md"
+      }
+    ],
+    "assets": {
+      "client": [
+        {
+          "file": "checkboxSelect.js", "target": "~/tutorial/src/components/", "chmod": "+r"
+        },
+        {
+          "file": "input.js", "target": "~/tutorial/src/components/", "chmod": "+r"
+        },
+        {
+          "file": "kebab.js", "target": "~/tutorial/src/components/", "chmod": "+r"
+        },
+        {
+          "file": "table.js", "target": "~/tutorial/src/components/", "chmod": "+r"
+        },
+        {
+          "file": "final.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
+        },
+        {
+          "file": "narrow-view-with-chip-groups.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
+        },
+        {
+          "file": "wide-view-with-chip-groups.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
+        },
+        {
+          "file": "toolbar-content.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
+        },
+        {
+          "file": "toolbar-items.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
+        },
+        {
+          "file": "toolbar-groups.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
+        },
+        {
+          "file": "toggle-group-wide-view.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
+        },
+        {
+          "file": "toggle-group-narrow-view.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
+        }
+      ]
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "files": [],
+  "environment": {
+    "showdashboard": true,
+    "delayToSaveFileAfterStopTypingMilliseconds": 2000,
+    "autoFormatEnable": true,
+    "dashboards": [
+      {
+        "name": "Web Application",
+        "port": 3000
+      }
+    ],
+    "uilayout": "editor-iframe-split",
+    "uisettings": "javascript",
+    "exclusionPatterns": [
+      "._*",
+      "package.json",
+      "package-lock.json",
+      "node_modules",
+      "public*",
+      "serviceWorker*"
+    ],
+    "hideHiddenFiles": true
+  },
+  "backend": {
+    "imageid": "node",
+    "port": 3000
+  }
+}
