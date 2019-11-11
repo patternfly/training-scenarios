@@ -1,0 +1,57 @@
+{
+  "title": "Intro to Patternfly React Select",
+  "description": "Practice building a Patternfly 4 React Select",
+  "difficulty": "beginner",
+  "time": "< 30 minutes",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "code": "env-init.sh"
+    },
+    "steps": [
+      {
+        "title": "Introducing Patternfly React Select",
+        "text": "step1.md"
+      }
+    ],
+    "assets": {
+      "client": [
+        {
+          "file": "step-2-complete.png",
+          "target": "~/tutorial/assets/images/",
+          "chmod": "+r"
+        }
+      ]
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "files": [],
+  "environment": {
+    "showdashboard": true,
+    "delayToSaveFileAfterStopTypingMilliseconds": 2000,
+    "autoFormatEnable": true,
+    "dashboards": [
+      {
+        "name": "Web Application",
+        "port": 3000
+      }
+    ],
+    "uilayout": "editor-iframe-split",
+    "uisettings": "javascript",
+    "exclusionPatterns": [
+      "._*",
+      "package.json",
+      "package-lock.json",
+      "node_modules",
+      "public*",
+      "serviceWorker*"
+    ],
+    "hideHiddenFiles": true
+  },
+  "backend": {
+    "imageid": "node",
+    "port": 3000
+  }
+}
