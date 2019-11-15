@@ -1,63 +1,35 @@
-With the modular approach to how PatternFly styles are defined, there’s a lot of flexibility in what html elements can be used within a component. This allows the components to use more semantic html elements depending on the context of the component. 
+In PatternFly, layouts allow for organizing and grouping elements. There are seven different layouts in PatternFly, but in this module we will cover just one. You can explore our other module which does a deep dive into layouts.
 
+## Workshop: Practice using layout classes
 
-Leveraging semantic markup enhances accessibility, searchability, internationalization and interpolation. Semantic elements accurately describe the purpose of the element and the type of content within. https://html.com/semantic-markup/
-
-## Workshop: Update the Nav component to use semantic html
-
-Lets update the Nav component so that the html is semantic.
+Let's add a bullseye layout class to the html markup to demonstrate the power of using PatternFly's layout classes.
 
 1) <strong>Copy code into the index.html file.</strong>
 
-Click the <strong>Copy to Editor</strong> button below to add html for a Nav component to the `index.html` file.
+Click the <strong>Copy to Editor</strong> button below to add html for a card component to the `index.html` file.
 
 <pre class="file" data-filename="index.html" data-target="replace">
-&lt;div class=&quot;pf-c-nav&quot;&gt;
-  &lt;div class=&quot;pf-c-nav__simple-list&quot;&gt;
-    &lt;div class=&quot;pf-c-nav__item&quot;&gt;
-      &lt;div href=&quot;#&quot; class=&quot;pf-c-nav__link pf-m-current&quot;&gt;
-        I am a link
-      &lt;/div&gt;
+&lt;div&gt;
+  &lt;div class=&quot;pf-c-card&quot;&gt;
+    &lt;div class=&quot;pf-c-card__header pf-c-title pf-m-md&quot;&gt;
+      Header
     &lt;/div&gt;
-    &lt;div class=&quot;pf-c-nav__item&quot;&gt;
-      &lt;div href=&quot;#&quot; class=&quot;pf-c-nav__link&quot;&gt;
-        I am a link
-      &lt;/div&gt;
+    &lt;div class=&quot;pf-c-card__body&quot;&gt;
+      Body
     &lt;/div&gt;
-    &lt;div class=&quot;pf-c-nav__item&quot;&gt;
-      &lt;div href=&quot;#&quot; class=&quot;pf-c-nav__link&quot;&gt;
-        I am a link
-      &lt;/div&gt;
+    &lt;div class=&quot;pf-c-card__footer&quot;&gt;
+      Footer
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 </pre>
 
-In your editor you should see the Nav component marked up by div's, which is semantically incorrect.
+2) Add the bullseye class to the card so that the card is centered horizontally and vertically on the page.
 
-2) Search for the class `pf-c-nav` in the editor. Change the opening bracket's `<div>`  to `<nav>` and do the same for the closing bracket.
+Find the outer `<div>` wrapper on Line 1 and add the class `pf-l-bullseye`.
 
-<strong>Note:</strong> Now `pf-c-nav` is semantic and a screen reader will understand that it is a navigational component.
+Hint: `<div class="pf-l-bullseye">`
 
-<strong>Hint:</strong> `<nav class="pf-c-nav"></nav>`
+Once the browser reloads, you should see that the card is now centered in the middle of the page!
 
-3) Search for the class `pf-c-nav__simple-list` in the editor. Change the opening bracket's `<div>` to a `<ul>` and do the same for the closing bracket.
-
-<strong>Note:</strong> Now `pf-c-nav__simple-list` is semantic and a screen reader will understand that it is an unordered list.
-
-<strong>Hint:</strong> `<ul class="pf-c-nav__simple-list"></ul>`
-
-4) Search for the class `pf-c-nav__item` in the editor, <strong>there will be three of them!</strong> Change the opening bracket's `<div>` to an `<li>` and do the same for the closing bracket, and all three of the classes.
-
-<strong>Note:</strong> Now `pf-c-nav__item` is semantic and a screen reader will understand that it is a nav item.
-
-<strong>Hint:</strong> `<li class="pf-c-nav__item"></li>`
-
-<strong>Note: </strong> When you try click on a link, you'll notice that the link isn't "clickable". This is because `<div's>` and all links should use the `<a>` tag. 
-
-5) <strong>Let's make the links clickable. </strong> Search for the class `pf-c-nav__link` in the editor. Change the opening bracket's `<div>` to an `<a>` and do the same for the closing bracket, and all three of the classes.
-
-<strong>Note:</strong> Now `pf-c-nav__link` is semantic and clickable!
-
-<strong>Hint:</strong> `<a href="#" class="pf-c-nav__link"></a>`
-
+<strong>Note: </strong>It’s important to follow the documentation for layouts because it will demonstrate where to add the layout class. The documentation for bullseye is [here](https://www.patternfly.org/v4/documentation/core/layouts/bullseye). In the documentation it specifies that you should add the class `pf-l-bullseye` to the parent container of its child.
