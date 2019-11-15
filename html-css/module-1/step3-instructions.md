@@ -24,11 +24,11 @@ Click the <strong>Copy to Editor</strong> button below to add html for a card co
 &lt;/div&gt;
 </pre>
 
-2) Add the bullseye class to the card so that the card is centered horizontally and vertically on the page.
+2) <strong>Add the bullseye class to the card so that the card is centered horizontally and vertically on the page.</strong>
 
 Find the outer `<div>` wrapper on Line 1 and add the class `pf-l-bullseye`.
 
-Hint: `<div class="pf-l-bullseye">`
+<strong>Hint: </strong>`<div class="pf-l-bullseye">`
 
 Once the browser reloads, you should see that the card is now centered in the middle of the page!
 
