@@ -1,3 +1,3 @@
 Module 3: Modifier and Utility Classes
 
-This module will deep dive into how to utilize and create modifier classes per component and how to efficiently use utility classes across the UI.
+This module will deep dive into how to use and create modifier classes per component and how to efficiently apply utility classes across user interfaces.
