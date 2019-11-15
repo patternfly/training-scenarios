@@ -11,29 +11,24 @@
     },
     "steps": [
       {
-        "title": "PatternFly Components (Atoms)",
+        "title": "PatternFly components(simple)",
         "text": "step1-instructions.md",
         "answer": "step1-answer.md"
       },
       {
-        "title": "PatternFly Components (Molecules)",
+        "title": "PatternFly components(complex)",
         "text": "step2-instructions.md",
         "answer": "step2-answer.md"
       },
       {
-        "title": "Semantic Markup",
+        "title": "PatternFly layouts",
         "text": "step3-instructions.md",
         "answer": "step3-answer.md"
       },
       {
-        "title": "PatternFly Layouts",
+        "title": "PatternFly demos",
         "text": "step4-instructions.md",
         "answer": "step4-answer.md"
-      },
-      {
-        "title": "PatternFly Demos",
-        "text": "step5-instructions.md",
-        "answer": "step5-answer.md"
       }
     ],
     "finish": {
