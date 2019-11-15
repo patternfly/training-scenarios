@@ -7,16 +7,16 @@ Demos show how PatternFly’s components and layouts can be put together to buil
 Use the `Copy to Clipboard` button to copy and paste this block of code five times in the `index.html` file.
 
 <pre class="file" data-target="clipboard">
-  <form class="pf-c-form">
-    <div class="pf-c-form__group">
-      <label class="pf-c-form__label">
-        <span class="pf-c-form__label-text">
+  &lt;form class=&quot;pf-c-form&quot;&gt;
+    &lt;div class=&quot;pf-c-form__group&quot;&gt;
+      &lt;label class=&quot;pf-c-form__label&quot;&gt;
+        &lt;span class=&quot;pf-c-form__label-text&quot;&gt;
           Form label
-        </span>
-      </label>
-      <input class="pf-c-form-control">
-    </div>
-  </form>
+        &lt;/span&gt;
+      &lt;/label&gt;
+      &lt;input class=&quot;pf-c-form-control&quot;&gt;
+    &lt;/div&gt;
+  &lt;/form&gt;
 </pre>
 
 2) <strong>Apply the PatternFly grid layout to position the components that were added in step 1.</strong>
