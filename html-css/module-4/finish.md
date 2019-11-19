@@ -1,4 +1,4 @@
-Congratulations - you finished the PatternFly Layouts course!
+Congratulations - you finished the layouts course!
 
 [Please fill out a quick survey here](https://redhatdg.co1.qualtrics.com/jfe/form/SV_bIRZRHYJyGsKBSt?Module=htmlcss-module4)
 
