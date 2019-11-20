@@ -1,4 +1,4 @@
-Module 4: Using PatternFly Layouts
+Module 4: Layouts
 
 
 In PatternFly, layouts are the containers that allow for organizing and grouping elements.

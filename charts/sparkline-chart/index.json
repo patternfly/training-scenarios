@@ -1,6 +1,6 @@
 {
-  "title": "Intro to PatternFly React sparkline chart components",
-  "description": "Practice using PatternFly React sparkline chart components to recreate a design",
+  "title": "Sparkline chart",
+  "description": "Learn how to implement a React sparkline chart",
   "difficulty": "beginner",
   "time": "10 minutes",
   "details": {

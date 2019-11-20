@@ -1,6 +1,6 @@
 {
-  "title": "BEM Naming Principles",
-  "description": "In this scenario you will utilize BEM to create component and global variables and also override them.",
+  "title": "Variable naming principles",
+  "description": "Create and override component and global variables by following BEM naming principles.",
   "difficulty": "Moderate",
   "time": "20 minutes",
   "details": {

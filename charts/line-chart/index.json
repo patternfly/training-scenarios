@@ -1,6 +1,6 @@
 {
-  "title": "Intro to PatternFly React line chart components",
-  "description": "Practice using PatternFly React line chart components to recreate a design",
+  "title": "Line chart",
+  "description": "Learn how to implement a React line chart",
   "difficulty": "beginner",
   "time": "10 minutes",
   "details": {

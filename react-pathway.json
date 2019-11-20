@@ -4,17 +4,17 @@
   "courses": [
     {
       "course_id": "components-intro",
-      "title": "PatternFly React Components",
-      "description": "Introduction to PatternFly React components"
+      "title": "PatternFly React basics",
+      "description": "Build your first PatternFly component."
     },
     {
       "course_id": "components-advanced",
-      "title": "PatternFly React Advanced",
-      "description": "Advanced PatternFly React component usage"
+      "title": "Customize PatternFly",
+      "description": "Learn how to customize components in PatternFly."
     },
     {
       "course_id": "filter-toolbar",
-      "title": "PatternFly Filter Toolbar",
+      "title": "Toolbar component with filter",
       "description": "Building a PatternFly React Filter Toolbar"
     }
   ]

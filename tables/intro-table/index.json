@@ -1,6 +1,6 @@
 {
-  "title": "Intro to Patternfly React Table",
-  "description": "Practice building a Patternfly 4 React Table",
+  "title": "Table component: beginner",
+  "description": "Build a React table with pagination.",
   "difficulty": "beginner",
   "time": "< 45 minutes",
   "details": {

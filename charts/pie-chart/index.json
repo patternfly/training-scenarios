@@ -1,6 +1,6 @@
 {
-  "title": "Intro to PatternFly React pie chart components",
-  "description": "Practice using PatternFly React pie chart components to recreate a design",
+  "title": "Pie chart",
+  "description": "Learn how to implement a React pie chart chart",
   "difficulty": "beginner",
   "time": "10 minutes",
   "details": {
