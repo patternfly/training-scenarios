@@ -1,4 +1,4 @@
-Congratulations - you finished the getting started with PatternFly pie chart course!
+Congratulations - you finished the getting started with the pie chart course!
 
 [Please fill out a quick survey here](https://redhatdg.co1.qualtrics.com/jfe/form/SV_bIRZRHYJyGsKBSt?Module=charts-piechart)
 

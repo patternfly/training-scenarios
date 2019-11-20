@@ -1,6 +1,6 @@
 {
-  "title": "Intro to PatternFly React area chart components",
-  "description": "Practice using PatternFly React area chart components to recreate a design",
+  "title": "Area chart",
+  "description": "Learn how to implement a React area chart.",
   "difficulty": "beginner",
   "time": "10 minutes",
   "details": {

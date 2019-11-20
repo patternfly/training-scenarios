@@ -1,6 +1,6 @@
 {
-  "title": "Intro to PatternFly React donut chart components",
-  "description": "Practice using PatternFly React donut chart components to recreate a design",
+  "title": "Donut chart",
+  "description": "Learn how to implement a React donut chart",
   "difficulty": "beginner",
   "time": "10 minutes",
   "details": {

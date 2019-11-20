@@ -1,51 +1,51 @@
 {
-  "title": "PatternFly React Charts",
+  "title": "PatternFly React charts",
   "description": "These courses are designed to introduced you to PatternFly React charts",
   "courses": [
     {
       "course_id": "area-chart",
-      "title": "Area Chart",
-      "description": "Introduction to PatternFly React area chart components"
+      "title": "Area chart",
+      "description": "Learn how to implement a React area chart."
     },
     {
       "course_id": "bar-chart",
-      "title": "Bar Chart",
-      "description": "Introduction to PatternFly React bar chart components"
+      "title": "Bar chart",
+      "description": "Learn how to implement a React bar chart."
     },
     {
       "course_id": "bullet-chart",
-      "title": "Bullet Chart",
-      "description": "Introduction to PatternFly React bullet chart components"
+      "title": "Bullet chart",
+      "description": "Learn how to implement a React bullet chart."
     },
     {
       "course_id": "donut-chart",
-      "title": "Donut Chart",
-      "description": "Introduction to PatternFly React donut chart components"
+      "title": "Donut chart",
+      "description": "Learn how to implement a React donut chart."
     },
     {
       "course_id": "donut-utilization-chart",
-      "title": "Donut utilization Chart",
-      "description": "Introduction to PatternFly React donut utilization chart components"
+      "title": "Donut utilization chart",
+      "description": "Learn how to implement a React donut utilization chart."
     },
     {
       "course_id": "line-chart",
-      "title": "Line Chart",
-      "description": "Introduction to PatternFly React line chart components"
+      "title": "Line chart",
+      "description": "Learn how to implement a React line chart."
     },
     {
       "course_id": "pie-chart",
-      "title": "Pie Chart",
-      "description": "Introduction to PatternFly React pie chart components"
+      "title": "Pie chart",
+      "description": "Learn how to implement a React pie chart."
     },
     {
       "course_id": "stack-chart",
-      "title": "Stack Chart",
-      "description": "Introduction to PatternFly React stack chart components"
+      "title": "Stack chart",
+      "description": "Learn how to implement a React pie chart."
     },
     {
       "course_id": "sparkline-chart",
-      "title": "Sparkline Chart",
-      "description": "Introduction to PatternFly React sparkline chart components"
+      "title": "Sparkline chart",
+      "description": "Learn how to implement a React sparkline chart."
     }
   ]
 }

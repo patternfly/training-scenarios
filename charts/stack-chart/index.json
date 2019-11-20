@@ -1,6 +1,6 @@
 {
-  "title": "Intro to PatternFly React stack chart components",
-  "description": "Practice using PatternFly React stack chart components to recreate a design",
+  "title": "Stack chart",
+  "description": "Learn how to implement a React stack chart",
   "difficulty": "beginner",
   "time": "10 minutes",
   "details": {

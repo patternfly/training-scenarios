@@ -1,6 +1,6 @@
 {
-  "title": "Intro to PatternFly React donut utilization chart components",
-  "description": "Practice using PatternFly React donut utilization chart components to recreate a design",
+  "title": "Donut utilization chart",
+  "description": "Learn how to implement a React donut utilization chart",
   "difficulty": "beginner",
   "time": "12 minutes",
   "details": {

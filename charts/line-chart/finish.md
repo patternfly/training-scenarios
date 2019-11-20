@@ -1,4 +1,4 @@
-Congratulations - you finished the getting started with PatternFly line chart course!
+Congratulations - you finished the getting started with the line chart course!
 
 [Please fill out a quick survey here](https://redhatdg.co1.qualtrics.com/jfe/form/SV_bIRZRHYJyGsKBSt?Module=charts-linechart)
 

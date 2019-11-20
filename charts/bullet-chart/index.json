@@ -1,6 +1,6 @@
 {
-  "title": "Intro to PatternFly React bullet chart components",
-  "description": "Practice using PatternFly React bullet chart components to recreate a design",
+  "title": "Bullet chart",
+  "description": "Learn how to implement a React bullet chart.",
   "difficulty": "beginner",
   "time": "10 minutes",
   "details": {
