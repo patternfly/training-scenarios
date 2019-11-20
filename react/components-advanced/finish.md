@@ -1,4 +1,4 @@
-Congratulations - you finished the customize PatternFly course!
+Congratulations! You finished the "customize PatternFly" course.
 
 [Please fill out a quick survey here](https://redhatdg.co1.qualtrics.com/jfe/form/SV_bIRZRHYJyGsKBSt?Module=react-components-advanced)
 

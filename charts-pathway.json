@@ -1,6 +1,6 @@
 {
   "title": "PatternFly React charts",
-  "description": "These courses are designed to introduced you to PatternFly React charts",
+  "description": "Learn how to implement React charts.",
   "courses": [
     {
       "course_id": "area-chart",

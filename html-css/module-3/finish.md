@@ -1,4 +1,4 @@
-Congratulations - you finished the modifiers and utility classes course!
+Congratulations! You finished the "modifiers and utility classes" course.
 
 [Please fill out a quick survey here](https://redhatdg.co1.qualtrics.com/jfe/form/SV_bIRZRHYJyGsKBSt?Module=htmlcss-module3)
 
