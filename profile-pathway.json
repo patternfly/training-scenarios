@@ -1,24 +1,24 @@
 {
   "courses": [
     {
-      "title": "PatternFly HTML CSS Pathway",
-      "description": "Learn how to use HTML and CSS within PatternFly 4",
+      "title": "PatternFly HTML/CSS",
+      "description": "Learn how to use PatternFly HTML/CSS.",
       "id": "html-css"
     },
     {
-      "title": "PatternFly React Pathway",
-      "description": "Learn how to use PatternFly React",
+      "title": "PatternFly React",
+      "description": "Learn how to use PatternFly React.",
       "id": "react"
     },
     {
-      "title": "PatternFly React Charts Pathway",
-      "description": "Learn how to use PatternFly React Charts",
-      "id": "charts"
+      "title": "PatternFly React charts",
+      "description": "Learn how to use PatternFly React charts.",
+      "id": "react-charts"
     },
     {
-      "title": "PatternFly React Table Pathway",
-      "description": "Learn how to use PatternFly React Tables",
-      "id": "tables"
+      "title": "PatternFly React components",
+      "description": "Learn how to use PatternFly React components.",
+      "id": "react-components"
     }
   ]
 }

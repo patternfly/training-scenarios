@@ -1,30 +1,30 @@
 {
-  "title": "PatternFly HTML CSS",
-  "description": "Below you will find training modules for Patternfly HTML and CSS.",
+  "title": "PatternFly HTML/CSS",
+  "description": "Learn to use PatternFly HTML/CSS.",
   "icon": "fa-jedi",
   "courses": [
     {
-      "course_id": "module-1",
+      "course_id": "building-blocks",
       "title": "The building blocks of PatternFly",
       "description": "Learn about components, layouts, and demos."
     },
     {
-      "course_id": "module-2",
+      "course_id": "variable-naming-principles",
       "title": "Variable naming principles",
       "description": "Create and override component and global variables by following BEM naming principles."
     },
     {
-      "course_id": "module-3",
+      "course_id": "modifier-utilities",
       "title": "Modifiers and utilities",
       "description": "Apply modifier and utility classes to create new variations."
     },
     {
-      "course_id": "module-4",
+      "course_id": "layouts",
       "title": "Layouts",
       "description": "Learn how to use all seven of PatternFly's layouts."
     },
     {
-      "course_id": "module-5",
+      "course_id": "override-extend-variables",
       "title": "Override and extend variables",
       "description": "Practice overriding and extending variables to create new designs."
     }
