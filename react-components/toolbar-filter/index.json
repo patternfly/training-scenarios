@@ -1,7 +1,7 @@
 {
   "title": "Toolbar component with filter",
   "description": "Build a React toolbar that is filterable.",
-  "difficulty": "beginner",
+  "difficulty": "intermediate",
   "time": "30 minutes",
   "details": {
     "intro": {

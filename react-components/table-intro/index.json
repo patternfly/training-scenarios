@@ -1,7 +1,7 @@
 {
   "title": "Table component: beginner",
   "description": "Build a React table with pagination.",
-  "difficulty": "beginner",
+  "difficulty": "intermediate",
   "time": "45 minutes",
   "details": {
     "intro": {

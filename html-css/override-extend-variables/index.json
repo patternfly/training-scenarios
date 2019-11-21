@@ -1,8 +1,8 @@
 {
   "title": "Override and extend variables.",
   "description": "Practice overriding and extending variables to create new designs.",
-  "difficulty": "beginner",
-  "time": "20 minutes",
+  "difficulty": "advanced",
+  "time": "25 minutes",
   "details": {
     "intro": {
       "text": "intro.md",
