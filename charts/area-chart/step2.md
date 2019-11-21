@@ -22,3 +22,5 @@ The exact number of pixels will depend on the size of the container the chart is
 Typically, the parent container is set to the same width in order to maintain the aspect ratio.
 
 We'll continue by creating a simple area chart in the next step.
+
+THIS IS A TEST....
