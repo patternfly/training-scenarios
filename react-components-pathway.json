@@ -1,0 +1,16 @@
+{
+  "title": "React components",
+  "description": "Build React components.",
+  "courses": [
+    {
+      "course_id": "table-intro",
+      "title": "Table component: beginner",
+      "description": "Build a React table with pagination."
+    },
+    {
+      "course_id": "toolbar-filter",
+      "title": "Toolbar component with filter",
+      "description": "Build a React toolbar that is filterable."
+    }
+  ]
+}
