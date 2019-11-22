@@ -1,6 +1,6 @@
 ## Extend a PatternFly component to achieve a new design
 
-Now that we have practiced overriding variables, let's practice extending PatternFly's system to create a new element in the card. Let's add a separator element to the card.
+Now that we have practiced overriding variables let's practice extending PatternFly's system to create a new element in the card. Let's add a separator element to the card.
 
 1) <strong>Add the html markup.</strong> 
 
@@ -13,7 +13,7 @@ In `index.html` add the html markup for the separator element that is a sibling 
 
 2) <strong>Add a variable for the height.</strong> 
 
-In the `myapp.scss` file, we will add new styles for `my-app-c-card__separator`. The first variable to add is for height and it should use PatternFly's global variable for small border width, and go under the variable declarations inside the `.pf-c-card` block.
+In the `myapp.scss` file, we will add new styles for `my-app-c-card__separator`. The first variable to add is for height, and it should use PatternFly's global variable for small border width, and go under the variable declarations inside the `.pf-c-card` block.
 
 ```
   --my-app-c-card__separator--Height: var(--pf-global--BorderWidth--sm);
@@ -45,5 +45,5 @@ In `myapp.scss` assign the variables that were declared to the height, backgroun
 }
 ```
 
-When the server reloads, you should see something like this:
+<strong>Note:</strong> When the server reloads, you should see something like this:
 <img src="override-extend-variables/assets/devconf-artboard-3.png" alt="card with separator" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />

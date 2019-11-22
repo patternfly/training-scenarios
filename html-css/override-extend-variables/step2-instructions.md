@@ -26,7 +26,9 @@ Inside of the `.pf-c-card` block of `myapp.scss` set the global variable `--pf-g
 
 Search in `index.html` for `<div class="pf-c-card__header pf-c-title pf-m-md">` and replace `pf-m-md` with `pf-m-xl`.
 
-<strong>Hint:</strong> `<div class="pf-c-card__header pf-c-title pf-m-xl">`
+<strong>Hint:</strong> 
 
-When the server reloads, you should see something like this:
+`<div class="pf-c-card__header pf-c-title pf-m-xl">`
+
+<strong>Note:</strong> When the server reloads, you should see something like this:
 <img src="override-extend-variables/assets/devconf-artboard-2.png" alt="card with new link color" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />

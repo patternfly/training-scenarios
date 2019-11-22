@@ -1,6 +1,6 @@
 ## Add a PatternFly class for the layout
 
-Now that we have an updated Card design, let's add several Cards and use the gallery layout to organize them on the page. 
+Now that we have an updated Card design let's add several Cards and use the gallery layout to organize them on the page. 
 
 1) <strong>Copy code into the index.html file.</strong>
 
