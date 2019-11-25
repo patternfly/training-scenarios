@@ -11,6 +11,11 @@
       "course_id": "react-customize",
       "title": "Customize PatternFly",
       "description": "Learn how to customize components in PatternFly."
+    },
+    {
+      "course_id": "select",
+      "title": "Select component: beginner",
+      "description": "Build and customizate a React select component."
     }
   ]
 }
