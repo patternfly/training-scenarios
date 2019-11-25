@@ -12,17 +12,28 @@
       {
         "title": "Introducing Patternfly React Select",
         "text": "step1.md"
+      },
+      {
+        "title": "Expanding into the typeahead select variant",
+        "text": "step2.md"
+      },
+      {
+        "title": "Customizing filtering",
+        "text": "step3.md"
+      },
+      {
+        "title": "Customizing data and display",
+        "text": "step4.md"
+      },
+      {
+        "title": "Adding new options",
+        "text": "step5.md"
+      },
+      {
+        "title": "Additional visual customization",
+        "text": "step6.md"
       }
     ],
-    "assets": {
-      "client": [
-        {
-          "file": "step-2-complete.png",
-          "target": "~/tutorial/assets/images/",
-          "chmod": "+r"
-        }
-      ]
-    },
     "finish": {
       "text": "finish.md"
     }
