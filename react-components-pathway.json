@@ -11,6 +11,11 @@
       "course_id": "toolbar-filter",
       "title": "Toolbar component with filter",
       "description": "Build a React toolbar that is filterable."
+    },
+    {
+      "course_id": "select",
+      "title": "Select component: beginner",
+      "description": "Build and customizate a React select component."
     }
   ]
 }
