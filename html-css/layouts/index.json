@@ -54,7 +54,7 @@
   "environment": {
     "showdashboard": true,
     "delayToSaveFileAfterStopTypingMilliseconds": 2000,
-    "autoFormatEnable": true,
+    "autoFormatEnable": false,
     "dashboards": [
       {"name": "Web Application", "port": 3000}
     ],
