@@ -2,9 +2,9 @@ Now you will add multiple datasets to the area chart.
 
 ## Task
 
-1) Make sure the App.js file is still open.
+1) Make sure the <strong>App.js file is still open.</strong>
 
-2) Locate the code that looks like the following:
+2) <strong>Locate the code that,</strong> looks like the following:
 
 <pre class="file">
 &lt;ChartArea
@@ -17,7 +17,7 @@ Now you will add multiple datasets to the area chart.
 /&gt;
 </pre>
 
-3) Replace that section with the following code:
+3)<strong> Replace that section</strong> with the following code:
 
 <pre class="file" data-target="clipboard">
 &lt;ChartGroup&gt;
@@ -55,7 +55,7 @@ Now you will add multiple datasets to the area chart.
 
 <strong>Note:</strong> The `ChartGroup` is the React Component used to apply properties to multiple `ChartArea` components.
 
-4) Once the preview reloads - it should look like this:
+Once the preview reloads - it should look like this:
 <img src="area-chart/assets/multiple.png" alt="Multiple dataset chart" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
 
 You will continue by adding tooltips to the chart in the next step.

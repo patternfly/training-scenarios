@@ -2,9 +2,9 @@ Now you will add axis labels to the area chart.
 
 ## Task
 
-1) Make sure the App.js file is still open
+1) Make sure the <strong>App.js file is still open.</strong>
 
-2) Locate the code that looks like the following:
+2) <strong>Locate the code </strong>that looks like the following:
 
 <pre class="file">
 &lt;Chart
@@ -16,7 +16,7 @@ Now you will add axis labels to the area chart.
 &gt;
 </pre>
 
-3) Add the following property to that section:
+3) <strong>Add the following property </strong>to that section:
 
 <pre class="file" data-target="clipboard">
 padding={{
@@ -29,7 +29,7 @@ padding={{
 
 <strong>Note:</strong> This will add more padding to the bottom and left properties to accommodate the axis labels.
 
-4) Locate the code that looks like the following:
+4),<strong> Locate the code</strong> that looks like the following:
 
 <pre class="file">
 &lt;ChartGroup&gt;
@@ -37,7 +37,7 @@ padding={{
 &lt;/ChartGroup&gt;
 </pre>
 
-5) Add the following code above that section:
+5)<strong> Add the following code</strong> above that section:
 
 <pre class="file" data-target="clipboard">
 &lt;ChartAxis label=&quot;Years&quot;/&gt;
@@ -50,7 +50,7 @@ padding={{
 - The `dependentAxis` property specifies whether the axis corresponds to dependent data points (e.g., usually the y-axis)
 - The `showGrid` property simply displays grid lines along that axis
 
-6) Once the preview reloads - it should look like this:
+Once the preview reloads - it should look like this:
 <img src="area-chart/assets/axis.png" alt="Chart with axis labels" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
 
 You will continue by adding a legend to the chart in the next step.

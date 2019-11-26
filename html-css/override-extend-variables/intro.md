@@ -1,4 +1,4 @@
-<strong>In this module, you will learn how to override and extend PatternFly css in the context of your application to accomodate your custom designs.</strong>
+<strong>In this module, you will learn how to override and extend PatternFly css in the context of your application to accommodate your custom designs.</strong>
 
 In PatternFly, the values that are assigned to css properties use custom properties (which are also referred to as variables in the source code and documentation for PatternFly).
 

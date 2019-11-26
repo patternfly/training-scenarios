@@ -2,10 +2,9 @@ Now you will create a simple area chart.
 
 ## Task
 
-1) Navigate to the `src` folder and open `src/App.js`{{open}}
+1) <strong>Navigate to the `src` folder and open `src/App.js`{{open}}</strong>
 
-2) Next, you will set up the general structure of the chart and the necessary import statements. 
-Copy the following code into the App.js file, replacing all of the content there:
+2) Next, you will set up the general structure of the chart and the necessary import statements. <strong>Copy the following code into the App.js file, replacing all of the content there:</strong>
 
 <pre class="file" data-filename="App.js" data-target="replace">
 import React from 'react';
@@ -46,7 +45,7 @@ export default App;
 
 <strong>Note:</strong> The `interpolation` property adds interpolating curves
 
-3) When the server reloads, you should see something like this:
+ When the server reloads, you should see something like this:
 <img src="area-chart/assets/simple.png" alt="Simple chart" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
 
-You will continue by adding multiple datasets to the chart in the next step.
+ You will continue by adding multiple datasets to the chart in the next step.

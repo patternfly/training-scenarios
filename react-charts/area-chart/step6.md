@@ -2,9 +2,9 @@ Now you will add a legend to the area chart...
 
 ## Task
 
-1) Make sure the App.js file is still open.
+1) Make sure the <strong>App.js file is still open.</</strong>>
 
-2) Locate the code that looks like the following:
+2) <strong>Locate the code </strong>that looks like the following:
 
 <pre class="file">
 &lt;Chart
@@ -22,7 +22,7 @@ Now you will add a legend to the area chart...
 &gt;
 </pre>
 
-3) Replace the following property in that section:
+3) <strong>Replace the following property</strong> in that section:
 
 <pre class="file" data-target="clipboard">
 padding={{
@@ -35,7 +35,7 @@ padding={{
 
 <strong>Note:</strong> This will add more padding to the right property to accommodate the legend.
 
-4) Add the following properties to that section:
+4) <strong> Add the following properties</strong> to that section:
 
 <pre class="file" data-target="clipboard">
 legendData={[
@@ -51,7 +51,7 @@ legendPosition=&quot;right&quot;
 - The `legendOrientation` property specifies whether the legend is rendered horizontally or vertically
 - The `legendPosition` property specifies whether the legend is rendered on the bottom or right of the chart
 
-5) Once the preview reloads, it should look like this:
+- Once the preview reloads, it should look like this:
 <img src="area-chart/assets/legend.png" alt="Chart with legend" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
 
 You will continue by changing the chart's theme color in the next step.

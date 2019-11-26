@@ -12,11 +12,11 @@ The image below is what we'll end up with when we are done.
 
 ## Task
 
-1) Navigate to the `src` folder and open `src/app.css`{{open}}.
+1) <strong> Navigate to the `src` folder and open `src/app.css`{{open}}.</strong>
 
-2) Next we'll add some CSS to define the overall chart size.
+2) Next you will <strong>add some CSS </strong>to define the overall chart size.
 
-Copy the following code into the app.css file, replacing all of the content there:
+3) <strong>Copy the following code into the app.css file, replacing all of the content there:</strong>
 
 <pre class="file" data-filename="src/app.css" data-target="replace">
 .chart-container {

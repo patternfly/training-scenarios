@@ -2,9 +2,9 @@ Now you will add tooltips to the area chart.
 
 ## Task
 
-1) Make sure the App.js file is still open.
+1) Make sure the <strong> App.js file is still open.</strong>
 
-2) Locate the code that looks like the following:
+2) <strong>Locate the code </strong>that looks like the following:
 
 <pre class="file">
 &lt;Chart
@@ -13,7 +13,7 @@ Now you will add tooltips to the area chart.
 &gt;
 </pre>
 
-3) Add the following property to that section:
+3) <strong>Add the following property </strong>to that section:
 
 <pre class="file" data-target="clipboard">
 containerComponent={
@@ -28,7 +28,7 @@ containerComponent={
 - The `containerComponent` property takes a component instance which will be used to create a container element for standalone charts
 - The `ChartVoronoiContainer` is used to create voronoi overlays for charts, which are useful for attaching events to data points, such as tooltips
 
-4) Once the preview reloads - it should look like this:
+- Once the preview reloads - it should look like this:
 <img src="area-chart/assets/tooltips.png" alt="Chart with tooltips" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
 
 You will continue by adding axis labels to the chart in the next step.
