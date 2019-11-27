@@ -4,6 +4,8 @@ In this step you will add multiple datasets to the area chart.
 
 2) <strong>Locate the code within the `<ChartArea/>` component.</strong>
 
+`ChartGroup` is the React Component used to apply properties to multiple `ChartArea` components.
+
 It will look like this:
 
 <pre class="file">
@@ -54,8 +56,6 @@ Copy this code to the editor:
   /&gt;
 &lt;/ChartGroup&gt;
 </pre>
-
-<strong>Note: </strong> `ChartGroup` is the React Component used to apply properties to multiple `ChartArea` components.
 
 Once the preview reloads - it should look like this:
 <img src="area-chart/assets/multiple.png" alt="Multiple dataset chart" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
