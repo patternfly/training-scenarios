@@ -1,18 +1,18 @@
 In this step you will add a legend to the area chart.
 
-1) <strong>Make sure the `App.js` file is still open.
+1) <strong>Make sure the `App.js` file is still open.</strong>
 
 2) <strong>Locate the code for the `padding` property in the `<Chart>` component.</strong>
 
 It should look like this:
 
 <pre class="file">
-  padding={{
-    bottom: 75,
-    left: 75,
-    right: 50,
-    top: 50
-  }}
+padding={{
+  bottom: 75,
+  left: 75,
+  right: 50,
+  top: 50
+}}
 </pre>
 
 3) <strong>Update the padding for the right value to accommodate the legend.</strong>
