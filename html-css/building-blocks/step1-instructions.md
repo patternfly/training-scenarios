@@ -3,7 +3,7 @@ In PatternFly, components which cannot be broken down into smaller parts are kno
 
 This step will look at the button component.
 
-## Task: Add a button component
+## Workshop: Add a button component
 
 1) <strong>Copy code into the index.html file.</strong>
 

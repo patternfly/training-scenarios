@@ -1,34 +1,61 @@
-Now you will add tooltips to the area chart.
+Now we'll add multiple datasets to the area chart...
 
 ## Task
 
-1) Make sure the <strong> App.js file is still open.</strong>
+1) Make sure the App.js file is still open
 
-2) <strong>Locate the code </strong>that looks like the following:
+2) Locate the code that looks like the following:
 
 <pre class="file">
-&lt;Chart
-  height={250}
-  width={600}
-&gt;
+&lt;ChartArea
+  data={[
+    { name: &#39;Cats&#39;, x: &#39;2015&#39;, y: 3 }, 
+    { name: &#39;Cats&#39;, x: &#39;2016&#39;, y: 4 }, 
+    { name: &#39;Cats&#39;, x: &#39;2017&#39;, y: 8 }, 
+    { name: &#39;Cats&#39;, x: &#39;2018&#39;, y: 6 }
+  ]} 
+/&gt;
 </pre>
 
-3) <strong>Add the following property </strong>to that section:
+3) Replace that section with the following code:
 
 <pre class="file" data-target="clipboard">
-containerComponent={
-  &lt;ChartVoronoiContainer
-    constrainToVisibleArea
-    labels={({ datum }) =&gt; `${datum.name}: ${datum.y}`}
+&lt;ChartGroup&gt;
+  &lt;ChartArea
+    data={[
+      { name: &#39;Cats&#39;, x: &#39;2015&#39;, y: 3 }, 
+      { name: &#39;Cats&#39;, x: &#39;2016&#39;, y: 4 }, 
+      { name: &#39;Cats&#39;, x: &#39;2017&#39;, y: 8 }, 
+      { name: &#39;Cats&#39;, x: &#39;2018&#39;, y: 6 }
+    ]}
+    interpolation="basis"
   /&gt;
-}
+  &lt;ChartArea 
+    data={[
+      { name: &#39;Dogs&#39;, x: &#39;2015&#39;, y: 2 }, 
+      { name: &#39;Dogs&#39;, x: &#39;2016&#39;, y: 3 }, 
+      { name: &#39;Dogs&#39;, x: &#39;2017&#39;, y: 4 }, 
+      { name: &#39;Dogs&#39;, x: &#39;2018&#39;, y: 5 },
+      { name: &#39;Dogs&#39;, x: &#39;2019&#39;, y: 6 }
+    ]}
+    interpolation="basis"
+  /&gt;
+  &lt;ChartArea 
+    data={[
+      { name: &#39;Birds&#39;, x: &#39;2015&#39;, y: 1 }, 
+      { name: &#39;Birds&#39;, x: &#39;2016&#39;, y: 2 }, 
+      { name: &#39;Birds&#39;, x: &#39;2017&#39;, y: 3 }, 
+      { name: &#39;Birds&#39;, x: &#39;2018&#39;, y: 2 },
+      { name: &#39;Birds&#39;, x: &#39;2019&#39;, y: 4 }
+    ]}
+    interpolation="basis"
+  /&gt;
+&lt;/ChartGroup&gt;
 </pre>
 
-<strong>Note:</strong> The `constrainToVisibleArea` property will alter the position of the tooltip so that it exactly fits within the rendered Scalable Vector Graphic (SVG).
-- The `containerComponent` property takes a component instance which will be used to create a container element for standalone charts
-- The `ChartVoronoiContainer` is used to create voronoi overlays for charts, which are useful for attaching events to data points, such as tooltips
+- The `ChartGroup` is the React Component used to apply properties to multiple `ChartArea` components
 
-- Once the preview reloads - it should look like this:
-<img src="area-chart/assets/tooltips.png" alt="Chart with tooltips" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
+4) Once the preview reloads - it should look like this:
+<img src="area-chart/assets/multiple.png" alt="Multiple dataset chart" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
 
-You will continue by adding axis labels to the chart in the next step.
+We'll continue by adding tooltips to the chart in the next step.
