@@ -17,7 +17,7 @@ It will look like this:
 
 The `containerComponent` property takes a component instance which will be used to create a container element for standalone charts.
 
-You will add the `ChartVoronoiContainer` component which is used to create voronoi overlays for charts. These are useful for attaching events to data points, such as tooltips.
+You will add the `ChartVoronoiContainer` component which adds the ability to associate a mouse position with the data point(s) closest to it. This is useful for adding a tooltip.
 
 It should look like this:
 

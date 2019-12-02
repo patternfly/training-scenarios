@@ -34,7 +34,9 @@ legendData={[
 
 5) <strong>Add the `legendOrientation` property to the `<Chart>` component.</strong>
 
-The `legendOrientation` property specifies whether the legend is rendered horizontally or vertically. It should look like the following:
+You will need to set the orientation for the `legendData` so that it behaves as expected.
+
+The `legendOrientation` property specifies whether the legend is rendered horizontally or vertically. In this case it should be set to vertical:
 
 <pre class="file" data-target="clipboard">
 legendOrientation=&quot;vertical&quot;
