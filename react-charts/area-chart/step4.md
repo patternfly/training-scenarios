@@ -13,19 +13,11 @@ It will look like this:
 &gt;
 </pre>
 
-3) <strong>Add a `containerComponent` property to that section:</strong>
+3) <strong>Add a `containerComponent` property to that section</strong>
 
 The `containerComponent` property takes a component instance which will be used to create a container element for standalone charts.
 
-It should look like this:
-
-<pre class="file" data-target="clipboard">
-containerComponent={}
-</pre>
-
-4) <strong>Add a `ChartVoronoiContainer` inside of the `containerComponent`.</strong>
-
-The `ChartVoronoiContainer` is used to create voronoi overlays for charts, which are useful for attaching events to data points, such as tooltips.
+You will add the `ChartVoronoiContainer` component which adds the ability to associate a mouse position with the data point(s) closest to it. This is useful for adding a tooltip.
 
 It should look like this:
 
@@ -36,7 +28,9 @@ containerComponent={
 }
 </pre>
 
-5) <strong>Add a `constrainToVisibleArea` property inside of the `ChartVoronoiContainer`.</strong>
+<strong>Note:</strong> There will be no visible changes at this stage.
+
+4) <strong>Add a `constrainToVisibleArea` property inside of the `ChartVoronoiContainer`.</strong>
 
 The `constrainToVisibleArea` property will alter the position of the tooltip so that it exactly fits within the rendered SVG.
 
@@ -50,7 +44,7 @@ containerComponent={
 }
 </pre>
 
-6) <strong>Add a `labels` property inside of the `ChartVoronoiContainer`.</strong>
+5) <strong>Add a `labels` property inside of the `ChartVoronoiContainer`.</strong>
 
 <pre class="file" data-target="clipboard">
 containerComponent={

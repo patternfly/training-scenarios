@@ -1,10 +1,8 @@
 In this step you will add multiple datasets to the area chart.
 
-1) <strong>Make sure the App.js file is still open.</strong>
+1) <strong>Make sure `App.js` is still open.</strong>
 
 2) <strong>Locate the code within the `<ChartArea/>` component.</strong>
-
-`ChartGroup` is the React Component used to apply properties to multiple `ChartArea` components.
 
 It will look like this:
 
@@ -20,6 +18,8 @@ It will look like this:
 </pre>
 
 3) <strong>Replace the `ChartArea` component with multiple `ChartArea` components wrapped in a `ChartGroup` component.</strong>
+
+`ChartGroup` is the React Component used to apply properties to multiple `ChartArea` components.
 
 Copy this code to the editor:
 
