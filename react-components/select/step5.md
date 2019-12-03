@@ -8,12 +8,7 @@ To change what data is passed around, and back to you on selection, you must imp
 
 <pre class="file" data-target="clipboard">
   class CustomDataState {
-    constructor(
-      name,
-      abbreviation,
-      capital,
-      founded
-    ) {
+    constructor(name, abbreviation, capital, founded) {
       this.name = name;
       this.abbreviation = abbreviation;
       this.capital = capital;

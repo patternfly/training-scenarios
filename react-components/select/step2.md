@@ -47,23 +47,23 @@ Your component should look as below.
 4) **Add event handling functions to the component.**
 
   a. Copy the following `onToggle` function into the constructor of the App class, under the state declaration. This function controls the `isExpanded` property, and thereby when the select menu opens and closes.
-    <pre class="file" data-target="clipboard">
-      this.onToggle = isExpanded => {
-        this.setState({
-          isExpanded
-        });
-      };
-    </pre>
+<pre class="file" data-target="clipboard">
+  this.onToggle = isExpanded => {
+    this.setState({
+      isExpanded
+    });
+  };
+</pre>
 
   b. Copy the following `onSelect` function into the constructor of the App class, under the `onToggle` function added in step 6a. This function acts as a callback when a select option is clicked, updating the `selected` state property, and thereby what is rendered as selected in the component.
-    <pre class="file" data-target="clipboard">
-      this.onSelect = (event, selection) => {
-        this.setState({
-          selected: selection,
-          isExpanded: false
-        });
-      };
-    </pre>
+<pre class="file" data-target="clipboard">
+  this.onSelect = (event, selection) => {
+    this.setState({
+      selected: selection,
+      isExpanded: false
+    });
+  };
+</pre>
 
 5) **Update the select properties with the functions added to the constructor in step 6.**
 

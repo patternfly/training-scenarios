@@ -14,24 +14,28 @@
         "text": "step1.md"
       },
       {
-        "title": "Expanding into the typeahead select variant",
+        "title": "Setting up a basic single select",
         "text": "step2.md"
       },
       {
-        "title": "Customizing filtering",
+        "title": "Expanding into the typeahead select variant",
         "text": "step3.md"
       },
       {
-        "title": "Customizing data and display",
+        "title": "Customizing filtering",
         "text": "step4.md"
       },
       {
-        "title": "Adding new options",
+        "title": "Customizing data and display",
         "text": "step5.md"
       },
       {
-        "title": "Additional visual customization",
+        "title": "Adding new options",
         "text": "step6.md"
+      },
+      {
+        "title": "Additional visual customization",
+        "text": "step7.md"
       }
     ],
     "finish": {
