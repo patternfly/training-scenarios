@@ -7,7 +7,7 @@ You are going to create a basic select component.
 2) **Copy the following code into the App.js file, replacing all of the content in the file:**
 
 <pre class="file" data-filename="App.js" data-target="replace">
-import * as React from &quot;react&quot;;
+import React from &quot;react&quot;;
 import &quot;@patternfly/react-core/dist/styles/base.css&quot;;
 import { Select, SelectOption } from &quot;@patternfly/react-core&quot;;
 class App extends React.Component {
@@ -35,4 +35,5 @@ export default App;
 </pre>
 
 When Katacoda reloads you should see this...
-//SCREENSHOT
+<img src="select/assets/basic-select.png" alt="basic select" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
+

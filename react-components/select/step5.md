@@ -21,7 +21,7 @@ To change what data is passed around, and back to you on selection, you must imp
 
 <strong>Note:</strong> This class may contain any properties you wish to maintain as data when an option is selected. The `toString` function tells the select component how to display and compare the data as a string.
 
-<strong>Note:<strong> You may import the `SelectOptionObject` interface from @patternfly/react-core if using TypeScript. This interface would enforce the required `toString` function for `CustomDataState`.
+<strong>Note:</strong> You may import the `SelectOptionObject` interface from @patternfly/react-core if using TypeScript. This interface would enforce the required `toString` function for `CustomDataState`.
 
 2) **Replace the state's `options` property, located in the App class constructor, with the following array that uses `CustomDataState`:**
 
@@ -64,4 +64,4 @@ Currently, the `CustomDataState` is required `toString` function is used to disp
 </pre>
 
 Now, you should see these new values being displayed, and the filtering will match based on this display. In the case of html structures passed as a child, the component will convert the structure to a string for filtering.
-//SCREENSHOT
+<img src="select/assets/select-custom-display.png" alt="select menu with custom display text" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />

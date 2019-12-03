@@ -6,10 +6,10 @@ There a couple additional miscellaneous properties used to customize general vis
   width="50%"
 </pre>
 
-2) **Add a new property to the select component called `height` and assign it to `{100}`.** This property controls the maximum height of the expanded select menu, using pixels or percentages.
+2) **Add a new property to the select component called `maxHeight` and assign it to `{100}`.** This property controls the maximum height of the expanded select menu, using pixels or percentages.
 
 <pre class="file" data-target="clipboard">
-  height={100}
+  maxHeight={100}
 </pre>
 
 3) **Add a new property to the select component called `noResultsFoundText` and assign it to `"Nothing found"`.** This property allows you to customize the text that appears when no results are found by the filtering function.
@@ -38,8 +38,9 @@ This is what your select component should look like:
   onClear={this.clearSelection}
   onFilter={this.customFilter}
   isCreatable
+  onCreateOption={this.onCreateOption}
   width="50%"
-  height={100}
+  maxHeight={100}
   noResultsFoundText="Nothing found"
   createText="Create new option"
 >

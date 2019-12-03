@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@patternfly/react-core": "^3.75.2",
-    "@patternfly/react-icons": "^3.10.14",
+    "@patternfly/react-core": "^3.112.3",
+    "@patternfly/react-icons": "^3.14.12",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"

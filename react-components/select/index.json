@@ -38,6 +38,20 @@
         "text": "step7.md"
       }
     ],
+    "assets": {
+      "client": [
+        {
+          "file": "basic-select.png",
+          "target": "~/tutorial/assets/images/",
+          "chmod": "+r"
+        },
+        {
+          "file": "select-custom-display.png",
+          "target": "~/tutorial/assets/images/",
+          "chmod": "+r"
+        }
+      ]
+    },
     "finish": {
       "text": "finish.md"
     }
