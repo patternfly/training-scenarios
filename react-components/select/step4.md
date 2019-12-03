@@ -30,7 +30,7 @@ Let's allow any input to be matched, regardless of ordering.
 
 Note: The component expects a function that will return a list of options to display. In the code below, we match the text input regardless of ordering using a regular expression, and santize the text input to avoid extraneous characters. Using the same example above, this will mean that a text input of "bama" would still match for the option "Alabama".
 
-2) **Add a new property to the select component called <pre>onFilter</pre> and assign it to the function that was added in step 1.**
+2) **Add a new property to the select component called `onFilter` and assign it to the function that was added in step 1.**
 
 <pre>
   onFilter={this.customFilter}

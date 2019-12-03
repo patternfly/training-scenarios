@@ -7,20 +7,20 @@ Typeahead variants support adding new options, based on the user entered input. 
 </pre>
 
 This is what your select component should look like:
-  <pre>
-    &lt;Select
-      onToggle={this.onToggle}
-      onSelect={this.onSelect}
-      selections={selected}
-      isExpanded={isExpanded}
-      placeholderText="Select a state"
-      onClear={this.clearSelection}
-      onFilter={this.customFilter}
-      isCreatable
-    &gt;
-      {options}
-    &lt;/Select&gt;
-  </pre>
+```
+<Select 
+  onToggle={this.onToggle}
+  onSelect={this.onSelect}
+  selections={selected}
+  isExpanded={isExpanded}
+  placeholderText="Select a state"
+  onClear={this.clearSelection}
+  onFilter={this.customFilter}
+  isCreatable
+>
+    {options}
+</Select>
+```
 
 <strong>Note:</strong> With this flag, a new message is displayed at the end of the list, prompting the user to create an option based on the input. Additionally, this message replaces the "no results found" message when filtering would otherwise return nothing. This lets you use your current value as a new selection, but does not persist the data - it will appear as selected, but will not appear in the overall list.
 
@@ -45,7 +45,7 @@ This is what your select component should look like:
 
 <strong>Note:</strong> The function receives the text input entered by the user and is triggered when a new option is selected.
 
-3) **Add a new property to the select component called <pre>onCreateOption</pre> and assign it to the function that was added in step 2.**
+3) **Add a new property to the select component called `onCreateOption` and assign it to the function that was added in step 2.**
 
 <pre class="file" data-target="clipboard">
   onCreateOption={this.onCreateOption}

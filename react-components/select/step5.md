@@ -2,14 +2,14 @@ Another customization option, available for all variants, is custom display and 
 
 Let's begin with customizing the data. 
 
-To change what data is passed around, and back to you on selection, you must implement a <pre>SelectOptionObject</pre> class. The only required property is a <pre>toString</pre> function, which converts whatever other data you include in the structure to a string format. This allows the component to internally compare options for filtering, and gives some limited customization for the option's display.
+To change what data is passed around, and back to you on selection, you must implement a `SelectOptionObject` class. The only required property is a `toString` function, which converts whatever other data you include in the structure to a string format. This allows the component to internally compare options for filtering, and gives some limited customization for the option's display.
 
-1) **Add <pre>SelectOptionObject</pre> to the list of imports from @patternfly/react-core.**
+1) **Add `SelectOptionObject` to the list of imports from @patternfly/react-core.**
 
 Your import statement should now look like this:
-<pre>import { Select, SelectOption, SelectVariant, SelectOptionObject } from "@patternfly/react-core";</pre>
+`import { Select, SelectOption, SelectVariant, SelectOptionObject } from "@patternfly/react-core";`
 
-2) **Copy the following <pre>CustomDataState</pre> class, which extends <pre>SelectOptionObject</pre>, into the <pre>App.js</pre> file, outside of the App class:**
+2) **Copy the following `CustomDataState` class, which extends `SelectOptionObject`, into the `App.js` file, outside of the App class:**
 
 <pre class="file" data-target="clipboard">
   class CustomDataState implements SelectOptionObject {
@@ -33,9 +33,9 @@ Your import statement should now look like this:
   }
 </pre>
 
-<strong>Note:</strong> This class may contain any properties you wish to maintain as data when an option is selected. The <pre>toString</pre> function tells the select component how to display and compare the data as a string.
+<strong>Note:</strong> This class may contain any properties you wish to maintain as data when an option is selected. The `toString` function tells the select component how to display and compare the data as a string.
 
-3) **Replace the <pre>options</pre> state property, located in the App class constructor, with the following array that uses <pre>CustomDataState</pre>:**
+3) **Replace the state's `options` property, located in the App class constructor, with the following array that uses `CustomDataState`:**
 
 <pre class="file" data-target="clipboard">
   options: [
@@ -51,7 +51,7 @@ Your import statement should now look like this:
   ]
 </pre>
 
-Currently, the <pre>CustomDataState</pre> is required <pre>toString</pre> function is used to display the data in the list. This allows for some limited customization in display, but if you want to use custom nodes, or separate data with display, you may use the children property of the <pre>SelectOption</pre>.
+Currently, the `CustomDataState` is required `toString` function is used to display the data in the list. This allows for some limited customization in display, but if you want to use custom nodes, or separate data with display, you may use the children property of the `SelectOption`.
 
 4) Edit the options state to display something different than the CustomDataState's toString.
 

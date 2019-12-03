@@ -24,7 +24,8 @@ class App extends React.Component {
           onSelect={Function.prototype} 
           selections={null} 
           isExpanded={false} 
-          placeholderText="Select a state"&gt;
+          placeholderText="Select a state"
+        &gt;
             (Add options here)
         &lt;/Select&gt;
       &lt;/React.Fragment&gt;

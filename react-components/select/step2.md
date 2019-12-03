@@ -24,27 +24,28 @@ Now, let's add some data to populate the select, and give it basic event handlin
 </pre>
 
 5) **Update the select properties with values from the state that was added in step 3.** 
-  a. Assign `selected` to `selections`. This variable tells the component what is currently selected.
 
-  b. Assign `isExpanded` to `isExpanded`. This boolean controls if the select menu is expanded.
+a. Assign `selected` to `selections`. This variable tells the component what is currently selected.
 
-  c. Replace the text inside of the Select component `(Add options here)` with `{options}`. This list determines what is rendered expanded select menu.
-  
-  Your component should look as below.
- ```
-    &lt;Select
-      onToggle={Function.prototype}
-      onSelect={Function.prototype}
-      selections={selected}
-      isExpanded={isExpanded}
-      placeholderText="Select a state"
-    &gt;
-      {options}
-    &lt;/Select&gt;
-  </pre>
+b. Assign `isExpanded` to `isExpanded`. This boolean controls if the select menu is expanded.
+
+c. Replace the text inside of the Select component `(Add options here)` with `{options}`. This list determines what is rendered expanded select menu.
+
+Your component should look as below.
+```
+<Select 
+  onToggle={Function.prototype} 
+  onSelect={Function.prototype} 
+  selections={selected} 
+  isExpanded={isExpanded} 
+  placeholderText="Select a state"
+>
+    {options}
+</Select>
 ```
 
 6) **Add event handling functions to the component.**
+
   a. Copy the following `onToggle` function into the constructor of the App class, under the state declaration. This function controls the `isExpanded` property, and thereby when the select menu opens and closes.
     <pre class="file" data-target="clipboard">
       this.onToggle = isExpanded => {
@@ -65,21 +66,22 @@ Now, let's add some data to populate the select, and give it basic event handlin
     </pre>
 
 7) **Update the select properties with the functions added to the constructor in step 6.**
-  a. Assign `this.onToggle` to `onToggle`.
 
-  b. Assign `this.onSelect` to `onSelect`.
+a. Assign `this.onToggle` to `onToggle`.
 
-  You component should look as below.
-  <pre>
-    &lt;Select
-      onToggle={this.onToggle}
-      onSelect={this.onSelect}
-      selections={selected}
-      isExpanded={isExpanded}
-      placeholderText="Select a state"
-    &gt;
-      {options}
-    &lt;/Select&gt;
-  </pre>
+b. Assign `this.onSelect` to `onSelect`.
+
+You component should look as below.
+```
+<Select 
+  onToggle={this.onToggle} 
+  onSelect={this.onSelect} 
+  selections={selected} 
+  isExpanded={isExpanded} 
+  placeholderText="Select a state"
+>
+    {options}
+</Select>
+```
 
 Now your select is set up! You should be able to open and close the menu, see some basic options, as well as select an option.
