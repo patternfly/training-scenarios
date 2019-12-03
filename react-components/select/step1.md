@@ -8,7 +8,6 @@ You are going to create a basic select component.
 
 <pre class="file" data-filename="App.js" data-target="replace">
 import * as React from &quot;react&quot;;
-import * as ReactDOM from &quot;react-dom&quot;;
 import &quot;@patternfly/react-core/dist/styles/base.css&quot;;
 import { Select, SelectOption } from &quot;@patternfly/react-core&quot;;
 class App extends React.Component {
@@ -26,7 +25,7 @@ class App extends React.Component {
           isExpanded={false} 
           placeholderText="Select a state"
         &gt;
-            (Add options here)
+          (Add options here)
         &lt;/Select&gt;
       &lt;/React.Fragment&gt;
     );

@@ -34,6 +34,7 @@ This is what your select component should look like:
   selections={selected}
   isExpanded={isExpanded}
   placeholderText="Select a state"
+  variant={SelectVariant.typeahead}
   onClear={this.clearSelection}
   onFilter={this.customFilter}
   isCreatable

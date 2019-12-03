@@ -14,6 +14,7 @@ This is what your select component should look like:
   selections={selected}
   isExpanded={isExpanded}
   placeholderText="Select a state"
+  variant={SelectVariant.typeahead}
   onClear={this.clearSelection}
   onFilter={this.customFilter}
   isCreatable
@@ -29,7 +30,7 @@ This is what your select component should look like:
 2) **Add the following function that adds a new value to the options array to the constructor of the App class:**
 
 <pre class="file" data-target="clipboard">
-  onCreateOption = newValue => {
+  this.onCreateOption = newValue => {
     this.setState({
       options: [
         ...this.state.options,

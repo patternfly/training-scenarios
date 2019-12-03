@@ -23,10 +23,10 @@ Let's make a select component with a typeahead variation.
   variant={SelectVariant.typeahead}
 </pre>
 
-3) Additionally, to convert to typeahead, you must add a function to handle text input clearing. **Add the following function to the constructor of the App class:**
+3) **Add the following function that clears text input to the constructor of the App class:**
 
 <pre class="file" data-target="clipboard">
-  clearSelection = () => {
+  this.clearSelection = () => {
       this.setState({
         selected: null,
         isExpanded: false

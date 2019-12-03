@@ -9,7 +9,7 @@ Let's allow any input to be matched, regardless of ordering.
 1) **Add the following custom filtering function to the constructor of the App class.**
 
 <pre class="file" data-target="clipboard">
-  customFilter = e => {
+  this.customFilter = e => {
     const { options } = this.state;
     let input;
     try {
@@ -32,6 +32,6 @@ Note: The component expects a function that will return a list of options to dis
 
 2) **Add a new property to the select component called `onFilter` and assign it to the function that was added in step 1.**
 
-<pre>
+<pre class="file" data-target="clipboard">
   onFilter={this.customFilter}
 </pre>

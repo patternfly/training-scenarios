@@ -1,6 +1,6 @@
 Now, let's add some data to populate the select, and give it basic event handling like opening, closing, and selecting an option.
 
-3) **Add the following state to the constructor of the App class, below `super(props);`**
+1) **Add the following state to the constructor of the App class, below `super(props);`**
 
 <pre class="file" data-target="clipboard">
   this.state = {
@@ -17,13 +17,13 @@ Now, let's add some data to populate the select, and give it basic event handlin
   };
 </pre>
 
-4) **Add the deconstructed state properties to the top of the App class's render function.** 
+2) **Add the deconstructed state properties to the top of the App class's render function.** 
 
 <pre class="file" data-target="clipboard">
     const { options, selected, isExpanded } = this.state;
 </pre>
 
-5) **Update the select properties with values from the state that was added in step 3.** 
+3) **Update the select properties with values from the state that was added in step 3.** 
 
 a. Assign `selected` to `selections`. This variable tells the component what is currently selected.
 
@@ -40,11 +40,11 @@ Your component should look as below.
   isExpanded={isExpanded} 
   placeholderText="Select a state"
 >
-    {options}
+  {options}
 </Select>
 ```
 
-6) **Add event handling functions to the component.**
+4) **Add event handling functions to the component.**
 
   a. Copy the following `onToggle` function into the constructor of the App class, under the state declaration. This function controls the `isExpanded` property, and thereby when the select menu opens and closes.
     <pre class="file" data-target="clipboard">
@@ -65,7 +65,7 @@ Your component should look as below.
       };
     </pre>
 
-7) **Update the select properties with the functions added to the constructor in step 6.**
+5) **Update the select properties with the functions added to the constructor in step 6.**
 
 a. Assign `this.onToggle` to `onToggle`.
 
@@ -80,7 +80,7 @@ You component should look as below.
   isExpanded={isExpanded} 
   placeholderText="Select a state"
 >
-    {options}
+  {options}
 </Select>
 ```
 
