@@ -1,11 +1,11 @@
-## Add code to the workspace
-
-Before we get started, let's add some code to the workspace that we can modify.
-
+## Add code to the workspace
+ 
+Before you get started, let's add some code to the workspace that you can modify.
+ 
 1) <strong>Copy code into the index.html file.</strong>
-
-Click the <strong>Copy to Editor</strong> button below to add html for a card to the `index.html` file.
-
+ 
+2) <strong> Click the Copy to Editor</strong> button below to add html for a card to the `index.html` file.
+ 
 <pre class="file" data-filename="index.html" data-target="replace">
 &lt;div class=&quot;pf-c-card pf-m-hoverable&quot;&gt;
   &lt;div class=&quot;pf-c-card__head&quot;&gt;
@@ -35,20 +35,20 @@ PatternFly is an open source design system created to enable consistency and usa
   &lt;/div&gt;
 &lt;/div&gt;
 </pre>
-
-2) <strong>Set up your new styles file for overriding styles in the card component.</strong> There are two blocks in this file: `:root` targets styles across the entire application and `.pf-c-card` targets styles specifically in the card component.
-
-Click the <strong>Copy to Editor</strong> button below to add code for the card component to the myapp.scss file.
-
+ 
+3) <strong>Set up your new styles file for overriding styles in the card component.</strong> There are two blocks in this file: `:root` targets styles across the entire application and `.pf-c-card` targets styles specifically in the card component.
+ 
+4) Click the <strong>Copy to Editor</strong> button below to add code for the card component to the myapp.scss file.
+ 
 <pre class="file" data-filename="myapp.scss" data-target="replace">
 :root {
   // Add global variables here
 }
-
+ 
 .pf-c-card {
   // Add Card component variables here
 }
 </pre>
-
-When the server reloads, you should see something like this:
+ 
+<strong>Note:</strong> When the server reloads, you should see something like this:
 <img src="override-extend-variables/assets/devconf-artboard-1.png" alt="card initial" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
