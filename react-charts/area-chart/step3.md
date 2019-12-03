@@ -1,4 +1,4 @@
-In this step you will add multiple datasets to the area chart.
+Add multiple datasets to the area chart.
 
 1) <strong>Make sure `App.js` is still open.</strong>
 
@@ -57,7 +57,5 @@ Copy this code to the editor:
 &lt;/ChartGroup&gt;
 </pre>
 
-Once the preview reloads - it should look like this:
+Once the preview reloads, it should look like this:
 <img src="area-chart/assets/multiple.png" alt="Multiple dataset chart" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
-
-You will continue by adding tooltips to the chart in the next step.

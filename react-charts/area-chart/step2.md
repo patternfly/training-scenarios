@@ -1,4 +1,4 @@
-Now you will create a simple area chart.
+Create a simple area chart.
 
 1) <strong>Navigate to the `src` folder and open `src/App.js`{{open}}</strong>
 
@@ -47,5 +47,3 @@ export default App;
 
 When the server reloads, you should see something like this:
 <img src="area-chart/assets/simple.png" alt="Simple chart" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
-
-You will continue by adding multiple datasets to the chart in the next step.
