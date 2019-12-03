@@ -21,7 +21,7 @@ padding={{
 
 4) <strong>Add the `legendOrientation` property to the `<Chart>` component.</strong>
 
-You will need to set the orientation for the `legendData` so that it behaves as expected when you add it in step 5 (there will be no visible changes yet).
+You will need to set the orientation for the `legendData` so that it behaves as expected when you add it in step 6 (there will be no visible changes yet).
 
 The `legendOrientation` property specifies whether the legend is rendered horizontally or vertically. In this case it should be set to vertical:
 
@@ -29,7 +29,17 @@ The `legendOrientation` property specifies whether the legend is rendered horizo
 legendOrientation=&quot;vertical&quot;
 </pre>
 
-5) <strong>Add the `legendData` property to the `<Chart>` component.</strong>
+5) <strong>Add the `legendPosition` property to the `<Chart>` component.</strong>
+
+You will need to set the position for the `legendData` so that it behaves as expected when you add it in step 6 (there will still be no visible changes yet).
+
+The `legendPosition` property specifies whether the legend is rendered on the bottom or right of the chart. It should look like the following:
+
+<pre class="file" data-target="clipboard">
+legendPosition=&quot;right&quot;
+</pre>
+
+6) <strong>Add the `legendData` property to the `<Chart>` component.</strong>
 
 Inside the `legendData` should be an object with names for the data. It should look like the following:
 
@@ -40,14 +50,6 @@ legendData={[
   { name: &#39;Birds&#39; }, 
   { name: &#39;Mice&#39; }
 ]}
-</pre>
-
-6) <strong>Add the `legendPosition` property to the `<Chart>` component.</strong>
-
-The `legendPosition` property specifies whether the legend is rendered on the bottom or right of the chart. It should look like the following:
-
-<pre class="file" data-target="clipboard">
-legendPosition=&quot;right&quot;
 </pre>
 
 Once the preview reloads it should look like this:
