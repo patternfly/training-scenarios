@@ -1,12 +1,12 @@
-This step will begin by adding a CSS selector to define the chart size.
+Begin by adding a CSS selector to define the chart size.
 
-Note: Katacoda is setting up a new React application for you. You will be ready to code once the server starts and you can see "Welcome to PatternFly" on the lower pane.
+Note: Katacoda is setting up a new React application. You can use the code once the server starts and you see "Welcome to PatternFly" on the lower pane.
 
 1) <strong>Navigate to the `src` folder and open `src/app.css`{{open}}</strong>
 
 2) <strong>Add CSS to define the overall chart size.</strong>
 
-Copy the following code into the `app.css` file, replacing all of the content there:
+Copy the following code into the `app.css` file, replacing all the content.
 
 <pre class="file" data-filename="src/app.css" data-target="replace">
 .chart-container {
@@ -15,8 +15,6 @@ Copy the following code into the `app.css` file, replacing all of the content th
 }
 </pre>
 
-<strong>Note: </strong>Because Victory renders responsive containers, the chart's width and height props do not determine the width and height of the chart in number of pixels, but instead define an aspect ratio for the chart.
+<strong>Note: </strong>Victory renders responsive containers, so the chart's width and height props do not determine the width and height of the chart in number of pixels. Instead, they define an aspect ratio for the chart.
 
-The exact number of pixels will depend on the size of the container the chart is rendered into. Typically, the parent container is set to the same width in order to maintain the aspect ratio.
-
-We will continue by creating a simple area chart in the next step.
+The exact number of pixels will depend on the size of the container the chart is rendered into. Typically, the parent container is set to the same width to maintain the aspect ratio.

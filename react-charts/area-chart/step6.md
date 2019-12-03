@@ -1,4 +1,4 @@
-In this step you will add a legend to the area chart.
+Add a legend to the area chart.
 
 1) <strong>Make sure the `App.js` file is still open.</strong>
 
@@ -52,7 +52,5 @@ legendData={[
 ]}
 </pre>
 
-Once the preview reloads it should look like this:
+Once the preview reloads, it should look like this:
 <img src="area-chart/assets/legend.png" alt="Chart with legend" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
-
-You will continue by changing the chart's theme color in the next step.
