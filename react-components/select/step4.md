@@ -1,71 +1,37 @@
-Another customization option, available for all variants, is custom display and data for the Select options.
+Now let's begin customizing. There are many options available to customize your select component and its options.
 
-Let's begin with customizing the data. To change what data is passed around, and back to you on selection, you must implement a SelectOptionObject class. The only required property is a toString function, which converts whatever other data you include in the structure to a string format. This allows the component to internally compare options for filtering, and gives some limited customization for the option's display.
+One such customization, for both typeahead and multiple typeahead variants, is custom filtering.
 
-1. Add SelectOptionObject to the list of imports from @patternfly/react-core.
+By default, these variants match the entered input with the options' values in order. For example, given the "Alabama" option value, an "Ala" text input would match but a "bama" text input would not.
 
-2. Copy the following CustomDataState class, which extends SelectOptionObject, into the App.js file, outside of the App class:
+Let's allow any input to be matched, regardless of ordering.
+
+1) **Add the following custom filtering function to the constructor of the App class.**
 
 <pre class="file" data-target="clipboard">
-  class CustomDataState implements SelectOptionObject {
-    name: string;
-    abbreviation: string;
-    capital: string;
-    founded: number;
-    constructor(
-      name: string,
-      abbreviation: string,
-      capital: string,
-      founded: number
-    ) {
-      this.name = name;
-      this.abbreviation = abbreviation;
-      this.capital = capital;
-      this.founded = founded;
+  customFilter = e => {
+    const { options } = this.state;
+    let input;
+    try {
+      input = new RegExp(e.target.value.toString(), "i");
+    } catch (err) {
+      input = new RegExp(
+        e.target.value.toString().replace(/[.*+?^${}()|[\]\\]/g, "\\$&"),
+        "i"
+      );
     }
-    toString = () =>
-      `${this.name} (${this.abbreviation}) - Founded: ${this.founded}`;
-  }
+    let typeaheadFilteredChildren =
+      e.target.value.toString() !== ""
+        ? options.filter(option => input.test(option.props.value.toString()))
+        : options;
+    return typeaheadFilteredChildren;
+  };
 </pre>
 
-3. Replace the options state with the following code:
+Note: The component expects a function that will return a list of options to display. In the code below, we match the text input regardless of ordering using a regular expression, and santize the text input to avoid extraneous characters. Using the same example above, this will mean that a text input of "bama" would still match for the option "Alabama".
 
-<pre class="file" data-target="clipboard">
-  options: [
-    &lt;SelectOption
-      value={new CustomDataState("Alabama", "AL", "Montgomery", 1846)}
-    /&gt;,
-    &lt;SelectOption
-      value={new CustomDataState("Florida", "FL", "Tailahassee", 1845)}
-    /&gt;,
-    &lt;SelectOption
-      value={new CustomDataState("New Jersey", "NJ", "Trenton", 1787)}
-    /&gt;
-  ]
+2) **Add a new property to the select component called <pre>onFilter</pre> and assign it to the function that was added in step 1.**
+
+<pre>
+  onFilter={this.customFilter}
 </pre>
-
-Currently, the CustomDataState's required toString function is used to display the data in the list. This allows for some limited customization in display, but if you want to use custom nodes, or separate data with display, you may use the children property of the SelectOption.
-
-4. Edit the options state to display something different than the CustomDataState's toString.
-
-<pre class="file" data-target="clipboard">
-  options: [
-    &lt;SelectOption
-      value={new CustomDataState("Alabama", "AL", "Montgomery", 1846)}
-    &gt;
-      Alabama / AL
-    &lt;/SelectOption&gt;,
-    &lt;SelectOption
-      value={new CustomDataState("Florida", "FL", "Tailahassee", 1845)}
-    &gt;
-      Florida / FL
-    &lt;/SelectOption&gt;,
-    &lt;SelectOption
-      value={new CustomDataState("New Jersey", "NJ", "Trenton", 1787)}
-    &gt;
-      New Jersey / NJ
-    &lt;/SelectOption&gt;
-  ]
-</pre>
-
-Now, you should see these new values being displayed, and the filtering will match based on this display. In the case of html structures passed as a child, the component will convert the structure to a string for filtering.

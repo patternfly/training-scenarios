@@ -15,7 +15,7 @@
     {
       "course_id": "select",
       "title": "Select component: beginner",
-      "description": "Build and customizate a React select component."
+      "description": "Build and customize a React select component."
     }
   ]
 }

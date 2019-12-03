@@ -1,41 +1,84 @@
-Now that you have a basic select component in place, let's go over the available variants of the component and begin to build a more complex example.
+Now, let's add some data to populate the select, and give it basic event handling like opening, closing, and selecting an option.
 
-The Select component has 4 variants: single, checkbox, typeahead, and multiple option typeahead. When no variant is specified, the component defaults to the single variant. The single and typeahead variants allow for a single selection at a time, while the checkbox and multiple option typeahead variants allow for multiple selections at a time.
-
-1. Add SelectVariant to the list of imports from @patternfly/react-core. With this import in place, we may use this enum's options rather than a string literal.
-
-<pre>
-  export enum SelectVariant {
-    single = 'single',
-    checkbox = 'checkbox',
-    typeahead = 'typeahead',
-    typeaheadMulti = 'typeaheadmulti'
-  }
-</pre>
-
-Let's explore the typeahead variant.
-
-2. Add the variant property to the Select component:
+3) **Add the following state to the constructor of the App class, below <pre>super(props);</pre>**
 
 <pre class="file" data-target="clipboard">
-  variant={SelectVariant.typeahead}
+  this.state = {
+    options: [
+      &lt;SelectOption value="Alabama" /&gt;,
+      &lt;SelectOption value="Florida" /&gt;,
+      &lt;SelectOption value="New Jersey" /&gt;,
+      &lt;SelectOption value="New Mexico" /&gt;,
+      &lt;SelectOption value="New York" /&gt;,
+      &lt;SelectOption value="North Carolina" /&gt;
+    ],
+    selected: null,
+    isExpanded: false
+  };
 </pre>
 
-3. Additionally, to convert to typeahead, you must add another function to handle input clearing. Add the following method to the App class:
+4) **Add the deconstructed state properties to the top of the App class's render function.** 
 
 <pre class="file" data-target="clipboard">
-  clearSelection = () => {
-      this.setState({
-        selected: null,
-        isExpanded: false
-      });
-    };
+    const { options, selected, isExpanded } = this.state;
 </pre>
 
-4. And add the onClear property to the Select component:
+5) **Update the select properties with values from the state that was added in step 3.** 
+  a. Assign <pre>selected</pre> to <pre>selections</pre>. This variable tells the component what is currently selected.
 
-<pre class="file" data-target="clipboard">
-  onClear={this.clearSelection}
-</pre>
+  b. Assign <pre>isExpanded</pre> to <pre>isExpanded</pre>. This boolean controls if the select menu is expanded.
 
-You should now have a select that you can type into and filter the options.
+  c. Replace the text inside of the Select component <pre>(Add options here)</pre> with <pre>{options}</pre>. This list determines what is rendered expanded select menu.
+  
+  Your component should look as below.
+  <pre>
+    &lt;Select
+      onToggle={Function.prototype}
+      onSelect={Function.prototype}
+      selections={selected}
+      isExpanded={isExpanded}
+      placeholderText="Select a state"
+    &gt;
+      {options}
+    &lt;/Select&gt;
+  </pre>
+
+6) **Add event handling functions to the component.**
+  a. Copy the following <pre>onToggle</pre> function into the constructor of the App class, under the state declaration. This function controls the <pre>isExpanded</pre> property, and thereby when the select menu opens and closes.
+    <pre class="file" data-target="clipboard">
+      this.onToggle = isExpanded => {
+        this.setState({
+          isExpanded
+        });
+      };
+    </pre>
+
+  b. Copy the following <pre>onSelect</pre> function into the constructor of the App class, under the <pre>onToggle</pre> function added in step 6a. This function acts as a callback when a select option is clicked, updating the <pre>selected</pre> state property, and thereby what is rendered as selected in the component.
+    <pre class="file" data-target="clipboard">
+      this.onSelect = (event, selection) => {
+        this.setState({
+          selected: selection,
+          isExpanded: false
+        });
+      };
+    </pre>
+
+7) **Update the select properties with the functions added to the constructor in step 6.**
+  a. Assign <pre>this.onToggle</pre> to <pre>onToggle</pre>.
+
+  b. Assign <pre>this.onSelect</pre> to <pre>onSelect</pre>.
+
+  You component should look as below.
+  <pre>
+    &lt;Select
+      onToggle={this.onToggle}
+      onSelect={this.onSelect}
+      selections={selected}
+      isExpanded={isExpanded}
+      placeholderText="Select a state"
+    &gt;
+      {options}
+    &lt;/Select&gt;
+  </pre>
+
+Now your select is set up! You should be able to open and close the menu, see some basic options, as well as select an option.

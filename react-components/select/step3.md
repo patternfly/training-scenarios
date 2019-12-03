@@ -1,35 +1,43 @@
-Now let's begin customizing. There are many options available to customize your select component and its options.
+Now that you have a basic select component in place, let's go over the available variants of the component and begin to build a more complex example.
 
-One such customization, for both typeahead and multiple typeahead variants, is custom filtering.
+The select component has four variants: single, checkbox, typeahead, and multiple option typeahead. When no variant is specified, the component defaults to the single variant. The single and typeahead variants allow for a single selection at a time, while the checkbox and multiple option typeahead variants allow for multiple selections at a time.
 
-By default, these variants match the entered input with the options' values in order. For example, given the "Alabama" option value, an "Ala" text input would match but a "bama" text input would not.
+1) **Add <pre>SelectVariant</pre> to the list of imports from @patternfly/react-core.** With this import in place, we may use this enum's options rather than a string literal. This enum looks like the following:
+  <pre>
+    export enum SelectVariant {
+      single = 'single',
+      checkbox = 'checkbox',
+      typeahead = 'typeahead',
+      typeaheadMulti = 'typeaheadmulti'
+    }
+  </pre>
 
-Let's allow any input to be matched, regardless of ordering.
+Your import statement should now look like this:
+<pre>import { Select, SelectOption, SelectVariant } from "@patternfly/react-core";</pre>
 
-1. Add a custom filtering method to the App class. The component expects a function that will return a list of options to display. In the code below, we match the text input regardless of ordering using a regular expression, and santize the text input to avoid extraneous characters. Using the same example above, this will mean that a text input of "bama" would still match for the option "Alabama".
+Let's make a select component with a typeahead variation.
+
+2) **Add the variant property to the Select component and assign the property to the typeahead variation declared by the <pre>SelectVariant</pre> enum.**
 
 <pre class="file" data-target="clipboard">
-  customFilter = e => {
-    const { options } = this.state;
-    let input;
-    try {
-      input = new RegExp(e.target.value.toString(), "i");
-    } catch (err) {
-      input = new RegExp(
-        e.target.value.toString().replace(/[.*+?^${}()|[\]\\]/g, "\\$&"),
-        "i"
-      );
-    }
-    let typeaheadFilteredChildren =
-      e.target.value.toString() !== ""
-        ? options.filter(option => input.test(option.props.value.toString()))
-        : options;
-    return typeaheadFilteredChildren;
-  };
+  variant={SelectVariant.typeahead}
 </pre>
 
-2. And add the onFilter property to the Select component:
+3) Additionally, to convert to typeahead, you must add a function to handle text input clearing. **Add the following function to the constructor of the App class:**
 
-<pre>
-  onFilter={this.customFilter}
+<pre class="file" data-target="clipboard">
+  clearSelection = () => {
+      this.setState({
+        selected: null,
+        isExpanded: false
+      });
+    };
 </pre>
+
+4) **Add a new property to the select component called <pre>onClear</pre> and assign it to the function that was added in step 3.**
+
+<pre class="file" data-target="clipboard">
+  onClear={this.clearSelection}
+</pre>
+
+You should now have a select that you can type into and filter the options.
