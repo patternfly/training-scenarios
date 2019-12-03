@@ -32,7 +32,7 @@ Copy this code to the editor:
       { name: &#39;Cats&#39;, x: &#39;2017&#39;, y: 8 }, 
       { name: &#39;Cats&#39;, x: &#39;2018&#39;, y: 6 }
     ]}
-    interpolation="basis"
+    interpolation="monotoneX"
   /&gt;
   &lt;ChartArea 
     data={[
@@ -42,7 +42,7 @@ Copy this code to the editor:
       { name: &#39;Dogs&#39;, x: &#39;2018&#39;, y: 5 },
       { name: &#39;Dogs&#39;, x: &#39;2019&#39;, y: 6 }
     ]}
-    interpolation="basis"
+    interpolation="monotoneX"
   /&gt;
   &lt;ChartArea 
     data={[
@@ -52,7 +52,7 @@ Copy this code to the editor:
       { name: &#39;Birds&#39;, x: &#39;2018&#39;, y: 2 },
       { name: &#39;Birds&#39;, x: &#39;2019&#39;, y: 4 }
     ]}
-    interpolation="basis"
+    interpolation="monotoneX"
   /&gt;
 &lt;/ChartGroup&gt;
 </pre>
