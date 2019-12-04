@@ -10,55 +10,63 @@
     },
     "steps": [
       {
-        "title": "Introducing PatternFly React bullet charts",
-        "text": "step1.md"
-      },
-      {
         "title": "Customize with CSS",
-        "text": "step2.md",
-        "verify": "step2-verify.sh",
-        "answer": "step2-answer.md"
+        "text": "step1.md",
+        "verify": "step1-verify.sh",
+        "answer": "step1-answer.md"
       },
       {
         "title": "Create a simple chart",
-        "text": "step3.md"
+        "text": "step2.md"
       },
       {
         "title": "Add tooltips",
-        "text": "step4.md"
+        "text": "step3.md"
       },
       {
         "title": "Add labels",
+        "text": "step4.md"
+      },
+      {
+        "title": "Add a legend",
         "text": "step5.md"
       },
       {
-        "title": "Add legend",
-        "text": "step6.md"
-      },
-      {
         "title": "Change the theme",
-        "text": "step7.md"
+        "text": "step6.md"
       }
     ],
     "assets": {
       "client": [
         {
-          "file": "final.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
+          "file": "final.png",
+          "target": "~/tutorial/assets/images/",
+          "chmod": "+r"
         },
         {
-          "file": "labels.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
+          "file": "labels.png",
+          "target": "~/tutorial/assets/images/",
+          "chmod": "+r"
         },
         {
-          "file": "legend.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
+          "file": "legend.png",
+          "target": "~/tutorial/assets/images/",
+          "chmod": "+r"
         },
         {
-          "file": "simple.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
+          "file": "simple.png",
+          "target": "~/tutorial/assets/images/",
+          "chmod": "+r"
         },
         {
-          "file": "theme.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
+          "file": "theme.png",
+          "target": "~/tutorial/assets/images/",
+          "chmod": "+r"
         },
         {
-          "file": "tooltips.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
+          "file": "tooltips.png",
+          "target": "~/tutorial/assets/images/",
+          "chmod": "+r"
         }
       ]
     },
@@ -66,18 +74,27 @@
       "text": "finish.md"
     }
   },
-
   "files": [],
   "environment": {
     "showdashboard": true,
     "delayToSaveFileAfterStopTypingMilliseconds": 2000,
     "autoFormatEnable": false,
     "dashboards": [
-      {"name": "Web Application", "port": 3000}
+      {
+        "name": "Web Application",
+        "port": 3000
+      }
     ],
     "uilayout": "editor-iframe-split",
     "uisettings": "javascript",
-    "exclusionPatterns": ["._*", "package.json", "package-lock.json", "node_modules*", "public*", "serviceWorker*"],
+    "exclusionPatterns": [
+      "._*",
+      "package.json",
+      "package-lock.json",
+      "node_modules*",
+      "public*",
+      "serviceWorker*"
+    ],
     "hideHiddenFiles": true
   },
   "backend": {

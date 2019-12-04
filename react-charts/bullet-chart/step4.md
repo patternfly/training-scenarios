@@ -1,23 +1,29 @@
-Now we'll add labels to the bullet chart...
+Add labels to the bullet chart.
 
-## Task
+1) <strong>Make sure the `App.js` file is still open.</strong>
 
-1) Make sure the App.js file is still open
+2) <strong>Locate the `<ChartBullet/>` component.</strong>
 
-2) Locate the code that looks like the following:
+It will look like this:
 
 <pre class="file">
 &lt;ChartBullet
-  comparativeWarningMeasureData={[{ name: &#39;Warning&#39;, y: 88 }]}
+   height={150}
+  width={600}
   maxDomain={{y: 100}}
   primarySegmentedMeasureData={[{ name: &#39;Measure&#39;, y: 60 }]}
   qualitativeRangeData={[{ name: &#39;Range&#39;, y: 50 }, { name: &#39;Range&#39;, y: 75 }]}
-  height={150}
-  width={600}
+  comparativeWarningMeasureData={[{ name: &#39;Warning&#39;, y: 88 }]}
+  constraingToVisibleArea
+  labels={({ datum }) =&gt; `${datum.name}: ${datum.y}`}
 /&gt;
 </pre>
 
-3) Add the following property to that section:
+3) <strong>Add the `padding` property to the `ChartBullet` component.</strong>
+
+This adds more space to the left side of the chart to make room for the labels.
+
+It should look like this:
 
 <pre class="file" data-target="clipboard">
 padding={{
@@ -28,16 +34,25 @@ padding={{
 }}
 </pre>
 
-- This will add more padding to the left property to accommodate the labels.
+4) <strong>Add the `title` property to the `ChartBullet` component.</strong>
 
-4) Add the following property to that section:
+The `title` property defines a prominent label that appears to the left of the chart by default.
+
+It should look like this:
 
 <pre class="file" data-target="clipboard">
 title="Text label"
+</pre>
+
+5) <strong>Add the `subTitle` property to the `ChartBullet` component.</strong>
+
+The `subTitle` property defines a muted label that will appear underneath the title.
+
+It should look like this:
+
+<pre class="file" data-target="clipboard">
 subTitle="Measure details"
 </pre>
 
-5) Once the preview reloads - it should look like this:
-<img src="bullet-chart/assets/labels.png" alt="Chart with axis labels" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
-
-We'll continue by adding a legend to the chart in the next step.
+Once the preview reloads, it should look like this:
+<img src="bullet-chart/assets/labels.png" alt="Chart with axis labels" style="box-shadow: rgba(3, 3, 3, 0)2) 0px 1)25px 2)5px 0px;" />

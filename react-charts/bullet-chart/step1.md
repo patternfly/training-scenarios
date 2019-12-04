@@ -1,14 +1,12 @@
-We'll begin by adding a CSS selector to define the chart size...
+Begin by adding a CSS selector to define the chart size.
 
-- Katacoda is setting up a new React application for you. You'll be ready to code once the server starts and you can see "Welcome to PatternFly" on the lower pane.
+Katacoda is setting up a new React application. Begin coding once the server starts and "Welcome to PatternFly" is visible on the lower pane.
 
-## Task
+1) <strong>Navigate to the `src` folder and open `src/app.css`{{open}}</strong>
 
-1) Navigate to the `src` folder and open `src/app.css`{{open}}
+2) <strong>Add CSS to define the overall chart size.</strong>
 
-2) Next we'll add some CSS to define the overall chart size
-
-Copy the following code into the app.css file, replacing all of the content there:
+Copy the following code into the `app.css` file, replacing all the content:
 
 <pre class="file" data-filename="src/app.css" data-target="replace">
 .chart-container {
@@ -17,8 +15,4 @@ Copy the following code into the app.css file, replacing all of the content ther
 }
 </pre>
 
-- Because Victory renders responsive containers, the Chart's width and height props do not determine the width and height of the chart in number of pixels, but instead define an aspect ratio for the chart. 
-The exact number of pixels will depend on the size of the container the chart is rendered into. 
-Typically, the parent container is set to the same width in order to maintain the aspect ratio.
-
-We'll continue by creating a simple bullet chart in the next step.
+<strong>Note: </strong>Victory renders responsive containers, so the chart's width and height props do not determine the width and height of the chart in number of pixels. Instead, they define an aspect ratio for the chart. The exact number of pixels will depend on the size of the container the chart is rendered into. Typically, the parent container is set to the same width as the chart to maintain the aspect ratio and scale.
