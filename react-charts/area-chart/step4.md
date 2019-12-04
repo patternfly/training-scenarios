@@ -13,11 +13,11 @@ It will look like this:
 &gt;
 </pre>
 
-3) <strong>Add a `containerComponent` property to that section</strong>
+3) <strong>Add a `containerComponent` property to the `Chart` component.</strong>
 
 The `containerComponent` property takes a component instance, which will be used to create a container element for standalone charts.
 
-Add the `ChartVoronoiContainer` component which adds the ability to associate a mouse position with the data point(s) closest to it. This is useful for adding a tooltip.
+Inside the `containerComponent` is the `ChartVoronoiContainer` component, which adds the ability to associate a mouse position with the data point(s) closest to it. This is useful for adding a tooltip.
 
 It should look like this:
 
@@ -32,7 +32,7 @@ containerComponent={
 
 4) <strong>Add a `constrainToVisibleArea` property inside of the `ChartVoronoiContainer`.</strong>
 
-The `constrainToVisibleArea` property will alter the position of the tooltip so that it exactly fits within the rendered SVG.
+The `constrainToVisibleArea` property determines whether to coerce tooltips so that they fit within the visible area of the chart.
 
 It should look like this:
 

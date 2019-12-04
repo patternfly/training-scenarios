@@ -21,7 +21,7 @@ padding={{
 
 4) <strong>Add the `legendOrientation` property to the `<Chart>` component.</strong>
 
-You will need to set the orientation for the `legendData` so that it behaves as expected when you add it in step 6 (there will be no visible changes yet).
+Set the orientation for the `legendData` so that it behaves as expected when added in step 6 (there will be no visible changes yet).
 
 The `legendOrientation` property specifies whether the legend is rendered horizontally or vertically. In this case it should be set to vertical:
 
@@ -31,7 +31,7 @@ legendOrientation=&quot;vertical&quot;
 
 5) <strong>Add the `legendPosition` property to the `<Chart>` component.</strong>
 
-You will need to set the position for the `legendData` so that it behaves as expected when you add it in step 6 (there will still be no visible changes yet).
+Set the position for the `legendData` so that it behaves as expected when added in step 6 (there will still be no visible changes yet).
 
 The `legendPosition` property specifies whether the legend is rendered on the bottom or right of the chart. It should look like the following:
 

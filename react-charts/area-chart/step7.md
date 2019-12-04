@@ -4,7 +4,7 @@ Change the area chart theme color.
 
 2) <strong>Locate the `<Chart>` component and add a property to change the theme.</strong>
 
-The `themeColor` property specifies the theme color. Valid values are 'blue,' 'green,' 'multi,' etc. It should look like the following:
+The `themeColor` property specifies the theme color. Some valid values are `ChartThemeColor.blue`,  `ChartThemeColor.green`, or `ChartThemeColor.multi`. It should look like the following:
 
 <pre class="file" data-target="clipboard">
 themeColor={ChartThemeColor.green}

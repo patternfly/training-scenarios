@@ -43,7 +43,7 @@ function App() {
 export default App;
 </pre>
 
-The `interpolation` property adds interpolating curves.
+The `interpolation` property determines how data points should be connected when creating a path. Area chart uses "montoneX".
 
-When the server reloads, you should see something like this:
+Once the preview reloads, it should look like this:
 <img src="area-chart/assets/simple.png" alt="Simple chart" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
