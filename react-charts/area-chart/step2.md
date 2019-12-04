@@ -43,7 +43,7 @@ function App() {
 export default App;
 </pre>
 
-<strong>Note:</strong> The `interpolation` property adds interpolating curves.
+The `interpolation` property adds interpolating curves.
 
 When the server reloads, you should see something like this:
 <img src="area-chart/assets/simple.png" alt="Simple chart" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
