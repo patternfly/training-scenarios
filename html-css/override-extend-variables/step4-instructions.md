@@ -1,10 +1,8 @@
-## Add a PatternFly class for the layout
- 
 Now that you have an updated Card design, let's add several Cards and use the gallery layout to organize them on the page. 
  
 1) <strong>Copy code into the index.html file.</strong>
  
-2) <strong>Click the Copy to Editor button </strong> below to add html for multiple Cards to the index.html file.
+2) <strong>Click the Copy to Editor button below to add html for multiple Cards to the index.html file.</strong>
  
 <pre class="file" data-filename="index.html" data-target="replace">
 &lt;div class=&quot;pf-c-card pf-m-hoverable&quot;&gt;
@@ -133,16 +131,19 @@ PatternFly is an open source design system created to enable consistency and usa
 &lt;/div&gt;
 </pre>
  
-3) <strong>Create a wrapper around the Cards.</strong> Multiple Cards were just added and you need to create a wrapper around them. 
-<strong>Add an opening</strong> `<div>` tag to the first line, and a closing `</div>` tag to the bottom of the file.
+3) <strong>Create a wrapper around the cards.</strong> 
+
+Multiple cards were just added and you need to create a wrapper around them. 
+Add an opening `<div>` tag to the first line, and a closing `</div>` tag to the bottom of the file.
  
-4) <strong>Add a layout class. 
+4) <strong>Add a layout class. </strong>
+
 To the opening `<div>` tag, add the gallery layout class: `pf-l-gallery`</strong>.
  
 Hint: `<div class="pf-l-gallery">`
  
-5) <strong>Add a gutter modifier.</strong> to modify the gallery layout so that it includes a gutter.<strong> 
+5) <strong>Add a gutter modifier to modify the gallery layout so that it includes a gutter.<strong> 
  
-Note: Add to the same opening</strong> `<div>` tag and add the class `pf-m-gutter`.
+Note: Add to the same opening `<div>` tag and add the class `pf-m-gutter`.
  
 <strong>Hint:</strong> `<div class="pf-l-gallery pf-m-gutter">`
