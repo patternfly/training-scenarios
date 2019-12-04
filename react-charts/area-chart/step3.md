@@ -1,53 +1,61 @@
-Now we'll create a simple area chart...
+Add multiple datasets to the area chart.
 
-## Task
+1) <strong>Make sure `App.js` is still open.</strong>
 
-1) Navigate to the `src` folder and open `src/App.js`{{open}}
+2) <strong>Locate the code within the `<ChartArea/>` component.</strong>
 
-2) Next, we'll set up the general structure of the chart and the necessary import statements.
+It will look like this:
 
-Copy the following code into the App.js file, replacing all of the content there:
-
-<pre class="file" data-filename="App.js" data-target="replace">
-import React from 'react';
-import "@patternfly/react-core/dist/styles/base.css";
-import './app.css';
-import {
-  Chart,
-  ChartAxis,
-  ChartArea,
-  ChartGroup,
-  ChartThemeColor,
-  ChartVoronoiContainer
-} from '@patternfly/react-charts';
-
-function App() {
-  return (
-    &lt;div className=&quot;chart-container&quot;&gt;
-      &lt;Chart
-        height={250}
-        width={600}
-      &gt;
-        &lt;ChartArea
-          data={[
-            { name: &#39;Cats&#39;, x: &#39;2015&#39;, y: 3 }, 
-            { name: &#39;Cats&#39;, x: &#39;2016&#39;, y: 4 }, 
-            { name: &#39;Cats&#39;, x: &#39;2017&#39;, y: 8 }, 
-            { name: &#39;Cats&#39;, x: &#39;2018&#39;, y: 6 }
-          ]} 
-          interpolation="basis"
-        /&gt;
-      &lt;/Chart&gt;
-    &lt;/div&gt;
-  );
-}
-
-export default App;
+<pre class="file">
+&lt;ChartArea
+  data={[
+    { name: &#39;Cats&#39;, x: &#39;2015&#39;, y: 3 }, 
+    { name: &#39;Cats&#39;, x: &#39;2016&#39;, y: 4 }, 
+    { name: &#39;Cats&#39;, x: &#39;2017&#39;, y: 8 }, 
+    { name: &#39;Cats&#39;, x: &#39;2018&#39;, y: 6 }
+  ]} 
+/&gt;
 </pre>
 
-- The `interpolation` property adds interpolating curves
+3) <strong>Replace the `ChartArea` component with multiple `ChartArea` components wrapped in a `ChartGroup` component.</strong>
 
-3) When the server reloads, you should see something like this:
-<img src="area-chart/assets/simple.png" alt="Simple chart" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
+`ChartGroup` is the React Component used to apply properties to multiple `ChartArea` components.
 
-We'll continue by adding multiple datasets to the chart in the next step.
+Copy this code to the editor:
+
+<pre class="file" data-target="clipboard">
+&lt;ChartGroup&gt;
+  &lt;ChartArea
+    data={[
+      { name: &#39;Cats&#39;, x: &#39;2015&#39;, y: 3 }, 
+      { name: &#39;Cats&#39;, x: &#39;2016&#39;, y: 4 }, 
+      { name: &#39;Cats&#39;, x: &#39;2017&#39;, y: 8 }, 
+      { name: &#39;Cats&#39;, x: &#39;2018&#39;, y: 6 }
+    ]}
+    interpolation="monotoneX"
+  /&gt;
+  &lt;ChartArea 
+    data={[
+      { name: &#39;Dogs&#39;, x: &#39;2015&#39;, y: 2 }, 
+      { name: &#39;Dogs&#39;, x: &#39;2016&#39;, y: 3 }, 
+      { name: &#39;Dogs&#39;, x: &#39;2017&#39;, y: 4 }, 
+      { name: &#39;Dogs&#39;, x: &#39;2018&#39;, y: 5 },
+      { name: &#39;Dogs&#39;, x: &#39;2019&#39;, y: 6 }
+    ]}
+    interpolation="monotoneX"
+  /&gt;
+  &lt;ChartArea 
+    data={[
+      { name: &#39;Birds&#39;, x: &#39;2015&#39;, y: 1 }, 
+      { name: &#39;Birds&#39;, x: &#39;2016&#39;, y: 2 }, 
+      { name: &#39;Birds&#39;, x: &#39;2017&#39;, y: 3 }, 
+      { name: &#39;Birds&#39;, x: &#39;2018&#39;, y: 2 },
+      { name: &#39;Birds&#39;, x: &#39;2019&#39;, y: 4 }
+    ]}
+    interpolation="monotoneX"
+  /&gt;
+&lt;/ChartGroup&gt;
+</pre>
+
+Once the preview reloads, it should look like this:
+<img src="area-chart/assets/multiple.png" alt="Multiple dataset chart" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />

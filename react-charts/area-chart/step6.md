@@ -1,24 +1,12 @@
-Now we'll add axis labels to the area chart...
+Add a legend to the area chart.
 
-## Task
+1) <strong>Make sure the `App.js` file is still open.</strong>
 
-1) Make sure the App.js file is still open
+2) <strong>Locate the code for the `padding` property in the `<Chart>` component.</strong>
 
-2) Locate the code that looks like the following:
+It should look like this:
 
 <pre class="file">
-&lt;Chart
-  constrainToVisibleArea
-  containerComponent={&lt;ChartVoronoiContainer labels={({ datum }) =&gt; `${datum.name}: ${datum.y}`} /&gt;}
-  domainPadding={{ x: [30, 25] }}
-  height={250}
-  width={600}
-&gt;
-</pre>
-
-3) Add the following property to that section:
-
-<pre class="file" data-target="clipboard">
 padding={{
   bottom: 75,
   left: 75,
@@ -27,29 +15,42 @@ padding={{
 }}
 </pre>
 
-- This will add more padding to the bottom and left properties to accommodate the axis labels.
+3) <strong>Update the padding for the right value to accommodate the legend.</strong>
 
-4) Locate the code that looks like the following:
+`right: 200`
 
-<pre class="file">
-&lt;ChartGroup&gt;
-...
-&lt;/ChartGroup&gt;
-</pre>
+4) <strong>Add the `legendOrientation` property to the `<Chart>` component.</strong>
 
-5) Add the following code above that section:
+Set the orientation for the `legendData` so that it behaves as expected when added in step 6 (there will be no visible changes yet).
+
+The `legendOrientation` property specifies whether the legend is rendered horizontally or vertically. In this case it should be set to vertical:
 
 <pre class="file" data-target="clipboard">
-&lt;ChartAxis label=&quot;Years&quot;/&gt;
-&lt;ChartAxis dependentAxis showGrid label=&quot;Percentage&quot;/&gt;
+legendOrientation=&quot;vertical&quot;
 </pre>
 
-- The grid lines should appear behind the ChartArea components
-- The `Chart` component displays an axis by default, but we've added labels and grid lines
-- The `dependentAxis` property specifies whether the axis corresponds to dependent data points (e.g., usually the y-axis)
-- The `showGrid` property simply displays grid lines along that axis
+5) <strong>Add the `legendPosition` property to the `<Chart>` component.</strong>
 
-6) Once the preview reloads - it should look like this:
-<img src="area-chart/assets/axis.png" alt="Chart with axis labels" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
+Set the position for the `legendData` so that it behaves as expected when added in step 6 (there will still be no visible changes yet).
 
-We'll continue by adding a legend to the chart in the next step.
+The `legendPosition` property specifies whether the legend is rendered on the bottom or right of the chart. It should look like the following:
+
+<pre class="file" data-target="clipboard">
+legendPosition=&quot;right&quot;
+</pre>
+
+6) <strong>Add the `legendData` property to the `<Chart>` component.</strong>
+
+Inside the `legendData` should be an object with names for the data. It should look like the following:
+
+<pre class="file" data-target="clipboard">
+legendData={[
+  { name: &#39;Cats&#39; }, 
+  { name: &#39;Dogs&#39; }, 
+  { name: &#39;Birds&#39; }, 
+  { name: &#39;Mice&#39; }
+]}
+</pre>
+
+Once the preview reloads, it should look like this:
+<img src="area-chart/assets/legend.png" alt="Chart with legend" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
