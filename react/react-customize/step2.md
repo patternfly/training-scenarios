@@ -1,6 +1,6 @@
 Add content to cards.
 
-1) <strong>Make sure `App.js` is still open.
+1) <strong>Make sure `App.js` is still open.</strong>
 
 2) <strong>Locate the code for the `<Card>` component.</strong>
 
@@ -10,7 +10,7 @@ Add content to cards.
 &lt;/Card&gt;
 </pre>
 
-3) <strong>Replace the `<Card>` component located in step 2 with a `<Card>` component that has more information.
+3) <strong>Replace the `<Card>` component located in step 2 with a `<Card>` component that has more information.</strong>
 
 <pre class="file" data-target="clipboard">
 &lt;Card&gt;
@@ -41,6 +41,6 @@ Add content to cards.
 &lt;/Card&gt;
 </pre>
 
-Once the preview reloads - it should look like this:
+Once the preview reloads, it should look like this:
 
 <img src="react-customize/assets/step2.png" alt="Page demo with cards" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />

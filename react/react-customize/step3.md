@@ -14,7 +14,9 @@ It should look like this:
 
 You can change the variant to achieve different types of buttons.
 
-Replace the `CardFooter` component with the following code:
+Inside the `CardFooter` component, replace the current variant on the button with the `primary` variant, and remove the `isLine` prop.
+
+The code should look like the following:
 
 <pre class="file" data-target="clipboard">
 &lt;CardFooter&gt;

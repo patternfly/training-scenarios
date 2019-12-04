@@ -2,7 +2,7 @@ In PatternFly 4, demos are used to show how PatternFly’s components and layout
 
 In this exercise, we'll be using a page demo to create a new page for a web application.
 
-Note: Katacoda is setting up a new React application. You can use the code once the server starts and you see "Welcome to PatternFly" on the lower pane.
+Note: Katacoda is setting up a new React application. Start coding once the server starts and "Welcome to PatternFly" is visible on the lower pane.
 
 1) <strong>Navigate to the `src` folder and open `src/App.js`{{open}}</strong>
 
@@ -43,22 +43,48 @@ class PageLayoutSimpleNav extends React.Component {
     return (
       &lt;React.Fragment&gt;
         &lt;AppPage&gt;
-            &lt;Gallery gutter=&quot;md&quot;&gt;
-              {Array.apply(0, Array(9)).map((x, i) =&gt; (
-                &lt;GalleryItem key={i}&gt;
-                  &lt;Card&gt;
-                    &lt;CardBody&gt;This is a card&lt;/CardBody&gt;
-                  &lt;/Card&gt;
-                &lt;/GalleryItem&gt;
-              ))}
-            &lt;/Gallery&gt;
-          &lt;/AppPage&gt;
+        &lt;/AppPage&gt;
       &lt;/React.Fragment&gt;
     );
   }
 }
 
 export default PageLayoutSimpleNav;
+</pre>
+
+3) <strong>Add a gallery of cards.</strong>
+
+The gallery is a PatternFly layout that applies a `minmax` width and a `gutter` between items. Here set the gutter to `md`.
+
+Add the gallery inside of `<AppPage>`, it should look like this:
+
+```
+<Gallery gutter="md">
+</Gallery>
+```
+
+4) <strong>Add multiple `cards` inside of the `gallery`.</strong>
+
+For the purpose of this example, make every card the same. Each `card` should be wrapped in a `<GalleryItem`.
+
+```
+<GalleryItem>
+  <Card>
+    <CardBody>This is a card</CardBody>
+  </Card>
+</GalleryItem>
+```
+
+To add cards efficiently use `Array.apply` and `Array.map` to add nine cards. The result should look like this:
+
+<pre class="file" data-target="clipboard">
+{Array.apply(0, Array(9)).map((x, i) =&gt; (
+  &lt;GalleryItem key={i}&gt;
+    &lt;Card&gt;
+      &lt;CardBody&gt;This is a card&lt;/CardBody&gt;
+    &lt;/Card&gt;
+  &lt;/GalleryItem&gt;
+))}
 </pre>
 
 When the server reloads, you should see something like this:
