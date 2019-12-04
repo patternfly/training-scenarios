@@ -1,10 +1,24 @@
-PatternFly React charts are based on the [Victory chart](https://formidable.com/open-source/victory/docs/victory-chart/) library, along with additional functionality, custom components, and theming for PatternFly. 
-This provides a collection of React based components you can use to build PatternFly patterns with consistent markup, styling, and behavior. 
+We'll begin by adding a CSS selector to define the chart size...
 
-PatternFly React charts are composed using separate components, so features are more easily customizable. 
-In this course, we're going to build a PatternFly bullet chart together - starting with a simple chart, adding qualitative ranges, primary comparative measures, a comparative warning measure, tooltips, labels, a legend, and concluding by changing the theme color.
-You'll learn how to use PatternFly React chart components together to build a consistent user experience.
+- Katacoda is setting up a new React application for you. You'll be ready to code once the server starts and you can see "Welcome to PatternFly" on the lower pane.
 
-The image below is what we'll end up with when we are done.
+## Task
 
-<img src="bullet-chart/assets/final.png" alt="Completed chart component" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
+1) Navigate to the `src` folder and open `src/app.css`{{open}}
+
+2) Next we'll add some CSS to define the overall chart size
+
+Copy the following code into the app.css file, replacing all of the content there:
+
+<pre class="file" data-filename="src/app.css" data-target="replace">
+.chart-container {
+  height: 150px;
+  width: 600px;
+}
+</pre>
+
+- Because Victory renders responsive containers, the Chart's width and height props do not determine the width and height of the chart in number of pixels, but instead define an aspect ratio for the chart. 
+The exact number of pixels will depend on the size of the container the chart is rendered into. 
+Typically, the parent container is set to the same width in order to maintain the aspect ratio.
+
+We'll continue by creating a simple bullet chart in the next step.

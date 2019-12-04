@@ -1,24 +1,47 @@
-We'll begin by adding a CSS selector to define the chart size...
-
-- Katacoda is setting up a new React application for you. You'll be ready to code once the server starts and you can see "Welcome to PatternFly" on the lower pane.
+Now we'll create a simple bullet chart...
 
 ## Task
 
-1) Navigate to the `src` folder and open `src/app.css`{{open}}
+1) Navigate to the `src` folder and open `src/App.js`{{open}}
 
-2) Next we'll add some CSS to define the overall chart size
+2) Next, we'll set up the general structure of the chart and the necessary import statements.
 
-Copy the following code into the app.css file, replacing all of the content there:
+Copy the following code into the App.js file, replacing all of the content there:
 
-<pre class="file" data-filename="src/app.css" data-target="replace">
-.chart-container {
-  height: 150px;
-  width: 600px;
+<pre class="file" data-filename="App.js" data-target="replace">
+import React from 'react';
+import "@patternfly/react-core/dist/styles/base.css";
+import './app.css';
+import {
+  Chart,
+  ChartBullet,
+  ChartThemeColor
+} from '@patternfly/react-charts';
+
+function App() {
+  return (
+    &lt;div className=&quot;chart-container&quot;&gt;
+      &lt;ChartBullet
+        maxDomain={{y: 100}}
+        comparativeWarningMeasureData={[{ name: &#39;Warning&#39;, y: 88 }]}
+        primarySegmentedMeasureData={[{ name: &#39;Measure&#39;, y: 60 }]}
+        qualitativeRangeData={[{ name: &#39;Range&#39;, y: 50 }, { name: &#39;Range&#39;, y: 75 }]}
+        height={150}
+        width={600}
+      /&gt;
+    &lt;/div&gt;
+  );
 }
+
+export default App;
 </pre>
 
-- Because Victory renders responsive containers, the Chart's width and height props do not determine the width and height of the chart in number of pixels, but instead define an aspect ratio for the chart. 
-The exact number of pixels will depend on the size of the container the chart is rendered into. 
-Typically, the parent container is set to the same width in order to maintain the aspect ratio.
+- The `maxDomain` property defines the maximum domain value for a chart
+- The `qualitativeRangeData` property adds qualitative ranges to the bullet chart
+- The `primarySegmentedMeasureData` property adds a primary measure to the bullet chart
+- The `comparativeWarningMeasureData` property adds comparative warning measure to the bullet chart
 
-We'll continue by creating a simple bullet chart in the next step.
+3) When the server reloads, you should see something like this:
+<img src="bullet-chart/assets/simple.png" alt="Simple chart" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
+
+We'll continue by adding tooltips to the chart in the next step.
