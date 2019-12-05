@@ -1,4 +1,4 @@
-Before you get started, let's add some code to the workspace that you can modify.
+Before getting started, add some code to the workspace that can be modified.
  
 1) <strong>Copy code into the index.html file.</strong>
  
@@ -34,7 +34,7 @@ PatternFly is an open source design system created to enable consistency and usa
 &lt;/div&gt;
 </pre>
  
-3) <strong>Set up your new styles file for overriding styles in the card component.</strong> 
+3) <strong>Set up the new styles file for overriding styles in the card component.</strong> 
 
 There are two blocks in this file: `:root` targets styles across the entire application and `.pf-c-card` targets styles specifically in the card component.
  
