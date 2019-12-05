@@ -10,11 +10,13 @@ Add axis labels to the bar chart.
   labels={({ datum }) =&gt; `${datum.name}: ${datum.y}`} /&gt;}
   domainPadding={{ x: [30, 25] }}
   height={250}
-  width={600}
-&gt;
+  width={600}&gt;
 </pre>
 
 3) <strong>Add the `padding` property to that section:</strong>
+
+This increases padding to the bottom and left properties to accommodate
+the axis labels.
 
 <pre class="file" data-target="clipboard">
 padding={{
@@ -25,14 +27,10 @@ padding={{
 }}
 </pre>
 
-- This will add more padding to the bottom and left properties to accommodate
-the axis labels.
-
 4) <strong>Locate the code between the `<Chart>` and `<ChartGroup>`.</strong>
 
 <pre class="file">
 &lt;Chart&gt;
-&lt;/Chart&gt;
 
 &lt;ChartGroup&gt;
 &lt;/ChartGroup&gt;

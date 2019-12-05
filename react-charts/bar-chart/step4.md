@@ -14,6 +14,12 @@ Add tooltips to the barchart.
 
 3) <strong>Add a `containerComponent` property to that section</strong>
 
+The `containerComponent` property takes a component instance which will be
+used to create a container element for standalone charts.
+Add the `ChartVoronoiContainer` component which adds the ability to associate
+a mouse position with the data point(s) closest to it. This is useful for
+adding a tooltip.
+
 <pre class="file" data-target="clipboard">
 containerComponent={
   &lt;ChartVoronoiContainer
@@ -22,14 +28,6 @@ containerComponent={
   /&gt;
 }
 </pre>
-
-<strong>Notes:</strong>
-
-- The `containerComponent` property takes a component instance which will be
-used to create a container element for standalone charts
-- The `ChartVoronoiContainer` component adds the ability to associate
-a mouse position with the data point(s) closest to it.
-This is useful for adding a tooltip.
 
 Once the preview reloads - it should look like this:
 

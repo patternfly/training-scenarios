@@ -61,12 +61,7 @@ Copy this code to the editor:
 &lt;/ChartGroup&gt;
 </pre>
 
-<strong>Notes:</strong>
+4) <strong>Once the preview reloads - it should look like this</strong>
 
-- The `ChartGroup` is the React Component used to apply properties to multiple
-`ChartBar` components
-- The `offset` property is used to adjust each `ChartBar` from its original position
-
-4) <strongOnce the preview reloads - it should look like this</strong>
 <img src="bar-chart/assets/multiple.png" alt="Multiple dataset chart"
 style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
