@@ -2,7 +2,7 @@ Add a legend to the donut chart.
 
 1) <strong>Make sure the App.js file is still open.</strong>
 
-2) <strong>Locate the code for the '<Chart>' component.</strong>
+2) <strong>Locate the code for the `<Chart>` component.</strong>
 
 It should look like this:
 
@@ -34,7 +34,7 @@ padding={{
 </pre>
 
 
-4) <strong>Add the 'LegendOrientation' and 'legendPostition' properties to the component.</strong>
+4) <strong>Add the 'LegendOrientation' and 'legendPosition' properties to the component.</strong>
 
 The `legendOrientation` property specifies whether the legend is rendered horizontally or vertically.
 
