@@ -7,8 +7,6 @@ starts and "Welcome to PatternFly" is visible on the lower pane.
 It's ready to code once the server starts and "Welcome to PatternFly" message
 is displayed on the lower pane.
 
-## Tasks
-
 1) <strong>Navigate to the `src` folder and open `src/app.css`{{open}}</strong>
 
 2) <strong>Add CSS to define the overall chart size.</strong>

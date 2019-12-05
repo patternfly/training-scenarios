@@ -10,7 +10,7 @@ The `themeColor` property specifies the theme color. Valid values are
 'blue,' 'green,' 'multi,' etc. It should look like the following:
 
 <pre class="file" data-target="clipboard">
-themeColor={ChartThemeColor.green}
+themeColor={ChartThemeColor.gold}
 </pre>
 
 Once the preview reloads, it should look like this:

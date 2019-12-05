@@ -19,8 +19,6 @@ padding={{
 
 `right: 200`
 
-- This will add more padding to the right property to accommodate the legend.
-
 4) <strong>Add the `legendOrientation` property to the `<Chart>` component.</strong>
 
 You will need to set the orientation for the `legendData` so that it behaves as

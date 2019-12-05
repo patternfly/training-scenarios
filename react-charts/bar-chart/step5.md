@@ -51,18 +51,17 @@ a) <strong>Add the `<ChartAxis>` component with a label property.</strong>
 
 b) <strong>Add another `<ChartAxis>` component with multiple properties.</strong>
 
+The `dependentAxis` property specifies whether the axis corresponds to
+dependent data points (e.g., usually the y-axis).
+The `showGrid` property of `ChartAxis` simply displays grid lines along that axis.
+
 It should look like this:
 
 <pre class="file" data-target="clipboard">
 &lt;ChartAxis dependentAxis showGrid label=&quot;Percentage&quot;/&gt;
 </pre>
 
-<strong>Notes:</strong>
-
 - This will add grid lines which appear behind the ChartBar
-- The `dependentAxis` property specifies whether the axis corresponds to
-dependent data points (e.g., usually the y-axis)
-- The `showGrid` property of `ChartAxis` simply displays grid lines along that axis
 
 Once the preview reloads, it should look like this:
 <img src="bar-chart/assets/axis.png" alt="Chart with axis labels"
