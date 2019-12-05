@@ -1,4 +1,4 @@
-Now that you have an updated Card design, let's add several Cards and use the gallery layout to organize them on the page. 
+Now that the card design has been updated, add several cards and use the gallery layout to organize them on the page. 
  
 1) <strong>Copy code into the index.html file.</strong>
  
@@ -133,7 +133,7 @@ PatternFly is an open source design system created to enable consistency and usa
  
 3) <strong>Create a wrapper around the cards.</strong> 
 
-Multiple cards were just added and you need to create a wrapper around them. 
+Multiple cards were just added, now create a wrapper around them. 
 Add an opening `<div>` tag to the first line, and a closing `</div>` tag to the bottom of the file.
  
 4) <strong>Add a layout class. </strong>
