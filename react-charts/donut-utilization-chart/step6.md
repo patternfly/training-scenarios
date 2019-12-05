@@ -4,7 +4,7 @@ Change the donut utilization chart theme color.
 
 2) <strong>Locate the `<Chart>` component and add a peroperty to change the theme.</strong>
 
-It will loo like this:
+It will look like this:
 
 <pre class="file">
 &lt;ChartDonutUtilization
