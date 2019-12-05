@@ -1,10 +1,10 @@
-Now we'll add a legend to the line chart...
+Change the line chart theme color.
 
-## Task
+1) <strong>Make sure the App.js file is still open.</strong>
 
-1) Make sure the App.js file is still open
+2) <strong>Locate the `<Chart>` component and add a peroperty to change the theme.</strong>
 
-2) Locate the code that looks like the following:
+It will look like this:
 
 <pre class="file">
 &lt;Chart
@@ -12,10 +12,13 @@ Now we'll add a legend to the line chart...
   containerComponent={&lt;ChartVoronoiContainer labels={({ datum }) =&gt; `${datum.name}: ${datum.y}`} /&gt;}
   maxDomain={{y: 10}}
   minDomain={{y: 0}}
+  legendData={[{ name: &#39;Cats&#39; }, { name: &#39;Birds&#39; }, { name: &#39;Dogs&#39; }, { name: &#39;Mice&#39; }]}
+  legendOrientation=&quot;vertical&quot;
+  legendPosition=&quot;right&quot;
   padding={{
     bottom: 75,
     left: 75,
-    right: 50,
+    right: 200,
     top: 50
   }}
   height={250}
@@ -23,36 +26,13 @@ Now we'll add a legend to the line chart...
 &gt;
 </pre>
 
-3) Replace the following property in that section:
+3) <strong>Add the `themeColor` property to the component.</strong>
+
+The `themeColor` property specifies the theme color. Some valid values are `ChartThemeColor.blue`,  `ChartThemeColor.green`, or `ChartThemeColor.multi`.
 
 <pre class="file" data-target="clipboard">
-padding={{
-  bottom: 75,
-  left: 75,
-  right: 200,
-  top: 50
-}}
+themeColor={ChartThemeColor.green}
 </pre>
 
-- This will add more padding to the right property to accommodate the legend
-
-4) Add the following properties to that section:
-
-<pre class="file" data-target="clipboard">
-legendData={[
-  { name: &#39;Cats&#39; }, 
-  { name: &#39;Dogs&#39;, symbol: { type: &#39;dash&#39; }}, 
-  { name: &#39;Birds&#39;},
-  { name: &#39;Mice&#39; }
-]}
-legendOrientation=&quot;vertical&quot;
-legendPosition=&quot;right&quot;
-</pre>
-
-- The `legendOrientation` property specifies whether the legend is rendered horizontally or vertically
-- The `legendPosition` property specifies whether the legend is rendered on the bottom or right of the chart
-
-5) Once the preview reloads - it should look like this:
-<img src="line-chart/assets/legend.png" alt="Chart with legend" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
-
-We'll continue by changing the chart's theme color in the next step.
+Once the preview reloads, it should look like this:
+<img src="line-chart/assets/theme.png" alt="Chart with theme color" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
