@@ -1,12 +1,12 @@
 Let's create the basic table structure.
 
-## Task
-
-1) Navigate to the `src` folder and open `src/App.js`{{open}}
+1) <strong>Navigate to the `src` folder and open `src/App.js`.</strong>
 
 Next, we'll set up the general structure of an empty table and add the necessary imports.
 
-2) Copy the following code into the App.js file, replacing all of the content there:
+2) <strong>Copy the following code into the App.js file.</strong>
+
+Replace all of the content in App.js with the code snippet below.
 
 <pre class="file" data-filename="App.js" data-target="replace">
 import * as React from &quot;react&quot;;
@@ -25,7 +25,9 @@ const App = () =&gt; {
 export default App;
 </pre>
 
-3) Now, declare two constants, outside of the React "App" component (below the last import statement at the top, above the line starting with `const App = () => {`), to represent a set of columns and rows.
+3) <strong>Declare constants for table columns and rows.</strong>
+
+Just below the last import statement, and above the line starting with `const App = ()`, add the following code to populate the table with data:
 
 <pre class="file" data-target="clipboard">
 const columns = ["First column", "Second column", "Third column"];
@@ -36,12 +38,14 @@ const defaultRows = [
 ];
 </pre>
 
-4) Now, locate the line `<Table caption="Patternfly React Table" cells={[]} rows={[]}>` and replace the references to empty arrays (`cells={[]} rows={[]}`) with the row/column definitions you just created.
+4) <strong>Set the `cells` and `rows` prop for the `<Table />` component.</strong>
+
+Locate the `<Table />` component, and replace the references to empty arrays (`cells={[]} rows={[]}`) with the row/column definitions you just created.
 
 <pre class="file">
 cells={columns} rows={defaultRows}
 </pre>
 
-Your table should now look like the image below:
+The table should now look like the image below:
 
 <img src="table-intro/assets/step-2-complete.png" alt="Image of what table looks like at the end of step 2." style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
