@@ -6,7 +6,7 @@ Now we'll create a simple bar chart...
 
 2) <strong>Set up the general structure of the chart and the necessary import statements.</strong>
 
-Copy the following code into the App.js file, replacing all of the content there:
+Copy the following code into the `App.js` file, replacing all of the content there:
 
 <pre class="file" data-filename="App.js" data-target="replace">
 import React from 'react';
@@ -48,7 +48,8 @@ export default App;
 <strong>Notes:</strong>
 
 - The `ChartBar` is the React component used to add data to the Chart
-- The `domainPadding` property adjusts the position of the first/last `ChartBar`
+The `domainPadding` property adjusts the position of the first/last `ChartBar`
 
-3) <strong>When the server reloads, the page should look like this</strong>
-<img src="bar-chart/assets/simple.png" alt="Simple chart" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
+When the server reloads, the page should look like this
+<img src="bar-chart/assets/simple.png" alt="Simple chart"
+style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />

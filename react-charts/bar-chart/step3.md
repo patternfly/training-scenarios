@@ -61,7 +61,7 @@ Copy this code to the editor:
 &lt;/ChartGroup&gt;
 </pre>
 
-4) <strong>Once the preview reloads - it should look like this</strong>
+When the server reloads, the page should look like this:
 
 <img src="bar-chart/assets/multiple.png" alt="Multiple dataset chart"
 style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />

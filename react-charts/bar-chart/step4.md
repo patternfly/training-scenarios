@@ -29,7 +29,7 @@ containerComponent={
 }
 </pre>
 
-Once the preview reloads - it should look like this:
+When the server reloads, the page should look like this:
 
 <img src="bar-chart/assets/tooltips.png" alt="Chart with tooltips"
 style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />

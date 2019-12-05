@@ -15,8 +15,8 @@ Add axis labels to the bar chart.
 
 3) <strong>Add the `padding` property to that section:</strong>
 
-This increases padding to the bottom and left properties to accommodate
-the axis labels.
+In this case, give it the following values. More padding will be added to the
+bottom and left properties to accommodate the axis labels.
 
 <pre class="file" data-target="clipboard">
 padding={{
@@ -42,6 +42,8 @@ The `<Chart>` component displays an axis by default. Add labels and grid lines
 here to enhance the component.
 
 a) <strong>Add the `<ChartAxis>` component with a label property.</strong>
+
+It should look like this:
 
 <pre class="file" data-target="clipboard">
 &lt;ChartAxis label=&quot;Years&quot;/&gt;
