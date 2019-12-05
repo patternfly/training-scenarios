@@ -1,7 +1,11 @@
-This step will begin by adding a CSS selector to define the chart size.
+Begin by adding a CSS selector to define the chart size.
 
-<strong>Note:</strong> Katacoda is setting up a new React application. It will be ready to code
-once the server starts and you can see "Welcome to PatternFly" on the lower pane.
+Katacoda is setting up a new React application. Begin coding once the server
+starts and "Welcome to PatternFly" is visible on the lower pane.
+
+<strong>Note:</strong> Katacoda is setting up a new React application.
+It's ready to code once the server starts and "Welcome to PatternFly" message
+is displayed on the lower pane.
 
 ## Tasks
 
