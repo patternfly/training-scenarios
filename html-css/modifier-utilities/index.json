@@ -1,0 +1,56 @@
+{
+  "title": "Modifiers and utility classes",
+  "description": "Apply modifier and utility classes to create new variations.",
+  "difficulty": "beginner",
+  "time": "15 minutes",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "code": "env-init.sh",
+      "credits": ""
+    },
+    "steps": [
+      {
+        "title": "Modify simple component",
+        "text": "step1-instructions.md",
+        "answer": "step1-answer.md"
+      },
+      {
+        "title": "Modify larger component",
+        "text": "step2-instructions.md",
+        "answer": "step2-answer.md"
+      },
+      {
+        "title": "More practice with modifiers",
+        "text": "step3-instructions.md",
+        "answer": "step3-answer.md"
+      },
+      {
+        "title": "Create your own modifier class",
+        "text": "step4-instructions.md",
+        "answer": "step4-answer.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "files": ["index.html", "myapp.scss"],
+  "environment": {
+    "showdashboard": true,
+    "delayToSaveFileAfterStopTypingMilliseconds": 2000,
+    "autoFormatEnable": false,
+    "dashboards": [
+      {"name": "Web Application", "port": 3000}
+    ],
+    "uilayout": "editor-iframe-split",
+    "uisettings": "html"
+  },
+  "backend": {
+    "imageid": "node",
+    "port": 3000
+  },
+  "actions": {
+    "hideprogressbar": {}
+  }
+}

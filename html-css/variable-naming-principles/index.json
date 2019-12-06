@@ -1,0 +1,56 @@
+{
+  "title": "Variable naming principles",
+  "description": "Create and override component and global variables by following BEM naming principles.",
+  "difficulty": "intermediate",
+  "time": "20 minutes",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "code": "env-init.sh",
+      "credits": ""
+    },
+    "steps": [
+      {
+        "title": "Override Component Variables",
+        "text": "step1-instructions.md",
+        "answer": "step1-answer.md"
+      },
+      {
+        "title": "Override Global Variables",
+        "text": "step2-instructions.md",
+        "answer": "step2-answer.md"
+      },
+      {
+        "title": "Create component variables using BEM",
+        "text": "step3-instructions.md",
+        "answer": "step3-answer.md"
+      },
+      {
+        "title": "Create global variables using BEM",
+        "text": "step4-instructions.md",
+        "answer": "step4-answer.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "files": ["index.html", "myapp.scss"],
+  "environment": {
+    "showdashboard": true,
+    "delayToSaveFileAfterStopTypingMilliseconds": 2000,
+    "autoFormatEnable": false,
+    "dashboards": [
+      {"name": "Web Application", "port": 3000}
+    ],
+    "uilayout": "editor-iframe-split",
+    "uisettings": "html"
+  },
+  "backend": {
+    "imageid": "node",
+    "port": 3000
+  },
+  "actions": {
+    "hideprogressbar": {}
+  }
+}

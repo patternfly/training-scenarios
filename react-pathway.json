@@ -1,16 +1,16 @@
 {
   "title": "PatternFly React",
-  "description": "These courses are designed to introduced you to PatternFly React - a set of React components that encapsulate the PatternFly patterns for re-use.",
+  "description": "Learn PatternFly React basics.",
   "courses": [
     {
-      "course_id": "components-intro",
-      "title": "PatternFly React Components",
-      "description": "Introduction to PatternFly React components"
+      "course_id": "react-basics",
+      "title": "PatternFly React basics",
+      "description": "Build your first PatternFly component."
     },
     {
-      "course_id": "components-advanced",
-      "title": "PatternFly React Advanced",
-      "description": "Advanced PatternFly React component usage"
+      "course_id": "react-customize",
+      "title": "Customize PatternFly",
+      "description": "Learn how to customize components in PatternFly."
     }
   ]
 }

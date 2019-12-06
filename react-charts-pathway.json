@@ -1,0 +1,51 @@
+{
+  "title": "PatternFly React charts",
+  "description": "Learn how to implement React charts.",
+  "courses": [
+    {
+      "course_id": "area-chart",
+      "title": "Area chart",
+      "description": "Learn how to implement a React area chart."
+    },
+    {
+      "course_id": "bar-chart",
+      "title": "Bar chart",
+      "description": "Learn how to implement a React bar chart."
+    },
+    {
+      "course_id": "bullet-chart",
+      "title": "Bullet chart",
+      "description": "Learn how to implement a React bullet chart."
+    },
+    {
+      "course_id": "donut-chart",
+      "title": "Donut chart",
+      "description": "Learn how to implement a React donut chart."
+    },
+    {
+      "course_id": "donut-utilization-chart",
+      "title": "Donut utilization chart",
+      "description": "Learn how to implement a React donut utilization chart."
+    },
+    {
+      "course_id": "line-chart",
+      "title": "Line chart",
+      "description": "Learn how to implement a React line chart."
+    },
+    {
+      "course_id": "pie-chart",
+      "title": "Pie chart",
+      "description": "Learn how to implement a React pie chart."
+    },
+    {
+      "course_id": "stack-chart",
+      "title": "Stack chart",
+      "description": "Learn how to implement a React pie chart."
+    },
+    {
+      "course_id": "sparkline-chart",
+      "title": "Sparkline chart",
+      "description": "Learn how to implement a React sparkline chart."
+    }
+  ]
+}

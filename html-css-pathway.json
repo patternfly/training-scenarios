@@ -1,32 +1,32 @@
 {
-  "title": "PatternFly HTML CSS",
-  "description": "Below you will find training modules for Patternfly HTML and CSS.",
+  "title": "PatternFly HTML/CSS",
+  "description": "Learn to use PatternFly HTML/CSS.",
   "icon": "fa-jedi",
   "courses": [
     {
-      "course_id": "module-1",
-      "title": "The Building Blocks for PatternFly Core",
-      "description": "This module will cover the guiding principles behind the three major parts of PatternFly Core—components, layouts, and demos and how they interact with each other."
+      "course_id": "building-blocks",
+      "title": "The building blocks of PatternFly",
+      "description": "Learn about components, layouts, and demos."
     },
     {
-      "course_id": "module-2",
-      "title": "BEM Naming Principles",
-      "description": "This module will utilize BEM to create component and global variables and also override them."
+      "course_id": "variable-naming-principles",
+      "title": "Variable naming principles",
+      "description": "Create and override component and global variables by following BEM naming principles."
     },
     {
-      "course_id": "module-3",
-      "title": "Modifier and Utility Classes",
-      "description": "Deep dive into modifiers."
+      "course_id": "modifier-utilities",
+      "title": "Modifiers and utilities",
+      "description": "Apply modifier and utility classes to create new variations."
     },
     {
-      "course_id": "module-4",
-      "title": "PatternFly Layouts",
-      "description": "This module will cover the seven different PatternFly layouts"
+      "course_id": "layouts",
+      "title": "Layouts",
+      "description": "Learn how to use all seven of PatternFly's layouts."
     },
     {
-      "course_id": "module-5",
-      "title": "Overriding and Extending Variables",
-      "description": "Practice overriding and extending PatternFly variables to make new designs."
+      "course_id": "override-extend-variables",
+      "title": "Override and extend variables",
+      "description": "Practice overriding and extending variables to create new designs."
     }
   ]
 }

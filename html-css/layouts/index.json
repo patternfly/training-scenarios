@@ -1,0 +1,71 @@
+{
+  "title": "Layouts",
+  "description": "Learn how to use all seven of PatternFly's layouts.",
+  "difficulty": "beginner",
+  "time": "25 minutes",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "code": "env-init.sh",
+      "credits": ""
+    },
+    "steps": [
+      {
+        "title": "Bullseye Layout",
+        "text": "step1-instructions.md",
+        "answer": "step1-answer.md"
+      },
+      {
+        "title": "Level Layout",
+        "text": "step2-instructions.md",
+        "answer": "step2-answer.md"
+      },
+      {
+        "title": "Split Layout",
+        "text": "step3-instructions.md",
+        "answer": "step3-answer.md"
+      },
+      {
+        "title": "Stack Layout",
+        "text": "step4-instructions.md",
+        "answer": "step4-answer.md"
+      },
+      {
+        "title": "Gallery Layout",
+        "text": "step5-instructions.md",
+        "answer": "step5-answer.md"
+      },
+      {
+        "title": "Grid Layout",
+        "text": "step6-instructions.md",
+        "answer": "step6-answer.md"
+      },
+      {
+        "title": "Flex Layout",
+        "text": "step7-instructions.md",
+        "answer": "step7-answer.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "files": ["index.html", "myapp.scss"],
+  "environment": {
+    "showdashboard": true,
+    "delayToSaveFileAfterStopTypingMilliseconds": 2000,
+    "autoFormatEnable": false,
+    "dashboards": [
+      {"name": "Web Application", "port": 3000}
+    ],
+    "uilayout": "editor-iframe-split",
+    "uisettings": "html"
+  },
+  "backend": {
+    "imageid": "node",
+    "port": 3000
+  },
+  "actions": {
+    "hideprogressbar": {}
+  }
+}
