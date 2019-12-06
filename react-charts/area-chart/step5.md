@@ -1,4 +1,12 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
 Now we will add axis labels to the area chart.
+=======
+Add axis labels to the area chart.
+>>>>>>> upstream/master
+=======
+Add axis labels to the area chart.
+>>>>>>> 8e7b2db643a6d7af430c00829f5c60764581c387
 
 1) <strong>Make sure the `App.js` file is still open.</strong>
 
@@ -37,6 +45,7 @@ padding={{
   right: 50,
   top: 50
 }}
+<<<<<<< HEAD
 </pre>
 
 4) <strong>Locate the code between the `<Chart>` and `<ChartGroup>`.</strong>
@@ -51,7 +60,7 @@ padding={{
 
 5) <strong>Between these components add the `<ChartAxis>` components.</strong>
 
-The `<Chart>` component displays an axis by default, but here you will add labels and grid lines to enhance the component.
+The `<Chart>` component displays an axis by default. Add labels and grid lines here to enhance the component.
 
 a) <strong>Add the `<ChartAxis>` component with a label property.</strong>
 
@@ -73,7 +82,50 @@ It should look like this:
 &lt;ChartAxis dependentAxis showGrid label=&quot;Percentage&quot;/&gt;
 </pre>
 
-Once the preview reloads it should look like this:
+Once the preview reloads, it should look like this:
 <img src="area-chart/assets/axis.png" alt="Chart with axis labels" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
+<<<<<<< HEAD
 
 You will continue by adding a legend to the chart in the next step.
+=======
+</pre>
+
+4) <strong>Locate the code between the `<Chart>` and `<ChartGroup>`.</strong>
+
+<pre class="file">
+&lt;Chart&gt;
+&lt;/Chart&gt;
+
+&lt;ChartGroup&gt;
+&lt;/ChartGroup&gt;
+</pre>
+
+5) <strong>Between these components add the `<ChartAxis>` components.</strong>
+
+The `<Chart>` component displays an axis by default. Add labels and grid lines here to enhance the component.
+
+a) <strong>Add the `<ChartAxis>` component with a label property.</strong>
+
+It should look like this:
+
+<pre class="file" data-target="clipboard">
+&lt;ChartAxis label=&quot;Years&quot;/&gt;
+</pre>
+
+b) <strong>Add another `<ChartAxis>` component with multiple properties.</strong>
+
+The `dependentAxis` property specifies whether the axis corresponds to dependent data points (e.g., usually the y-axis).
+
+The `showGrid` property displays grid lines along that axis.
+
+It should look like this:
+
+<pre class="file" data-target="clipboard">
+&lt;ChartAxis dependentAxis showGrid label=&quot;Percentage&quot;/&gt;
+</pre>
+
+Once the preview reloads, it should look like this:
+<img src="area-chart/assets/axis.png" alt="Chart with axis labels" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
+>>>>>>> upstream/master
+=======
+>>>>>>> 8e7b2db643a6d7af430c00829f5c60764581c387
