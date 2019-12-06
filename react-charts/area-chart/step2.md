@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 Now you will create a simple area chart.
 
 1) <strong>Navigate to the `src` folder and open `src/App.js`{{open}}</strong>
 
 2) <strong>Next, set up the general structure of the chart and the necessary import statements.</strong>
+=======
+Create a simple area chart.
+
+1) <strong>Navigate to the `src` folder and open `src/App.js`{{open}}</strong>
+
+2) <strong>Set up the general structure of the chart and the necessary import statements.</strong>
+>>>>>>> upstream/master
 
 Copy the following code into the `App.js` file, replacing all of the content there:
 
@@ -33,7 +41,11 @@ function App() {
             { name: &#39;Cats&#39;, x: &#39;2017&#39;, y: 8 }, 
             { name: &#39;Cats&#39;, x: &#39;2018&#39;, y: 6 }
           ]} 
+<<<<<<< HEAD
           interpolation="basis"
+=======
+          interpolation="monotoneX"
+>>>>>>> upstream/master
         /&gt;
       &lt;/Chart&gt;
     &lt;/div&gt;
@@ -43,9 +55,16 @@ function App() {
 export default App;
 </pre>
 
+<<<<<<< HEAD
 <strong>Note:</strong> The `interpolation` property adds interpolating curves.
 
 When the server reloads, you should see something like this:
 <img src="area-chart/assets/simple.png" alt="Simple chart" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
 
 You will continue by adding multiple datasets to the chart in the next step.
+=======
+The `interpolation` property determines how data points should be connected when creating a path. Area chart uses "montoneX".
+
+Once the preview reloads, it should look like this:
+<img src="area-chart/assets/simple.png" alt="Simple chart" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
+>>>>>>> upstream/master
