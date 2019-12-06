@@ -1,6 +1,6 @@
 Change the donut chart theme color.
 
-1) <strong>Make sure the App.js file is still open.</strong>
+1) <strong>Make sure the `App.js` file is still open.</strong>
 
 2) <strong>Locate the `<Chart>` component and add a property to change the theme.</strong>
 
@@ -25,7 +25,7 @@ It will look like this:
 /&gt;
 </pre>
 
-3) <strong>Add the 'themeColor' property to the component.</strong>
+3) <strong>Add the `themeColor` property to the component.</strong>
 
 The `themeColor` property specifies the theme color. Some valid values are `ChartThemeColor.blue`,  `ChartThemeColor.green`, or `ChartThemeColor.multi`.
 

@@ -4,7 +4,7 @@ Create a simple donut chart.
 
 2) Set up the general structure of the chart and the necessary import statements.</strong>
 
-Copy the following code into the App.js file, replacing all of the content there:
+Copy the following code into the `App.js` file, replacing all of the content there:
 
 <pre class="file" data-filename="App.js" data-target="replace">
 import React from 'react';

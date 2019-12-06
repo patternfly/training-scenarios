@@ -6,7 +6,7 @@ Katacoda is setting up a new React application. Begin coding once the server sta
 
 2) <strong>Add CSS to define the overall chart size.</strong>
 
-Copy the following code into the 'app.css' file, replacing all of the content.
+Copy the following code into the `app.css` file, replacing all of the content.
 
 <pre class="file" data-filename="src/app.css" data-target="replace">
 .chart-container {

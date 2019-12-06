@@ -1,8 +1,8 @@
 Add tooltips to the donut chart.
 
-1) <strong>Make sure the App.js file is still open.</strong>
+1) <strong>Make sure the `App.js` file is still open.</strong>
 
-2) <strong>Locate the '<Chart>' component.</strong>
+2) <strong>Locate the `<Chart>` component.</strong>
 
 It will look like this:
 
