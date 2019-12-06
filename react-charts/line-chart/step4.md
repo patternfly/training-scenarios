@@ -15,11 +15,40 @@ It will look like this:
 &gt;
 </pre>
 
-3) <strong>Add a `constrainToVisibleArea` property inside of the `ChartVoronoiContainer`.</strong>
+3) <strong>Add a `containerComponent` property to the `Chart` component.</strong>
+
+The `containerComponent` property takes a component instance, which will be used to create a container element for standalone charts.
+
+Inside the `containerComponent` is the `ChartVoronoiContainer` component, which adds the ability to associate a mouse position with the data point(s) closest to it. This is useful for adding a tooltip.
+
+It should look like this:
+
+<pre class="file" data-target="clipboard">
+containerComponent={
+  &lt;ChartVoronoiContainer
+  /&gt;
+}
+</pre>
+
+<strong>Note:</strong> There are no visible changes at this stage.
+
+4) <strong>Add a `constrainToVisibleArea` property inside of the `ChartVoronoiContainer`.</strong>
 
 The `constrainToVisibleArea` property determines whether to coerce tooltips so that they fit within the visible area of the chart.
 
-Copy this code to the editor:
+It should look like this:
+
+<pre class="file" data-target="clipboard">
+containerComponent={
+  &lt;ChartVoronoiContainer
+    constrainToVisibleArea
+  /&gt;
+  }
+</pre>
+
+5) <strong>Add a `labels` property inside of the `ChartVoronoiContainer`.</strong>
+
+It should look like this:
 
 <pre class="file" data-target="clipboard">
 containerComponent={
