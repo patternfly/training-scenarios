@@ -1,8 +1,8 @@
-Now we'll use CSS variables to further customize our components.
+Use CSS variables to further customize components.
 
 1) <strong>Navigate to the `src` folder and open `src/app.css`{{open}}</strong>
 
-2) <strong>Set up the css file.</strong>
+2) <strong>Set up the CSS file.</strong>
 
 Copy the following code into the `app.css` file, replacing all of the content there:
 
@@ -52,6 +52,6 @@ The variable for the background color of the page is `--pf-c-page--BackgroundCol
 
 <strong>Hint:</strong> `--pf-c-page--BackgroundColor: purple;`
 
-When these steps are complete, your page should look like this:
+When these steps are complete, the page should look like this:
 
 <img src="react-customize/assets/step4.png" alt="Completed custom page demo" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />

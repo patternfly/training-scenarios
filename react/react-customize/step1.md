@@ -87,6 +87,6 @@ To add cards efficiently use `Array.apply` and `Array.map` to add nine cards. Th
 ))}
 </pre>
 
-When the server reloads, you should see something like this:
+When the server reloads, it should look like this:
 
 <img src="react-customize/assets/step1.png" alt="Page demo" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
