@@ -1,10 +1,10 @@
 Change the donut utilization chart theme color.
 
-1) <strong>Make sure the App.js file is still open.</strong>
+1) <strong>Make sure the `App.js` file is still open.</strong>
 
-2) <strong>Locate the `<Chart>` component and add a peroperty to change the theme.</strong>
+2) <strong>Locate the `<Chart>` component and add a property to change the theme.</strong>
 
-It will look like this:
+It should look like this:
 
 <pre class="file">
 &lt;ChartDonutUtilization

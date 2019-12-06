@@ -1,6 +1,6 @@
 Add thresholds to the donut utilization chart.
 
-1) <strong>Make sure the App.js file is still open.</strong>
+1) <strong>Make sure the `App.js` file is still open.</strong>
 
 2) <strong>Locate the `<Chart>` component.</strong>
 
@@ -18,8 +18,7 @@ It will look like this:
 
 3) <strong>Add a `thresholds` property to the `<Chart>` component.</strong>
 
-The dynamic portion of the chart will change colors when data points reach the given `thresholds` properties
-This will change the dynamic portion of the chart to red.
+The dynamic portion of the chart will change colors when data points reach the given `thresholds` properties.  This will change the dynamic portion of the chart to red.
 
 Copy this code to the editor:
 

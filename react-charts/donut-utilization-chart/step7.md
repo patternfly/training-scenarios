@@ -1,6 +1,6 @@
 Add a donut threshold component.
 
-1) <strong>Make sure the App.js file is still open.</strong>
+1) <strong>Make sure the `App.js` file is still open.</strong>
 
 2) <strong>Locate the code for the `<Chart>`component.</strong>
 

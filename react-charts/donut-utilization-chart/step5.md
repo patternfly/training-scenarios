@@ -1,6 +1,6 @@
 Add a legend to the donut utilization chart.
 
-1) <strong>Make sure the App.js file is still open.</strong>
+1) <strong>Make sure the `App.js` file is still open.</strong>
 
 2) <strong>Locate the code for the `<Chart>` component.</strong>
 
@@ -19,11 +19,16 @@ It should look like this:
 /&gt;
 </pre>
 
-3) <strong>Add a `padding` property to the component.</strong>
+3) <strong>Add the `padding` property to that section:</strong>
 
-This `padding` property adds more padding to accommodate the legend.
+In this case, give it the following values. More padding will be added to the right property to accommodate the axis labels.
 
-Copy this code to the editor:
+- bottom: 20
+- left: 20
+- right: 290
+- top: 20
+
+It should look like this:
 
 <pre class="file" data-target="clipboard">
 padding={{
