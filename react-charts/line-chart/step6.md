@@ -25,11 +25,7 @@ It should look like this:
 
 3) <strong>Update the padding for the right value to accommodate the legend.</strong>
 
-<pre class="file" data-target="clipboard">
-padding={{
-  right: 200
-}}
-</pre>
+`right: 200`
 
 4) <strong>Add the `legendOrientation` and `legendPosition` properties to the `<Chart>` component.</strong>
 
