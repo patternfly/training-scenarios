@@ -9,21 +9,17 @@
       "code": "env-init.sh"
     },
     "steps": [
-      { "title": "Introducing PatternFly React demos",
+      { "title": "Add a page demo",
         "text": "step1.md"
       },
-      { "title": "Add a page demo",
+      { "title": "Add content to your cards",
         "text": "step2.md"
       },
-      { "title": "Add content to your cards",
+      { "title": "Modify the cards",
         "text": "step3.md"
       },
-      { "title": "Modify the cards",
+      { "title": "Customize with CSS variables",
         "text": "step4.md"
-      },
-      {
-        "title": "Customize with CSS variables",
-        "text": "step5.md"
       }
     ],
     "assets": {

@@ -1,30 +1,57 @@
-Now we'll modify our cards.
+Now we'll use CSS variables to further customize our components.
 
-## Task
+1) <strong>Navigate to the `src` folder and open `src/app.css`{{open}}</strong>
 
-1) Add a cool hover effect to the `Card` component
+2) <strong>Set up the css file.</strong>
 
-PatternFly components, including card, can be customized with props. You can add a hover effect to your cards with the `isHoverable` prop.
+Copy the following code into the `app.css` file, replacing all of the content there:
 
-Add the following code to the `Card` component:
+<pre class="file" data-filename="src/app.css" data-target="replace">
+:root {
+  // global styles go here
+}
 
-<pre class="file" data-target="clipboard">
-&lt;Card isHoverable&gt;
+.pf-c-page.myPageClass {
+  // myPageClass styles go here
+}
 </pre>
 
+3) <strong>Add a new global color.</strong>
 
-2) Change the button in the `CardFooter` component into a blue action button
+Inside of `:root` define a new variable that is assigned to a hex value. The `:root` contains styles that are applied to the global application.
 
-You can change the variant to get different kinds of buttons.
+In this example, use the variable name `--my-app-card-theme--Color`. For more information on PatternFly variable naming look at the "variable naming principles" tutorial.
 
-Replace the `CardFooter` component with the following code:
+Assign the variable to the color: #DC143C.
 
-<pre class="file" data-target="clipboard">
-&lt;CardFooter&gt;
-  &lt;Button variant="primary"&gt;Link to PatternFly&lt;/Button&gt;
-&lt;/CardFooter&gt;
-</pre>
+<strong>Hint:</strong>
+```
+:root {
+  --my-app-card-theme--Color: #DC143C;
+}
+```
 
-When these steps are complete, your page should look like this when you hover over a card:
+4) <strong>Override the global link color in the page.</strong>
 
-<img src="react-customize/assets/step3.png" alt="Page demo with cards and hover effect" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
+To override styles for the page and the specific class, target the styles in the `.pf-c-page.myPageClass` class inside of the `app.css` file.
+
+In this example, override the color for `--pf-global--link--Color` by assigning the variable to `--my-app-card-theme--Color` (the variable that was added to the root in step 3).
+
+<strong>Hint: </strong>
+```
+.pf-c-page.myPageClass {
+  --pf-global--link--Color: var(--my-app-card-theme--Color);
+}
+```
+
+5) <strong>Override the page background color.</strong>
+
+This override will still happen in the `.pf-c-page.myPageClass` block.
+
+The variable for the background color of the page is `--pf-c-page--BackgroundColor`. Assign it to `purple`.
+
+<strong>Hint:</strong> `--pf-c-page--BackgroundColor: purple;`
+
+When these steps are complete, your page should look like this:
+
+<img src="react-customize/assets/step4.png" alt="Completed custom page demo" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />

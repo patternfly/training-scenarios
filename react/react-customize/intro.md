@@ -1,1 +1,3 @@
-In this scenario, you will learn how to use a PatternFly 4 React demo for the first time and customize components.
+PatternFly React is made up of components, layouts and demos. The PatternFly React library provides a collection of React demos to build more complex interfaces with consistent markup, styling, and behavior. 
+
+In this course, we are going to build a PatternFly page together, starting with a demo, adding cards, and concluding with modifying the cards and their content. You will learn how to use PatternFly components together to build a consistent experience.
