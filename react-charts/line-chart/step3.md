@@ -1,6 +1,6 @@
 Add multiple datasets to the line chart.
 
-1) <strong>Make sure the App.js file is still open.</strong>
+1) <strong>Make sure the `App.js` file is still open.</strong>
 
 2) <strong>Locate the `<Chart>` component.</strong>
 

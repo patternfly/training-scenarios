@@ -1,8 +1,8 @@
 Add a legend to the line chart.
 
-1) <strong>Make sure the App.js file is still open.</strong>
+1) <strong>Make sure the `App.js` file is still open.</strong>
 
-2) <strong>Locate the code for the `<Chart>` component.</strong>
+2) <strong>Locate the code for the `padding` property in the `<Chart>` component.</strong>
 
 It should look like this:
 
@@ -27,10 +27,7 @@ It should look like this:
 
 <pre class="file" data-target="clipboard">
 padding={{
-  bottom: 75,
-  left: 75,
-  right: 200,
-  top: 50
+  right: 200
 }}
 </pre>
 
@@ -51,5 +48,5 @@ legendOrientation=&quot;vertical&quot;
 legendPosition=&quot;right&quot;
 </pre>
 
- Once the preview reloads, it should look like this:
+Once the preview reloads, it should look like this:
 <img src="line-chart/assets/legend.png" alt="Chart with legend" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
