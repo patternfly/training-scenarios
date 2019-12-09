@@ -2,9 +2,9 @@ This step looks at how component variables are named.
 
 In PatternFly, component-level custom properties follow this general formula `--pf-c-block[__element][--modifier][--state][--breakpoint][--pseudo-element]--PropertyCamelCase.`
 
-* `--pf-c-block` refers to the block, usually the component or layout name (i.e., --pf-c-alert).
-* `__element` refers to the element inside of the block (i.e., __title).
-* `--modifier` refers to a modifier class such as `.pf-m-danger`, and is prefixed with m- in the component variable (i.e., `--m-danger`).
+* `--pf-c-block` refers to the block, usually the component or layout name (i.e. `--pf-c-alert`).
+* `__element` refers to the element inside of the block (i.e. `__title`).
+* `--modifier` refers to a modifier class such as `.pf-m-danger`, and is prefixed with m- in the component variable (i.e.`--m-danger`).
 * `--state` is something like hover or active.
 * `--breakpoint` is a media query breakpoint such as sm for $pf-global--breakpoint--sm.
 * `--pseudo-element` is one of either before or after.
