@@ -1,8 +1,8 @@
-Before getting started, add some code to the workspace that can be modified.
+Before getting started, add code to the workspace so that it can be modified.
  
-1) <strong>Copy code into the index.html file.</strong>
+1) <strong>Copy code into the `index.html` file.</strong>
 
-Click the Copy to Editor button below to add html for a card to the `index.html` file.
+Click the `Copy to Editor` button below to add markup for a card to the `index.html` file.
  
 <pre class="file" data-filename="index.html" data-target="replace">
 &lt;div class=&quot;pf-c-card pf-m-hoverable&quot;&gt;
@@ -34,11 +34,11 @@ PatternFly is an open source design system created to enable consistency and usa
 &lt;/div&gt;
 </pre>
  
-2) <strong>Set up the new styles file for overriding styles in the card component.</strong> 
+2) <strong>Set up a new styles file for overriding styles in the card component.</strong> 
 
 There are two blocks in this file: `:root` targets styles across the entire application and `.pf-c-card` targets styles specifically in the card component.
  
-3) <strong>Click the Copy to Editor button below to add code for the card component to the myapp.scss file.</strong>
+3) <strong>Click the `Copy to Editor` button below to add code for the card component to the `myapp.scss` file.</strong>
  
 <pre class="file" data-filename="myapp.scss" data-target="replace">
 :root {
