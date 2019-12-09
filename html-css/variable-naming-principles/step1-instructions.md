@@ -1,7 +1,6 @@
-BEM stands for Block Element and Modifier, where, Block maps to the component, element is the elements within the component and modifiers are tied to the elements in the block.
+This step looks at how component variables are named.
 
-Let's look at how component variables are named:
-Similarly, component-level custom properties follow this general formula `--pf-c-block[__element][--modifier][--state][--breakpoint][--pseudo-element]--PropertyCamelCase.`
+In PatternFly, component-level custom properties follow this general formula `--pf-c-block[__element][--modifier][--state][--breakpoint][--pseudo-element]--PropertyCamelCase.`
 
 * `--pf-c-block` refers to the block, usually the component or layout name (i.e., --pf-c-alert).
 * `__element` refers to the element inside of the block (i.e., __title).
@@ -9,12 +8,26 @@ Similarly, component-level custom properties follow this general formula `--pf-c
 * `--state` is something like hover or active.
 * `--breakpoint` is a media query breakpoint such as sm for $pf-global--breakpoint--sm.
 * `--pseudo-element` is one of either before or after.
+* `PropertyCamelCase` refers to the property that is being changed.
 
-## Workshop: Override the title color custom property in the success variation of the alert component.
+In this step, override the title color custom property in the success variation of the alert component.
 
-1) <strong>Copy code into the myapp.scss file.</strong>
+1) <strong>Add a success alert component to `index.html`.</strong>
 
-Click the <strong>Copy to Editor</strong> button below to set up your stylesheet in the `myapp.scss` file.
+Click the `Copy to Editor` button below to add the success component in the `index.html` file.
+
+<pre class="file" data-filename="index.html" data-target="replace">
+&lt;div class=&quot;pf-c-alert pf-m-success&quot;&gt;
+  &lt;div class=&quot;pf-c-alert__icon&quot;&gt;
+    &lt;i class=&quot;fas fa-check-circle&quot;&gt;&lt;/i&gt;
+  &lt;/div&gt;
+  &lt;h4 class=&quot;pf-c-alert__title&quot;&gt;Success alert title&lt;/h4&gt;
+&lt;/div&gt;
+</pre>
+
+2) <strong>Set up the styles file for the alert component.</strong>
+
+Click the `Copy to Editor` button below to set up the stylesheet in the `myapp.scss` file.
 
 <pre class="file" data-filename="myapp.scss" data-target="replace">
 :root {
@@ -26,29 +39,39 @@ Click the <strong>Copy to Editor</strong> button below to set up your stylesheet
 }
 </pre>
 
-<strong>Note:</strong> The task is to change the success variation’s title color to PatternFly’s danger color. To find the BEM class for the success variation of the alert component, and the alert title, visit https://www.patternfly.org/v4/documentation/core/components/alert.
+3) <strong>Write the block for the custom property name.</strong>
 
-Scroll to the bottom to view the Alert component’s documentation and note the class for the success variation is **.pf-m-success**, and the class for the title is **.pf-c-alert__title**.
+Overriding the success variation’s title color, means overriding its custom property.
 
-2) To override the success variation’s title color, we need to override its custom property. In the `myapp.scss` file, in the `.pf-c-alert{}`block, let's begin writing the custom property name. Start with the component part of the custom property name:
+In the `myapp.scss` file, in the `.pf-c-alert{}`block, begin writing the custom property name.
 
-<strong>Hint: </strong> `--pf-c-alert`
+In reference to the documentation above, it should look like: `--pf-c-alert`
 
-3) Lets add the modifier to the custom property name.
+4) <strong>Add the modifier to the custom property name.</strong>
 
-<strong>Note: </strong> In this step you will need to reference the documentation. In it we can see that the success variation class **.pf-m-success** applies to **.pf-c-alert**, so we need to add that modifier to the custom property:
+Reference the [documentation] (https://www.patternfly.org/v4/documentation/core/components/alert) by scrolling down to the bottom to view the alert component's documentation. Note that the success variation class `.pf-m-success` applies to `.pf-c-alert`. Add that modifier to the custom property.
 
-<strong>Hint: </strong>`--pf-c-alert--m-success`
+It should look like: `--pf-c-alert--m-success`
 
-4) Next we want to find the title’s element name and add that:
+5) <strong>Add the element to the custom property name.</strong>
 
-<strong>Hint: </strong>`--pf-c-alert--m-success__title`
+The element that is being changed is the `title` of the alert.
 
-5) And finally, we want to modify the color property, so let’s add that:
+It should look like this: `--pf-c-alert--m-success__title`
 
-<strong>Hint: </strong>`--pf-c-alert--m-success__title--Color`
+6) <strong>Add the property that is being modified.</strong>
 
-6) Now that we have the <strong>custom property name</strong>, we simply need to create a declaration with the danger color referenced above as the value:
+In this case, modify the color property of the title in the alert component.
 
-This is the one line that you should add inside of the `.pf-c-alert{}` block:
+It should look like: `--pf-c-alert--m-success__title--Color`
+
+7) <strong>Add a declaration using the new custom property created in steps 2-5.</strong>
+
+PatternFly's global danger color is: `--pf-global--danger-color--100`.
+
+Assign the custom property name: `--pf-c-alert--m-success__title--Color` that is already inside of the `.pf-c-alert{}` block, to the global danger color.
+
+It should look like this:
 `--pf-c-alert--m-success__title--Color: var(--pf-global--danger-color--100);`
+
+<strong>Note: </strong> The alert component should have a new color for the title.
