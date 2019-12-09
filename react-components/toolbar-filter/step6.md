@@ -8,6 +8,6 @@ Managing the relationship of a toolbar with its filters to a table or other comp
 
 The `DemoTable` component is defined in `src/components/table.js` where the managed list of applied filters manipulates a very small set of data.
 
-Once the preview reloads - it should look like this:
+Once the preview reloads, it should look like this:
 
 <img src="toolbar-filter/assets/final.png" alt="Completed toolbar filter with table" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />

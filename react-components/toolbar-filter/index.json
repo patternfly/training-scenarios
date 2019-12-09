@@ -10,7 +10,7 @@
     },
     "steps": [
       {
-        "title": "Set up DataToolbar basics",
+        "title": "Setting up `DataToolbar` basics",
         "text": "step1.md"
       },
       {

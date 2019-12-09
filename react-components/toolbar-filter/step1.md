@@ -1,10 +1,10 @@
-At its most basic, Toolbars consist of content rows of components. Most toolbars will only be a single row, but each row needs to be housed in a `DataToolbarContent` component.
+Toolbars consist of content rows of components. Most toolbars will only be a single row, but each row needs to be housed in a `DataToolbarContent` component.
 
 1) **Navigate to the `src` folder and open** `src/App.js`{{open}}
 
 2) **Set up the general structure of an empty toolbar and add the necessary imports**
 
-Copy the following code into the App.js file, replacing all of the content there:
+Copy the following code into the `App.js` file, replacing all of the content there:
 
 <pre class="file" data-filename="App.js" data-target="replace">
 import React from &quot;react&quot;;
@@ -64,6 +64,6 @@ Once completed, the code inside `<React.Fragment>` should appear as below.
 &lt;/DataToolbar&gt;
 </pre>
 
-Once the preview reloads - it should look like this:
+Once the preview reloads, it should look like this:
 
 <img src="toolbar-filter/assets/toolbar-content.png" alt="toolbar with data toolbar content" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />

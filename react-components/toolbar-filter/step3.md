@@ -99,7 +99,7 @@ This will space the three icons according to the PatternFly design specification
 </pre>
 
 
-Once the preview reloads - it should look like this:
+Once the preview reloads, it should look like this:
 
 <img src="toolbar-filter/assets/toolbar-groups.png" alt="toolbar groups" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
 
