@@ -17,7 +17,7 @@ It should look like this:
 &gt;
 </pre>
 
-3) <strong>Add the `padding` property to that section:</strong>
+3) <strong>Add the `padding` property to the `<Chart>` component.</strong>
 
 This will add more padding to the bottom and left properties to accommodate the axis labels.
 

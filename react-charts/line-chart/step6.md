@@ -27,21 +27,37 @@ It should look like this:
 
 `right: 200`
 
-4) <strong>Add the `legendOrientation` and `legendPosition` properties to the `<Chart>` component.</strong>
+4) <strong>Add the `legendOrientation` property to the `<Chart>` component.</strong>
 
-The `legendOrientation` property specifies whether the legend is rendered horizontally or vertically.  The `legendPosition` property specifies whether the legend is rendered on the bottom or right of the chart.
+Set the orientation for the `legendData` so that it behaves as expected when added in step 6 (there will be no visible changes yet).
 
-Copy this code to the editor:
+The `legendOrientation` property specifies whether the legend is rendered horizontally or vertically. In this case it should be set to vertical:
+
+<pre class="file" data-target="clipboard">
+legendOrientation=&quot;vertical&quot;
+</pre>
+
+5) <strong>Add the `legendPosition` property to the `<Chart>` component.</strong>
+
+Set the position for the `legendData` so that it behaves as expected when added in step 6 (there will still be no visible changes yet).
+
+The `legendPosition` property specifies whether the legend is rendered on the bottom or right of the chart. It should look like the following:
+
+<pre class="file" data-target="clipboard">
+legendPosition=&quot;right&quot;
+</pre>
+
+6) <strong>Add the `legendData` property to the `<Chart>` component.</strong>
+
+Inside the `legendData` should be an object with names for the data. It should look like the following:
 
 <pre class="file" data-target="clipboard">
 legendData={[
   { name: &#39;Cats&#39; }, 
-  { name: &#39;Dogs&#39;, symbol: { type: &#39;dash&#39; }}, 
-  { name: &#39;Birds&#39;},
+  { name: &#39;Dogs&#39; }, 
+  { name: &#39;Birds&#39; }, 
   { name: &#39;Mice&#39; }
 ]}
-legendOrientation=&quot;vertical&quot;
-legendPosition=&quot;right&quot;
 </pre>
 
 Once the preview reloads, it should look like this:
