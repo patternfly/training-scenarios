@@ -1,32 +1,40 @@
-There a couple additional miscellaneous properties used to customize general visual aspects of the select component.
+There are a couple of additional miscellaneous properties used to customize general visual aspects of the select component.
 
-1) **Add a new property to the select component called `width` and assign it to `"50%"`.** This property controls the overall width of the select toggle, using pixels or percentages.
+1) **Add a new property to the select component called `width` and assign it to `"50%"`.** 
+
+This property controls the overall width of the select toggle, using pixels or percentages.
 
 <pre class="file" data-target="clipboard">
-  width="50%"
+width="50%"
 </pre>
 
-2) **Add a new property to the select component called `maxHeight` and assign it to `{100}`.** This property controls the maximum height of the expanded select menu, using pixels or percentages.
+2) **Add a new property to the select component called `maxHeight` and assign it to `{100}`.** 
+
+This property controls the maximum height of the expanded select menu, using pixels or percentages.
 
 <pre class="file" data-target="clipboard">
-  maxHeight={100}
+maxHeight={100}
 </pre>
 
-3) **Add a new property to the select component called `noResultsFoundText` and assign it to `"Nothing found"`.** This property allows you to customize the text that appears when no results are found by the filtering function.
+3) **Add a new property to the select component called `noResultsFoundText` and assign it to `"Nothing found"`.** 
+
+This property allows you to customize the text that appears when no results are found by the filtering function.
 
 <pre class="file" data-target="clipboard">
-  noResultsFoundText="Nothing found"
+noResultsFoundText="Nothing found"
 </pre>
 
-4) **Add a new property to the select component called `createText` and assign it to `"Create new option"`.** This property allows you to customize the text that appears when the `isCreateable` property is present.
+4) **Add a new property to the select component called `createText` and assign it to `"Create new option"`.** 
+
+This property allows you to customize the text that appears when the `isCreateable` property is present.
 
 <pre class="file" data-target="clipboard">
-  createText="Create new option"
+createText="Create new option"
 </pre>
 
 <strong>Note:</strong> The variable prefixes the input text, formatting the displayed text as follows: `{createText} "{input value}"`
 
-This is what your select component should look like:
+The component should look as below.
 ```
 <Select 
   onToggle={this.onToggle}
@@ -47,3 +55,6 @@ This is what your select component should look like:
     {options}
 </Select>
 ```
+
+Once the preview reloads, it should look like this:
+<img src="select/assets/final-select.png" alt="basic select" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />

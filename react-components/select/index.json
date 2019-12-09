@@ -2,7 +2,7 @@
   "title": "Select component: beginner",
   "description": "Practice building a Patternfly 4 React Select",
   "difficulty": "beginner",
-  "time": "< 30 minutes",
+  "time": "30 minutes",
   "details": {
     "intro": {
       "text": "intro.md",
@@ -10,31 +10,31 @@
     },
     "steps": [
       {
-        "title": "Introducing Patternfly React Select",
+        "title": "Set up import statements and structure",
         "text": "step1.md"
       },
       {
-        "title": "Setting up a basic single select",
+        "title": "Set up a basic single select",
         "text": "step2.md"
       },
       {
-        "title": "Expanding into the typeahead select variant",
+        "title": "Typeahead select variant",
         "text": "step3.md"
       },
       {
-        "title": "Customizing filtering",
+        "title": "Customize filtering",
         "text": "step4.md"
       },
       {
-        "title": "Customizing data and display",
+        "title": "Customize data and display",
         "text": "step5.md"
       },
       {
-        "title": "Adding new options",
+        "title": "Add new options",
         "text": "step6.md"
       },
       {
-        "title": "Additional visual customization",
+        "title": "And additional visual customization",
         "text": "step7.md"
       }
     ],
@@ -47,6 +47,11 @@
         },
         {
           "file": "select-custom-display.png",
+          "target": "~/tutorial/assets/images/",
+          "chmod": "+r"
+        },
+        {
+          "file": "final-select.png",
           "target": "~/tutorial/assets/images/",
           "chmod": "+r"
         }

@@ -1,10 +1,8 @@
-The PatternFly React library provides a collection of React components you can use to build interfaces with consistent markup, styling, and behavior. In this course, we're going to build a PatternFly select component together - starting with the single select variant, and then expanding the example using the typeahead select variant and adding some customization.
-
-You are going to create a basic select component.
+Create a basic select component.
 
 1) **Navigate to the `src` folder and open `src/App.js`{{open}}**
 
-2) **Copy the following code into the App.js file, replacing all of the content in the file:**
+2) **Copy the code into the App.js file to set up the structure of the select component.**
 
 <pre class="file" data-filename="App.js" data-target="replace">
 import React from &quot;react&quot;;
@@ -34,6 +32,5 @@ class App extends React.Component {
 export default App;
 </pre>
 
-When Katacoda reloads you should see this...
+Once the preview reloads, it should look like this:
 <img src="select/assets/basic-select.png" alt="basic select" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
-
