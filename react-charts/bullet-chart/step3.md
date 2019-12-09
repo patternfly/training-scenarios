@@ -23,9 +23,7 @@ The `constrainToVisibleArea` property determines whether to coerce tooltips so t
 
 It should look like this:
 
-<pre class="file" data-target="clipboard">
-constrainToVisibleArea
-</pre>
+<pre class="file" data-target="clipboard">constrainToVisibleArea</pre>
 
 <strong>Note:</strong> There are no visible changes at this stage.
 
@@ -33,9 +31,7 @@ constrainToVisibleArea
 
 The `labels` property enables bullet chart tooltips and determines their content.
 
-<pre class="file" data-target="clipboard">
-labels={({ datum }) =&gt; `${datum.name}: ${datum.y}`}
-</pre>
+<pre class="file" data-target="clipboard">labels={({ datum }) =&gt; `${datum.name}: ${datum.y}`}</pre>
 
 Once the preview reloads, it should look like this:
 <img src="bullet-chart/assets/tooltips.png" alt="Chart with tooltips" style="box-shadow: rgba(3, 3, 3, 0)2) 0px 1)25px 2)5px 0px;" />

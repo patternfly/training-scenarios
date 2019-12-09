@@ -41,9 +41,7 @@ The `qualitativeRangeData` property adds descriptive ranges like 'poor', 'averag
 
 It should look like this:
 
-<pre class="file" data-target="clipboard">
-qualitativeRangeData={[{ name: &#39;Range&#39;, y: 50 }, { name: &#39;Range&#39;, y: 75 }]}
-</pre>
+<pre class="file" data-target="clipboard">qualitativeRangeData={[{ name: &#39;Range&#39;, y: 50 }, { name: &#39;Range&#39;, y: 75 }]}</pre>
 
 
 4) <strong>Add the `comparativeWarningMeasureData` property to the `ChartBullet` component.</strong>
@@ -52,9 +50,7 @@ The `comparativeWarningMeasureData` property adds warning thresholds to the char
 
 It should look like this:
 
-<pre class="file" data-target="clipboard">
-comparativeWarningMeasureData={[{ name: &#39;Warning&#39;, y: 88 }]}
-</pre>
+<pre class="file" data-target="clipboard">comparativeWarningMeasureData={[{ name: &#39;Warning&#39;, y: 88 }]}</pre>
 
 When the preview reloads, it should look like this:
 <img src="bullet-chart/assets/simple.png" alt="Simple chart" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
