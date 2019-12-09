@@ -66,4 +66,6 @@ options: [
 </pre>
 
 New values are being displayed, and the typeahead filtering will match based on this display. In the case of html structures passed as a child, the component will convert the structure to a string for filtering.
+
+Once the preview reloads, it should look like this:
 <img src="select/assets/select-custom-display.png" alt="select menu with custom display text" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
