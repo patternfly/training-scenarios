@@ -8,12 +8,16 @@ It should look like this:
 
 <pre class="file">
 &lt;Chart
-  containerComponent={&lt;ChartVoronoiContainer labels={({ datum }) =&gt; `${datum.name}: ${datum.y}`} /&gt;}
-  domainPadding={{ x: [30, 25] }}
   height={250}
   width={600}
+  containerComponent={
+  &lt;ChartVoronoiContainer
+    constrainToVisibleArea
+    labels={({ datum }) =&gt; `${datum.name}: ${datum.y}`}
+  /&gt;
+}
 &gt;
-</pre>
+</pre> 
 
 3) <strong>Add the `padding` property to that section:</strong>
 

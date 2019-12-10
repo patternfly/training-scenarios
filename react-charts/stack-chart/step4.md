@@ -25,6 +25,31 @@ It should look like this:
 <pre class="file" data-target="clipboard">
 containerComponent={
   &lt;ChartVoronoiContainer
+  /&gt;
+}
+</pre>
+
+<strong>Note:</strong> There are no visible changes at this stage.
+
+4) <strong>Add a `constrainToVisibleArea` property inside of the `ChartVoronoiContainer`.</strong>
+
+The `constrainToVisibleArea` property determines whether to coerce tooltips so that they fit within the visible area of the chart.
+
+It should look like this:
+
+<pre class="file" data-target="clipboard">
+containerComponent={
+  &lt;ChartVoronoiContainer
+    constrainToVisibleArea
+  /&gt;
+  }
+</pre>
+
+5) <strong>Add a `labels` property inside of the `ChartVoronoiContainer`.</strong>
+
+<pre class="file" data-target="clipboard">
+containerComponent={
+  &lt;ChartVoronoiContainer
     constrainToVisibleArea
     labels={({ datum }) =&gt; `${datum.name}: ${datum.y}`}
   /&gt;

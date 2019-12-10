@@ -4,30 +4,7 @@ Change the stack chart theme color.
 
 2) <strong>Locate the `<Chart>` component and add a property to change the theme.</strong>
 
-
-It will look like this:
-
-<pre class="file">
-&lt;Chart
-  containerComponent={&lt;ChartVoronoiContainer labels={({ datum }) =&gt; `${datum.name}: ${datum.y}`} /&gt;}
-  domainPadding={{ x: [30, 25] }}
-  legendData={[{ name: &#39;Cats&#39; }, { name: &#39;Birds&#39; }, { name: &#39;Dogs&#39; }, { name: &#39;Mice&#39; }]}
-  legendOrientation=&quot;vertical&quot;
-  legendPosition=&quot;right&quot;
-  padding={{
-    bottom: 75,
-    left: 75,
-    right: 200,
-    top: 50
-  }}
-  height={250}
-  width={600}
-&gt;
-</pre>
-
- <strong>Add the `themeColor` property to the component.</strong>
-
-The `themeColor` property specifies the theme color. Some valid values are `ChartThemeColor.blue`,  `ChartThemeColor.green`, or `ChartThemeColor.multi`.
+The `themeColor` property specifies the theme color. Some valid values are `ChartThemeColor.blue`,  `ChartThemeColor.green`, or `ChartThemeColor.multi`. It should look like the following:
 
 <pre class="file" data-target="clipboard">
 themeColor={ChartThemeColor.green}

@@ -43,7 +43,7 @@ function App() {
 export default App;
 </pre>
 
-`ChartBar` is the React component used to add data to the Chart -- `ChartArea` could be used instead.  The `domainPadding` property adjusts the position of the first/last `ChartBar`.
+`ChartBar` is the React component used to add data to the Chart, however `ChartArea` could be used instead.  The `domainPadding` property adjusts the position of the first/last `ChartBar`.
 
 Once the preview reloads, it should look like this:
 <img src="stack-chart/assets/simple.png" alt="Simple chart" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />

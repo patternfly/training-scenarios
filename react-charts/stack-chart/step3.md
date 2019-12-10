@@ -2,7 +2,7 @@ Add multiple datasets to the stack chart.
 
 1) <strong>Make sure `App.js` is still open.</strong>
 
-2) <strong>Locate the code within the `<Chart/>` component.</strong>
+2) <strong>Locate the code within the `<ChartBar/>` component.</strong>
 
 It will look like this:
 
