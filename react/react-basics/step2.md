@@ -15,7 +15,7 @@ It will look like the following:
 
 b) <strong>Add the `brand` component.</strong>
 
-The `brand` component is used to place a product logotype on a screen. All you need to provide is the source image or svg and alt text. Here the PatternFly logo is used.
+The `brand` component is used to place a product logotype on a screen. All that is needed is to provide the source image or SVG and alt text. Here the PatternFly logo is used.
 
 Insert the `brand` inside of the `CardHead` but before the `CardActions`.
 

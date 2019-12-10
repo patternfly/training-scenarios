@@ -10,7 +10,7 @@ Katacoda is setting up a new React application. Begin coding once the server sta
 
 2) <strong>Set up the general structure of the card and the necessary import statements.</strong>
 
-This step adds the structure of the card component. The next steps aim to fill in the structure with content.
+This step adds the structure of the card component. The next steps fill in the structure with content.
 
 Copy the following code into the `App.js` file, replacing all of the content there:
 
