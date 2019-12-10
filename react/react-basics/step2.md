@@ -1,21 +1,56 @@
-Add content to the `CardBody` of the card.
+Add content to the `CardHead` component.
 
-1) <strong>Make sure the `App.js` file is still open.</strong>
+1) <strong>Add a brand to the `CardHead` component.</strong>
 
-2) <strong>Locate the `<CardBody>` component.</strong>
+a) <strong>Locate the `<CardHead>` component.</strong>
 
 It will look like the following:
 
 <pre class="file">
-&lt;CardBody&gt;
-&lt;/CardBody&gt;
+&lt;CardHead&gt;
+  &lt;CardActions&gt;
+  &lt;/CardActions&gt;
+&lt;/CardHead&gt;
 </pre>
 
-3) <strong>Add content to that section.</strong>
+b) <strong>Add the `brand` component.</strong>
+
+The `brand` component is used to place a product logotype on a screen. All you need to provide is the source image or svg and alt text. Here the PatternFly logo is used.
+
+Insert the `brand` inside of the `CardHead` but before the `CardActions`.
 
 <pre class="file" data-target="clipboard">
-  PatternFly is an open source design system created to enable consistency and usability across a wide range of applications and use cases. PatternFly provides clear standards, guidance, and tools that help designers and developers work together more efficiently and build better user experiences.
+  &lt;Brand src=&quot;https://pf4.patternfly.org/assets/images/pf-logo-small.svg&quot; alt=&quot;Patternfly Logo&quot; /&gt;
 </pre>
 
-Once the preview reloads, it should look like this:
-<img src="react-basics/assets/card-with-body.png" alt="Card with body content" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
+2) <strong>Add a close button to the `CardActions` component.</strong>
+
+a) <strong>Locate the `<CardActions>` component.</strong>
+
+It will look like this:
+
+<pre class="file">
+&lt;CardActions&gt;
+&lt;/CardActions&gt;
+</pre>
+
+b) <strong>Add the `button` component.</strong>
+
+Buttons communicate and trigger actions a user can take in an application or website. They come in several variations, such as `primary`, `secondary`, `danger`, `plain`, and `link`.
+
+Add a button using the `plain` variant.
+
+<pre class="file" data-target="clipboard">
+  &lt;Button variant=&quot;plain&quot;&gt;
+  &lt;/Button&gt;
+</pre>
+
+c) <strong>Add an icon inside of the button.</strong>
+
+PatternFly React provides a variety of icons. They're easy to use and compile into svgs. Use them inside buttons and other components.
+
+Add a `TimesIcon` so that the card can be closed.
+
+<pre class="file" data-target="clipboard">
+  &lt;TimesIcon /&gt;
+</pre>

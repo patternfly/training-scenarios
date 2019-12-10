@@ -12,14 +12,17 @@
       { "title": "Add a card",
         "text": "step1.md"
       },
-      { "title": "Add content to the card",
+      { "title": "Add content to the head",
         "text": "step2.md"
       },
-      { "title": "Modify the header",
+      { "title": "Add content to the header",
         "text": "step3.md"
       },
-      { "title": "Add footer content",
+      { "title": "Add content to the body",
         "text": "step4.md"
+      },
+      { "title": "Add footer content",
+        "text": "step5.md"
       }
     ],
     "assets": {
