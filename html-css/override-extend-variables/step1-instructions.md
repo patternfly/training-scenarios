@@ -38,7 +38,7 @@ PatternFly is an open source design system created to enable consistency and usa
 
 There are two blocks in this file: `:root` targets styles across the entire application, and `.pf-c-card` targets styles specifically in the card component.
  
-3) <strong>Click the `Copy to Editor` button below to add code for the card component to the `myapp.scss` file.</strong>
+Click the `Copy to Editor` button below to add code for the card component to the `myapp.scss` file.
  
 <pre class="file" data-filename="myapp.scss" data-target="replace">
 :root {
