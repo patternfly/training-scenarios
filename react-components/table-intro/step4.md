@@ -1,5 +1,5 @@
 
-1) <strong>Convert each <em>row</em> definition from a string array to array of objects.</strong>
+A) <strong>Convert each <em>row</em> definition from a string array to an array of objects.</strong>
 
 For each of the three row definitions, replace the string array with an object, and set the object's `cells` property to the string array.
 
@@ -34,7 +34,7 @@ const defaultRows = [
 ];
 </pre>
 
-2) <strong>Convert each <em>row cell</em> definition from a string to an object representation.</strong>
+B) <strong>Convert each <em>row cell</em> definition from a string to an object representation.</strong>
 
 For each array item in each row's `cells` array, replace the string value with an object whose `title` property is the row cell value.
 
@@ -60,7 +60,7 @@ becomes
 
 Apply this transformation to all of the row cell definitions.
 
-<strong>Note: </strong> You can mix string and object definitions for the table data.
+<strong>Note: </strong> The table component allows for mixing string and object definitions together.
 
 The table should appear exactly as it did before:
 

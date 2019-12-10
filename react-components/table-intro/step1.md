@@ -25,7 +25,7 @@ export interface ICell {
 }
 </pre>
 
-So, here are two ways you could write the same columns definition:
+Here are two ways that the same columns definition can be written:
 
 As array of strings:
 <pre class="file">
@@ -64,7 +64,7 @@ export interface IRow extends RowType {
 }
 </pre>
 
-So, here are two ways you could write the same rows definition:
+Here are two ways of writing the same rows definition:
 
 As multidimentional array of strings:
 <pre class="file">

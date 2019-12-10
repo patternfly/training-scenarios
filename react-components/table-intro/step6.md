@@ -1,8 +1,8 @@
-In this step, we'll move our row/column definitions to an external file and add a few more rows of sample data to make the next part of the lesson more realistic.
+This step walks through moving our row/column definitions to an external file and adds a few more rows of sample data to make the next part of the lesson more realistic.
 
-1) <strong>Navigate to the `src` folder and open `src/data.js`.</strong>
+A) <strong>Navigate to the `src` folder and open `src/data.js`.</strong>
 
-2) <strong>Copy the row/column definitions to the external file.</strong>
+B) <strong>Copy the below row/column definitions to `src/data.js`.</strong>
 
 <pre class="file" data-target="clipboard">
 export const columns = [
@@ -56,19 +56,21 @@ export const defaultRows = [
 ];
 </pre>
 
-3) <strong>Navigate back to the `src` folder and reopen `src/App.js`.</strong>
+C) <strong>Navigate back to the `src` folder and reopen `src/App.js`.</strong>
 
-4) <strong>Replace the inline rows/columns definitions with a reference to the ones from data.js.</strong>
+D) <strong>Replace the inline row/column definitions with a reference to the ones from `data.js`.</strong>
 
-a) Import the new row/column definitions. Place the import statement just below the last import at the top of the file.
+a) <strong> Import the new row/column definitions.</strong>
+
+Place the import statement just below the last import at the top of the file.
 
 <pre class="file">
 import { columns, defaultRows } from './data';
 </pre>
 
-b) Delete the rows and columns definitions in App.js, as the table will now use the definitions imported from data.js instead.
+b) <strong>Delete the rows and columns definitions in `App.js`.</strong>
 
-The code you are deleting should look like the following
+The table will now use the definitions imported from `data.js` instead. The code to delete should look like the following:
 
 <pre class="file">
 const columns = [
@@ -101,6 +103,6 @@ const defaultRows = [
 ];
 </pre>
 
-The Table should render the same as it did before, except with a few more rows:
+The table should render the same as it did before, except with a few more rows:
 
 <img src="table-intro/assets/step-6-complete.png" alt="Image of what table looks like at the end of step 6." style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />

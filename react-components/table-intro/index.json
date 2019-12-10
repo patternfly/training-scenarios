@@ -1,5 +1,5 @@
 {
-  "title": "Table",
+  "title": "The Patternfly React table",
   "description": "Learn how to implement a paginated table with React.",
   "difficulty": "beginner",
   "time": "30 minutes",
@@ -14,7 +14,7 @@
         "text": "step1.md"
       },
       {
-        "title": "Initialize a basic Table",
+        "title": "Initialize a basic table",
         "text": "step2.md",
         "answer": "step2-answer.md"
       },
@@ -39,7 +39,7 @@
         "answer": "step6-answer.md"
       },
       {
-        "title": "Add the Pagination component",
+        "title": "Add the pagination component",
         "text": "step7.md",
         "answer": "step7-answer.md"
       },
