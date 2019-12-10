@@ -1,10 +1,10 @@
-One particular type of Data toolbar group is called the toggle group. A `DataToolbarToggleGroup` can be used to collapse a set of items into an overlay panel at a certain breakpoint. This allows complex toolbars with multiple items and groups of items to be responsive. 
+One particular type of data toolbar group is called the toggle group. A `DataToolbarToggleGroup` can be used to collapse a set of items into an overlay panel at a certain breakpoint. This allows complex toolbars with multiple items and groups of items to be responsive. 
 
 A toggle group is useful for containing filter controls, for example. When the toolbar responds to adapt to a mobile viewport, the contents contained in a toggle group will collapse into an overlay panel that can be toggled by clicking the Filter icon.
 
 Using a `DataToolbarToggleGroup` requires both a `toggleIcon` and `breakpoint` property. The `toggleIcon` is a ReactNode which is displayed instead of the children of `DataToolbarToggleGroup` once the viewport width shrinks below the passed in breakpoint.
 
-1) **Locate both the `DataToolbarItem` with `variant="search-filter"` and the `DataToolbarGroup` with `variant="filter-group"`:**
+1) **Locate both the `DataToolbarItem` with `variant="search-filter"` and the `DataToolbarGroup` with `variant="filter-group"`**
 
 **Hint:** Both the `DataToolbarItem` and `DataToolbarGroup` to locate are siblings of each other.
 
@@ -32,11 +32,15 @@ Using a `DataToolbarToggleGroup` requires both a `toggleIcon` and `breakpoint` p
 &lt;/DataToolbarGroup&gt;
 </pre>
 
-2) **Wrap both the located `DataToolbarItem` and `DataToolbarGroup` in the same `DataToolbarToggleGroup`**
+2) **Wrap the `DataToolbarItem` and `DataToolbarGroup` located in step 1, in a `DataToolbarToggleGroup`**
 
-3) **Add the `toggleIcon` property to the `DataToolbarToggleGroup` component. Its value should be `{<FilterIcon />}`**
+3) **Add the `toggleIcon` property to the `DataToolbarToggleGroup` component**
 
-4) **Add the `breakpoint` property to the `DataToolbarToggleGroup` component. Its value should be `"xl"`**  
+The value of the `toggleIcon` property should be `{<FilterIcon />}`.
+
+4) **Add the `breakpoint` property to the `DataToolbarToggleGroup` component**
+
+The value of the `breakpoint` property should be `"xl"`.
 
 Once completed, the code should appear as below.
 
@@ -69,7 +73,7 @@ Once completed, the code should appear as below.
 &lt;/DataToolbarToggleGroup&gt;
 </pre>
 
-5) **Test changing viewport widths and breakpoints**
+5) **Test the responsiveness of the toolbar**
 
 Shrinking and expanding the viewport should toggle between showing the toggle icon and the children of the `DataToolbarToggleGroup`. When the toggle icon is being displayed, clicking on it should toggle the `DataToolbarToggleGroup` children in responsive expandable content.
 

@@ -1,12 +1,14 @@
 Managing the relationship of a toolbar with its filters to a table or other component is the responsibility of the consumer. 
 
-1) Add the `DemoTable` component below the `DataToolbar` and pass it the status and risk filters as props.
+1) **Add the `DemoTable` component below the `DataToolbar`** 
+
+Pass the `DemoTable` the status and risk filters as props.
 
 <pre class="file" data-target="clipboard">
 &lt;DemoTable nameFilters={filters.name} statusFilters={filters.status} riskFilters={filters.risk} clearAllFilters={this.onDelete}/&gt;
 </pre> 
 
-The `DemoTable` component is defined in `src/components/table.js` where the managed list of applied filters manipulates a very small set of data.
+**Note:** The `DemoTable` component is defined in `src/components/table.js` where the managed list of applied filters manipulates a very small set of data.
 
 Once the preview reloads, it should look like this:
 

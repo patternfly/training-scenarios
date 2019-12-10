@@ -1,10 +1,10 @@
-One particular type of Data toolbar item is called the `DataToolbarFilter`. When used, selected filters are displayed in chip groups below the toolbar. Placing any `DataToolbarFilter` inside of a toggle group makes the toolbar responsive.
+One particular type of data toolbar item is called the `DataToolbarFilter`. When used, selected filters are displayed in chip groups below the toolbar. Placing any `DataToolbarFilter` inside of a toggle group makes the toolbar responsive.
 
 Using a `DataToolbarFilter` requires three properties. First is a managed array of selected filters called `chips` as strings or ReactNodes. It also requires an `onDelete` callback function to be executed whenever the user deletes a selected filter chip. Lastly, it requires a `categoryName` which will be used to label the chip group.
 
-1) **Define the required `onDelete` function to be passed to the DataToolbarFilters**
+1) **Define the required `onDelete` function to be passed to each `DataToolbarFilter`**
 
-Add it to the ToolbarDemoApp class below the `onSelect` function definition in the `ToolbarDemoApp` class.
+Add the function to the ToolbarDemoApp class. Make sure to add it below the `onSelect` function definition in the `ToolbarDemoApp` class.
 
 The `onDelete` callback function is executed whenever the user deletes a selected filter chip.
 
@@ -57,23 +57,49 @@ onDelete = (type = &quot;&quot;, id = &quot;&quot;) =&gt; {
 
 3) **Replace each of the three `DataToolbarItems` inside the `DataToolbarToggleGroup` with a `DataToolbarFilter`**
 
-4) **Add a `chips` property to each of the `DataToolbarFilter`**
+Once completed, the contents of the `DataToolbarToggleGroup` should appear as follows:
+
+<pre class="file">
+&lt;DataToolbarFilter&gt;
+  &lt;Input id=&quot;searchInput&quot; search={this.onSearch} ariaLabel=&quot;Search input&quot; /&gt;
+&lt;/DataToolbarFilter&gt;
+&lt;DataToolbarGroup variant=&quot;filter-group&quot;&gt;
+  &lt;DataToolbarFilter&gt;
+    &lt;CheckboxSelect
+      onSelect={this.onSelect}
+      type=&quot;Status&quot;
+      selections={filters.status}
+      options={statusOptions}
+    /&gt;
+  &lt;/DataToolbarFilter&gt;
+  &lt;DataToolbarFilter&gt;
+    &lt;CheckboxSelect
+      onSelect={this.onSelect}
+      type=&quot;Risk&quot;
+      selections={filters.risk}
+      options={riskOptions}
+    /&gt;
+  &lt;/DataToolbarFilter&gt;
+&lt;/DataToolbarGroup&gt;
+</pre>
+
+4) **Add a `chips` property to each of the `DataToolbarFilter` components**
 
 Each of the `DataToolbarFilter` components requires a `chips` property. In this case, the state managed filters array's properties can serve as the `chips` property for each `DataToolbarFilter`. 
 
-* In this case, the first `DataToolbarFilter` (containing a text input) should have the property `chips={filters.name}`. 
-* The second `DataToolbarFilter` (containing the status filter) should have the property `chips={filters.status}`. 
-* The third `DataToolbarFilter` (containing the risk filter) should have the property `chips={filters.risk}`.
+a) In this case, the first `DataToolbarFilter` (containing a text input) should have the property `chips={filters.name}`. 
+b) The second `DataToolbarFilter` (containing the status filter) should have the property `chips={filters.status}`. 
+c) The third `DataToolbarFilter` (containing the risk filter) should have the property `chips={filters.risk}`.
 
 5) **Pass an appropriate label as the `categoryName` property to each `DataToolbarFilter`**
 
-* In this case, the first `DataToolbarFilter` (containing a text input) should have the property `categoryName="Name"`. 
-* The second `DataToolbarFilter` (containing the status filter) should have the property `categoryName="Status"`. 
-* The third `DataToolbarFilter` (containing the risk filter) should have the property `categoryName="Risk"`.
+a) In this case, the first `DataToolbarFilter` (containing a text input) should have the property `categoryName="Name"`. 
+b) The second `DataToolbarFilter` (containing the status filter) should have the property `categoryName="Status"`. 
+c) The third `DataToolbarFilter` (containing the risk filter) should have the property `categoryName="Risk"`.
 
 6) **Pass the onDelete function as the `deleteChip` property to each `DataToolbarFilter`**
 
-Once completed, the contents of the `DataToolbarToggleGroup` should appear as follows:
+Once steps 4, 5, and 6 are completed, the contents of the `DataToolbarToggleGroup` should appear as follows:
 
 <pre class="file">
 &lt;DataToolbarFilter chips={filters.name} deleteChip={this.onDelete} categoryName=&quot;Name&quot;&gt;
@@ -102,8 +128,8 @@ Once completed, the contents of the `DataToolbarToggleGroup` should appear as fo
 7) **Experiment with two optional properties passed to `DataToolbar`**
 
 Two props can be optionally added to the top level `DataToolbar` component when using a `DataToolbarFilter`.
-* If a `clearAllFilters` event handler is passed to `DataToolbar`, a 'Clear All Filters' action will appear alongside the applied filters chip groups.
-* Second, if a `collapseListedFiltersBreakpoint` is passed to `DataToolbar`, the chip groups will collapse to a summary message at the passed in breakpoint, making the applied filters chip groups more responsive.
+a) If a `clearAllFilters` event handler is passed to `DataToolbar`, a 'Clear All Filters' action will appear alongside the applied filters chip groups.
+b) If a `collapseListedFiltersBreakpoint` is passed to `DataToolbar`, the chip groups will collapse to a summary message at the passed in breakpoint, making the applied filters chip groups more responsive.
 
 Add the following code to the `DataToolbar` to see optional props in action.
 

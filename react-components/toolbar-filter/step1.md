@@ -37,7 +37,7 @@ class ToolbarDemoApp extends React.Component {
   render() {
     return (
       &lt;React.Fragment&gt;
-        Toolbar Demo
+        
       &lt;/React.Fragment&gt;
     );
   }
@@ -46,13 +46,13 @@ class ToolbarDemoApp extends React.Component {
 export default ToolbarDemoApp;
 </pre>
 
-3) **Wrap the `Toolbar Demo` text inside `React.Fragment` in a `DataToolbar` component**
+3) **Add a `DataToolbar` component inside the `React.Fragment` and add the property `id="tutorial-toolbar"` to the `DataToolbar`**
 
-The `DataToolbar` should include the property `id="tutorial-toolbar"`.
-
-4) **Wrap the `Toolbar Demo` text inside `DataToolbar` in a `DataToolbarContent` component**
+4) **Add a `DataToolbarContent` component inside the `DataToolbar` component**
 
 Each toolbar must contain one or more `DataToolbarContent` components as content rows.
+
+5) **Add `Toolbar Demo` as text inside the `DataToolbarContent` as a stand in for future content.** 
 
 Once completed, the code inside `<React.Fragment>` should appear as below.
 

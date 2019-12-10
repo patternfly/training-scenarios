@@ -1,10 +1,10 @@
-The individual components placed inside of a toolbar are each wrapped in a `DataToolbarItem` component. `DataToolbarItems` can be passed an optional `variant` prop to format a specific type of component it wraps such as a search filter, a pagination component, a bulk select, or an overflow menu. 
+The individual components placed inside of a toolbar are each wrapped in a `DataToolbarItem` component. `DataToolbarItems` can be passed an optional `variant` prop to format a specific type of component it wraps. These specific components could be search filter, a pagination component, a bulk select, or an overflow menu. 
 
 Wrapping components in the `DataToolbarItem` component and adding the proper variant ensures the components are spaced appropriately.
 
 Use the state of the `ToolbarDemoApp` to manage the three applied filters in the `DataToolbar`.
 
-1) **Locate the following constructor in `ToolbarDemoApp**
+1) **Locate the following constructor in `ToolbarDemoApp`**
 
 <pre class="file">
 constructor(props) {
@@ -14,7 +14,7 @@ constructor(props) {
 
 2) **Initialize the state in the constructor located in step 1**
 
-Add a `filters` object to the state. `filters` should have three properties (name, risk, and status) each with an empty array as its value. This filters object will manage the three filters in the `DataToolbar`.
+Add a `filters` object to the state. `filters` should have three properties (name, risk, and status), and each property should have an empty array as its value. This filters object will manage the three filters in the `DataToolbar`.
 
 Once step 2 is completed, the constructor should look like the snippet below.
 
@@ -35,7 +35,7 @@ constructor(props) {
 
 Both of the event handlers can be inserted outside and below the constructor modified in the previous steps.
 
-The first will be an `onSearch` event handler which will fire when the user interacts with the name filter.
+The first event handler to add is `onSearch` which will fire when the user interacts with the name filter.
 
 <pre class="file" data-target="clipboard">
 onSearch = (value) =&gt; {
@@ -50,7 +50,7 @@ onSearch = (value) =&gt; {
 }
 </pre>
 
-The second event handler will be an `onSelect` event handler which will fire when the user interacts with the risk and status filters.
+The second event handler to add is `onSelect` which will fire when the user interacts with the risk and status filters.
 
 <pre class="file" data-target="clipboard">
 onSelect = (type, event, selection) =&gt; {
@@ -69,11 +69,13 @@ onSelect = (type, event, selection) =&gt; {
 };
 </pre>
 
-4) **Add the following constants inside the top of the render function above the return statement**
+4) **Declare constants in the render function**
 
-In this case, unwrap the state managed `filters` to be used by the `DataToolbar`.
+Inside the top of the render function and above the return statement, add three constants.
 
-Also define the status and risk options that will appear in the two dropdown filters in the `DataToolbar`.
+First, unwrap the state managed `filters` to be used by the `DataToolbar`.
+
+Second, define the status and risk options that will appear in the two dropdown filters in the `DataToolbar`.
 
 <pre class="file" data-target="clipboard">
 const { filters } = this.state;
@@ -92,7 +94,11 @@ const riskOptions = [&quot;Low&quot;, &quot;Medium&quot;, &quot;High&quot;];
 &lt;/DataToolbar&gt;
 </pre>
 
-6) **Replace the `Toolbar Demo` text in the `DataToolbarContent` with the following six items:**
+6) **Add `DataToolbarItems`**
+
+This `DataToolbar` will have one text input filter, two dropdown filters, three button icons, and an action menu hidden in a kebab.
+
+Replace the stand in `Toolbar Demo` text in the `DataToolbarContent` with the following seven `DataToolbarItems`:
 
 <pre class="file" data-target="clipboard">
 &lt;DataToolbarItem variant=&quot;search-filter&quot;&gt;
