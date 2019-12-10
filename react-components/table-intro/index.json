@@ -1,5 +1,5 @@
 {
-  "title": "The Patternfly React table",
+  "title": "The PatternFly React table",
   "description": "Learn how to implement a paginated table with React.",
   "difficulty": "beginner",
   "time": "30 minutes",
@@ -10,7 +10,7 @@
     },
     "steps": [
       {
-        "title": "Introducing patternfly React table",
+        "title": "Introducing PatternFly React table",
         "text": "step1.md"
       },
       {

@@ -26,7 +26,7 @@ const App = () =&gt; {
         page={currentPage}
         perPage={numPerPage}
         itemCount={defaultRows.length} /&gt;
-      &lt;Table variant=&quot;compact&quot; caption=&quot;Patternfly React Table&quot; cells={columns} rows={rows}&gt;
+      &lt;Table variant=&quot;compact&quot; caption=&quot;PatternFly React Table&quot; cells={columns} rows={rows}&gt;
         &lt;TableHeader /&gt;
         &lt;TableBody /&gt;
       &lt;/Table&gt;

@@ -13,7 +13,7 @@ import { Table, TableHeader, TableBody } from &quot;@patternfly/react-table&quot
 const App = () =&gt; {
   return (
     &lt;React.Fragment&gt;
-      &lt;Table caption=&quot;Patternfly React Table&quot; cells={[]} rows={[]}&gt;
+      &lt;Table caption=&quot;PatternFly React Table&quot; cells={[]} rows={[]}&gt;
         &lt;TableHeader /&gt;
         &lt;TableBody /&gt;
       &lt;/Table&gt;
