@@ -7,6 +7,6 @@ PatternFly provides a collection of React-based components.
 patterns with consistent markup, styling, and behavior.
 
 PatternFly React charts are composed using separate components, so features are
-more easily customizable. This course covers PatternFly bar chart - starting
+more easily customizable. This course covers PatternFly bar chart, starting
 with a simple chart, adding multiple datasets, tooltips, axis labels, a legend, 
 and concluding by changing the theme color.
