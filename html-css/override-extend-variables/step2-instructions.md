@@ -4,7 +4,7 @@ There is now a card on the page. Customize the styles applied to it.
 
 Make the links in the card purple. In PatternFly, all of the CSS values used are first assigned to variables. It is recommended doing the same when making customizations in the application.
  
-In `myapp.scss` inside of the `:root` block, make a new variable name called `--my-app-card-theme--Color`, and assign it to be purple: `#6200EE`.
+In `myapp.scss` inside of the `:root{}` block, make a new variable name called `--my-app-card-theme--Color`, and assign it to be purple: `#6200EE`.
 
 <strong>Hint:</strong> 
 ```
