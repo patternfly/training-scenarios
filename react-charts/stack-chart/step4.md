@@ -47,6 +47,8 @@ containerComponent={
 
 5) <strong>Add a `labels` property inside of the `ChartVoronoiContainer`.</strong>
 
+The `containerComponent` prop should look like the following after the `labels` prop is added.
+
 <pre class="file" data-target="clipboard">
 containerComponent={
   &lt;ChartVoronoiContainer

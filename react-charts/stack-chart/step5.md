@@ -49,12 +49,25 @@ padding={{
 
 5) <strong>Between these components add the `<ChartAxis>` components.</strong>
 
-The `<Chart>` component displays an axis by default. Add labels and grid lines here to enhance the component.  The `dependentAxis` property specifies whether the axis corresponds to dependent data points (e.g., usually the y-axis).  The `showGrid` property of ChartAxis simply displays grid lines along that axis.
+The `<Chart>` component displays an axis by default. Add labels and grid lines here to enhance the component.
+
+a) Add the `<ChartAxis>` component with a label property.
 
 It should look like this:
 
 <pre class="file" data-target="clipboard">
 &lt;ChartAxis label=&quot;Years&quot;/&gt;
+</pre>
+
+b) <strong>Add another `<ChartAxis>` component with multiple properties.</strong>
+
+The `dependentAxis` property specifies whether the axis corresponds to dependent data points (e.g., usually the y-axis).
+
+The `showGrid` property displays grid lines along that axis.
+
+It should look like this:
+
+<pre class="file" data-target="clipboard">
 &lt;ChartAxis dependentAxis showGrid label=&quot;Percentage&quot;/&gt;
 </pre>
 
