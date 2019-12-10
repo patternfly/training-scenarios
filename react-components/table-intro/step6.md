@@ -1,4 +1,4 @@
-This step walks through moving our row/column definitions to an external file and adds a few more rows of sample data to make the next part of the lesson more realistic.
+In this step, move the row/column definitions to an external file and adds a few more rows of sample data to make the next part of the lesson more realistic.
 
 A) <strong>Navigate to the `src` folder and open `src/data.js`.</strong>
 
@@ -70,7 +70,7 @@ import { columns, defaultRows } from './data';
 
 b) <strong>Delete the rows and columns definitions in `App.js`.</strong>
 
-The table will now use the definitions imported from `data.js` instead. The code to delete should look like the following:
+The table will now use the definitions imported from `data.js` instead. The code to delete looks like the following:
 
 <pre class="file">
 const columns = [

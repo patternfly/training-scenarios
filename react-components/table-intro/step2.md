@@ -1,10 +1,10 @@
-This step walks through setting up the general structure of the table and adds the necessary imports.
+Set up the general structure of the table and add the necessary imports.
 
 A) <strong>Navigate to the `src` folder and open `src/App.js`.</strong>
 
 B) <strong>Copy the following code into the `src/App.js` file.</strong>
 
-Replace all of the content in App.js with the code snippet below.
+Replace all of the content in `App.js` with the code snippet below.
 
 <pre class="file" data-filename="App.js" data-target="replace">
 import * as React from &quot;react&quot;;

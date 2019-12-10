@@ -38,7 +38,7 @@ B) <strong>Convert each <em>row cell</em> definition from a string to an object 
 
 For each array item in each row's `cells` array, replace the string value with an object whose `title` property is the row cell value.
 
-For example:
+It should look like this:
 
 <pre class="file">
 {
@@ -60,7 +60,7 @@ becomes
 
 Apply this transformation to all of the row cell definitions.
 
-<strong>Note: </strong> The table component allows for mixing string and object definitions together.
+<strong>Note: </strong> String and object definitions can be mixed for the table data.
 
 The table should appear exactly as it did before:
 
