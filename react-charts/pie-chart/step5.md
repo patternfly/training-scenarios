@@ -2,24 +2,24 @@ Change the pie chart theme color.
 
 1) <strong>Make sure the `App.js` file is still open.</strong>
 
-2) <strong>Locate the `<Chart>` component and add a property to change the theme.</strong>
+2) <strong>Locate the `<ChartPie>` component and add a property to change the theme.</strong>
 
 It should look like this:
 
 <pre class="file">
 &lt;ChartPie
-  constrainToVisibleArea
+  height={230}
+  width={350}
   data={[{ x: &#39;Cats&#39;, y: 35 }, { x: &#39;Dogs&#39;, y: 55 }, { x: &#39;Birds&#39;, y: 10 }]}
+  constrainToVisibleArea
   labels={({ datum }) =&gt; `${datum.name}: ${datum.y}%`}
+  legendOrientation=&quot;vertical&quot;
+  legendPosition=&quot;right&quot;
   legendData={[
     { name: &#39;Cats: 35&#39; }, 
     { name: &#39;Dogs: 55&#39; }, 
     { name: &#39;Birds: 10&#39; }
   ]}
-  legendOrientation=&quot;vertical&quot;
-  legendPosition=&quot;right&quot;
-  height={230}
-  width={350}
 /&gt;
 </pre>
 

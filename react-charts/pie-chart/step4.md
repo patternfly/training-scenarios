@@ -2,17 +2,17 @@ Add a legend to the pie chart.
 
 1) <strong>Make sure the `App.js` file is still open.</strong>
 
-2) <strong>Locate the code for the `<Chart>` component.</strong>
+2) <strong>Locate the code for the `<ChartPie>` component.</strong>
 
 It should look like this:
 
 <pre class="file">
 &lt;ChartPie
-  constrainToVisibleArea
   data={[{ x: &#39;Cats&#39;, y: 35 }, { x: &#39;Dogs&#39;, y: 55 }, { x: &#39;Birds&#39;, y: 10 }]}
-  labels={({ datum }) =&gt; `${datum.name}: ${datum.y}%`}
   height={230}
   width={350}
+  constrainToVisibleArea
+  labels={({ datum }) =&gt; `${datum.name}: ${datum.y}%`}
 /&gt;
 </pre>
 
@@ -30,7 +30,7 @@ padding={{
 </pre>
 
 
-4) <strong>Add the `legendOrientation` property to the `<Chart>` component.</strong>
+4) <strong>Add the `legendOrientation` property to the `<ChartPie>` component.</strong>
 
 Set the orientation for the `legendData` so that it behaves as expected when added in step 6 (there will be no visible changes yet).
 
@@ -40,7 +40,7 @@ The `legendOrientation` property specifies whether the legend is rendered horizo
 legendOrientation=&quot;vertical&quot;
 </pre>
 
-5) <strong>Add the `legendPosition` property to the `<Chart>` component.</strong>
+5) <strong>Add the `legendPosition` property to the `<ChartPie>` component.</strong>
 
 Set the position for the `legendData` so that it behaves as expected when added in step 6 (there will still be no visible changes yet).
 
@@ -50,7 +50,7 @@ The `legendPosition` property specifies whether the legend is rendered on the bo
 legendPosition=&quot;right&quot;
 </pre>
 
-6) <strong>Add the `legendData` property to the `<Chart>` component.</strong>
+6) <strong>Add the `legendData` property to the `<ChartPie>` component.</strong>
 
 Inside the `legendData` should be an object with names for the data. It should look like the following:
 
