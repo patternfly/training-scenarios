@@ -36,7 +36,7 @@ It should look like: `--pf-global--FontSize--5xl`
 
 Assign the property name added in step 3 to the pixel value for the new font size.
 
-Update the line added in step 3 and be 42px.
+Update the line added in step 3 to be 42px.
 
 It should look like: `--pf-global--FontSize--5xl: 42px;`
 
@@ -64,7 +64,7 @@ It should look like: `--pf-c-title--m-5xl--FontSize: var(--pf-global--FontSize--
 
 9) <strong>Create a CSS selector for the new 5xl variation.</strong>
 
-Knowing that the modifier `.pf-m-5xl` will apply to the title component, use the & in SCSS nested inside of .pf-c-title to create `.pf-c-title.pf-m-5xl`.
+Knowing that the modifier `.pf-m-5xl` will apply to the title component, use the & in SCSS to nest `.pf-m-5xl` inside of `.pf-c-title` to create `.pf-c-title.pf-m-5xl`.
 
 Add this block inside of `.pf-c-title`, underneath the declaration from step 8.
 

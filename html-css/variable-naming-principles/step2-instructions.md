@@ -1,6 +1,7 @@
 Global custom properties follow these rules:
 
-* They are prefixed with the word `global` and follow the formula `--pf-global--concept--PropertyCamelCase--modifier--state.`
+In PatternFly, global properties follow this general formula: `--pf-global--concept--PropertyCamelCase--modifier--state.`
+ * They are prefixed with the word `global`
  * a `concept` is something like a `spacer` or `main-title`.
  * a `PropertyCamelCase` is something like `BackgroundColor` or `FontSize`.
  * a `modifier` is something like `sm`, or `lg`.
@@ -11,7 +12,7 @@ In this step, override the global link color by setting it to the custom propert
 
 1) <strong>Add two components to `index.html`.</strong>
 
-Click the `Copy to Editor` button below to add a button and expandable component to the `index.html` file.
+Click the `Copy to Editor` button below to add a button component and expandable component to the `index.html` file.
 
 <pre class="file" data-filename="index.html" data-target="replace">
 &lt;button class=&quot;pf-c-button pf-m-inline pf-m-link&quot; type=&quot;button&quot;&gt;Inline link&lt;/button&gt;
@@ -63,4 +64,4 @@ Assign the custom property name: `--pf-global--link--Color` that is already insi
 It should look like this:
 `--pf-global--link--Color: var(--pf-global--danger-color--100);`
 
-<strong>Note: </strong> The button and expandable component should inherit different colors.
+<strong>Note: </strong> The button component and expandable component should inherit different colors.
