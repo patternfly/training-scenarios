@@ -2,7 +2,7 @@ Create a simple donut chart.
 
 1) <strong>Navigate to the `src` folder and open `src/App.js`{{open}}</strong>
 
-2) Set up the general structure of the chart and the necessary import statements.</strong>
+2) <strong>Set up the general structure of the chart and the necessary import statements.</strong>
 
 Copy the following code into the `App.js` file, replacing all of the content there:
 

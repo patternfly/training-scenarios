@@ -2,4 +2,4 @@ PatternFly React charts are based on the [Victory chart](https://formidable.com/
 
 PatternFly provides a collection of React-based components you can use to build patterns with consistent markup, styling, and behavior. 
 
-PatternFly React charts are composed using separate components, so features are more easily customizable.  This course covers PatternFly donut charts - starting with a simple chart, tooltips, a legend, and concluding by changing the theme color.
+PatternFly React charts are composed using separate components, so features are more easily customizable. This course covers PatternFly donut charts - starting with a simple chart, tooltips, a legend, and concluding by changing the theme color.
