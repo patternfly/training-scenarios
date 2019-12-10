@@ -36,7 +36,7 @@ PatternFly is an open source design system created to enable consistency and usa
  
 2) <strong>Set up a new styles file for overriding styles in the card component.</strong> 
 
-There are two blocks in this file: `:root` targets styles across the entire application and `.pf-c-card` targets styles specifically in the card component.
+There are two blocks in this file: `:root` targets styles across the entire application, and `.pf-c-card` targets styles specifically in the card component.
  
 3) <strong>Click the `Copy to Editor` button below to add code for the card component to the `myapp.scss` file.</strong>
  
@@ -50,5 +50,5 @@ There are two blocks in this file: `:root` targets styles across the entire appl
 }
 </pre>
  
-<strong>Note:</strong> When the preview reloads, it should look something like this:
+<strong>Note:</strong> When the preview reloads, it should look like this:
 <img src="override-extend-variables/assets/devconf-artboard-1.png" alt="card initial" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />

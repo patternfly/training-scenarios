@@ -2,7 +2,7 @@ Now that the card design has been updated, add several cards and use the gallery
  
 1) <strong>Copy code into the `index.html` file.</strong>
  
-Click the `Copy to Editor` button below to add html for multiple Cards to the `index.html` file.
+Click the `Copy to Editor` button below to add HTML for multiple cards to the `index.html` file.
  
 <pre class="file" data-filename="index.html" data-target="replace">
 &lt;div class=&quot;pf-c-card pf-m-hoverable&quot;&gt;
@@ -133,7 +133,7 @@ PatternFly is an open source design system created to enable consistency and usa
  
 2) <strong>Create a wrapper around the cards.</strong> 
 
-Add a wrapper around the cards that were added in step 2. Do this by adding an opening `<div>` tag to the first line, and a closing `</div>` tag to the bottom of the file.
+Add a wrapper around the cards that were added in step 2. Do this by adding an opening `<div>` tag to the first line and a closing `</div>` tag to the bottom of the file.
  
 3) <strong>Add a layout class.</strong>
 
