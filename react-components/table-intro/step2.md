@@ -38,7 +38,7 @@ const defaultRows = [
 
 D) <strong>Set the `cells` and `rows` prop for the `<Table />` component.</strong>
 
-Locate the `<Table />` component and locate the references to empty arrays (`cells={[]} rows={[]}`). These empty arrays should be replaced with the row/column definitions that were added in step 3.
+Locate the `<Table />` component and locate the references to empty arrays (`cells={[]} rows={[]}`). These empty arrays should be replaced with the row/column definitions that were added in step C.
 
 <pre class="file">
 cells={columns} rows={defaultRows}

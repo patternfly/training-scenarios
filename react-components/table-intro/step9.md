@@ -2,7 +2,7 @@ Add functionality for paginating the table's dataset. This includes adding a new
 
 A) <strong>Create a new state property to keep track of dynamic rows.</strong>
 
-Add the following code just below the other state properties you added in step 9. Set the initial value to the `defaultRows` constant imported from `data.js`.
+Add the following code just below the other state properties you added in step 8. Set the initial value to the `defaultRows` constant imported from `data.js`.
 
 <pre class="file">
 const [rows, setRows] = React.useState(defaultRows.slice(0, defaultPerPage));
@@ -10,7 +10,7 @@ const [rows, setRows] = React.useState(defaultRows.slice(0, defaultPerPage));
 
 B) <strong>Update the `<Table />`'s `rows` prop to use the new `rows` state property.</strong>
 
-Locate the code that sets the rows for the table `rows={defaultRows}`, and update it to reference the new rows state property you created in step 1.
+Locate the code that sets the rows for the table `rows={defaultRows}`, and update it to reference the new rows state property you created in step A.
 
 <pre class="file">
 rows={rows}

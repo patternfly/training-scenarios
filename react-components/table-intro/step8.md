@@ -13,7 +13,7 @@ const [numPerPage, setNumPerPage] = React.useState(defaultPerPage);
 
 B) <strong>Set the `perPage` prop of the `<Pagination />` component.</strong>
 
-Set the property to the `numPerPage` state property that was added in step 1.
+Set the property to the `numPerPage` state property that was added in step A.
 
 <pre class="file">
 perPage={numPerPage}
@@ -21,7 +21,7 @@ perPage={numPerPage}
 
 C) <strong>Create a state property to track the current page of the table data.</strong>
 
-Add the following code to the App component, just below the previous state property that was added in step 1. Supply a `1` as the default value so that the table intuitively loads with the first page of data.
+Add the following code to the App component, just below the previous state property that was added in step A. Supply a `1` as the default value so that the table intuitively loads with the first page of data.
 
 <pre class="file">
 const [currentPage, setCurrentPage] = React.useState(1);
@@ -43,11 +43,11 @@ perPageOptions={[{ title: "2", value: 2 }, { title: "3", value: 3 }]}
 
 Notice that the "per page options" dropdown now reflects options of 2 and 3 per page.
 
-<img src="table-intro/assets/step-8-perPageOptions-complete.png" alt="Image of what table looks like after step 8, sub-step 5." style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
+<img src="table-intro/assets/step-8-perPageOptions-complete.png" alt="Image of what table looks like after step 8 E." style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
 
 F) <strong>Create a function to handle updating the number of rows per page.</strong>
 
-Add the following code inside the App component definition (just below the state properties added in step 1 & 3). Inside this function update the `numPerPage` state property to the value selected in the dropdown by calling `setNumPerPage` and passing it the `newPerPage` parameter.
+Add the following code inside the App component definition (just below the state properties added in step A & C). Inside this function update the `numPerPage` state property to the value selected in the dropdown by calling `setNumPerPage` and passing it the `newPerPage` parameter.
 
 <pre class="file">
 const handlePerPageSelect = (_evt, newPerPage, newPage = 1, startIdx, endIdx) => {
@@ -55,7 +55,7 @@ const handlePerPageSelect = (_evt, newPerPage, newPage = 1, startIdx, endIdx) =>
 };
 </pre>
 
-G) <strong>Set the `onPerPageSelect` prop of the `<Pagination />` component to the `handlePerPageSelect` function created in step 6.</strong>
+G) <strong>Set the `onPerPageSelect` prop of the `<Pagination />` component to the `handlePerPageSelect` function created in step F.</strong>
 
 <pre class="file">
 onPerPageSelect={handlePerPageSelect}
