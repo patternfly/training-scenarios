@@ -24,6 +24,7 @@ wrapped in a `ChartGroup` component.</strong>
 components.
 
 Copy this code to the editor:
+
 <pre class="file" data-target="clipboard">
 &lt;ChartGroup offset={11}&gt;
   &lt;ChartBar
