@@ -15,8 +15,8 @@ Add axis labels to the bar chart.
 
 3) <strong>Add the `padding` property to that section:</strong>
 
-In this case, give it the following values. More padding will be added to the
-bottom and left properties to accommodate the axis labels.
+In this case, give it the following values. More padding will be added to
+the bottom and left properties to accommodate the axis labels.
 
 <pre class="file" data-target="clipboard">
 padding={{
@@ -64,5 +64,6 @@ It should look like this:
 - This will add grid lines which appear behind the ChartBar
 
 Once the preview reloads, it should look like this:
+
 <img src="bar-chart/assets/axis.png" alt="Chart with axis labels"
 style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />

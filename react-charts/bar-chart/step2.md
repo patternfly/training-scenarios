@@ -1,6 +1,4 @@
-Now we'll create a simple bar chart...
-
-## Tasks
+Create a simple bar chart.
 
 1) <strong>Navigate to the `src` folder and open `src/App.js`{{open}}</strong>
 
@@ -47,9 +45,9 @@ export default App;
 
 <strong>Notes:</strong>
 
-- The `ChartBar` is the React component used to add data to the Chart
-The `domainPadding` property adjusts the position of the first/last `ChartBar`
+The `ChartBar` is the React component used to add data to the Chart.
+The `domainPadding` property adjusts the position of the first/last `ChartBar`.
 
-When the server reloads, the page should look like this
+Once the preview reloads, it should look like this:
 <img src="bar-chart/assets/simple.png" alt="Simple chart"
 style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
