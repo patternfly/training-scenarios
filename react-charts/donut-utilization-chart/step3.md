@@ -2,7 +2,7 @@ Add thresholds to the donut utilization chart.
 
 1) <strong>Make sure the `App.js` file is still open.</strong>
 
-2) <strong>Locate the `<Chart>` component.</strong>
+2) <strong>Locate the `<ChartDonutUtilization>` component.</strong>
 
 It will look like this:
 
@@ -16,7 +16,7 @@ It will look like this:
 /&gt;
 </pre>
 
-3) <strong>Add a `thresholds` property to the `<Chart>` component.</strong>
+3) <strong>Add a `thresholds` property to the `<ChartDonutUtilization>` component.</strong>
 
 The dynamic portion of the chart will change colors when data points reach the given `thresholds` property.  This will change the dynamic portion of the chart to red.
 
@@ -26,7 +26,7 @@ Copy this code to the editor:
 thresholds={[{ value: 60 }, { value: 90 }]}
 </pre>
 
-4) <strong>Locate the `data` and `title` properties in the `<Chart>` component.</strong> 
+4) <strong>Locate the `data` and `title` properties in the `<ChartDonutUtilization>` component.</strong> 
 
 It will look like the following:
 
@@ -35,24 +35,35 @@ data={{ x: &#39;Storage capacity&#39;, y: 90 }}
 title=&quot;90%&quot;
 </pre>
 
-5) <strong>Replace the `data` and `title` properties in the `<Chart>` component.</strong> 
+a) <strong>Update the `y` value for `data`.</strong>
 
-This will change the dynamic portion of the chart to yellow.
+Assign the `y` value to be `60` so that it changes the dynamic portion of the chart to yellow.
 
-Copy this code to the editor:
+It should look like:
 
-<pre class="file" data-target="clipboard">
+<pre class="file">
 data={{ x: &#39;Storage capacity&#39;, y: 60 }}
+</pre>
+
+b) <strong>Update the `title` value.</strong>
+
+Assign the `title` value to be `60%`.
+
+These properties should look like:
+
+<pre class="file">
 title=&quot;60%&quot;
 </pre>
 
-6) <strong>Replace the `data` and `title` properties in the `<Chart>` component.</strong> 
+5) <strong>Replace the same properties in the `<ChartDonutUtilization>` component to see the donut chart change to a different color.</strong>
 
-This will return the dynamic portion of the chart to the default color.
+Assign the `y` value for `data` to be `45` so that it changes the dynamic portion of the chart to the default color.
 
-Copy this code to the editor:
+Also change the `title` to be `45%`.
 
-<pre class="file" data-target="clipboard">
+These properties should look like:
+
+<pre class="file">
 data={{ x: &#39;Storage capacity&#39;, y: 45 }}
 title=&quot;45%&quot;
 </pre>

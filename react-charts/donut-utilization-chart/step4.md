@@ -2,7 +2,7 @@ Add tooltips to the donut utilization chart.
 
 1) <strong>Make sure the `App.js` file is still open.</strong>
 
-2) <strong>Locate the `<Chart>` component.</strong>
+2) <strong>Locate the `<ChartDonutUtilization>` component.</strong>
 
 It will look like this:
 
@@ -17,7 +17,7 @@ It will look like this:
 /&gt;
 </pre>
 
-3) <strong>Add a `constrainToVisbleArea` property to the `<Chart>` component.</strong>
+3) <strong>Add a `constrainToVisbleArea` property to the `<ChartDonutUtilization>` component.</strong>
 
 The `constrainToVisibleArea` property determines whether to coerce tooltips so that they fit within the visible area of the chart.
 
@@ -25,6 +25,13 @@ Copy this code to the editor:
 
 <pre class="file" data-target="clipboard">
 constrainToVisibleArea
+</pre>
+
+4) <strong>Add a `labels` property to the `<ChartDonutUtilization>` component.</strong>
+
+Copy this code to the editor:
+
+<pre class="file" data-target="clipboard">
 labels={({ datum }) =&gt; datum.x ? `${datum.x}: ${datum.y}%` : null}
 </pre>
 
