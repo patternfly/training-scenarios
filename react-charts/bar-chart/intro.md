@@ -3,7 +3,7 @@ PatternFly React charts are based on the
 library, along with additional functionality, custom components, and theming for
 PatternFly.
 
-PatternFly provides a collection of React-based components you can use to build
+PatternFly provides a collection of React-based components.
 patterns with consistent markup, styling, and behavior.
 
 PatternFly React charts are composed using separate components, so features are
