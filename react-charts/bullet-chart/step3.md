@@ -1,47 +1,37 @@
-Now we'll create a simple bullet chart...
+Add tooltips to the bullet chart.
 
-## Task
+1) <strong>Make sure the `App.js` file is still open.</strong>
 
-1) Navigate to the `src` folder and open `src/App.js`{{open}}
+2) <strong>Locate the `<ChartBullet/>` component:</strong>`
 
-2) Next, we'll set up the general structure of the chart and the necessary import statements.
+It will look like this:
 
-Copy the following code into the App.js file, replacing all of the content there:
-
-<pre class="file" data-filename="App.js" data-target="replace">
-import React from 'react';
-import "@patternfly/react-core/dist/styles/base.css";
-import './app.css';
-import {
-  Chart,
-  ChartBullet,
-  ChartThemeColor
-} from '@patternfly/react-charts';
-
-function App() {
-  return (
-    &lt;div className=&quot;chart-container&quot;&gt;
-      &lt;ChartBullet
-        maxDomain={{y: 100}}
-        comparativeWarningMeasureData={[{ name: &#39;Warning&#39;, y: 88 }]}
-        primarySegmentedMeasureData={[{ name: &#39;Measure&#39;, y: 60 }]}
-        qualitativeRangeData={[{ name: &#39;Range&#39;, y: 50 }, { name: &#39;Range&#39;, y: 75 }]}
-        height={150}
-        width={600}
-      /&gt;
-    &lt;/div&gt;
-  );
-}
-
-export default App;
+<pre class="file">
+&lt;ChartBullet
+  height={150}
+  width={600}
+  maxDomain={{y: 100}}
+  primarySegmentedMeasureData={[{ name: &#39;Measure&#39;, y: 60 }]}
+  qualitativeRangeData={[{ name: &#39;Range&#39;, y: 50 }, { name: &#39;Range&#39;, y: 75 }]}
+  comparativeWarningMeasureData={[{ name: &#39;Warning&#39;, y: 88 }]}
+/&gt;
 </pre>
 
-- The `maxDomain` property defines the maximum domain value for a chart
-- The `qualitativeRangeData` property adds qualitative ranges to the bullet chart
-- The `primarySegmentedMeasureData` property adds a primary measure to the bullet chart
-- The `comparativeWarningMeasureData` property adds comparative warning measure to the bullet chart
+3) <strong>Add the `constrainToVisisbleArea` property to `ChartBullet` component.</strong>
 
-3) When the server reloads, you should see something like this:
-<img src="bullet-chart/assets/simple.png" alt="Simple chart" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
+The `constrainToVisibleArea` property determines whether to coerce tooltips so that they fit within the visible area of the chart.
 
-We'll continue by adding tooltips to the chart in the next step.
+It should look like this:
+
+<pre class="file" data-target="clipboard">constrainToVisibleArea</pre>
+
+<strong>Note:</strong> There are no visible changes at this stage.
+
+4) <strong>Add `labels` property to the `ChartBullet` component.</strong>`
+
+The `labels` property enables bullet chart tooltips and determines their content.
+
+<pre class="file" data-target="clipboard">labels={({ datum }) =&gt; `${datum.name}: ${datum.y}`}</pre>
+
+Once the preview reloads, it should look like this:
+<img src="bullet-chart/assets/tooltips.png" alt="Chart with tooltips" style="box-shadow: rgba(3, 3, 3, 0)2) 0px 1)25px 2)5px 0px;" />

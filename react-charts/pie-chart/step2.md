@@ -1,24 +1,35 @@
-We'll begin by adding a CSS selector to define the chart size...
+Create a simple pie chart.
 
-- Katacoda is setting up a new React application for you. You'll be ready to code once the server starts and you can see "Welcome to PatternFly" on the lower pane.
+1) <strong>Navigate to the `src` folder and open `src/App.js`{{open}}</strong>
 
-## Task
+2) <strong>Set up the general structure of the chart and the necessary import statements.</strong>
 
-1) Navigate to the `src` folder and open `src/app.css`{{open}}
+Copy the following code into the `App.js` file, replacing all of the content there:
 
-2) Next we'll add some CSS to define the overall chart size
+<pre class="file" data-filename="App.js" data-target="replace">
+import React from 'react';
+import "@patternfly/react-core/dist/styles/base.css";
+import './app.css';
+import {
+  ChartAxis,
+  ChartPie,
+  ChartThemeColor
+} from '@patternfly/react-charts';
 
-Copy the following code into the app.css file, replacing all of the content there:
-
-<pre class="file" data-filename="src/app.css" data-target="replace">
-.chart-container {
-  height: 230px;
-  width: 350px;
+function App() {
+  return (
+    &lt;div className=&quot;chart-container&quot;&gt;
+      &lt;ChartPie
+        data={[{ x: &#39;Cats&#39;, y: 35 }, { x: &#39;Dogs&#39;, y: 55 }, { x: &#39;Birds&#39;, y: 10 }]}
+        height={230}
+        width={350}
+      /&gt;
+    &lt;/div&gt;
+  );
 }
+
+export default App;
 </pre>
 
-- Because Victory renders responsive containers, the Chart's width and height props do not determine the width and height of the chart in number of pixels, but instead define an aspect ratio for the chart. 
-The exact number of pixels will depend on the size of the container the chart is rendered into. 
-Typically, the parent container is set to the same width in order to maintain the aspect ratio.
-
-We'll continue by creating a simple pie chart in the next step.
+Once the preview reloads, it should look like this:
+<img src="pie-chart/assets/simple.png" alt="Simple chart" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
