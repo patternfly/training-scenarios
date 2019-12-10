@@ -1,8 +1,8 @@
-In PatternFly 4, demos are used to show how PatternFly’s components and layouts can be put together to build more complex structures. They're made entirely from components and layouts.
+In PatternFly, demos are used to show how PatternFly’s components and layouts can be put together to build more complex structures. They are made entirely from components and layouts.
 
-In this exercise, we'll be using a page demo to create a new page for a web application.
+In this exercise, use a page demo to create a new page for a web application.
 
-Note: Katacoda is setting up a new React application. Start coding once the server starts and "Welcome to PatternFly" is visible on the lower pane.
+Katacoda is setting up a new React application. Begin coding once the server starts and "Welcome to PatternFly" is visible on the lower pane.
 
 1) <strong>Navigate to the `src` folder and open `src/App.js`{{open}}</strong>
 
@@ -63,7 +63,7 @@ Add the gallery inside of `<AppPage>`, it should look like this:
 </Gallery>
 ```
 
-4) <strong>Add multiple `cards` inside of the `gallery`.</strong>
+4) <strong>Add multiple cards inside of the gallery.</strong>
 
 For the purpose of this example, make every card the same. Each `card` should be wrapped in a `<GalleryItem`.
 
@@ -87,6 +87,5 @@ To add cards efficiently use `Array.apply` and `Array.map` to add nine cards. Th
 ))}
 </pre>
 
-When the server reloads, you should see something like this:
-
+Once the preview reloads, it should look like this:
 <img src="react-customize/assets/step1.png" alt="Page demo" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
