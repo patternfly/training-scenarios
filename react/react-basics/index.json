@@ -9,20 +9,17 @@
       "code": "env-init.sh"
     },
     "steps": [
-      { "title": "Introducing PatternFly React",
+      { "title": "Add a card",
         "text": "step1.md"
       },
-      { "title": "Add a card",
+      { "title": "Add content to the card",
         "text": "step2.md"
       },
-      { "title": "Add content to your card",
+      { "title": "Modify the header",
         "text": "step3.md"
       },
-      { "title": "Modify the header",
-        "text": "step4.md"
-      },
       { "title": "Add footer content",
-        "text": "step5.md"
+        "text": "step4.md"
       }
     ],
     "assets": {
