@@ -45,27 +45,27 @@ Overriding the success variation’s title color, means overriding its custom pr
 
 In the `myapp.scss` file, in the `.pf-c-alert{}`block, begin writing the custom property name.
 
-In reference to the documentation above, it should look like: `--pf-c-alert`
+In reference to the documentation above, it should be: `--pf-c-alert`
 
 4) <strong>Add the modifier to the custom property name.</strong>
 
-Reference the [documentation] (https://www.patternfly.org/v4/documentation/core/components/alert) by scrolling down to the bottom to view the alert component's documentation. Note that the success variation class `.pf-m-success` applies to `.pf-c-alert`. Add that modifier to the custom property.
+Reference the [documentation](https://www.patternfly.org/v4/documentation/core/components/alert) by scrolling down to the bottom to view the alert component's documentation. Note that the success variation class `.pf-m-success` applies to `.pf-c-alert`. Add that modifier to the custom property.
 
-It should look like: `--pf-c-alert--m-success`
+The custom property name should now be: `--pf-c-alert--m-success`
 
 5) <strong>Add the element to the custom property name.</strong>
 
 The element that is being changed is the `title` of the alert.
 
-It should look like this: `--pf-c-alert--m-success__title`
+The custom property name should now be: `--pf-c-alert--m-success__title`
 
 6) <strong>Add the property that is being modified.</strong>
 
 In this case, modify the color property of the title in the alert component.
 
-It should look like: `--pf-c-alert--m-success__title--Color`
+The custom property name should now be: `--pf-c-alert--m-success__title--Color`
 
-7) <strong>Add a declaration using the new custom property created in steps 2-5.</strong>
+7) <strong>Add a declaration using the new custom property created in steps 3-6.</strong>
 
 PatternFly's global danger color is: `--pf-global--danger-color--100`.
 

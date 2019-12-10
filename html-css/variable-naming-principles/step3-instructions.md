@@ -57,7 +57,7 @@ It should look like: `--pf-c-label`
 
 Add the element after the name of the component.
 
-It should look like: `--pf-c-label__icon`
+The custom property should now be: `--pf-c-label__icon`
 
 7) <strong>Add the property being applied to the icon.</strong>
 
@@ -73,9 +73,9 @@ Assign the custom property name: `--pf-c-label__icon--MarginRight` that is alrea
 
 It should look like: `--pf-c-label__icon--MarginRight: var(--pf-global--spacer--sm);`
 
-10) <strong>Add a new selector block for the style assigned to the label icon.</strong>
+9) <strong>Add a new selector block for the style assigned to the label icon.</strong>
 
-Create a new selector block for `pf-c-label__icon` in `myapp.scss`. It should be added to the global scope (outside of the existing .pf-c-label selector) to apply the margin styles to.
+Create a new selector block for `pf-c-label__icon` in `myapp.scss`. It should be added to the global scope (outside of the existing `.pf-c-label` selector) to apply the margin styles to.
 
 It should look like this:
 ```
@@ -84,10 +84,11 @@ It should look like this:
 }
 ```
 
-11) <strong>Assign the new custom property name to the property that is being overriden.</strong>
+10) <strong>Assign the new custom property name to the property that is being overriden.</strong>
 
 Add a `margin-right` declaration inside of `.pf-c-label__icon{}` and assign it to the new margin variable.
 
 It should look like this:
 `margin-right: var(--pf-c-label__icon--MarginRight);`
 
+<strong>Note: </strong> Once the preview reloads, there should be space to the right of the icon.
