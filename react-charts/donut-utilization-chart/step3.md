@@ -18,7 +18,7 @@ It will look like this:
 
 3) <strong>Add a `thresholds` property to the `<Chart>` component.</strong>
 
-The dynamic portion of the chart will change colors when data points reach the given `thresholds` properties.  This will change the dynamic portion of the chart to red.
+The dynamic portion of the chart will change colors when data points reach the given `thresholds` property.  This will change the dynamic portion of the chart to red.
 
 Copy this code to the editor:
 

@@ -35,7 +35,7 @@ It should look like this:
 
 3) <strong>Refactor `height`, `padding`, `themeColor`, and `width` properties from `ChartDonutUtilization` to the `ChartDonutThreshold` component.</strong>
 
- The `ChartDonutThreshold` component is a visual representation of donut utilization thresholds.  The `constrainToVisibleArea` property will be reintroduced in the next step.
+ The `ChartDonutThreshold` component is a visual representation of donut utilization thresholds.
 
 Copy this code to the editor:
 
