@@ -5,7 +5,8 @@ starts and "Welcome to PatternFly" is visible on the lower pane.
 
 1) <strong>Navigate to the `src` folder and open `src/app.css`{{open}}</strong>
 
-2) <strong>Add CSS to the overall chart size and label layout.</strong>
+2) <strong>Add CSS to the overall chart size, label layout, axis labels and
+legend labels.</strong>
 
 Copy the following code into the `app.css` file, replacing all the content.
 
