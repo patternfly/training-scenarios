@@ -1,6 +1,7 @@
 The `select` component should look like the following.
-```
-<Select 
+
+<pre>
+&lt;Select 
   onToggle={this.onToggle}
   onSelect={this.onSelect}
   selections={selected}
@@ -15,7 +16,7 @@ The `select` component should look like the following.
   maxHeight={100}
   noResultsFoundText="Nothing found"
   createText="Create new option"
->
+&gt;
     {options}
-</Select>
-```
+&lt;/Select&gt;
+</pre>
