@@ -1,10 +1,10 @@
-The individual components placed inside of a toolbar are each wrapped in a `DataToolbarItem` component. `DataToolbarItems` can be passed an optional `variant` prop to format a specific type of component it wraps. These specific components could be search filter, a pagination component, a bulk select, or an overflow menu. 
+The individual components placed inside of a toolbar are each wrapped in a `DataToolbarItem` component. `DataToolbarItems` can be passed an optional `variant` prop to format a specific type of component it wraps. These particular components could be a search filter, a pagination component, a bulk select, or an overflow menu. 
 
 Wrapping components in the `DataToolbarItem` component and adding the proper variant ensures the components are spaced appropriately.
 
 Use the state of the `ToolbarDemoApp` to manage the three applied filters in the `DataToolbar`.
 
-1) **Locate the following constructor in `ToolbarDemoApp`**
+1) <strong>Locate the following constructor in `ToolbarDemoApp`</strong>
 
 <pre class="file">
 constructor(props) {
@@ -12,9 +12,9 @@ constructor(props) {
 }
 </pre>
 
-2) **Initialize the state in the constructor located in step 1**
+2) <strong>Initialize the state in the constructor located in step 1</strong>
 
-Add a `filters` object to the state. `filters` should have three properties (name, risk, and status), and each property should have an empty array as its value. This filters object will manage the three filters in the `DataToolbar`.
+Add a `filters` object to the state. `filters` should have three properties (name, risk, and status), and each property should have an empty array as its value. This `filters` object will manage the three filters in the `DataToolbar`.
 
 Once step 2 is completed, the constructor should look like the snippet below.
 
@@ -31,7 +31,7 @@ constructor(props) {
 }
 </pre>
 
-3) **Add two event handlers to the `ToolbarDemoApp` class**
+3) <strong>Add two event handlers to the `ToolbarDemoApp` class</strong>
 
 Both of the event handlers can be inserted outside and below the constructor modified in the previous steps.
 
@@ -69,7 +69,7 @@ onSelect = (type, event, selection) =&gt; {
 };
 </pre>
 
-4) **Declare constants in the render function**
+4) <strong>Declare constants in the render function</strong>
 
 Inside the top of the render function and above the return statement, add three constants.
 
@@ -84,7 +84,7 @@ const riskOptions = [&quot;Low&quot;, &quot;Medium&quot;, &quot;High&quot;];
 </pre>
 
 
-5) **Locate the following `DataToolbarContent` component:**
+5) <strong>Locate the following `DataToolbarContent` component:</strong>
 
 <pre class="file">
 &lt;DataToolbar id=&quot;tutorial-toolbar&quot;&gt;
@@ -94,7 +94,7 @@ const riskOptions = [&quot;Low&quot;, &quot;Medium&quot;, &quot;High&quot;];
 &lt;/DataToolbar&gt;
 </pre>
 
-6) **Add `DataToolbarItems`**
+6) <strong>Add `DataToolbarItems`</strong>
 
 This `DataToolbar` will have one text input filter, two dropdown filters, three button icons, and an action menu hidden in a kebab.
 
@@ -140,7 +140,7 @@ Replace the stand in `Toolbar Demo` text in the `DataToolbarContent` with the fo
 &lt;/DataToolbarItem&gt;
 </pre>
 
-**Note:** The first of the items added includes `variant='search-filter'`. Adding this variant adjusts some of the margins to comply with PatternFly design standards.
+<strong>Note:</strong> The first of the items added includes `variant='search-filter'`. Adding this variant adjusts some of the margins to comply with PatternFly design standards.
 
 Once the preview reloads - it should look like this:
 

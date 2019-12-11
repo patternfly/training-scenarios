@@ -2,7 +2,7 @@ One particular type of data toolbar item is called the `DataToolbarFilter`. When
 
 Using a `DataToolbarFilter` requires three properties. First is a managed array of selected filters called `chips` as strings or ReactNodes. It also requires an `onDelete` callback function to be executed whenever the user deletes a selected filter chip. Lastly, it requires a `categoryName` which will be used to label the chip group.
 
-1) **Define the required `onDelete` function to be passed to each `DataToolbarFilter`**
+1) <strong>Define the required `onDelete` function to be passed to each `DataToolbarFilter`</strong>
 
 Add the function to the ToolbarDemoApp class. Make sure to add it below the `onSelect` function definition in the `ToolbarDemoApp` class.
 
@@ -29,7 +29,7 @@ onDelete = (type = &quot;&quot;, id = &quot;&quot;) =&gt; {
 };
 </pre>
 
-2) **Locate the following three `DataToolbarItems` inside the `DataToolbarToggleGroup`:**
+2) <strong>Locate the following three `DataToolbarItems` inside the `DataToolbarToggleGroup`:</strong>
 
 <pre class="file">
 &lt;DataToolbarItem variant=&quot;search-filter&quot;&gt;
@@ -55,7 +55,7 @@ onDelete = (type = &quot;&quot;, id = &quot;&quot;) =&gt; {
 &lt;/DataToolbarGroup&gt;
 </pre>
 
-3) **Replace each of the three `DataToolbarItems` inside the `DataToolbarToggleGroup` with a `DataToolbarFilter`**
+3) <strong>Replace each of the three `DataToolbarItems` inside the `DataToolbarToggleGroup` with a `DataToolbarFilter`</strong>
 
 Once completed, the contents of the `DataToolbarToggleGroup` should appear as follows:
 
@@ -83,21 +83,25 @@ Once completed, the contents of the `DataToolbarToggleGroup` should appear as fo
 &lt;/DataToolbarGroup&gt;
 </pre>
 
-4) **Add a `chips` property to each of the `DataToolbarFilter` components**
+4) <strong>Add a `chips` property to each of the `DataToolbarFilter` components </strong>
 
 Each of the `DataToolbarFilter` components requires a `chips` property. In this case, the state managed filters array's properties can serve as the `chips` property for each `DataToolbarFilter`. 
 
 a) In this case, the first `DataToolbarFilter` (containing a text input) should have the property `chips={filters.name}`. 
+
 b) The second `DataToolbarFilter` (containing the status filter) should have the property `chips={filters.status}`. 
+
 c) The third `DataToolbarFilter` (containing the risk filter) should have the property `chips={filters.risk}`.
 
-5) **Pass an appropriate label as the `categoryName` property to each `DataToolbarFilter`**
+5) <strong>Pass an appropriate label as the `categoryName` property to each `DataToolbarFilter`</strong>
 
 a) In this case, the first `DataToolbarFilter` (containing a text input) should have the property `categoryName="Name"`. 
+
 b) The second `DataToolbarFilter` (containing the status filter) should have the property `categoryName="Status"`. 
+
 c) The third `DataToolbarFilter` (containing the risk filter) should have the property `categoryName="Risk"`.
 
-6) **Pass the onDelete function as the `deleteChip` property to each `DataToolbarFilter`**
+6) <strong>Pass the onDelete function as the `deleteChip` property to each `DataToolbarFilter`</strong>
 
 Once steps 4, 5, and 6 are completed, the contents of the `DataToolbarToggleGroup` should appear as follows:
 
@@ -125,10 +129,12 @@ Once steps 4, 5, and 6 are completed, the contents of the `DataToolbarToggleGrou
 &lt;/DataToolbarGroup&gt;
 </pre>
 
-7) **Experiment with two optional properties passed to `DataToolbar`**
+7) <strong>Experiment with two optional properties passed to `DataToolbar`</strong>
 
-Two props can be optionally added to the top level `DataToolbar` component when using a `DataToolbarFilter`.
+Two props can be optionally added to the top-level `DataToolbar` component when using a `DataToolbarFilter`.
+
 a) If a `clearAllFilters` event handler is passed to `DataToolbar`, a 'Clear All Filters' action will appear alongside the applied filters chip groups.
+
 b) If a `collapseListedFiltersBreakpoint` is passed to `DataToolbar`, the chip groups will collapse to a summary message at the passed in breakpoint, making the applied filters chip groups more responsive.
 
 Add the following code to the `DataToolbar` to see optional props in action.
@@ -137,7 +143,7 @@ Add the following code to the `DataToolbar` to see optional props in action.
 clearAllFilters={this.onDelete} collapseListedFiltersBreakpoint=&quot;xl&quot;
 </pre>
 
-Take some time to play with the toolbar to see how it responds to changes in viewport size and the number of filters applied.
+<strong> Note:</strong> Take some time to play with the toolbar to see how it responds to changes in viewport size and the number of filters applied.
 
 <img src="toolbar-filter/assets/wide-view-with-chip-groups.png" alt="Wide view of toolbar filter with applied filters in chip groups" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
 
