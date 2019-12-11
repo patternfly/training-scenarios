@@ -8,12 +8,16 @@ It should look like this:
 
 <pre class="file">
 &lt;Chart
-  constrainToVisibleArea
-  containerComponent={&lt;ChartVoronoiContainer labels={({ datum }) =&gt; `${datum.name}: ${datum.y}`} /&gt;}
   maxDomain={{y: 10}}
   minDomain={{y: 0}}
   height={250}
   width={600}
+  containerComponent={
+    &lt;ChartVoronoiContainer
+      constrainToVisibleArea
+      labels={({ datum }) =&gt; `${datum.name}: ${datum.y}`}
+    /&gt;
+  }
 &gt;
 </pre>
 
