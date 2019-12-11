@@ -1,40 +1,74 @@
-## Extend a PatternFly component to achieve a new design
-
-Now that we have practiced overriding variables, let's practice extending PatternFly's system to create a new element in the card. Let's add a separator element to the card.
-
+Now practice extending PatternFly's system to create a new element in the card. Add the separator element to the card.
+ 
 1) <strong>Add the html markup.</strong> 
 
-In `index.html` add the html markup for the separator element that is a sibling to the `pf-c-card__body` element. Add this new code between `pf-c-card__header` and `pf-c-card__body` and `pf-c-card__body` and `pf-c-card__footer`. We will prefix the variable name with `my-app` so that it can be easily distinguished from the PatternFly codebase.
+In the `index.html` file add the html markup for the separator element.
 
+Prefix the variable name with `my-app` so that it can be easily distinguished from the PatternFly codebase.
+
+The class name should look like the following:
+ 
 ```
 <div class="my-app-c-card__separator">
 </div>
 ```
 
-2) <strong>Add a variable for the height.</strong> 
+Place it in `index.html` twice so that both separators are siblings to the `pf-c-card__body` element. Add this new code between `pf-c-card__header` and `pf-c-card__body` and `pf-c-card__body` and `pf-c-card__footer`.
 
-In the `myapp.scss` file, we will add new styles for `my-app-c-card__separator`. The first variable to add is for height and it should use PatternFly's global variable for small border width, and go under the variable declarations inside the `.pf-c-card` block.
+<strong>Note: </strong>There will be no visible changes at this step.
+ 
+2) <strong>Add variables to style the separator element.</strong>
+
+In the `myapp.scss` file, add new styles for `my-app-c-card__separator`.
+
+a) <strong>Add a variable for height.</strong>
+
+It should use PatternFly's global variable for small border width. Add it under the variable declarations inside the `.pf-c-card` block.
+
+The declaration should look like the following:
+ 
+```
+--my-app-c-card__separator--Height: var(--pf-global--BorderWidth--sm);
+```
+ 
+b) <strong>Add a variable for background color.</strong> 
+
+It should use PatternFly's global variable for border color. Add it under the variable declarations inside the `.pf-c-card` block.
+
+The declaration should look like the following:
+ 
+```
+--my-app-c-card__separator--BackgroundColor: var(--pf-global--BorderColor--100);
+```
+ 
+c) <strong>Add a variable for the margin.</strong> 
+
+It should use PatternFly's global variable for spacing. Add it under the variable declarations inside the `.pf-c-card` block.
+
+The declaration should look like the following:
+ 
+```
+--my-app-c-card__separator--Margin: var(--pf-global--spacer--lg);
+```
+ 
+3) <strong>Assign the variables for the separator element.</strong>
+
+In order to assign the variables that were declared above, scope the variables to the class that was added in step 1. 
+
+a) <strong>Add a new block underneath `.pf-c-card`.</strong>
+
+In `myapp.scss` add the following block. It should look like this:
 
 ```
-  --my-app-c-card__separator--Height: var(--pf-global--BorderWidth--sm);
+.my-app-c-card__separator {
+  // Add in variables here
+}
 ```
 
-3) <strong>Add a variable for background color.</strong> The second variable to add is for background color and it should use PatternFly's global variable for border color.
+b) <strong>Assign all of the variables that were added in steps 2a, 2b, and 2c.</strong>
 
-```
-  --my-app-c-card__separator--BackgroundColor: var(--pf-global--BorderColor--100);
-```
-
-4) <strong>Add a variable for the margin.</strong> The third variable to add is for the margin and it should use PatternFly's global variable for spacing.
-
-```
-  --my-app-c-card__separator--Margin: var(--pf-global--spacer--lg);
-```
-
-5) <strong>Assign the variables for the Separator element.</strong>
-
-In `myapp.scss` assign the variables that were declared to the height, background-color and margin style properties. Add this as a new block under `.pf-c-card`:
-
+Inside of the block created in step 3a, add the properties for `background-color`, `height`, `margin-right`, `margin-bottom` and `margin-left`.
+ 
 ```
 .my-app-c-card__separator {
   background-color: var(--my-app-c-card__separator--BackgroundColor);
@@ -44,6 +78,3 @@ In `myapp.scss` assign the variables that were declared to the height, backgroun
   margin-left: var(--my-app-c-card__separator--Margin);
 }
 ```
-
-When the server reloads, you should see something like this:
-<img src="override-extend-variables/assets/devconf-artboard-3.png" alt="card with separator" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />

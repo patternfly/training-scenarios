@@ -11,20 +11,16 @@
     },
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Create a PatternFly card component",
         "text": "step1-instructions.md"
       },
       {
-        "title": "Step 2",
+        "title": "Customize styles",
         "text": "step2-instructions.md"
       },
       {
-        "title": "Step 3",
+        "title": "Extend PatternFly",
         "text": "step3-instructions.md"
-      },
-      {
-        "title": "Step 4",
-        "text": "step4-instructions.md"
       }
     ],
     "assets": {
