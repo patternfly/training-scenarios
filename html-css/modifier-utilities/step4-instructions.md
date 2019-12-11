@@ -1,12 +1,16 @@
- Making your own modifier class is easy and will save you time. Choose which component you would like to add a modifier class and then select an element that you wish to modify. Create a modifier class name that represents the new style, and add the new styles to the stylesheet, as well as the new modifier class to the html. Here is a list of modifiers that we have in PatternFly: https://pf4.patternfly.org/modifiers
+Create a custom modifier class. First, choose which component to add a modifier class to and then select an element to be modified. 
 
-## Task: Create a modifier class for the Label component
+Second, create a modifier class name that represents the new style.
+Third, add the new modifier class to the HTML.
+Fourth, add the new styles to the stylesheet.
 
-Let’s create a “warning” variation of the label component by creating a suitable modifier class.
+<!-- Here is a list of modifiers that we have in PatternFly: https://pf4.patternfly.org/modifiers -->
 
-1) <strong>Copy code to the editor.</strong>
+In this step, create a custom `warning` variation for the label component.
 
-Click the <strong>Copy to Editor</strong> button below to add html for a Label to the `index.html` file.
+1) <strong>Copy code to the `index.html` file.</strong>
+
+Click the `Copy to Editor` button below to add HTML for two label components.
 
 <pre class="file" data-filename="index.html" data-target="replace">
 &lt;span class=&quot;pf-c-label&quot;&gt;
@@ -17,9 +21,9 @@ Click the <strong>Copy to Editor</strong> button below to add html for a Label t
 &lt;/span>
 </pre>
 
-2) <strong>Copy more code to the editor.</strong>
+2) <strong>Set up the styles file in `myapp.css`.</strong>
 
-Click the <strong>Copy to Editor</strong> button below to add the template for your new styles.
+Click the `Copy to Editor` button below to add the template for the new styles.
 
 <pre class="file" data-filename="myapp.scss" data-target="replace">
 .pf-c-label {
@@ -27,7 +31,29 @@ Click the <strong>Copy to Editor</strong> button below to add the template for y
 }
 </pre>
 
-3) In `myapp.scss` add a new block inside of the `.pf-c-label` class that will add styles for the warning modifier:
+3) <strong>Decide on which styles to override for the component.</strong>
+
+When adding new style overrides for a component decide on which properties to change. For example, in the case of the label, overriding the background color is a suitable choice because the component already styles the background color.
+
+4) <strong>Write a custom property to target the warning variation.</strong>
+
+Add the custom property inside of the `.pf-c-label{}` block.
+
+The custom property should follow the general formula discussed in the `variable naming principles` tutorial: `--pf-c-block[__element][--modifier][--state][--breakpoint][--pseudo-element]--PropertyCamelCase.`
+
+In this case, it should be: `--pf-c-label--m-warning--BackgroundColor`
+
+5) <strong>Assign the custom property to a global variable.</strong>
+
+On the same line as the custom property added in step 5, assign the property to the global variable for `warning` color. It is: `--pf-global--warning-color--100`.
+
+The declaration inside of the `.pf-c-label{}` block should look like: `--pf-c-label--m-warning--BackgroundColor: var(--pf-global--warning-color--100);`
+
+6) <strong>Add a new block to target styles for the `warning` variation.</strong>
+
+In `myapp.scss` nest the block `&.pf-m-warning{}` inside of the `.pf-c-label{}` class, using the SCSS &.
+
+It should look like the following:
 
 ```
 &.pf-m-warning {
@@ -35,19 +61,19 @@ Click the <strong>Copy to Editor</strong> button below to add the template for y
 }
 ```
 
-<strong>Pro Tip: </strong> When creating new styles for a modifier think about which styles you want to override. E.g. in this case, we want to override the variable for the component's background color and assign it to a new global variable.
+7) <strong>Override the original background color variable by setting its value to the new modifier variable that was created. </strong>
 
-4) In order to do this, you need to declare the variable. Add the declaration inside of `pf-c-label` and above `&.pf-m-warning`:
-
-Add: `--pf-c-label--m-warning--BackgroundColor: var(--pf-global--warning-color--100);`
-
-5) Now we need to override the original background color variable by setting its value to the new modifier variable you just created. Add this line inside of `&.pf-m-warning{}`:
+Add this line inside of `&.pf-m-warning{}`:
 
 `--pf-c-label--BackgroundColor: var(--pf-c-label--m-warning--BackgroundColor);`
 
-6) Now in `index.html` lets add the modifier class that we just created to the second label example.
+8) <strong>Add the `warning` modifier class to `index.html`.</strong>
 
-<strong>Hint: </strong> 
+a) <strong>Locate the second `pf-c-label` class in `index.html`.</strong>
+
+b) <strong>Add the new modifier class next to the `pf-c-label` class, inside of the quotation marks.</strong>
+
+It should look like this:
 ```
 <span class=”pf-c-label pf-m-warning”>
   Warning Label
