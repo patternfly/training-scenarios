@@ -43,8 +43,6 @@ function App() {
 export default App;
 </pre>
 
-<strong>Notes:</strong>
-
 The `ChartBar` is the React component used to add data to the Chart.
 The `domainPadding` property adjusts the position of the first/last `ChartBar`.
 
