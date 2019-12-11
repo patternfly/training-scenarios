@@ -2,7 +2,7 @@ Add tooltips to the donut chart.
 
 1) <strong>Make sure the `App.js` file is still open.</strong>
 
-2) <strong>Locate the `<Chart>` component.</strong>
+2) <strong>Locate the `<ChartDonut>` component.</strong>
 
 It will look like this:
 
@@ -16,7 +16,7 @@ It will look like this:
 /&gt;
 </pre>
 
-3) <strong>Add a 'constrainToVisbleArea' property to the 'Chart' component.</strong>
+3) <strong>Add a `constrainToVisbleArea` property to the `<ChartDonut>` component.</strong>
 
 The `constrainToVisibleArea` property determines whether to coerce tooltips so that they fit within the visible area of the chart.
 
@@ -24,6 +24,11 @@ Copy this code to the editor:
 
 <pre class="file" data-target="clipboard">
 constrainToVisibleArea
+</pre>
+
+4) <strong>Add a `labels` property to the `<ChartDonut>` component.</strong>
+
+<pre class="file" data-target="clipboard">
 labels={({ datum }) =&gt; `${datum.x}: ${datum.y}%`}
 </pre>
 
