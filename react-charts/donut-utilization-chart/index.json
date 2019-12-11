@@ -2,7 +2,7 @@
   "title": "Donut utilization chart",
   "description": "Learn how to implement a React donut utilization chart",
   "difficulty": "beginner",
-  "time": "12 minutes",
+  "time": "10 minutes",
   "details": {
     "intro": {
       "text": "intro.md",
@@ -38,10 +38,6 @@
       {
         "title": "Add donut threshold",
         "text": "step7.md"
-      },
-      {
-        "title": "Add tooltips",
-        "text": "step8.md"
       }
     ],
     "assets": {
