@@ -1,24 +1,50 @@
-We'll begin by adding a CSS selector to define the chart size...
+Create a simple line chart.
 
-- Katacoda is setting up a new React application for you. You'll be ready to code once the server starts and you can see "Welcome to PatternFly" on the lower pane.
+1) <strong>Navigate to the `src` folder and open `src/App.js`{{open}}</strong>
 
-## Task
+2) <strong>Set up the general structure of the chart and the necessary import statements.</strong>
 
-1) Navigate to the `src` folder and open `src/app.css`{{open}}
+The `ChartLine` is the React component used to add data to the `Chart`.  The `maxDomain` property defines the maximum domain value for a chart.  The `minDomain` property defines the minimum domain value for a chart.
 
-2) Next we'll add some CSS to define the overall chart size
+Copy the following code into the `App.js` file, replacing all of the content there:
 
-Copy the following code into the app.css file, replacing all of the content there:
+<pre class="file" data-filename="App.js" data-target="replace">
+import React from 'react';
+import "@patternfly/react-core/dist/styles/base.css";
+import './app.css';
+import {
+  Chart,
+  ChartAxis,
+  ChartLine,
+  ChartGroup,
+  ChartThemeColor,
+  ChartVoronoiContainer
+} from '@patternfly/react-charts';
 
-<pre class="file" data-filename="src/app.css" data-target="replace">
-.chart-container {
-  height: 250px;
-  width: 600px;
+function App() {
+  return (
+    &lt;div className=&quot;chart-container&quot;&gt;
+      &lt;Chart
+        maxDomain={{y: 10}}
+        minDomain={{y: 0}}
+        height={250}
+        width={600}
+      &gt;
+        &lt;ChartLine 
+          data={[
+            { name: &#39;Cats&#39;, x: &#39;2015&#39;, y: 1 }, 
+            { name: &#39;Cats&#39;, x: &#39;2016&#39;, y: 2 }, 
+            { name: &#39;Cats&#39;, x: &#39;2017&#39;, y: 5 }, 
+            { name: &#39;Cats&#39;, x: &#39;2018&#39;, y: 3 }
+          ]} 
+        /&gt;
+      &lt;/Chart&gt;
+    &lt;/div&gt;
+  );
 }
+
+export default App;
 </pre>
 
-- Because Victory renders responsive containers, the Chart's width and height props do not determine the width and height of the chart in number of pixels, but instead define an aspect ratio for the chart. 
-The exact number of pixels will depend on the size of the container the chart is rendered into. 
-Typically, the parent container is set to the same width in order to maintain the aspect ratio.
-
-We'll continue by creating a simple line chart in the next step.
+Once the preview reloads, it should look like this:
+<img src="line-chart/assets/simple.png" alt="Simple chart" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />

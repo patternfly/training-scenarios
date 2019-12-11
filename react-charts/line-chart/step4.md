@@ -1,71 +1,63 @@
-Now we'll add multiple datasets to the line chart...
+Add tooltips to the line chart.
 
-## Task
+1) <strong>Make sure the `App.js` file is still open.</strong>
 
-1) Make sure the App.js file is still open
+2) <strong>Locate the `<Chart>` component.</strong>
 
-2) Locate the code that looks like the following:
+It will look like this:
 
 <pre class="file">
-&lt;ChartLine 
-  data={[
-    { name: &#39;Cats&#39;, x: &#39;2015&#39;, y: 1 }, 
-    { name: &#39;Cats&#39;, x: &#39;2016&#39;, y: 2 }, 
-    { name: &#39;Cats&#39;, x: &#39;2017&#39;, y: 5 }, 
-    { name: &#39;Cats&#39;, x: &#39;2018&#39;, y: 3 }
-  ]} 
-/&gt;
+&lt;Chart
+  maxDomain={{y: 10}}
+  minDomain={{y: 0}}
+  height={250}
+  width={600}
+&gt;
 </pre>
 
-3) Replace that section with the following code:
+3) <strong>Add a `containerComponent` property to the `Chart` component.</strong>
+
+The `containerComponent` property takes a component instance, which will be used to create a container element for standalone charts.
+
+Inside the `containerComponent` is the `ChartVoronoiContainer` component, which adds the ability to associate a mouse position with the data point(s) closest to it. This is useful for adding a tooltip.
+
+It should look like this:
 
 <pre class="file" data-target="clipboard">
-&lt;ChartGroup&gt;
-  &lt;ChartLine
-    data={[
-      { name: &#39;Cats&#39;, x: &#39;2015&#39;, y: 1 }, 
-      { name: &#39;Cats&#39;, x: &#39;2016&#39;, y: 2 }, 
-      { name: &#39;Cats&#39;, x: &#39;2017&#39;, y: 5 }, 
-      { name: &#39;Cats&#39;, x: &#39;2018&#39;, y: 3 }
-    ]} 
+containerComponent={
+  &lt;ChartVoronoiContainer
   /&gt;
-  &lt;ChartLine 
-    data={[
-      { name: &#39;Dogs&#39;, x: &#39;2015&#39;, y: 2 }, 
-      { name: &#39;Dogs&#39;, x: &#39;2016&#39;, y: 1 }, 
-      { name: &#39;Dogs&#39;, x: &#39;2017&#39;, y: 7 }, 
-      { name: &#39;Dogs&#39;, x: &#39;2018&#39;, y: 4 }
-    ]}
-    style={{
-      data: {
-        strokeDasharray: &#39;3,3&#39;
-      }
-    }}
-  /&gt;
-  &lt;ChartLine 
-    data={[
-      { name: &#39;Birds&#39;, x: &#39;2015&#39;, y: 4 }, 
-      { name: &#39;Birds&#39;, x: &#39;2016&#39;, y: 4 }, 
-      { name: &#39;Birds&#39;, x: &#39;2017&#39;, y: 9 }, 
-      { name: &#39;Birds&#39;, x: &#39;2018&#39;, y: 7 }
-    ]}
-  /&gt;
-  &lt;ChartLine 
-    data={[
-      { name: &#39;Mice&#39;, x: &#39;2015&#39;, y: 3 }, 
-      { name: &#39;Mice&#39;, x: &#39;2016&#39;, y: 3 }, 
-      { name: &#39;Mice&#39;, x: &#39;2017&#39;, y: 8 }, 
-      { name: &#39;Mice&#39;, x: &#39;2018&#39;, y: 5 }
-    ]}
-  /&gt;
-&lt;/ChartGroup&gt;
+}
 </pre>
 
-- The `ChartGroup` is the React Component used to apply properties to multiple ChartLine components
-- The `strokeDasharray` property is used to show a dashed line
+<strong>Note:</strong> There are no visible changes at this stage.
 
-4) Once the preview reloads - it should look like this:
-<img src="line-chart/assets/multiple.png" alt="Multiple dataset chart" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
+4) <strong>Add a `constrainToVisibleArea` property inside of the `ChartVoronoiContainer`.</strong>
 
+The `constrainToVisibleArea` property determines whether to coerce tooltips so that they fit within the visible area of the chart.
 
-We'll continue by adding tooltips to the chart in the next step.
+It should look like this:
+
+<pre class="file" data-target="clipboard">
+containerComponent={
+  &lt;ChartVoronoiContainer
+    constrainToVisibleArea
+  /&gt;
+  }
+</pre>
+
+5) <strong>Add a `labels` property inside of the `ChartVoronoiContainer`.</strong>
+
+It should look like this:
+
+<pre class="file" data-target="clipboard">
+containerComponent={
+  &lt;ChartVoronoiContainer
+    constrainToVisibleArea
+    labels={({ datum }) =&gt; `${datum.name}: ${datum.y}`}
+  /&gt;
+}
+</pre>
+
+Once the preview reloads, it should look like this:
+<img src="line-chart/assets/tooltips.png" alt="Chart with tooltips" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
