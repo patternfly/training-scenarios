@@ -1,6 +1,8 @@
 Add data to populate the select, and give it basic event handling like opening, closing, and selecting an option.
 
-1) **Add the following state to the constructor of the App class.** This code goes below `super(props);`.
+1) **Add state properties to the constructor of the App class.** 
+
+This code goes below `super(props);`.
 
 <pre class="file" data-target="clipboard">
 this.state = {
@@ -25,19 +27,19 @@ const { options, selected, isExpanded } = this.state;
 
 3) **Update the `Select` properties with values from the state that was added in step 2.** 
 
-a. <strong>Assign `selected` to `selections`.</strong> 
+a. <strong>Assign the `selections` property to `selected`.</strong> 
 
-This variable tells the component what is currently selected.
+This variable informs the component of what is currently selected.
 
-b. <strong>Assign `isExpanded` to `isExpanded`.</strong> 
+b. <strong>Assign the `isExpanded` property to `isExpanded`.</strong> 
 
 This boolean controls if the select menu is expanded.
 
-c. <strong>Replace the text inside of the Select component `(Add options here)` with `{options}`.</strong> 
+c. <strong>Replace the text inside of the Select component.</strong> 
 
-This list determines what is rendered expanded select menu.
+Search for `(Add options here)` and replace this with the `{options}` object. This list determines what is rendered in the expanded select menu.
 
-The component should look as below.
+The `select` component should look like the following.
 ```
 <Select 
   onToggle={Function.prototype} 
@@ -66,7 +68,7 @@ this.onToggle = isExpanded => {
 
   b. <strong>Copy the following `onSelect` function into the constructor of the App class.</strong> 
   
-  This function should go under the `onToggle` function added in step 6a. This function acts as a callback when a select option is clicked, updating the `selected` state property, and thereby what is rendered as selected in the component.
+  This function should go under the `onToggle` function added in step 6a. This function acts as a callback when a select option is clicked. It updates the `selected` state property, and thereby what is rendered as selected in the component.
 
 <pre class="file" data-target="clipboard">
 this.onSelect = (event, selection) => {
@@ -79,9 +81,9 @@ this.onSelect = (event, selection) => {
 
 5) **Update the `Select` properties with the functions added to the constructor in step 4.**
 
-a. <strong>Assign `this.onToggle` to `onToggle`.</strong>
+a. <strong>Assign the `onToggle` property to `this.onToggle`.</strong>
 
-b. <strong>Assign `this.onSelect` to `onSelect`.</strong>
+b. <strong>Assign the `onSelect` property to `this.onSelect`.</strong>
 
 The component should look as below.
 ```

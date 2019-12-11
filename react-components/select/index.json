@@ -1,7 +1,7 @@
 {
   "title": "Select component: beginner",
-  "description": "Practice building a Patternfly 4 React Select",
-  "difficulty": "beginner",
+  "description": "Practice building a Patternfly React select",
+  "difficulty": "intermediate",
   "time": "30 minutes",
   "details": {
     "intro": {
@@ -35,7 +35,8 @@
       },
       {
         "title": "And additional visual customization",
-        "text": "step7.md"
+        "text": "step7.md",
+        "answer": "step7-answer.md"
       }
     ],
     "assets": {

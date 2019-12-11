@@ -1,8 +1,8 @@
-Another customization option, available for all variants, is custom display and data for the `Select` options.
+Custom display and custom data can be used to customize the `select` options. These are also available for all variants.
 
 Begin with customizing the data. 
 
-To change what data is passed around, and back to you on selection, implement a class that contains any data you wish to persist and a `toString` function, which converts the data in the structure to a string format. This allows the component to internally compare options for filtering, and gives some limited customization for the option's display.
+To change what data is passed around, and passed back on selection, implement a class that contains any data you wish to persist and a `toString` function, which converts the data in the structure to a string format. This allows the component to internally compare options for filtering, and gives some limited customization for the option's display.
 
 1) **Add a `CustomDataState` class.**
 
@@ -23,11 +23,9 @@ class CustomDataState {
 }
 </pre>
 
-<strong>Note:</strong> You may import the `SelectOptionObject` interface from @patternfly/react-core if using TypeScript. This interface would enforce the required `toString` function for `CustomDataState`.
+2) **Replace the state's `options` property.**
 
-2) **Replace the state's `options` property with the following array that uses `CustomDataState`.**
-
-The state is located in the App class constructor.
+Replace the property with the following array that uses `CustomDataState`. The state is located in the App class constructor.
 
 <pre class="file" data-target="clipboard">
 options: [
@@ -43,7 +41,11 @@ options: [
 ]
 </pre>
 
-3) **Edit the state's `options` to display something different than the CustomDataState's toString.**
+3) **Edit the state's `options` property to use a custom display.**
+
+Replace the property with the following array, or edit the `children` property of each option.
+
+Instead of using the `toString` function in `CustomDataState`, the `select` component will display and filter options based on the `children` property.
 
 <pre class="file" data-target="clipboard">
 options: [
@@ -65,7 +67,7 @@ options: [
 ]
 </pre>
 
-New values are being displayed, and the typeahead filtering will match based on this display. In the case of html structures passed as a child, the component will convert the structure to a string for filtering.
+New values are being displayed, and the typeahead filtering will match based on this display. In the case of HTML structures passed as a child, the component will convert the structure to a string for filtering.
 
 Once the preview reloads, it should look like this:
 <img src="select/assets/select-custom-display.png" alt="select menu with custom display text" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />

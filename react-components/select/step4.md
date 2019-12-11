@@ -1,4 +1,4 @@
-Begin customizing the select component. There are many options available to customize the select component and its options.
+Customize the `select` component. There are many options available to customize the `select` component and its options.
 
 One such customization, for both typeahead and multiple typeahead variants, is custom filtering.
 
@@ -8,7 +8,7 @@ Allow any input to be matched, regardless of ordering.
 
 1) **Add the following custom filtering function to the constructor of the App class.**
 
-Note: The component expects a function that will return a list of options to display. In the code below, the text input is matched regardless of ordering using a regular expression, and santize the text input to avoid extraneous characters. Using the same example above, this will mean that a text input of "bama" would still match for the option "Alabama".
+The component expects a function that will return a list of options to display. In the code below, the text input is matched regardless of ordering using a regular expression, and sanitizes the text input to avoid extraneous characters. Using the same example above, this will mean that a text input of "bama" would still match for the option "Alabama".
 
 <pre class="file" data-target="clipboard">
 this.customFilter = e => {
@@ -30,9 +30,9 @@ this.customFilter = e => {
 };
 </pre>
 
-2) **Add a new property to the `Select` component called `onFilter`.**
+2) **Add an `onFilter` property to the `select` component.**
 
-Assign it to the function that was added in step 1.
+Assign `onFilter` to the function that was added in step 1.
 
 <pre class="file" data-target="clipboard">
 onFilter={this.customFilter}

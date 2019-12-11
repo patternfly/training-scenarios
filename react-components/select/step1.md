@@ -2,7 +2,7 @@ Create a basic select component.
 
 1) **Navigate to the `src` folder and open `src/App.js`{{open}}**
 
-2) **Copy the code into the App.js file to set up the structure of the select component.**
+2) **Copy the code into the `App.js` file to set up the structure of the select component.**
 
 <pre class="file" data-filename="App.js" data-target="replace">
 import React from &quot;react&quot;;
