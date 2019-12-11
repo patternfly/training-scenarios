@@ -1,12 +1,12 @@
 Typeahead variants support adding new options, based on the user entered input. This is supported in two parts, first by allowing a user to select their custom input, and second by allowing this custom input to be added to the overall list of options for permanence.
 
-1) **Add the `isCreateable` flag to the `select` component.**
+1) **Add the `isCreatable` flag to the `select` component.**
 
 <pre class="file" data-target="clipboard">
 isCreatable
 </pre>
 
-<strong>Note:</strong> With this flag, a new message is displayed at the end of the list, prompting the user to create an option based on the input. Additionally, this message replaces the "no results found" message when filtering would otherwise return nothing. This allows the current value to be used as a new selection, but does not persist the data - it will appear as selected, but will not appear in the overall list.
+<strong>Note:</strong> With this flag, when text is entered that does not match anything in the list, a new message prompting the user to create an option based on the input is displayed. This selectable message replaces the "no results found" message displayed when filtering would otherwise return nothing. This allows the current value to be used as a new selection, but does not persist the data - it will appear as selected, but will not appear in the overall list.
 
 2) **Add a function to add a new value to the options array.**
 
