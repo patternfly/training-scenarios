@@ -1,0 +1,92 @@
+{
+  "title": "Select component: beginner",
+  "description": "Practice building a Patternfly React select",
+  "difficulty": "intermediate",
+  "time": "30 minutes",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "code": "env-init.sh"
+    },
+    "steps": [
+      {
+        "title": "Set up import statements and structure",
+        "text": "step1.md"
+      },
+      {
+        "title": "Set up a basic single select",
+        "text": "step2.md"
+      },
+      {
+        "title": "Typeahead select variant",
+        "text": "step3.md"
+      },
+      {
+        "title": "Customize filtering",
+        "text": "step4.md"
+      },
+      {
+        "title": "Customize data and display",
+        "text": "step5.md"
+      },
+      {
+        "title": "Add new options",
+        "text": "step6.md"
+      },
+      {
+        "title": "And additional visual customization",
+        "text": "step7.md",
+        "answer": "step7-answer.md"
+      }
+    ],
+    "assets": {
+      "client": [
+        {
+          "file": "basic-select.png",
+          "target": "~/tutorial/assets/images/",
+          "chmod": "+r"
+        },
+        {
+          "file": "select-custom-display.png",
+          "target": "~/tutorial/assets/images/",
+          "chmod": "+r"
+        },
+        {
+          "file": "final-select.png",
+          "target": "~/tutorial/assets/images/",
+          "chmod": "+r"
+        }
+      ]
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "files": [],
+  "environment": {
+    "showdashboard": true,
+    "delayToSaveFileAfterStopTypingMilliseconds": 2000,
+    "autoFormatEnable": false,
+    "dashboards": [
+      {
+        "name": "Web Application",
+        "port": 3000
+      }
+    ],
+    "uilayout": "editor-iframe-split",
+    "uisettings": "javascript",
+    "exclusionPatterns": [
+      "._*",
+      "package.json",
+      "package-lock.json",
+      "node_modules",
+      "public*",
+      "serviceWorker*"
+    ],
+    "hideHiddenFiles": true
+  },
+  "backend": {
+    "imageid": "node",
+    "port": 3000
+  }
+}
