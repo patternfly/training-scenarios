@@ -2,7 +2,7 @@ Add tooltips to the bullet chart.
 
 1) <strong>Make sure the `App.js` file is still open.</strong>
 
-2) <strong>Locate the `<ChartBullet/>` component:</strong>`
+2) <strong>Locate the `<ChartBullet/>` component:</strong>
 
 It will look like this:
 
@@ -11,7 +11,7 @@ It will look like this:
   height={150}
   width={600}
   maxDomain={{y: 100}}
-  primarySegmentedMeasureData={[{ name: &#39;Measure&#39;, y: 60 }]}
+  primarySegmentedMeasureData={[{ name: &#39;Measure&#39;, y: 25 }, { name: &#39;Measure&#39;, y: 60 }]}
   qualitativeRangeData={[{ name: &#39;Range&#39;, y: 50 }, { name: &#39;Range&#39;, y: 75 }]}
   comparativeWarningMeasureData={[{ name: &#39;Warning&#39;, y: 88 }]}
 /&gt;
@@ -27,7 +27,7 @@ It should look like this:
 
 <strong>Note:</strong> There are no visible changes at this stage.
 
-4) <strong>Add `labels` property to the `ChartBullet` component.</strong>`
+4) <strong>Add `labels` property to the `ChartBullet` component.</strong>
 
 The `labels` property enables bullet chart tooltips and determines their content.
 

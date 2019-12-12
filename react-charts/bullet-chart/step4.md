@@ -8,10 +8,10 @@ It will look like this:
 
 <pre class="file">
 &lt;ChartBullet
-   height={150}
+  height={150}
   width={600}
   maxDomain={{y: 100}}
-  primarySegmentedMeasureData={[{ name: &#39;Measure&#39;, y: 60 }]}
+  primarySegmentedMeasureData={[{ name: &#39;Measure&#39;, y: 25 }, { name: &#39;Measure&#39;, y: 60 }]}
   qualitativeRangeData={[{ name: &#39;Range&#39;, y: 50 }, { name: &#39;Range&#39;, y: 75 }]}
   comparativeWarningMeasureData={[{ name: &#39;Warning&#39;, y: 88 }]}
   constraingToVisibleArea

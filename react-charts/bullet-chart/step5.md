@@ -60,7 +60,7 @@ The `legendPosition` property specifies whether the legend is rendered on the bo
 
 The `primarySegmentedMeasureLegendData` adds legend data to the chart which corresponds to the `primarySegmentedMeasureData` property.
 
-<pre class="file" data-target="clipboard">primarySegmentedMeasureLegendData={[{ name: &#39;Measure&#39; }]}</pre>
+<pre class="file" data-target="clipboard">primarySegmentedMeasureLegendData={[{ name: &#39;Measure 1&#39; }, { name: &#39;Measure 2&#39; }]}</pre>
 
 7) <strong>Add the `qualitativeRangeLegendData` property to the `ChartBullet` component:</strong>
 
