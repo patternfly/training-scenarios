@@ -1,10 +1,31 @@
-PatternFly React charts are based on the [Victory chart](https://formidable.com/open-source/victory/docs/victory-chart/) library, along with additional functionality, custom components, and theming for PatternFly. 
-This provides a collection of React based components you can use to build PatternFly patterns with consistent markup, styling, and behavior. 
+Begin by adding a CSS selector to define the chart size.
 
-PatternFly React charts are composed using separate components, so features are more easily customizable. 
-In this course, we're going to build a PatternFly sparkline chart together - starting with a simple chart, adding multiple datasets, tooltips, axis labels, a legend, and concluding by changing the theme color.
-You'll learn how to use PatternFly React chart components together to build a consistent user experience.
+Katacoda is setting up a new React application. Begin coding once the server
+starts and "Welcome to PatternFly" is visible on the lower pane.
 
-The image below is what we'll end up with when we are done.
+1) <strong>Navigate to the `src` folder and open `src/app.css`{{open}}</strong>
 
-<img src="sparkline-chart/assets/final.png" alt="Completed chart component" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
+2) <strong>Add CSS to the overall chart size, label layout, axis labels and
+legend labels.</strong>
+
+Copy the following code into the `app.css` file, replacing all the content.
+
+<pre class="file" data-filename="src/app.css" data-target="replace">
+.chart-container {
+  height: 100px;
+  width: 400px;
+}
+.chart-label-container {
+  margin-left: 50px;
+  margin-top: 50px;
+  height: 135px;
+}
+</pre>
+
+<strong>Note: </strong>Victory renders responsive containers, so the chart's
+width and height props do not determine the width and height of the chart in
+number of pixels. Instead, they define an aspect ratio for the chart.
+
+The exact number of pixels will depend on the size of the container the chart is
+rendered into. Typically, the parent container is set to the same width to
+maintain the aspect ratio.
