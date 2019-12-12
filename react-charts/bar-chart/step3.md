@@ -1,54 +1,68 @@
-Now we'll create a simple bar chart...
+Add multiple datasets to the bar chart.
 
-## Task
+1) <strong>Make sure `App.js` is still open.</strong>
 
-1) Navigate to the `src` folder and open `src/App.js`{{open}}
+2) <strong>Locate the code within the `<ChartBar/>` component.</strong>
 
-2) Next, we'll set up the general structure of the chart and the necessary import statements.
+It will look like this:
 
-Copy the following code into the App.js file, replacing all of the content there:
-
-<pre class="file" data-filename="App.js" data-target="replace">
-import React from 'react';
-import "@patternfly/react-core/dist/styles/base.css";
-import './app.css';
-import {
-  Chart,
-  ChartAxis,
-  ChartBar,
-  ChartGroup,
-  ChartThemeColor,
-  ChartVoronoiContainer
-} from '@patternfly/react-charts';
-
-function App() {
-  return (
-    &lt;div className=&quot;chart-container&quot;&gt;
-      &lt;Chart
-        domainPadding={{ x: [30, 25] }}
-        height={250}
-        width={600}
-      &gt;
-        &lt;ChartBar 
-          data={[
-            { name: &#39;Cats&#39;, x: &#39;2015&#39;, y: 1 }, 
-            { name: &#39;Cats&#39;, x: &#39;2016&#39;, y: 2 }, 
-            { name: &#39;Cats&#39;, x: &#39;2017&#39;, y: 5 }, 
-            { name: &#39;Cats&#39;, x: &#39;2018&#39;, y: 3 }
-          ]} 
-        /&gt;
-      &lt;/Chart&gt;
-    &lt;/div&gt;
-  );
-}
-
-export default App;
+<pre class="file">
+&lt;ChartBar
+  data={[
+    { name: &#39;Cats&#39;, x: &#39;2015&#39;, y: 1 },
+    { name: &#39;Cats&#39;, x: &#39;2016&#39;, y: 2 },
+    { name: &#39;Cats&#39;, x: &#39;2017&#39;, y: 5 },
+    { name: &#39;Cats&#39;, x: &#39;2018&#39;, y: 3 }
+  ]}
+/&gt;
 </pre>
 
-- The `ChartBar` is the React component used to add data to the Chart
-- The `domainPadding` property adjusts the position of the first/last `ChartBar`
+3) <strong>Replace the `ChartBar` component with multiple `ChartBar` components
+wrapped in a `ChartGroup` component.</strong>
 
-3) When the server reloads, you should see something like this:
-<img src="bar-chart/assets/simple.png" alt="Simple chart" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
+`ChartGroup` is the React Component used to apply properties to multiple `ChartBar`
+components.
 
-We'll continue by adding multiple datasets to the chart in the next step.
+Copy this code to the editor:
+
+<pre class="file" data-target="clipboard">
+&lt;ChartGroup offset={11}&gt;
+  &lt;ChartBar
+    data={[
+      { name: &#39;Cats&#39;, x: &#39;2015&#39;, y: 1 },
+      { name: &#39;Cats&#39;, x: &#39;2016&#39;, y: 2 },
+      { name: &#39;Cats&#39;, x: &#39;2017&#39;, y: 5 },
+      { name: &#39;Cats&#39;, x: &#39;2018&#39;, y: 3 }
+    ]}
+  /&gt;
+  &lt;ChartBar
+    data={[
+      { name: &#39;Dogs&#39;, x: &#39;2015&#39;, y: 2 },
+      { name: &#39;Dogs&#39;, x: &#39;2016&#39;, y: 1 },
+      { name: &#39;Dogs&#39;, x: &#39;2017&#39;, y: 7 },
+      { name: &#39;Dogs&#39;, x: &#39;2018&#39;, y: 4 }
+    ]}
+  /&gt;
+  &lt;ChartBar
+    data={[
+      { name: &#39;Birds&#39;, x: &#39;2015&#39;, y: 4 },
+      { name: &#39;Birds&#39;, x: &#39;2016&#39;, y: 4 },
+      { name: &#39;Birds&#39;, x: &#39;2017&#39;, y: 9 },
+      { name: &#39;Birds&#39;, x: &#39;2018&#39;, y: 7 }
+    ]}
+  /&gt;
+  &lt;ChartBar
+    data={[
+      { name: &#39;Mice&#39;, x: &#39;2015&#39;, y: 3 },
+      { name: &#39;Mice&#39;, x: &#39;2016&#39;, y: 3 },
+      { name: &#39;Mice&#39;, x: &#39;2017&#39;, y: 8 },
+      { name: &#39;Mice&#39;, x: &#39;2018&#39;, y: 5 }
+    ]}
+  /&gt;
+&lt;/ChartGroup&gt;
+</pre>
+
+Once the preview reloads, it should look like this:
+
+<img src="bar-chart/assets/multiple.png" alt="Multiple dataset chart"
+style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
