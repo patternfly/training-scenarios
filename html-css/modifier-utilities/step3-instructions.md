@@ -35,7 +35,7 @@ Click the `Copy to Editor` button below to add HTML for three alert components.
 
 2) <strong>Modify the first alert to be the `success` variation.</strong>
 
-In order to find the modifier class, use the documentation at this (link)[https://www.patternfly.org/v4/documentation/core/components/alert]. Scroll down to the "usage" table and find the class that styles the success variation.
+To find the modifier class, use the documentation at this (link)[https://www.patternfly.org/v4/documentation/core/components/alert]. Scroll down to the "usage" table and find the class that styles the success variation.
 
 When the class is found, add it next to the first `pf-c-alert` class.
 
@@ -53,6 +53,6 @@ Use the (documentation)[https://www.patternfly.org/v4/documentation/core/compone
 
 It should look like: `<div class="pf-c-alert pf-m-info pf-m-danger">`
 
-5) Notice that the color of the third alert changes to blue. What about the `pf-m-danger` modifier, Why didn't the alert change to red for danger? The reason is because `pf-m-info` and `pf-m-danger` both modify the color of an alert and `pf-m-info` comes before `pf-m-danger` in the codebase.
+5) Notice that the color of the third alert changes to blue. What about the `pf-m-danger` modifier? Why didn't the alert change to red for danger? The reason is that `pf-m-info` and `pf-m-danger` both modify the color of an alert, and `pf-m-info` comes before `pf-m-danger` in the codebase.
 
 <strong>Note: </strong>Only every apply one modifier class to an element class when those modifier classes change the same styles.

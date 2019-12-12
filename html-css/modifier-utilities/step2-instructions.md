@@ -1,6 +1,4 @@
-In the previous step the modifier was set on the `block` class. This step will explore how modifier classes are applied to different elements in the component.
-
-<!-- In this step we will modify the Dropdown component. You can explore the documentation and classes for the Dropdown component at this (link)[https://www.patternfly.org/v4/documentation/core/components/dropdown]. At the bottom of the page, under the "Usage" section table, you will see the documentation for the modifier classes under “class” and the classes they apply to under “applied”. -->
+In the previous step, the modifier was set on the `block` class. This step will explore how modifier classes are applied to different elements in the component.
 
 Modify the dropdown component so that it is in the expanded state, then change the dropdown toggle to the plain variation.
 
@@ -47,10 +45,8 @@ a) <strong>Locate the `pf-c-dropdown__toggle` class.</strong>
 
 b) <strong>Add `pf-m-plain` next to the `pf-c-dropdown__toggle` class and inside the quotation marks.</strong>
 
+This will style the `pf-c-dropdown__toggle` class to have no border.
+
 It should look like: `<button class="pf-c-dropdown__toggle pf-m-plain">`
 
-<strong>Note: </strong> The toggle should now have no border.</strong>
-
-<strong>Note: </strong> Now try adding `pf-m-plain` to `pf-c-dropdown__menu`. What happens? 
-
-Nothing should happen because the modifier class does not apply to `pf-c-dropdown__menu`, it only applies to `pf-c-dropdown__toggle`. When applying modifier classes always refer to the (documentation)[https://www.patternfly.org/v4/documentation/core/components/dropdown].
+<strong>Note: </strong> Now try adding `pf-m-plain` to `pf-c-dropdown__menu`. What happens? Nothing should happen because the modifier class does not apply to `pf-c-dropdown__menu`, it only applies to `pf-c-dropdown__toggle`. When applying modifier classes always refer to the (documentation)[https://www.patternfly.org/v4/documentation/core/components/dropdown].

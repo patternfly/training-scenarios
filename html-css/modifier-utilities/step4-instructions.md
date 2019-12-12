@@ -1,10 +1,4 @@
-Create a custom modifier class. First, choose which component to add a modifier class to and then select an element to be modified. 
-
-Second, create a modifier class name that represents the new style.
-Third, add the new modifier class to the HTML.
-Fourth, add the new styles to the stylesheet.
-
-<!-- Here is a list of modifiers that we have in PatternFly: https://pf4.patternfly.org/modifiers -->
+Create a custom modifier class. First, choose which component to add a modifier class to and then select an element to be modified. Second, create a modifier class name that represents the new style. Third, add the new modifier class to the HTML. Fourth, add the new styles to the stylesheet.
 
 In this step, create a custom `warning` variation for the label component.
 
@@ -33,7 +27,7 @@ Click the `Copy to Editor` button below to add the template for the new styles.
 
 3) <strong>Decide on which styles to override for the component.</strong>
 
-When adding new style overrides for a component decide on which properties to change. For example, in the case of the label, overriding the background color is a suitable choice because the component already styles the background color.
+When adding new style overrides for a component, decide on which properties to change. For example, in the case of the label, overriding the background color is a suitable choice because the component already styles the background color.
 
 4) <strong>Write a custom property to target the warning variation.</strong>
 
