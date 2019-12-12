@@ -1,61 +1,56 @@
-A card is a flexible element for containing any kind of content. Cards are used on dashboards, in data displays, or for positioning content on a page.
+Add content to the `CardHead` component.
 
-In this exercise, we'll be creating a card with an image, action, header, body, and footer.
+1) <strong>Add a brand to the `CardHead` component.</strong>
 
-In PatternFly 4, separate components are used to demarcate the different regions of a card so it can be fully customized. For example, images are placed in CardHead, actions in CardActions, and the header in CardHeader.  We'll add a PatternFly card  - the image below is what we'll end up with when we are done.
+a) <strong>Locate the `<CardHead>` component.</strong>
 
-<img src="react-basics/assets/final-card.png" alt="Completed card component with header, icon, body, and footer links" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
+It will look like this:
 
-## Task
-Katacoda is setting up a new React application for you. You'll be ready to code once the server starts and you can see "Welcome to PatternFly" on the lower pane.
-
-1) Navigate to the `src` folder and open `App.js`
-
-2) Next, we'll set up the general structure of the card and the necessary import statements.
-
-Copy the following code into the App.js file, replacing all of the content there:
-
-<pre class="file" data-filename="App.js" data-target="replace">
-import React from 'react';
-import &quot;@patternfly/react-core/dist/styles/base.css&quot;;
-import {
-  Brand,
-  Button,
-  Card,
-  CardActions,
-  CardHead,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Split,
-  SplitItem,
-  Text,
-  TextContent,
-  TextVariants
-} from '@patternfly/react-core';
-import {
-  TimesIcon
-} from '@patternfly/react-icons';
-
-function App() {
-  return (
-    &lt;Card&gt;
-      &lt;CardHead&gt;
-        &lt;CardActions&gt;
-        &lt;/CardActions&gt;
-      &lt;/CardHead&gt;
-      &lt;CardHeader&gt;
-      &lt;/CardHeader&gt;
-      &lt;CardBody&gt;
-      &lt;/CardBody&gt;
-      &lt;CardFooter&gt;
-      &lt;/CardFooter&gt;
-    &lt;/Card&gt;
-  );
-}
-
-export default App;
+<pre class="file">
+&lt;CardHead&gt;
+  &lt;CardActions&gt;
+  &lt;/CardActions&gt;
+&lt;/CardHead&gt;
 </pre>
 
-When the server reloads, you should see something like this:
-<img src="react-basics/assets/empty-card.png" alt="Empty card" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
+b) <strong>Add the `brand` component.</strong>
+
+The `brand` component is used to place a product logotype on a screen. All that is needed is the source image or SVG and alt text. Here the PatternFly logo is used.
+
+Insert the `brand` inside of the `CardHead` but before the `CardActions`.
+
+<pre class="file" data-target="clipboard">
+  &lt;Brand src=&quot;https://pf4.patternfly.org/assets/images/pf-logo-small.svg&quot; alt=&quot;Patternfly Logo&quot; /&gt;
+</pre>
+
+2) <strong>Add a close button to the `CardActions` component.</strong>
+
+a) <strong>Locate the `<CardActions>` component.</strong>
+
+It will look like this:
+
+<pre class="file">
+&lt;CardActions&gt;
+&lt;/CardActions&gt;
+</pre>
+
+b) <strong>Add the `button` component.</strong>
+
+Buttons communicate and trigger actions a user can take in an application or website. They come in several variations, such as `primary`, `secondary`, `danger`, `plain`, and `link`.
+
+Add a button using the `plain` variant.
+
+<pre class="file" data-target="clipboard">
+  &lt;Button variant=&quot;plain&quot;&gt;
+  &lt;/Button&gt;
+</pre>
+
+c) <strong>Add an icon inside of the button.</strong>
+
+PatternFly React provides a variety of icons. They're easy to use and compile into SVG files. Use them inside buttons and other components.
+
+Add a `TimesIcon` so that the card can be closed.
+
+<pre class="file" data-target="clipboard">
+  &lt;TimesIcon /&gt;
+</pre>

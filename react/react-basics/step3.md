@@ -1,25 +1,40 @@
-Now we'll add content to the `CardBody` of our card..
+Add content to `CardHeader`.
 
-## Task
+1) <strong>Add text to the `CardHeader` component.</strong>
 
-1) Make sure the App.js file is still open
+a) <strong>Locate the `<CardHeader>` component.</strong>
 
-2) Locate the code that looks like the following:
+It will look like this:
 
 <pre class="file">
-&lt;CardBody&gt;
-&lt;/CardBody&gt;
+&lt;CardHeader&gt;
+&lt;/CardHeader&gt;
 </pre>
 
-3) Replace that section with the following code:
+b) <strong>Add the `text` component with a variant inside of the `<CardHeader>`.</strong>
+
+The text component can wrap any static HTML content that is placed on the page to provide correct formatting when using standard HTML tags. The text component comes in several variations, such as `h1`, `p`, `a`, `small`, `blockquote`, and `pre`.
+
+Use the `p` variation, which is specified with `component={TextVariants.p}`.
+
+Add the following code inside the `CardHeader` component:
 
 <pre class="file" data-target="clipboard">
-&lt;CardBody&gt;
-  PatternFly is an open source design system created to enable consistency and usability across a wide range of applications and use cases. PatternFly provides clear standards, guidance, and tools that help designers and developers work together more efficiently and build better user experiences.
-&lt;/CardBody&gt;
+&lt;Text component={TextVariants.p}&gt;
+  PatternFly
+&lt;/Text&gt;
 </pre>
 
-Once the preview reloads - it should look like this:
-<img src="react-basics/assets/card-with-body.png" alt="Card with body content" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
+c) <strong>Add a subhead below the text added in step 1b.</strong>
 
-CardBody is the React component used to place content into the body of the Card.  We'll continue to add more details to the card header in the next step.
+`TextContent` is used to wrap `Text` components and provides text with extra spacing and styling.
+
+Add the following code inside of the `Text` component that is inside of the `CardHeader`.
+
+<pre class="file" data-target="clipboard">
+  &lt;TextContent&gt;
+    &lt;Text component={TextVariants.small}&gt;
+      Provided by Red Hat
+    &lt;/Text&gt;
+  &lt;/TextContent&gt;
+</pre>
