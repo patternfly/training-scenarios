@@ -18,7 +18,7 @@ Click the `Copy to Editor` button below to add a modal box component in the `ind
 
 2) <strong>Locate the parent container for the modal component.</strong>
 
-The parent container is the wrapper that is one level above its child. In this case it is the `pf-c-backdrop` class.
+The parent container is the wrapper, which is one level above its child. In this case, it is the `pf-c-backdrop` class.
 
 Add `pf-l-bullseye` to to the class `pf-c-backdrop`.
 

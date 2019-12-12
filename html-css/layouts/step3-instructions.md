@@ -41,7 +41,7 @@ Adding this class to each child means that the parent split container has a rela
 
 6) <strong>Add a modifier class to the second child.</strong>
 
-In order for a child to fill the available horizontal space, add `pf-m-fill` to just one of the children. In this case add it to the middle child.
+For a child to fill the available horizontal space, add `pf-m-fill` to just one of the children. In this case, add it to the middle child.
 
 It should look like:
 `<div class="pf-l-split__item pf-m-fill">`
