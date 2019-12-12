@@ -4,6 +4,8 @@ Create a simple sparkline chart.
 
 2) <strong>Set up the general structure of the chart and the necessary import statements.</strong>
 
+The `maxDomain` property defines the maximum domain value for a chart.
+
 Copy the following code into the `App.js` file, replacing all of the content there:
 
 <pre class="file" data-filename="App.js" data-target="replace">
@@ -45,8 +47,6 @@ function App() {
 
 export default App;
 </pre>
-
-The `maxDomain` property defines the maximum domain value for a chart
 
 Once the preview reloads, it should look like this:
 <img src="sparkline-chart/assets/simple.png" alt="Simple chart"

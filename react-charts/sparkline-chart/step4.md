@@ -10,7 +10,7 @@ Add a label to the sparkline chart.
 &lt;/div&gt;
 </pre>
 
-3) Add the `ChartContainer` component outside of the wrapper identified in step 2.
+3) <strong>Add the `ChartContainer` component outside of the wrapper identified in step 2.</strong>
 
 <pre class="file" data-target="clipboard">
 &lt;ChartContainer&gt;
