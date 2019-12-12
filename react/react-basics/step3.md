@@ -4,7 +4,7 @@ Add content to `CardHeader`.
 
 a) <strong>Locate the `<CardHeader>` component.</strong>
 
-It will look like the following:
+It will look like this:
 
 <pre class="file">
 &lt;CardHeader&gt;

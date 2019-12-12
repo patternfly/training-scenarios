@@ -4,7 +4,7 @@ Add content to the `CardBody` of the card.
 
 2) <strong>Locate the `<CardBody>` component.</strong>
 
-It will look like the following:
+It will look like this:
 
 <pre class="file">
 &lt;CardBody&gt;

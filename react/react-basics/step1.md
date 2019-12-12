@@ -4,7 +4,7 @@ In PatternFly, separate components are used to demarcate the different regions o
 
 In this exercise, create a card with an image, action, header, body, and footer.
 
-Katacoda is setting up a new React application. Begin coding once the server starts and "Welcome to PatternFly" is visible on the lower pane.
+Katacoda is setting up a new React application. Begin coding once the server starts and "Welcome to PatternFly" appears on the lower pane.
 
 1) <strong>Navigate to the `src` folder and open `App.js`.</strong>
 

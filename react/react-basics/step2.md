@@ -4,7 +4,7 @@ Add content to the `CardHead` component.
 
 a) <strong>Locate the `<CardHead>` component.</strong>
 
-It will look like the following:
+It will look like this:
 
 <pre class="file">
 &lt;CardHead&gt;
@@ -15,7 +15,7 @@ It will look like the following:
 
 b) <strong>Add the `brand` component.</strong>
 
-The `brand` component is used to place a product logotype on a screen. All that is needed is to provide the source image or SVG and alt text. Here the PatternFly logo is used.
+The `brand` component is used to place a product logotype on a screen. All that is needed is the source image or SVG and alt text. Here the PatternFly logo is used.
 
 Insert the `brand` inside of the `CardHead` but before the `CardActions`.
 
@@ -47,7 +47,7 @@ Add a button using the `plain` variant.
 
 c) <strong>Add an icon inside of the button.</strong>
 
-PatternFly React provides a variety of icons. They're easy to use and compile into svgs. Use them inside buttons and other components.
+PatternFly React provides a variety of icons. They're easy to use and compile into SVG files. Use them inside buttons and other components.
 
 Add a `TimesIcon` so that the card can be closed.
 
