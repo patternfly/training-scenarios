@@ -1,12 +1,10 @@
-In PatternFly, layouts allow for organizing and grouping elements. There are seven different layouts in PatternFly, but in this module we will cover just one. You can explore our other module which does a deep dive into layouts.
+In PatternFly, layouts allow for organizing and grouping elements. This module covers just one of the seven layouts. To learn about all seven layouts, explore the layout module.
 
-## Workshop: Practice using layout classes
+Add a bullseye layout class to the HTML markup.
 
-Let's add a bullseye layout class to the html markup to demonstrate the power of using PatternFly's layout classes.
+1) <strong>Copy code into the `index.html` file.</strong>
 
-1) <strong>Copy code into the index.html file.</strong>
-
-Click the <strong>Copy to Editor</strong> button below to add html for a card component to the `index.html` file.
+Click the `Copy to Editor` button below to add HTML for a card component to the `index.html` file.
 
 <pre class="file" data-filename="index.html" data-target="replace">
 &lt;div&gt;
@@ -24,12 +22,14 @@ Click the <strong>Copy to Editor</strong> button below to add html for a card co
 &lt;/div&gt;
 </pre>
 
-2) <strong>Add the bullseye class to the card so that the card is centered horizontally and vertically on the page.</strong>
+2) <strong>Add the bullseye class to the card.</strong>
 
-Find the outer `<div>` wrapper on Line 1 and add the class `pf-l-bullseye`.
+This will center the card horizontally and vertically on the page.
 
-<strong>Hint: </strong>`<div class="pf-l-bullseye">`
+Find the outermost `<div>` wrapper for the card and add the class `pf-l-bullseye`.
 
-Once the browser reloads, you should see that the card is now centered in the middle of the page!
+It should look like: `<div class="pf-l-bullseye">`
 
-<strong>Note: </strong>It’s important to follow the documentation for layouts because it will demonstrate where to add the layout class. The documentation for bullseye is [here](https://www.patternfly.org/v4/documentation/core/layouts/bullseye). In the documentation it specifies that you should add the class `pf-l-bullseye` to the parent container of its child.
+Once the preview reloads, the card should be centered in the middle of the page.
+
+<strong>Note: </strong>It’s important to follow the documentation for layouts because it demonstrates where to add the layout class. The [documentation for bullseye]((https://www.patternfly.org/v4/documentation/core/layouts/bullseye) specifies to add the class `pf-l-bullseye` to the parent container of its child.

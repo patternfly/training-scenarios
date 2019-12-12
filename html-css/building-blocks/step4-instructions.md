@@ -1,8 +1,8 @@
-Demos show how PatternFly’s components and layouts can be put together to build more complex structures. Demos have no additional styling as they are strictly made from components and layouts. If styling is necessary to implement a desired demo, then new components or layouts, or variants of the components or layouts used, should be created instead.
+"Demos" show how PatternFly’s components and layouts are put together to build more complex structures. Demos have no additional styling; they are strictly made from components and layouts. If styling is needed for a certain demo, then instead create new components or layouts, or variants of the components or layouts.
 
-## Workshop: Create a form demo using components and layouts
+Create a form demo using components and layouts.
 
-1) <strong>Add the form component five times to the `index.html` file.</strong>
+1) <strong>Add five `form` components.</strong>
 
 Use the `Copy to Clipboard` button to copy and paste this block of code five times in the `index.html` file.
 
@@ -19,11 +19,13 @@ Use the `Copy to Clipboard` button to copy and paste this block of code five tim
   &lt;/form&gt;
 </pre>
 
-2) <strong>Apply the PatternFly grid layout to position the components that were added in step 1.</strong>
+2) <strong>Apply a grid layout to position the form components.</strong>
 
-Add a `<div>` wrapper around all of the code in the editor whereby the layout class `class="pf-l-grid"` is applied.
+a) <strong>Add one `<div>` wrapper around all of the code in the editor.</strong>
 
-<strong>Hint:</strong>
+b) <strong>Add the layout class.</strong>
+
+It should look like this:
 
 ```
 <div class="pf-l-grid">
@@ -37,33 +39,33 @@ Step 2 involved adding `pf-l-grid` around the entire form component. In this ste
 
 To do this, look for `pf-c-form` in `index.html` and wrap it in the `pf-l-grid__item` class.
 
-<strong>Hint:</strong>
+The wrapper should look like this:
 
 ```
 <div class=”pf-l-grid__item”>
   // code for form component
 </div>
 ```
-<strong>Note:</strong> make sure to find all five.
+<strong>Note:</strong> Make sure to do this step for all five `form` components.
 
-4) <strong>Add a modifier class to the layout class that was added in step 2.</strong>
+4) <strong>Add a modifier class to the grid layout.</strong>
 
-This step uses the `pf-m-gutter` class which modifies the `pf-l-grid` class so that there is equal spacing around all children. 
+Use the `pf-m-gutter` class to modify the `pf-l-grid` class so that there is equal spacing around all children.
 
-At line 1 add the class `pf-m-gutter` after `pf-l-grid` but inside the quotation marks.
+Add the class `pf-m-gutter` after `pf-l-grid` to the outermost wrapper, inside the quotation marks.
 
-<strong>Hint:</strong> `<div class="pf-l-grid pf-m-gutter">`
+It should look like: `<div class="pf-l-grid pf-m-gutter">`
 
 <strong>Note: </strong> Learn how modifier classes work with layout classes by looking at the [documentation](https://www.patternfly.org/v4/documentation/core/layouts/grid#usage) on the PatternFly website.
 
-5) <strong>Add a modifier class to the layout classes that were added in step 3.</strong>
+5) <strong>Add modifier classes to the grid item classes.</strong>
 
 This step modifies the number of columns that a grid item spans. The maximum number of columns that a grid item can span is 12 (which is equivalent to 100%).
 
-Find each `pf-l-grid__item` and add the class `pf-m-[number from 1 - 12]`. The numbers across a row should add up to 12.
+Find each `pf-l-grid__item` that was added in step 3 and add the class `pf-m-[number from 1 - 12]`. The numbers across a row should add up to 12.
 
 Add `pf-m-6-col` to the first two grid items and add `pf-m-4-col` to the last three grid items.
 
-<strong>Hint: </strong> `<div class="pf-l-grid__item pf-m-6-col">`
+The first two grid items should look like: `<div class="pf-l-grid__item pf-m-6-col">`
 
-<strong>Hint: </strong> `<div class="pf-l-grid__item pf-m-4-col">`
+The second two grid items should look like: `<div class="pf-l-grid__item pf-m-4-col">`
