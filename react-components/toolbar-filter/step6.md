@@ -1,6 +1,6 @@
 Managing the relationship of a toolbar with its filters to a table or other component is the responsibility of the consumer. 
 
-1) <strong>Add the `DemoTable` component below the `DataToolbar`</strong> 
+1) <strong>Add the `DemoTable` component below the `DataToolbar`.</strong> 
 
 Pass the `DemoTable` the status and risk filters as props.
 

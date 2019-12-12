@@ -23,9 +23,9 @@ This step will group `DataToolbarItem` components into `DataToolbarGroup` compon
 &lt;/DataToolbarItem&gt;
 </pre>
 
-2) <strong>Wrap both the `DataToolbarItem` components containing the `CheckboxSelect` filters in one `DataToolbarGroup` component</strong>
+2) <strong>Wrap both the `DataToolbarItem` components containing the `CheckboxSelect` filters in one `DataToolbarGroup` component.</strong>
 
-3) <strong>Add the prop `variant="filter-group"` to the `DataToolbarGroup` added in step 2</strong>
+3) <strong>Add the prop `variant="filter-group"` to the `DataToolbarGroup` added in step 2.</strong>
 
 This will space the two `CheckboxSelect` components according to the PatternFly design specifications. 
 
@@ -72,9 +72,9 @@ Once completed, the code should appear as below.
 &lt;/DataToolbarItem&gt;
 </pre>
 
-5) <strong>Wrap the three adjacent `DataToolbarItem` components containing icons in one `DataToolbarGroup` component</strong>
+5) <strong>Wrap the three adjacent `DataToolbarItem` components containing icons in one `DataToolbarGroup` component.</strong>
 
-6) <strong>Add the prop `variant="icon-button-group"` to the `DataToolbarGroup` component added in step 5</strong>
+6) <strong>Add the prop `variant="icon-button-group"` to the `DataToolbarGroup` component added in step 5.</strong>
 
 This will space the three icons according to the PatternFly design specifications. Once completed, the code should appear as below.
 

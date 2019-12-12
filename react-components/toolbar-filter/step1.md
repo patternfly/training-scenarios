@@ -1,8 +1,8 @@
 Toolbars consist of content rows of components. Most toolbars will only be a single row, but each row is required to be housed in a `DataToolbarContent` component.
 
-1) <strong>Navigate to the `src` folder and open</strong> `src/App.js`{{open}}
+1) <strong>Navigate to the `src` folder and open</strong> `src/App.js`{{open}}.
 
-2) <strong>Set up the general structure of an empty toolbar and add the necessary imports</strong>
+2) <strong>Set up the general structure of an empty toolbar and add the necessary imports.</strong>
 
 Copy the following code into the `App.js` file, replacing all of the content there:
 
@@ -46,13 +46,13 @@ class ToolbarDemoApp extends React.Component {
 export default ToolbarDemoApp;
 </pre>
 
-3) <strong>Add a `DataToolbar` component inside the `React.Fragment` and add the property `id="tutorial-toolbar"` to the `DataToolbar`</strong>
+3) <strong>Add a `DataToolbar` component inside the `React.Fragment` and add the property `id="tutorial-toolbar"` to the `DataToolbar`.</strong>
 
-4) <strong>Add a `DataToolbarContent` component inside the `DataToolbar` component</strong>
+4) <strong>Add a `DataToolbarContent` component inside the `DataToolbar` component.</strong>
 
 Each toolbar must contain one or more `DataToolbarContent` components as content rows.
 
-5) <strong>Add `Toolbar Demo` as text inside the `DataToolbarContent` as a stand in for future content.</strong> 
+5) <strong>Add `Toolbar Demo` as text inside the `DataToolbarContent` as a placeholder for future content.</strong> 
 
 Once completed, the code inside `<React.Fragment>` should appear as below.
 

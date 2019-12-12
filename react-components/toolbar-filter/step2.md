@@ -4,7 +4,7 @@ Wrapping components in the `DataToolbarItem` component and adding the proper var
 
 Use the state of the `ToolbarDemoApp` to manage the three applied filters in the `DataToolbar`.
 
-1) <strong>Locate the following constructor in `ToolbarDemoApp`</strong>
+1) <strong>Locate the following constructor in `ToolbarDemoApp`.</strong>
 
 <pre class="file">
 constructor(props) {
@@ -12,7 +12,7 @@ constructor(props) {
 }
 </pre>
 
-2) <strong>Initialize the state in the constructor located in step 1</strong>
+2) <strong>Initialize the state in the constructor located in step 1.</strong>
 
 Add a `filters` object to the state. `filters` should have three properties (name, risk, and status), and each property should have an empty array as its value. This `filters` object will manage the three filters in the `DataToolbar`.
 
@@ -35,7 +35,7 @@ constructor(props) {
 
 Both of the event handlers can be inserted outside and below the constructor modified in the previous steps.
 
-The first event handler to add is `onSearch` which will fire when the user interacts with the name filter.
+a) <strong>Add the event handler `onSearch` which will fire when the user interacts with the name filter.</strong>
 
 <pre class="file" data-target="clipboard">
 onSearch = (value) =&gt; {
@@ -50,7 +50,7 @@ onSearch = (value) =&gt; {
 }
 </pre>
 
-The second event handler to add is `onSelect` which will fire when the user interacts with the risk and status filters.
+b) <strong>Add the event handler `onSelect` which will fire when the user interacts with the risk and status filters.</strong>
 
 <pre class="file" data-target="clipboard">
 onSelect = (type, event, selection) =&gt; {
@@ -69,13 +69,13 @@ onSelect = (type, event, selection) =&gt; {
 };
 </pre>
 
-4) <strong>Declare constants in the render function</strong>
+4) <strong>Declare constants in the render function.</strong>
 
 Inside the top of the render function and above the return statement, add three constants.
 
-First, unwrap the state managed `filters` to be used by the `DataToolbar`.
+a) <strong>Unwrap the state managed `filters` to be used by the `DataToolbar`.</strong>
 
-Second, define the status and risk options that will appear in the two dropdown filters in the `DataToolbar`.
+b) <strong>Define the status and risk options that will appear in the two dropdown filters in the `DataToolbar`.<strong>
 
 <pre class="file" data-target="clipboard">
 const { filters } = this.state;
