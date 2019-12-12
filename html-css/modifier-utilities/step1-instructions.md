@@ -2,13 +2,15 @@ PatternFly is based on the BEM naming system, whereby modifiers are tied to a co
 
 Components have multiple variations due in part to the use of modifier classes, which override or add new styling to the same component. 
 
-Modifiers use the `pf-m-` prefix, followed by a suitable name for the modifier. PatternFly aims to use consistent names for modifiers across components, however the styles for each modifier are specific to that component element.
+Modifiers use the “pf-m-” prefix, followed by a suitable name for the modifier. PatternFly aims to use consistent names for modifiers across components, however the styles for each modifier are specific to that component element.
 
-In this step, change the badge's state from unread to read.
+## Task: Change the Badge component's state from unread to read
 
-1) <strong>Copy code to `index.html`.</strong>
+In this step we are going to add two Badge components that use the unread modifier and we are going to change the Badge to the read variation by replacing the modifier.
 
-Click the `Copy to Editor` button below to add HTML for two unread badge components.
+1) <strong>Copy code to the editor.</strong>
+
+Click the <strong>Copy to Editor</strong> button below to add html for a Badge to the `index.html` file.
 
 <pre class="file" data-filename="index.html" data-target="replace">
 &lt;span class=&quot;pf-c-badge pf-m-unread&quot;&gt;
@@ -19,10 +21,8 @@ Click the `Copy to Editor` button below to add HTML for two unread badge compone
 &lt;/span&gt;
 </pre>
 
-<strong>Note: </strong> Both badges will have a background color of blue. The modifier class `pf-m-unread` modifies the `background-color` property to be blue.
+2) You should see <strong>two Badges</strong> appear with the background-color of blue. The modifier class: `pf-m-unread` modifies its styles to be “unread”.
 
-2) <strong>Update the second badge to be in the read state.</strong>
+3) The Badge also has a “read” state denoted by the modifier class `pf-m-read`. <strong>Update the second Badge so that it has the modifier for “read”.</strong>
 
-The badge also has a read state denoted by the modifier class `pf-m-read`. Replace the modifier class on the second badge with the new modifier class for read.
-
-<strong>Note: </strong>The background color of the second badge should change to grey because of the CSS styles attached to the modifier class `pf-m-read`.
+<strong>Hint: </strong>The background color of the second Badge should have changed to grey because of the css styles attached to the modifier class `pf-m-read`.

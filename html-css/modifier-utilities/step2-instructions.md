@@ -1,10 +1,12 @@
-In the previous step, the modifier was set on the `block` class. This step will explore how modifier classes are applied to different elements in the component.
+In step 1 we saw that the modifier was set on the "block" class, but let’s look at a more complex component to see how the modifier classes are applied to different elements in the component.
 
-Modify the dropdown component so that it is in the expanded state, then change the dropdown toggle to the plain variation.
+In this step we will modify the Dropdown component. You can explore the documentation and classes for the Dropdown component at this (link)[https://www.patternfly.org/v4/documentation/core/components/dropdown]. At the bottom of the page, under the "Usage" section table, you will see the documentation for the modifier classes under “class” and the classes they apply to under “applied”.
 
-1) <strong>Copy code to the `index.html` file.</strong>
+## Task: Modify the Dropdown for the expanded state, then change the dropdown toggle to the plain variation
 
-Click the `Copy to Editor` button below to add HTML for a dropdown component.
+1) <strong>Copy code to the editor.</strong>
+
+Click the <strong>Copy to Editor</strong> button below to add html for a Dropdown to the `index.html` file.
 
 <pre class="file" data-filename="index.html" data-target="replace">
 &lt;div class=&quot;pf-c-dropdown&quot;&gt;
@@ -29,24 +31,14 @@ Click the `Copy to Editor` button below to add HTML for a dropdown component.
 &lt;/div&gt;
 </pre>
 
-2) <strong>Add the expanded modifier to the dropdown.</strong>
+2) Search for the `pf-c-dropdown` class. Add `pf-m-expanded` beside that class name and inside the quotation marks.
 
-a) <strong>Locate the `pf-c-dropdown` class.</strong>
+<strong>Hint: </strong> `<div class="pf-c-dropdown pf-m-expanded">`
 
-b) <strong>Add `pf-m-expanded` next to `pf-c-dropdown` class and inside the quotation marks.</strong>
+You’ll see that the the bottom-border has changed to a blue line.
 
-It should look like this: `<div class="pf-c-dropdown pf-m-expanded">`
+3) Let’s try another modifier. Add `pf-m-plain` to `pf-c-dropdown__toggle` so that it’s modified to display the toggle modifier with no border. You may need to right-click on the iframe to reload the browser.
 
-<strong>Note: </strong> The bottom border on the dropdown toggle should have changed to a blue line.
+<strong>Hint: </strong> `<button class="pf-c-dropdown__toggle pf-m-plain">`
 
-3) <strong>Add the plain modifier to the dropdown toggle.</strong>
-
-a) <strong>Locate the `pf-c-dropdown__toggle` class.</strong>
-
-b) <strong>Add `pf-m-plain` next to the `pf-c-dropdown__toggle` class and inside the quotation marks.</strong>
-
-This will style the `pf-c-dropdown__toggle` class to have no border.
-
-It should look like: `<button class="pf-c-dropdown__toggle pf-m-plain">`
-
-<strong>Note: </strong> Now try adding `pf-m-plain` to `pf-c-dropdown__menu`. What happens? Nothing should happen because the modifier class does not apply to `pf-c-dropdown__menu`, it only applies to `pf-c-dropdown__toggle`. When applying modifier classes always refer to the (documentation)[https://www.patternfly.org/v4/documentation/core/components/dropdown].
+<strong>Pro Tip: </strong> Now try adding `pf-m-plain` to `pf-c-dropdown__menu`. What happens? <strong> Nothing should happen</strong>  because the modifier class does not apply to `pf-c-dropdown__menu`, it only applies to `pf-c-dropdown__toggle`. Always remember to refer to the documentation!

@@ -1,8 +1,12 @@
-Practice adding modifier classes to components. Apply visual modifiers and state modifiers to the alert component.
+Let’s continue to practice how to add modifier classes to components.
 
-1) <strong>Copy code to the `index.html` file.</strong>
+In this workshop we will apply visual modifiers and state modifiers to the same component or element. Using the documentation at this link https://www.patternfly.org/v4/documentation/core/components/alert, <strong> follow the instructions </strong> to modify the three Alert components.
 
-Click the `Copy to Editor` button below to add HTML for three alert components.
+## Task: Apply visual and state modifiers to the Alert component.
+
+1) <strong>Copy code to the editor.</strong>
+
+Click the <strong>Copy to Editor</strong> button below to add html for three Alert components to the index.html file.
 
 <pre class="file" data-filename="index.html" data-target="replace">
 &lt;div class=&quot;pf-c-alert&quot;&gt;
@@ -33,26 +37,16 @@ Click the `Copy to Editor` button below to add HTML for three alert components.
 &lt;/div&gt;
 </pre>
 
-2) <strong>Modify the first alert to be the `success` variation.</strong>
+2) Using the documentation from the "Usage" table at the link above modify the first Alert to be a “success” variation.
 
-To find the modifier class, use the documentation at this (link)[https://www.patternfly.org/v4/documentation/core/components/alert]. Scroll down to the "usage" table and find the class that styles the success variation.
+<strong>Hint:</strong> `<div class="pf-c-alert pf-m-success">`
 
-When the class is found, add it next to the first `pf-c-alert` class.
+3) Modify the second Alert to have “inline” and “warning” variations.
 
-It should look like: `<div class="pf-c-alert pf-m-success">`
+<strong>Hint:</strong> `<div class="pf-c-alert pf-m-inline pf-m-warning">`
 
-3) <strong>Modify the second alert to have `inline` and `warning` variations.</strong>
+4) Modify the third Alert to have “danger” and "info" variations.
 
-Use the (documentation)[https://www.patternfly.org/v4/documentation/core/components/alert] to find the classes that will modify the alert to have these variations.
+<strong>Hint:</strong> `<div class="pf-c-alert pf-m-info pf-m-danger">`
 
-It should look like: `<div class="pf-c-alert pf-m-inline pf-m-warning">`
-
-4) <strong>Modify the third alert to have `danger` and `info` variations.</strong>
-
-Use the (documentation)[https://www.patternfly.org/v4/documentation/core/components/alert] to find the classes that will modify the alert to have these variations.
-
-It should look like: `<div class="pf-c-alert pf-m-info pf-m-danger">`
-
-5) Notice that the color of the third alert changes to blue. What about the `pf-m-danger` modifier? Why didn't the alert change to red for danger? The reason is that `pf-m-info` and `pf-m-danger` both modify the color of an alert, and `pf-m-info` comes before `pf-m-danger` in the codebase.
-
-<strong>Note: </strong>Only every apply one modifier class to an element class when those modifier classes change the same styles.
+<strong>Pro Tip: </strong>You should notice that the color of the third Alert changes to blue. What about the `pf-m-danger` modifier, Why didn't it change to red for danger? The reason is because `pf-m-info` and `pf-m-danger` both modify the color of an Alert and `pf-m-info` comes before `pf-m-danger` in the code. You should only every apply one modifier class to an element class when those modifier classes change the same styles.
