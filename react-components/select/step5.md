@@ -8,7 +8,7 @@ To change what data is passed around, and passed back on selection, implement a 
 
 Add the class to the `App.js` file, outside of the App class.
 
-<strong>Note:</strong> This class may contain any amount of properties, and these will be passed back as data when an option is selected. The `toString` function tells the select component how to display and compare the data as a string.
+<strong>Note:</strong> This class may contain any amount of properties, and these will be passed back as data when an option is selected. The `toString` function tells the select component on how to display and compare the data as a string.
 
 <pre class="file" data-target="clipboard">
 class CustomDataState {
@@ -67,7 +67,7 @@ options: [
 ]
 </pre>
 
-New values are being displayed, and the typeahead filtering will match based on this display. In the case of HTML structures passed as a child, the component will convert the structure to a string for filtering.
+New values are displayed, and the typeahead filtering will match based on this display. In the case of HTML structures passed as a child, the component will convert the structure to a string for filtering.
 
 Once the preview reloads, it should look like this:
 <img src="select/assets/select-custom-display.png" alt="select menu with custom display text" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />

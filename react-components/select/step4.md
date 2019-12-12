@@ -6,9 +6,9 @@ By default, these variants match the entered input with the options' values in o
 
 Allow any input to be matched, regardless of ordering.
 
-1) **Add the following custom filtering function to the constructor of the App class.**
+1) **Add the following custom filtering function to the constructor of the `App` class.**
 
-The component expects a function that will return a list of options to display. In the code below, the text input is matched regardless of ordering using a regular expression, and sanitizes the text input to avoid extraneous characters. Using the same example above, this will mean that a text input of "bama" would still match for the option "Alabama".
+The component expects a function that will return a list of options to display. In the code below, the text input is matched regardless of ordering using a regular expression and sanitizes the text input to avoid extraneous characters. Using the same example above, this will mean that a text input of "bama" would still match for the option "Alabama".
 
 <pre class="file" data-target="clipboard">
 this.customFilter = e => {
@@ -32,7 +32,7 @@ this.customFilter = e => {
 
 2) **Add an `onFilter` property to the `select` component.**
 
-Assign `onFilter` to the function that was added in step 1.
+Assign `onFilter` property to the function that was added in step 1.
 
 <pre class="file" data-target="clipboard">
 onFilter={this.customFilter}

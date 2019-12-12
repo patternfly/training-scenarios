@@ -39,19 +39,6 @@ c. <strong>Replace the text inside of the Select component.</strong>
 
 Search for `(Add options here)` and replace this with the `{options}` object. This list determines what is rendered in the expanded select menu.
 
-The `select` component should look like the following.
-```
-<Select 
-  onToggle={Function.prototype} 
-  onSelect={Function.prototype} 
-  selections={selected} 
-  isExpanded={isExpanded} 
-  placeholderText="Select a state"
->
-  {options}
-</Select>
-```
-
 4) **Add event handling functions to the component.**
 
   a. <strong>Copy the following `onToggle` function into the constructor of the App class.</strong>
@@ -66,9 +53,9 @@ this.onToggle = isExpanded => {
 };
 </pre>
 
-  b. <strong>Copy the following `onSelect` function into the constructor of the App class.</strong> 
+  b. <strong>Copy the following `onSelect` function into the constructor of the `App` class.</strong> 
   
-  This function should go under the `onToggle` function added in step 6a. This function acts as a callback when a select option is clicked. It updates the `selected` state property, and thereby what is rendered as selected in the component.
+  This function should go under the `onToggle` function added in step 4a. This function acts as a callback when a select option is clicked. It updates the `selected` state property, and thereby what is rendered as selected in the component.
 
 <pre class="file" data-target="clipboard">
 this.onSelect = (event, selection) => {
@@ -85,7 +72,7 @@ a. <strong>Assign the `onToggle` property to `this.onToggle`.</strong>
 
 b. <strong>Assign the `onSelect` property to `this.onSelect`.</strong>
 
-The component should look as below.
+The `select` component should look like the following.
 ```
 <Select 
   onToggle={this.onToggle} 
