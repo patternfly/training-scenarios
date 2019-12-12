@@ -10,32 +10,28 @@
     },
     "steps": [
       {
-        "title": "Introducing Patternfly React toolbar",
+        "title": "Setting up DataToolbar basics",
         "text": "step1.md"
       },
       {
-        "title": "Adding content rows",
+        "title": "Add toolbar items",
         "text": "step2.md"
       },
       {
-        "title": "Toolbar items",
+        "title": "Add toolbar groups",
         "text": "step3.md"
       },
       {
-        "title": "Toolbar groups",
+        "title": "Add toggle groups",
         "text": "step4.md"
       },
       {
-        "title": "Toggle groups",
+        "title": "Add toolbar filters",
         "text": "step5.md"
       },
       {
-        "title": "Toolbar filters",
+        "title": "Attach toolbar filters to a react table",
         "text": "step6.md"
-      },
-      {
-        "title": "Attaching toolbar filters to a React table",
-        "text": "step7.md"
       }
     ],
     "assets": {

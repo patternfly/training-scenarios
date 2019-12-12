@@ -1,29 +1,57 @@
-Toolbar groups are used to group sets of like items to create desired associations and to enable items to respond together to changes in viewport width. A `DataToolbarGroup` is passed an optional prop `variant` to format particular types of groups of elements such as filter groups, button groups, or icon button groups.
+One particular type of data toolbar group is called the toggle group. The `DataToolbarToggleGroup` collapses a set of items into an overlay panel at a specific breakpoint. The method allows complex toolbars with multiple items and groups of items to be responsive.
 
-## Task
-1) Locate the following two `DataToolbarItems` containing `CheckBoxSelect` components:
+A toggle group is useful for containing filter controls, for example. When the toolbar responds to adapt to a mobile viewport, the contents contained in a toggle group will collapse into an overlay panel that can be toggled by clicking the Filter icon.
+
+Using a `DataToolbarToggleGroup` requires both a `toggleIcon` and `breakpoint` property. The `toggleIcon` is a ReactNode which is displayed instead of the children of `DataToolbarToggleGroup`. This occurs once the viewport width shrinks below the passed in breakpoint.
+
+1) <strong>Locate both the `DataToolbarItem` with `variant="search-filter"` and the `DataToolbarGroup` with `variant="filter-group"`.</strong>
+
+<strong>Hint:</strong> Both the `DataToolbarItem` and `DataToolbarGroup` to locate are siblings of each other.
+
 <pre class="file">
-   &lt;DataToolbarItem&gt;
-     &lt;CheckboxSelect
-       onSelect={this.onSelect}
-       type=&quot;Status&quot;
-       selections={filters.status}
-       options={statusOptions}
-     /&gt;
-   &lt;/DataToolbarItem&gt;
-   &lt;DataToolbarItem&gt;
-     &lt;CheckboxSelect
-       onSelect={this.onSelect}
-       type=&quot;Risk&quot;
-       selections={filters.risk}
-       options={riskOptions}
-     /&gt;
-   &lt;/DataToolbarItem&gt;
+&lt;DataToolbarItem variant=&quot;search-filter&quot;&gt;
+  &lt;Input value=&quot;&quot; id=&quot;step2Input&quot; ariaLabel=&quot;Step 2 input&quot; /&gt;
+&lt;/DataToolbarItem&gt;
+&lt;DataToolbarGroup variant=&quot;filter-group&quot;&gt;
+  &lt;DataToolbarItem&gt;
+    &lt;CheckboxSelect
+      onSelect={this.onSelect}
+      type=&quot;Status&quot;
+      selections={filters.status}
+      options={statusOptions}
+    /&gt;
+  &lt;/DataToolbarItem&gt;
+  &lt;DataToolbarItem&gt;
+    &lt;CheckboxSelect
+      onSelect={this.onSelect}
+      type=&quot;Risk&quot;
+      selections={filters.risk}
+      options={riskOptions}
+    /&gt;
+  &lt;/DataToolbarItem&gt;
+&lt;/DataToolbarGroup&gt;
 </pre>
 
-2) Wrap both the `DataToolbarItem` components containing our `CheckboxSelect` filters in the same `DataToolbarGroup` along with the optional prop `variant="filter-group"`.
+2) <strong>Wrap the `DataToolbarItem` and `DataToolbarGroup` located in step 1, in a `DataToolbarToggleGroup`<./strong>
 
-<pre class="file" data-target="clipboard">
+3) <strong>Add the `toggleIcon` property to the `DataToolbarToggleGroup` component.</strong>
+
+The value of the `toggleIcon` property should be `{<FilterIcon />}`.
+
+4) <strong>Add the `breakpoint` property to the `DataToolbarToggleGroup` component.</strong>
+
+The value of the `breakpoint` property should be `"xl"`.
+
+Once completed, the code should appear as below.
+
+<pre class="file">
+&lt;DataToolbarToggleGroup 
+  toggleIcon={&lt;FilterIcon /&gt;} 
+  breakpoint=&quot;xl&quot;
+  &gt;
+  &lt;DataToolbarItem variant=&quot;search-filter&quot;&gt;
+    &lt;Input value=&quot;&quot; id=&quot;step2Input&quot; ariaLabel=&quot;Step 2 input&quot; /&gt;
+  &lt;/DataToolbarItem&gt;
   &lt;DataToolbarGroup variant=&quot;filter-group&quot;&gt;
     &lt;DataToolbarItem&gt;
       &lt;CheckboxSelect
@@ -42,50 +70,21 @@ Toolbar groups are used to group sets of like items to create desired associatio
       /&gt;
     &lt;/DataToolbarItem&gt;
   &lt;/DataToolbarGroup&gt;
+&lt;/DataToolbarToggleGroup&gt;
 </pre>
 
-3) Locate the following three `DataToolbarItems` containing icons:
-<pre class="file">
-  &lt;DataToolbarItem&gt;
-    &lt;Button variant=&quot;plain&quot;&gt;
-      &lt;EditIcon /&gt;
-    &lt;/Button&gt;
-  &lt;/DataToolbarItem&gt;
-  &lt;DataToolbarItem&gt;
-    &lt;Button variant=&quot;plain&quot;&gt;
-      &lt;CloneIcon /&gt;
-    &lt;/Button&gt;
-  &lt;/DataToolbarItem&gt;
-  &lt;DataToolbarItem&gt;
-    &lt;Button variant=&quot;plain&quot;&gt;
-      &lt;SyncIcon /&gt;
-    &lt;/Button&gt;
-  &lt;/DataToolbarItem&gt;
-</pre>
+5) <strong>Test the responsiveness of the toolbar.</strong>
 
-4) Wrap three adjacent `DataToolbarItem` components containing icons in the same `DataToolbarGroup` along with the optional prop `variant="icon-button-group"`.
+Shrinking and expanding the viewport should toggle between showing the toggle icon and the children of the `DataToolbarToggleGroup`. When the toggle icon is being displayed, clicking on it should toggle the `DataToolbarToggleGroup` children in responsive expandable content.
 
-<pre class="file" data-target="clipboard">
-  &lt;DataToolbarGroup variant=&quot;icon-button-group&quot;&gt;
-    &lt;DataToolbarItem&gt;
-      &lt;Button variant=&quot;plain&quot;&gt;
-        &lt;EditIcon /&gt;
-      &lt;/Button&gt;
-    &lt;/DataToolbarItem&gt;
-    &lt;DataToolbarItem&gt;
-      &lt;Button variant=&quot;plain&quot;&gt;
-        &lt;CloneIcon /&gt;
-      &lt;/Button&gt;
-    &lt;/DataToolbarItem&gt;
-    &lt;DataToolbarItem&gt;
-      &lt;Button variant=&quot;plain&quot;&gt;
-        &lt;SyncIcon /&gt;
-      &lt;/Button&gt;
-    &lt;/DataToolbarItem&gt;
-  &lt;/DataToolbarGroup&gt;
-</pre>
+This first image shows how the toolbar should appear at a wider viewport width.
 
+<img src="toolbar-filter/assets/toggle-group-wide-view.png" alt="wide view of toggle group" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
 
-Once the preview reloads - it should look like this:
-<img src="toolbar-filter/assets/toolbar-groups.png" alt="toolbar groups" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
-Notice how the filters in the `DataToolbarGroup` with the `filter-group` variant have no spacing between them, and that the `DataToolbarGroup` with the `icon-button-group` variant are now spaced closer to each other than before the variant prop was provided.
+This second image shows how the toolbar should appear at a narrow viewport width.
+
+<img src="toolbar-filter/assets/toggle-group-narrow-view.png" alt="narrow view of toggle group" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
+
+Changing the `breakpoint` passed to the `DataToolbarToggleGroup` should change the viewport width at which the `DataToolbarToggleGroup` toggles between the expanded state and the responsive collapsed state.
+
+Valid values for the `breakpoint` property are `md`, `lg`, or `xl`.

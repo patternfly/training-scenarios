@@ -16,7 +16,7 @@ import {
 } from '@patternfly/react-core';
 import { SearchIcon } from '@patternfly/react-icons';
 
-class AppTable extends React.Component {
+class DemoTable extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -94,4 +94,4 @@ class AppTable extends React.Component {
   }
 }
 
-export default AppTable;
+export default DemoTable;
