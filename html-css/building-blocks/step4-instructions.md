@@ -1,4 +1,4 @@
-"Demos" show how PatternFly’s components and layouts can be put together to build more complex structures. Demos have no additional styling as they are strictly made from components and layouts. If styling is necessary to implement a desired demo, then new components or layouts, or variants of the components or layouts used, should be created instead.
+"Demos" show how PatternFly’s components and layouts are put together to build more complex structures. Demos have no additional styling; they are strictly made from components and layouts. If styling is needed for a certain demo, then instead create new components or layouts, or variants of the components or layouts.
 
 Create a form demo using components and layouts.
 
@@ -25,7 +25,7 @@ a) <strong>Add one `<div>` wrapper around all of the code in the editor.</strong
 
 b) <strong>Add the layout class.</strong>
 
-It should look like the following:
+It should look like this:
 
 ```
 <div class="pf-l-grid">
@@ -46,13 +46,13 @@ The wrapper should look like this:
   // code for form component
 </div>
 ```
-<strong>Note:</strong> Make sure to do this step for all five.
+<strong>Note:</strong> Make sure to do this step for all five `form` components.
 
 4) <strong>Add a modifier class to the grid layout.</strong>
 
 Use the `pf-m-gutter` class to modify the `pf-l-grid` class so that there is equal spacing around all children.
 
-To the outermost wrapper add the class `pf-m-gutter` after `pf-l-grid` but inside the quotation marks.
+Add the class `pf-m-gutter` after `pf-l-grid` to the outermost wrapper, inside the quotation marks.
 
 It should look like: `<div class="pf-l-grid pf-m-gutter">`
 

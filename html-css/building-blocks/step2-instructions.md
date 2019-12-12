@@ -8,7 +8,7 @@ In this step, add a `badge` component to the `chip` component.
 
 Click the `Copy to Editor` button below to add HTML for a chip component to the `index.html` file.
 
-This is the default chip component that already has another component in it: the button! This is why the chip can be considered as a more complex component.
+This is the default chip component that already has another component in it: the button. This is why the chip can be considered as a more complex component.
 
 <pre class="file" data-filename="index.html" data-target="replace">
 &lt;div class=&quot;pf-c-chip&quot;&gt;
@@ -31,4 +31,4 @@ To do this add this block of code between `pf-c-chip__text` and `pf-c-button`.
 </span>
 ```
 
-<strong>Note: </strong> Remember this is a component and not a demo because the chip component includes styles that handle how the badge looks within the chip. For example, when the badge component is added to the chip it receives styling that gives it a margin. You can read more in the documentation [here](https://www.patternfly.org/v4/documentation/core/components/chip)
+<strong>Note: </strong> Remember this is a component and not a demo because the chip component includes styles that handle how the badge looks within the chip. For example, when the badge component is added to the chip, it receives styling that gives it a margin. You can read more in the documentation [here](https://www.patternfly.org/v4/documentation/core/components/chip)
