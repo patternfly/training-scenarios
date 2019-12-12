@@ -26,8 +26,6 @@ it. This is useful for adding a tooltip.
 <pre class="file" data-target="clipboard">
 containerComponent={
   &lt;ChartVoronoiContainer
-    constrainToVisibleArea
-    labels={({ datum }) =&gt; `${datum.name}: ${datum.y}`}
   /&gt;
 }
 </pre>
