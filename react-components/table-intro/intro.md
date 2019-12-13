@@ -1,4 +1,4 @@
-In this scenario, you learn how to use PatternFly 4 React table.
+In this scenario, learn how to use PatternFly 4 React table.
 
 PatternFly React tables are based on the [Reactabular.js](https://reactabular.js.org/) library, and extend it with additional functionality and custom components.
 

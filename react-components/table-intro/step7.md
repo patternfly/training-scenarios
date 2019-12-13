@@ -1,6 +1,6 @@
-As mentioned in step 5, table allows for handling the case of large datasets on the interaction side. Do this by incorporating pagination controls that give users more granular control over their view of the data. The pagination component is available via PatternFly React core package `@patternfly/react-core`.
+As mentioned in step 5, the table allows for handling the case of large datasets on the interaction side. Do this by incorporating pagination controls that give users more granular control over their view of the data. The pagination component is available via PatternFly React core package `@patternfly/react-core`.
 
-A) <strong>Import the pagination component.</strong>
+1) <strong>Import the pagination component.</strong>
 
 Place the import right after the imports from  `@patternfly/react-table`.
 
@@ -8,13 +8,13 @@ Place the import right after the imports from  `@patternfly/react-table`.
 import { Pagination } from '@patternfly/react-core';
 </pre>
 
-B) <strong>Add the `<Pagination />` component just above the `<Table />` component.</strong>
+2) <strong>Add the `<Pagination />` component just above the `<Table />` component.</strong>
 
 <pre class="file">
   &lt;Pagination /&gt;
 </pre>
 
-C) <strong>Set the `itemCount` prop of the `<Pagination />` component.</strong>
+3) <strong>Set the `itemCount` prop of the `<Pagination />` component.</strong>
 
 Set `itemCount` to the total number of rows in the dataset by referencing the `defaultRows.length`.
 

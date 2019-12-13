@@ -1,6 +1,6 @@
-A common case for the table component is the need to handle large datasets elegantly. This is addressed on both the styling and interactivity side. In this step, styling techniques are applied to improve the experience.
+A typical case for the table component is the need to handle large datasets elegantly. This is addressed on both the styling and interactivity side. In this step, styling techniques are applied to improve the experience.
 
-A) <strong>Set the table to compact mode</strong>
+1) <strong>Set the table to compact mode</strong>
 
 Locate the `<Table />` component and add a `variant` <a href="https://reactjs.org/docs/components-and-props.html" target="_blank">prop</a>, setting its value to `compact`.
 

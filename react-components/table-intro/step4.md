@@ -1,9 +1,9 @@
 
-A) <strong>Convert each <em>row</em> definition from a string array to an array of objects.</strong>
+1) <strong>Convert each <em>row</em> definition from a string array to an array of objects.</strong>
 
 For each of the three row definitions, replace the string array with an object, and set the object's `cells` property to the string array.
 
-For example:
+It should look like this:
 
 <pre class="file">
 ["Row 1 column 1", "Row 1 column 2", "Row 1 column 3"]
@@ -34,7 +34,7 @@ const defaultRows = [
 ];
 </pre>
 
-B) <strong>Convert each <em>row cell</em> definition from a string to an object representation.</strong>
+2) <strong>Convert each <em>row cell</em> definition from a string to an object representation.</strong>
 
 For each array item in each row's `cells` array, replace the string value with an object whose `title` property is the row cell value.
 

@@ -1,8 +1,8 @@
 In this step, move the row/column definitions to an external file and adds a few more rows of sample data to make the next part of the lesson more realistic.
 
-A) <strong>Navigate to the `src` folder and open `src/data.js`.</strong>
+1) <strong>Navigate to the `src` folder and open `src/data.js`.</strong>
 
-B) <strong>Copy the below row/column definitions to `src/data.js`.</strong>
+2) <strong>Copy the below row/column definitions to `src/data.js`.</strong>
 
 <pre class="file" data-target="clipboard">
 export const columns = [
@@ -56,11 +56,11 @@ export const defaultRows = [
 ];
 </pre>
 
-C) <strong>Navigate back to the `src` folder and reopen `src/App.js`.</strong>
+3) <strong>Navigate back to the `src` folder and reopen `src/App.js`.</strong>
 
-D) <strong>Replace the inline row/column definitions with a reference to the ones from `data.js`.</strong>
+4) <strong>Replace the inline row/column definitions with a reference to the ones from `data.js`.</strong>
 
-a) <strong> Import the new row/column definitions.</strong>
+1) <strong> Import the new row/column definitions.</strong>
 
 Place the import statement just below the last import at the top of the file.
 
@@ -68,7 +68,7 @@ Place the import statement just below the last import at the top of the file.
 import { columns, defaultRows } from './data';
 </pre>
 
-b) <strong>Delete the rows and columns definitions in `App.js`.</strong>
+2) <strong>Delete the rows and columns definitions in `App.js`.</strong>
 
 The table will now use the definitions imported from `data.js` instead. The code to delete looks like the following:
 

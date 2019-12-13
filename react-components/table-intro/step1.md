@@ -45,7 +45,7 @@ const columnsDefinition = [
 ];
 </pre>
 
-Rows can be expressed as a multidimentional array of strings, or as an array of objects which match the type "IRow". The rows definition is passed to the `rows` prop of the Table or TableBody component, and can take the form of `Array<IRow | string[]>`. Below is what an IRow looks like.
+Rows can be expressed as a multidimensional array of strings, or as an array of objects which match the type "IRow". The rows definition is passed to the `rows` prop of the Table or TableBody component, and can take the form of `Array<IRow | string[]>`. Below is what an IRow should look like.
 
 <pre class="file">
 export interface IRow extends RowType {

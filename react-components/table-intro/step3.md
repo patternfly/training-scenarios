@@ -1,10 +1,10 @@
 With the basic table structure and imports in place, this step will convert the columns definition into an array of objects.
 
-A) <strong>Locate the table columns definition.</strong>
+1) <strong>Locate the table columns definition.</strong>
 
 It looks like: `const columns = ["First column", "Second column", "Third column"];`
 
-B) <strong>Replace each string in the `columns` array with an object representation.</strong>
+2) <strong>Replace each string in the `columns` array with an object representation.</strong>
 
 For each of the columns, set the object's `title` property to the string value used previously. For example: `"First column"` becomes `{ title: "First column" }`, etc.
 

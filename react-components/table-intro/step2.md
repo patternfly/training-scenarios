@@ -1,8 +1,8 @@
 Set up the general structure of the table and add the necessary imports.
 
-A) <strong>Navigate to the `src` folder and open `src/App.js`.</strong>
+1) <strong>Navigate to the `src` folder and open `src/App.js`.</strong>
 
-B) <strong>Copy the following code into the `src/App.js` file.</strong>
+2) <strong>Copy the following code into the `src/App.js` file.</strong>
 
 Replace all of the content in `App.js` with the code snippet below.
 
@@ -23,7 +23,7 @@ const App = () =&gt; {
 export default App;
 </pre>
 
-C) <strong>Declare constants for table columns and rows.</strong>
+3) <strong>Declare constants for table columns and rows.</strong>
 
 Just below the last import statement, and above the line starting with `const App = ()`, add the following code to populate the table with data:
 
@@ -36,9 +36,9 @@ const defaultRows = [
 ];
 </pre>
 
-D) <strong>Set the `cells` and `rows` prop for the `<Table />` component.</strong>
+4) <strong>Set the `cells` and `rows` prop for the `<Table />` component.</strong>
 
-Locate the `<Table />` component and locate the references to empty arrays (`cells={[]} rows={[]}`). These empty arrays should be replaced with the row/column definitions that were added in step C.
+Locate the `<Table />` component and locate the references to empty arrays (`cells={[]} rows={[]}`). Replace these empty arrays with the row/column definitions that were added in step 3.
 
 <pre class="file">
 cells={columns} rows={defaultRows}
