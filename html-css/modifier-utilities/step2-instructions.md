@@ -49,4 +49,4 @@ This will style the `pf-c-dropdown__toggle` class to have no border.
 
 It should look like: `<button class="pf-c-dropdown__toggle pf-m-plain">`
 
-<strong>Note: </strong> Now try adding `pf-m-plain` to `pf-c-dropdown__menu`. What happens? Nothing should happen because the modifier class does not apply to `pf-c-dropdown__menu`, it only applies to `pf-c-dropdown__toggle`. When applying modifier classes always refer to the (documentation)[https://www.patternfly.org/v4/documentation/core/components/dropdown].
+<strong>Note: </strong> Now try adding `pf-m-plain` to `pf-c-dropdown__menu`. What happens? Nothing should happen because the modifier class does not apply to `pf-c-dropdown__menu`, it only applies to `pf-c-dropdown__toggle`. When applying modifier classes always refer to the [documentation](https://www.patternfly.org/v4/documentation/core/components/dropdown).
