@@ -6,11 +6,16 @@ Add axis labels to the bar chart.
 
 <pre class="file">
 &lt;Chart
-  containerComponent={&lt;ChartVoronoiContainer
-  labels={({ datum }) =&gt; `${datum.name}: ${datum.y}`} /&gt;}
-  domainPadding={{ x: [30, 25] }}
-  height={250}
-  width={600}&gt;
+    domainPadding={{ x: [30, 25] }}
+    height={250}
+    width={600}
+    containerComponent={
+      &lt;ChartVoronoiContainer
+        constrainToVisibleArea
+        labels={({ datum }) =&gt; `${datum.name}: ${datum.y}`}
+      /&gt;
+    }
+  &gt;
 </pre>
 
 3) <strong>Add the `padding` property to that section:</strong>
@@ -60,8 +65,6 @@ It should look like this:
 <pre class="file" data-target="clipboard">
 &lt;ChartAxis dependentAxis showGrid label=&quot;Percentage&quot;/&gt;
 </pre>
-
-- This will add grid lines which appear behind the ChartBar
 
 Once the preview reloads, it should look like this:
 

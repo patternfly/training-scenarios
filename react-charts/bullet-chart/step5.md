@@ -29,16 +29,17 @@ It will look like this:
 
 3) <strong>Adjust the bottom padding.</strong>
 
-Add some extra padding to the botton of the chart to accomodate the legend.
+Add extra padding to the right side and bottom of the chart to accomodate the legend.
 
 - bottom: 60
+- right: 200
 
 It should look like this:
 
 <pre class="file" data-target="clipboard">padding={{
   bottom: 60,
   left: 150,
-  right: 50,
+  right: 200,
   top: 50
 }}</pre>
 
