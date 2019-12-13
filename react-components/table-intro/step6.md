@@ -1,56 +1,108 @@
-As mentioned in step 4, we can handle the case for large datasets on the interaction side, also. We can do this by incorporating pagination controls that give users more granular control over their view of the data.
+In this step, move the row/column definitions to an external file and adds a few more rows of sample data to make the next part of the lesson more realistic.
 
-## Task
+1) <strong>Navigate to the `src` folder and open `src/data.js`.</strong>
 
-1) Import Pagination component from react-core right after your imports from  `@patternfly/react-table`.
+2) <strong>Copy the below row/column definitions to `src/data.js`.</strong>
 
-<pre class="file">
-import { Pagination } from '@patternfly/react-core';
+<pre class="file" data-target="clipboard">
+export const columns = [
+  { title: "First column" },
+  { title: "Second column" },
+  { title: "Third column" }
+];
+export const defaultRows = [
+  {
+    cells: [
+      { title: "Row 1 column 1" },
+      { title: "Row 1 column 2" },
+      { title: "Row 1 column 3" }
+    ]
+  },
+  {
+    cells: [
+      { title: "Row 2 column 1" },
+      { title: "Row 2 column 2" },
+      { title: "Row 2 column 3" }
+    ]
+  },
+  {
+    cells: [
+      { title: "Row 3 column 1" },
+      { title: "Row 3 column 2" },
+      { title: "Row 3 column 3" }
+    ]
+  },
+  {
+    cells: [
+      { title: "Row 4 column 1" },
+      { title: "Row 4 column 2" },
+      { title: "Row 4 column 3" }
+    ]
+  },
+  {
+    cells: [
+      { title: "Row 5 column 1" },
+      { title: "Row 5 column 2" },
+      { title: "Row 5 column 3" }
+    ]
+  },
+  {
+    cells: [
+      { title: "Row 6 column 1" },
+      { title: "Row 6 column 2" },
+      { title: "Row 6 column 3" }
+    ]
+  }
+];
 </pre>
 
-2) Render the Pagination component just above the `<Table>` component, as a sibling in the component tree.
+3) <strong>Navigate back to the `src` folder and reopen `src/App.js`.</strong>
+
+4) <strong>Replace the inline row/column definitions with a reference to the ones from `data.js`.</strong>
+
+1) <strong> Import the new row/column definitions.</strong>
+
+Place the import statement just below the last import at the top of the file.
 
 <pre class="file">
-  &lt;Pagination /&gt;
+import { columns, defaultRows } from './data';
 </pre>
 
-3) Set the `itemCount` prop of the Pagination component to the total number of rows in your dataset.
+2) <strong>Delete the rows and columns definitions in `App.js`.</strong>
+
+The table will now use the definitions imported from `data.js` instead. The code to delete looks like the following:
 
 <pre class="file">
-itemCount={defaultRows.length}
+const columns = [
+  { title: "First column" },
+  { title: "Second column" },
+  { title: "Third column" }
+];
+const defaultRows = [
+  {
+    cells: [
+      { title: "Row 1 column 1" },
+      { title: "Row 1 column 2" },
+      { title: "Row 1 column 3" }
+    ]
+  },
+  {
+    cells: [
+      { title: "Row 2 column 1" },
+      { title: "Row 2 column 2" },
+      { title: "Row 2 column 3" }
+    ]
+  },
+  {
+    cells: [
+      { title: "Row 3 column 1" },
+      { title: "Row 3 column 2" },
+      { title: "Row 3 column 3" }
+    ]
+  }
+];
 </pre>
 
-At this point you should see the Pagination component rendered above the table reflecting 1 - 6 of 6 items.
-
-<strong>Note: </strong> You may need to click the refresh button at the top right of the preview pane or wait for the environment to finish updating before you see the latest changes.
-
-Your component implementation should look like the following:
-
-<pre class="file">
-import * as React from &quot;react&quot;;
-import &quot;@patternfly/react-core/dist/styles/base.css&quot;;
-import { Table, TableHeader, TableBody } from &quot;@patternfly/react-table&quot;;
-import { Pagination } from &#39;@patternfly/react-core&#39;;
-import { columns, defaultRows } from &quot;./data&quot;;
-const App = () =&gt; {
-  return (
-    &lt;React.Fragment&gt;
-      &lt;Pagination itemCount={defaultRows.length} /&gt;
-      &lt;Table
-        caption=&quot;Patternfly React Table&quot;
-        cells={columns}
-        rows={defaultRows}
-        variant=&quot;compact&quot;
-      &gt;
-        &lt;TableHeader /&gt;
-        &lt;TableBody /&gt;
-      &lt;/Table&gt;
-    &lt;/React.Fragment&gt;
-  );
-};
-export default App;
-</pre>
-
-The rendered output should look like the image below:
+The table should render the same as it did before, except with a few more rows:
 
 <img src="table-intro/assets/step-6-complete.png" alt="Image of what table looks like at the end of step 6." style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />

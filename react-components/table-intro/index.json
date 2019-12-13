@@ -1,8 +1,8 @@
 {
-  "title": "Table component: beginner",
-  "description": "Build a React table with pagination.",
-  "difficulty": "intermediate",
-  "time": "45 minutes",
+  "title": "The PatternFly React table",
+  "description": "Learn how to implement a paginated table with React.",
+  "difficulty": "beginner",
+  "time": "30 minutes",
   "details": {
     "intro": {
       "text": "intro.md",
@@ -10,40 +10,48 @@
     },
     "steps": [
       {
-        "title": "Introducing Patternfly React Table",
+        "title": "Introducing PatternFly React table",
         "text": "step1.md"
       },
       {
-        "title": "Initialize a basic Table",
-        "text": "step2.md"
+        "title": "Initialize a basic table",
+        "text": "step2.md",
+        "answer": "step2-answer.md"
       },
       {
-        "title": "Express column and row data as objects",
-        "text": "step3.md"
+        "title": "Express column data as objects",
+        "text": "step3.md",
+        "answer": "step3-answer.md"
+      },
+      {
+        "title": "Express row data as objects",
+        "text": "step4.md",
+        "answer": "step4-answer.md"
       },
       {
         "title": "Set the table in compact mode",
-        "text": "step4.md"
+        "text": "step5.md",
+        "answer": "step5-answer.md"
       },
       {
-        "title": "Move your data to an external file",
-        "text": "step5.md"
+        "title": "Move the data to an external file",
+        "text": "step6.md",
+        "answer": "step6-answer.md"
       },
       {
-        "title": "Add the Pagination component",
-        "text": "step6.md"
+        "title": "Add the pagination component",
+        "text": "step7.md",
+        "answer": "step7-answer.md"
       },
       {
         "title": "Add some state properties for pagination",
-        "text": "step7.md"
+        "text": "step8.md",
+        "answer": "step8-answer.md"
       },
       {
         "title": "Ensure rows reflect current pagination settings",
-        "text": "step8.md"
-      },
-      {
-        "title": "Cleanup, bugs and lint warnings",
-        "text": "step9.md"
+        "text": "step9.md",
+        "answer": "step9-answer.md"
       }
     ],
     "assets": {
@@ -67,7 +75,7 @@
           "file": "step-7-complete.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
         },
         {
-          "file": "step-7-perPageOptions-complete.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
+          "file": "step-8-perPageOptions-complete.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
         },
         {
           "file": "step-8-complete.png", "target": "~/tutorial/assets/images/", "chmod": "+r"

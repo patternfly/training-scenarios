@@ -1,6 +1,4 @@
-The PatternFly React Table package provides a collection of React components you can use to build tables with consistent markup, styling, and behavior. In this course, we're going to build a PatternFly Table together. We'll start with creating a basic table with simple column/row structures. Then we'll look at how to convert those row/column definitions into object representations, which will be useful for more complex tables later. We'll  conclude with setting the table into compact mode and adding pagination so that our basic table works well with lots of data. Let's dive right in.
-
-The following is an example of what a table implementation looks like:
+The following is an example of what the table component structure looks like:
 
 <pre class="file">
 &lt;Table caption=&quot;Empty Table&quot; cells={columnsDefinition} rows={rowsDefinition}&gt;
@@ -9,7 +7,7 @@ The following is an example of what a table implementation looks like:
 &lt;/Table&gt;
 </pre>
 
-Your columns can be expressed as an array of strings or an array of objects which match the type "ICell". The columns definition is passed to the `cells` prop of the Table component which can take the form of `Array<ICell | string>`. Below is what an ICell looks like.
+Columns can be expressed as an array of strings, or an array of objects which match the type "ICell". The columns definition is passed to the `cells` prop of the Table component which can take the form of `Array<ICell | string>`. Below is what an ICell looks like.
 
 <pre class="file">
 export interface ICell {
@@ -27,7 +25,27 @@ export interface ICell {
 }
 </pre>
 
-Your rows can be expressed as a multidimentional array of strings, or as an array of objects which match the type "IRow". The rows definition is passed to the `rows` prop of the Table or TableBody component, and can take the form of `Array<IRow | string[]>`. Below is what an IRow looks like.
+Here are two ways that the same columns definition can be written:
+
+As array of strings:
+<pre class="file">
+const columnsDefinition = [
+  "First column",
+  "Second column",
+  "Third column"
+]
+</pre>
+
+As array of `ICell` objects:
+<pre class="file">
+const columnsDefinition = [
+  { title: "First column" },
+  { title: "Second column" },
+  { title: "Third column" }
+];
+</pre>
+
+Rows can be expressed as a multidimensional array of strings, or as an array of objects which match the type "IRow". The rows definition is passed to the `rows` prop of the Table or TableBody component, and can take the form of `Array<IRow | string[]>`. Below is what an IRow should look like.
 
 <pre class="file">
 export interface IRow extends RowType {
@@ -44,4 +62,42 @@ export interface IRow extends RowType {
   isLastVisible?: boolean;
   selected?: boolean;
 }
+</pre>
+
+Here are two ways of writing the same rows definition:
+
+As multidimentional array of strings:
+<pre class="file">
+const rowsDefinition = [
+  ["Row 1 column 1", "Row 1 column 2", "Row 1 column 3"],
+  ["Row 2 column 1", "Row 2 column 2", "Row 2 column 3"],
+  ["Row 3 column 1", "Row 3 column 2", "Row 3 column 3"]
+];
+</pre>
+
+As array of `IRow` objects:
+<pre class="file">
+const rowsDefinition = [
+  {
+    cells: [
+      { title: "Row 1 column 1" },
+      { title: "Row 1 column 2" },
+      { title: "Row 1 column 3" }
+    ]
+  },
+  {
+    cells: [
+      { title: "Row 2 column 1" },
+      { title: "Row 2 column 2" },
+      { title: "Row 2 column 3" }
+    ]
+  },
+  {
+    cells: [
+      { title: "Row 3 column 1" },
+      { title: "Row 3 column 2" },
+      { title: "Row 3 column 3" }
+    ]
+  }
+];
 </pre>

@@ -1,118 +1,66 @@
-In this step, we'll add in the heart of pagination functionality. We'll add a new state property to track the dynamic rows, and a few more handler functions to facilitate updating the various state properties based off of user interactions.
+This step adds the state properties needed to track how many rows per page the user can display and what current page the user is on within the dataset. It also introduces a function to handle updating the number of rows per page to show when the user changes this value with the dropdown.
 
-## Task
+1) <strong>Create a state property to track the number of rows to display per page.</strong>
 
-1) Create a new state property to represent our dynamic rows, call it "rows". Set the initial value to the defaultRows constant that you defined earlier. Place this code just above the handlePerPageSelect function you added in the last step.
-
-<pre class="file">
-const [rows, setRows] = React.useState(defaultRows);
-</pre>
-
-2) Locate the code that sets the rows for the table (`rows={defaultRows}`), and update it to reference the new rows state property you just created.
+In the `src/App.js` file, just below the line that starts with `const App = () => {`, add the following code to the App component. This code creates a state variable called `numPerPage` and sets the default value to `2`, so that users will see 2 rows per page by default.
 
 <pre class="file">
-rows={rows}
+const defaultPerPage = 2;
+const [numPerPage, setNumPerPage] = React.useState(defaultPerPage);
 </pre>
 
-<strong>Note: </strong> the itemCount prop will still reference the defaultRows constant as itemCount needs to be aware of the total number of rows in the entire dataset, not the number of rows that's being shown at a given time.
+<strong>Note:</strong> The second parameter in the destructured array returned by React.useState() is the setter for the state variable you're creating. These "setters" are functions that update the corresponding state value.
 
-3) Add a function "updateList" just above handlePerPageSelect to handle setting the rows based on when the numPerPage state property changes.
+2) <strong>Set the `perPage` prop of the `<Pagination />` component.</strong>
 
-<pre class="file" data-target="clipboard">
-const updateList = value => {
-  setCurrentPage(value);
-  const beginMark = (value - 1) * numPerPage;
-  const endMark = beginMark + numPerPage;
-  let newRows = defaultRows.slice(beginMark, endMark);
-  setRows(newRows);
+Set the property to the `numPerPage` state property that was added in step A.
+
+<pre class="file">
+perPage={numPerPage}
+</pre>
+
+3) <strong>Create a state property to track the current page of the table data.</strong>
+
+Add the following code to the App component, just below the previous state property that was added in step 1. Supply a `1` as the default value so that the table intuitively loads with the first page of data.
+
+<pre class="file">
+const [currentPage, setCurrentPage] = React.useState(1);
+</pre>
+
+4) <strong>Set the `page` prop of the `<Pagination />` component to the `currentPage` state property.</strong>
+
+<pre class="file">
+page={currentPage}
+</pre>
+
+5) <strong>Set the pagination component dropdown options.</strong>
+
+Set the `perPageOptions` prop of the `<Pagination />` component so that there are two options in the dropdown, 2 and 3. This controls how many rows per page are shown.
+
+<pre class="file">
+perPageOptions={[{ title: "2", value: 2 }, { title: "3", value: 3 }]}
+</pre>
+
+<strong>Note: </strong>Notice that the "per page options" dropdown now reflects options of 2 and 3 per page.
+
+<img src="table-intro/assets/step-8-perPageOptions-complete.png" alt="Image of what table looks like after step 8, substep 5." style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
+
+6) <strong>Create a function to handle updating the number of rows per page.</strong>
+
+Add the following code inside the App component definition (just below the state properties added in steps 1 & 3). Inside this function update the `numPerPage` state property to the value selected in the dropdown by calling `setNumPerPage` and passing it the `newPerPage` parameter.
+
+<pre class="file">
+const handlePerPageSelect = (_evt, newPerPage, newPage = 1, startIdx, endIdx) => {
+  setNumPerPage(newPerPage);
 };
 </pre>
 
-4) Inside the handlePerPageSelect handler, make a call to updateList and pass it the currentPage state property.
+7) <strong>Set the `onPerPageSelect` prop of the `<Pagination />` component to the `handlePerPageSelect` function created in step 6.</strong>
 
 <pre class="file">
-updateList(currentPage);
+onPerPageSelect={handlePerPageSelect}
 </pre>
 
-5) Add a useEffect hook inside your component that we'll teach to only run when certain properties change. This effects hook will ultimately ensure `numPerPage` and `rows` stay in sync. Inside this effect, make a call to handlePerPageSelect, pass null for the first param (event) and pass numPerPage as the second param. Place this code just above the return statement in your App component.
-
-<pre class="file">
-React.useEffect(() => {
-  handlePerPageSelect(null, numPerPage);
-}, []);
-</pre>
-
-6) Locate the empty dependency array for the useEffect hook you just created, it's the second parameter (`[]`) that was passed to useEffect. This second parameter to useEffect represents an array of the function's dependencies.
-
-7) Specify numPerPage and handlePerPageSelect as <a href="https://reactjs.org/docs/hooks-reference.html#conditionally-firing-an-effect" target="_blank">effect dependencies</a> by listing them in the dependency array from the previous step. Replace the empty array with the following;
-
-<pre class="file">
-[numPerPage, handlePerPageSelect]
-</pre>
-
-8) Locate the `<Pagination>` component and set the `onSetPage` prop to an inline arrow function, and within this function make a call to updateList, pass updateList the value you receive as a second parameter.
-
-<pre class="file">
-onSetPage={(_evt, value) => {
-  updateList(value);
-}}
-</pre>
-
-At this point, you should see basic pagination in place. Nice! There is some important cleanup left to do, which we'll get to in the next step.
-
-Your rendered output should look something like the screenshot below:
+Here's what the rendered output should look like:
 
 <img src="table-intro/assets/step-8-complete.png" alt="Image of what table looks like at the end of step 8." style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
-
-Your component implementation should look something like the following:
-
-<pre class="file">
-import * as React from &quot;react&quot;;
-import &quot;@patternfly/react-core/dist/styles/base.css&quot;;
-import { Table, TableHeader, TableBody } from &quot;@patternfly/react-table&quot;;
-import { Pagination } from &quot;@patternfly/react-core&quot;;
-import { columns, defaultRows } from &quot;./data&quot;;
-const App = () =&gt; {
-  const [numPerPage, setNumPerPage] = React.useState(2);
-  const [currentPage, setCurrentPage] = React.useState(1);
-  const [rows, setRows] = React.useState(defaultRows);
-  const updateList = value =&gt; {
-    setCurrentPage(value);
-    const beginMark = (value - 1) * numPerPage;
-    const endMark = beginMark + numPerPage;
-    let newRows = defaultRows.slice(beginMark, endMark);
-    setRows(newRows);
-  };
-  const handlePerPageSelect = (event, value) =&gt; {
-    updateList(currentPage);
-    setNumPerPage(value);
-  };
-  React.useEffect(() =&gt; {
-    handlePerPageSelect(null, numPerPage);
-  }, [numPerPage, handlePerPageSelect]);
-  return (
-    &lt;React.Fragment&gt;
-      &lt;Pagination
-        onSetPage={(_evt, value) =&gt; {
-          updateList(value);
-        }}
-        onPerPageSelect={handlePerPageSelect}
-        perPageOptions={[{ title: &quot;2&quot;, value: 2 }, { title: &quot;3&quot;, value: 3 }]}
-        page={currentPage}
-        perPage={numPerPage}
-        itemCount={defaultRows.length}
-      /&gt;
-      &lt;Table
-        caption=&quot;Patternfly React Table&quot;
-        cells={columns}
-        rows={rows}
-        variant=&quot;compact&quot;
-      &gt;
-        &lt;TableHeader /&gt;
-        &lt;TableBody /&gt;
-      &lt;/Table&gt;
-    &lt;/React.Fragment&gt;
-  );
-};
-export default App;
-</pre>

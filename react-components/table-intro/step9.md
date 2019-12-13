@@ -1,57 +1,49 @@
-In this step, we'll find and treat a bug that you may or may not have already noticed in the current implementation, and then properly mark our callbacks that use state properties as react "callback hooks" so that they work as expected within the react data change detection ecosystem that is <a href="https://reactjs.org/docs/hooks-intro.html" target="_blank">hooks</a>.
+Add functionality for paginating the table's dataset. The functionality includes adding a new state property to track the dynamic rows and adding a few more handler functions to facilitate keeping the table and pagination in sync.
 
-## Task
+1) <strong>Create a new state property to keep track of dynamic rows.</strong>
 
-1) Set the per page dropdown to "2 per page" and navigate to the very last page using the pagination controls, now select "3 per page" from the dropdown and notice our rows are gone!
+Add the following code just below the other state properties added in step 8. Set the initial value to the `defaultRows` constant imported from `data.js`.
 
-2) Locate the `handlePerPageSelect` handler function and replace the call to `updateList(currentPage);` with the following logic.
+<pre class="file">
+const [rows, setRows] = React.useState(defaultRows.slice(0, defaultPerPage));
+</pre>
 
-<pre class="file" data-target="clipboard">
-// when a user reaches end of pagination, and sets numPerPage to a value
-// that requires more data than we have available, reset pagination to page 1
-if (value > numPerPage && currentPage === defaultRows.length / numPerPage) {
-  updateList(1);
-} else {
-  updateList(currentPage);
+2) <strong>Update the `<Table />`'s `rows` prop to use the new `rows` state property.</strong>
+
+Locate the code that sets the rows for the table `rows={defaultRows}`, and update it to reference the new rows state property you created in step 1.
+
+<pre class="file">
+rows={rows}
+</pre>
+
+<strong>Note: </strong> the `itemCount` prop for the pagination component will still reference the defaultRows constant as it needs to be aware of the total number of rows in the entire dataset, not the number of rows that are being shown for a given page within the dataset.
+
+3) <strong>Create a function to handle updating the current page.</strong>
+
+Copy the following handler function just below the `handlePerPageSelect` function.
+
+<pre class="file">
+const handleSetPage = (_evt, newPage, perPage, startIdx, endIdx) => {
+  setCurrentPage(newPage);
 }
 </pre>
 
-<strong>Disclaimer: </strong> We've handled the case of pagination overflow here in a basic way to keep this tutorial short and simple. In a production application it might make sense to instead add logic that reverts a user to the last and closest page index that will allow for displaying the number of items per page being selected.
+4) <strong>Set the `onSetPage` prop of the `<Pagination />` component to the `handleSetPage` handler function.</strong>
 
-3) Now convert `handlePerPageSelect` to a callback hook by passing the function signature as the first parameter to React.useCallback(), and specify an array of dependencies for this callback hook like you did earlier for `handlePerPageSelect`. Omitting the specifics, it should generally take the form of: `const handlePerPageSelect = React.useCallback(FN, [DEPS]);`, where FN is your callback function and DEPS represents an array of any state properties or other callback functions.
-
-
-4) When you're done, verify that your code looks like the following code snippet below. Notice we specify `numPerPage`, `currentPage`, and `updateList` as dependencies of the `handlePerPageSelect` callback hook.
-
-<pre class="file" data-target="clipboard">
-const handlePerPageSelect = React.useCallback((event, value) => {
-  // when user reaches end of pagination, and sets numPerPage to a value
-  // that requires more data than we have available, ensure the rows are set according
-  // to the previous page's index (currentPage - 1)
-  if (value > numPerPage && currentPage === defaultRows.length / numPerPage) {
-    updateList(currentPage - 1);
-  } else {
-    updateList(currentPage);
-  }
-  setNumPerPage(value);
-}, [numPerPage, currentPage, updateList]);
+<pre class="file">
+onSetPage={handleSetPage}
 </pre>
 
-5) As a final step, we need to give the same treatment to updateList as we just did for `handlePerPageSelect`. Replace the value of updateList with another call to React.useCallback() and pass updateList's function signature as the first parameter and provide an array of dependencies as the second parameter. updateList only depends on the numPerPage state property.
+5) <strong>Update the visible `rows` when `page` and `numPerPage` state variables are updated.</strong>
 
-<pre class="file" data-target="clipboard">
-const updateList = React.useCallback(
-  value => {
-    setCurrentPage(value);
-    const beginMark = (value - 1) * numPerPage;
-    const endMark = beginMark + numPerPage;
-    let newRows = defaultRows.slice(beginMark, endMark);
-    setRows(newRows);
-  },
-  [numPerPage]
-);
+Copy the following statement into the `handlePerPageSelect` and `handleSetPage` function bodies.
+
+<pre class="file">
+setRows(defaultRows.slice(startIdx, endIdx));
 </pre>
 
-The look of your table hasn't changed much, but it now functions much better and will pass the basic code quality test if you're using the react-hooks/exhaustive-deps lint plugin.
+The table should look like the following:
 
-This is a good point in time to copy your code somewhere in case you want to be able to reference this table implementation later. This concludes the tutorial.
+<img src="table-intro/assets/step-9-complete.png" alt="Image of what table looks like at the end of step 9." style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
+
+At this point, basic pagination of the table data should be in place. Nice!

@@ -1,128 +1,13 @@
-In this step, we'll move our row/column definitions to an external file and add three more rows of sample data to make the next part of the lesson more interesting.
+A typical case for the table component is the need to handle large datasets elegantly. This is addressed on both the styling and interactivity side. In this step, styling techniques are applied to improve the experience.
 
-## Task
+1) <strong>Set the table to compact mode</strong>
 
-1) Navigate to the `src` folder and open `src/data.js`{{open}}
-
-2) Copy your row/column definitions into data.js and ensure they are exported by adding the `export` keyword.
-
-<pre class="file" data-filename="src/data.js" data-target="replace">
-export const columns = [
-  { title: "First column" },
-  { title: "Second column" },
-  { title: "Third column" }
-];
-export const defaultRows = [
-  {
-    cells: [
-      { title: "Row 1 column 1" },
-      { title: "Row 1 column 2" },
-      { title: "Row 1 column 3" }
-    ]
-  },
-  {
-    cells: [
-      { title: "Row 2 column 1" },
-      { title: "Row 2 column 2" },
-      { title: "Row 2 column 3" }
-    ]
-  },
-  {
-    cells: [
-      { title: "Row 3 column 1" },
-      { title: "Row 3 column 2" },
-      { title: "Row 3 column 3" }
-    ]
-  },
-  {
-    cells: [
-      { title: "Row 4 column 1" },
-      { title: "Row 4 column 2" },
-      { title: "Row 4 column 3" }
-    ]
-  },
-  {
-    cells: [
-      { title: "Row 5 column 1" },
-      { title: "Row 5 column 2" },
-      { title: "Row 5 column 3" }
-    ]
-  },
-  {
-    cells: [
-      { title: "Row 6 column 1" },
-      { title: "Row 6 column 2" },
-      { title: "Row 6 column 3" }
-    ]
-  }
-
-];
-</pre>
-
-3) Navigate back to the `src` folder and open `src/App.js`{{open}} and import your new row/column definitions. Place the import statement just below the last import at the top of the file.
+Locate the `<Table />` component and add a `variant` <a href="https://reactjs.org/docs/components-and-props.html" target="_blank">prop</a>, setting its value to `compact`.
 
 <pre class="file">
-import { columns, defaultRows } from './data';
+variant="compact"
 </pre>
 
-4) Delete the rows and columns definitions you created earlier (roughly lines 6 - 32)
-
-The code you are deleting should look like the following
-
-<pre class="file">
-const columns = [
-  { title: "First column" },
-  { title: "Second column" },
-  { title: "Third column" }
-];
-const defaultRows = [
-  {
-    cells: [
-      { title: "Row 1 column 1" },
-      { title: "Row 1 column 2" },
-      { title: "Row 1 column 3" }
-    ]
-  },
-  {
-    cells: [
-      { title: "Row 2 column 1" },
-      { title: "Row 2 column 2" },
-      { title: "Row 2 column 3" }
-    ]
-  },
-  {
-    cells: [
-      { title: "Row 3 column 1" },
-      { title: "Row 3 column 2" },
-      { title: "Row 3 column 3" }
-    ]
-  }
-];
-</pre>
-
-
-<strong>Note: </strong> You may need to click the refresh button at the top right of the preview pane or wait for the environment to finish updating before you see the latest changes.
-
-Your Table implementation should look somewhat like the following;
-
-<pre class="file" data-target="clipboard">
-import * as React from &quot;react&quot;;
-import &quot;@patternfly/react-core/dist/styles/base.css&quot;;
-import { Table, TableHeader, TableBody } from &quot;@patternfly/react-table&quot;;
-import { columns, defaultRows } from &#39;./data&#39;;
-const App = () =&gt; {
-  return (
-    &lt;React.Fragment&gt;
-      &lt;Table variant=&quot;compact&quot; caption=&quot;Patternfly React Table&quot; cells={columns} rows={defaultRows}&gt;
-        &lt;TableHeader /&gt;
-        &lt;TableBody /&gt;
-      &lt;/Table&gt;
-    &lt;/React.Fragment&gt;
-  );
-};
-export default App;
-</pre>
-
-Your Table should render the same as it did before, except with a few more rows:
+<strong>Note: </strong> Notice the table head, rows, and cells become compressed and take up less vertical space in order to fit more data on the screen at one time.
 
 <img src="table-intro/assets/step-5-complete.png" alt="Image of what table looks like at the end of step 5." style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
