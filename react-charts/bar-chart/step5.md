@@ -44,7 +44,7 @@ padding={{
 5) <strong>Between these components add the `<ChartAxis>` components.</strong>
 
 The `<Chart>` component displays an axis by default. Add labels and grid lines
-here to enhance the component.
+here to enhance the component. Ensuring grid lines appear behind the bars is important to the design. They can get mixed up if `ChartAxis` is added below `ChartBar`.
 
 a) <strong>Add the `<ChartAxis>` component with a label property.</strong>
 
