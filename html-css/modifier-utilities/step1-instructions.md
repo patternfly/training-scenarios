@@ -1,4 +1,4 @@
-PatternFly is based on the BEM naming system, whereby modifiers are tied to a component's "block" and “element” classes. You can read more about BEM (here)[http://getbem.com/introduction/]. This example will demonstrate applying a modifier class to the "block" class.
+PatternFly is based on the BEM naming system, whereby modifiers are tied to a component's "block" and “element” classes. You can read more about BEM [here](http://getbem.com/introduction/). This example will demonstrate applying a modifier class to the "block" class.
 
 Components have multiple variations due in part to the use of modifier classes, which override or add new styling to the same component. 
 
