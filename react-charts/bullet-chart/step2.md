@@ -23,7 +23,7 @@ function App() {
         height={150}
         width={600}
         maxDomain={{y: 100}}
-        primarySegmentedMeasureData={[{ name: &#39;Measure&#39;, y: 60 }]}
+        primarySegmentedMeasureData={[{ name: &#39;Measure&#39;, y: 25 }, { name: &#39;Measure&#39;, y: 60 }]}
       /&gt;
     &lt;/div&gt;
   );
@@ -35,7 +35,7 @@ export default App;
 - The `maxDomain` property defines the the maximum value that can be expressed on each axis.
 - The `primarySegmentedMeasureData` property adds the featured meausure to the chart. It appears as a blue bar by default.
 
-3) <strong>Add the `qualitativeRangeData` property to the `BulletChart` component.</strong>
+3) <strong>Add the `qualitativeRangeData` property to the `ChartBullet` component.</strong>
 
 The `qualitativeRangeData` property adds descriptive ranges like 'poor', 'average', or 'great' to the chart. These ranges appear as grayscale boxes in the background by default.
 

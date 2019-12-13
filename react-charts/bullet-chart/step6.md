@@ -2,34 +2,7 @@ Change the bullet chart theme color.
 
 1) <strong>Make sure the `App.js` file is still open</strong>
 
-2) <strong>Locate the `ChartBullet` component.</strong>
-
-<pre class="file">
-&lt;ChartBullet
-  height={150}
-  width={600}
-  maxDomain={{y: 100}}
-  primarySegmentedMeasureData={[{ name: &#39;Measure&#39;, y: 60 }]}
-  qualitativeRangeData={[{ name: &#39;Range&#39;, y: 50 }, { name: &#39;Range&#39;, y: 75 }]}
-  comparativeWarningMeasureData={[{ name: &#39;Warning&#39;, y: 88 }]}  constraingToVisibleArea
-  labels={({ datum }) =&gt; `${datum.name}: ${datum.y}`}
-  padding={{
-    bottom: 50,
-    left: 150,
-    right: 50,
-    top: 50
-  }}
-  title="Text label"
-  subTitle="Measure details"
-  legendOrientation=&quot;horizontal&quot;
-  legendPosition=&quot;bottom&quot;
-  primarySegmentedMeasureLegendData={[ { name: &#39;Measure 1&#39; }, { name: &#39;Measure 2&#39; } ]}
-  qualitativeRangeLegendData={[{ name: &#39;Range 1&#39; }, { name: &#39;Range 2&#39; }]}
-  comparativeWarningMeasureLegendData={[{ name: &#39;Warning&#39; }]}
-/&gt;
-</pre>
-
-3) <strong>Add the `themeColor` property to the `ChartBullet` component:</strong>
+2) <strong>Locate the `<ChartBullet/>` component and add a theme property.</strong>
 
 The `themeColor` property specifies the color scheme of the chart. Some valid values are `ChartThemeColor.blue`, `ChartThemeColor.green`, or `ChartThemeColor.multi`.
 
