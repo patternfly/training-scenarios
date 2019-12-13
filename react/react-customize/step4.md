@@ -8,11 +8,9 @@ Copy the following code into the `app.css` file, replacing all of the content th
 
 <pre class="file" data-filename="src/app.css" data-target="replace">
 :root {
-  // global styles go here
 }
 
 .pf-c-page.myPageClass {
-  // myPageClass styles go here
 }
 </pre>
 
