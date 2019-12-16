@@ -12,6 +12,8 @@ In PatternFly, component-level custom properties follow this general formula `--
 
 In this step, override the title color custom property in the success variation of the alert component.
 
+Katacoda is setting up a new application. Begin coding once the server starts and "Welcome to PatternFly" appears on the lower pane.
+
 1) <strong>Add a success alert component to `index.html`.</strong>
 
 Click the `Copy to Editor` button below to add the success component in the `index.html` file.

@@ -1,4 +1,6 @@
 Before getting started, add code to the workspace so that it can be modified.
+
+Katacoda is setting up a new application. Begin coding once the server starts and "Welcome to PatternFly" appears on the lower pane.
  
 1) <strong>Copy code into the `index.html` file.</strong>
 

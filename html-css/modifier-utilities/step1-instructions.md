@@ -6,6 +6,8 @@ Modifiers use the `pf-m-` prefix, followed by a suitable name for the modifier. 
 
 In this step, change the badge's state from unread to read.
 
+Katacoda is setting up a new application. Begin coding once the server starts and "Welcome to PatternFly" appears on the lower pane.
+
 1) <strong>Copy code to `index.html`.</strong>
 
 Click the `Copy to Editor` button below to add HTML for two unread badge components.

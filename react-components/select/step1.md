@@ -1,5 +1,7 @@
 Create a basic select component.
 
+Katacoda is setting up a new React application. Begin coding once the server starts and "Welcome to PatternFly" appears on the lower pane.
+
 1) **Navigate to the `src` folder and open `src/App.js`{{open}}**
 
 2) **Copy the code into the `App.js` file to set up the structure of the select component.**

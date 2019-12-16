@@ -2,7 +2,7 @@ In PatternFly, demos are used to show how PatternFly’s components and layouts 
 
 In this exercise, use a page demo to create a new page for a web application.
 
-Katacoda is setting up a new React application. Begin coding once the server starts and "Welcome to PatternFly" is visible on the lower pane.
+Katacoda is setting up a new React application. Begin coding once the server starts and "Welcome to PatternFly" appears on the lower pane.
 
 1) <strong>Navigate to the `src` folder and open `src/App.js`{{open}}</strong>
 

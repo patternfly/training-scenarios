@@ -2,6 +2,8 @@ In PatternFly, components which cannot be broken down into smaller parts are kno
 
 In this step, add a button component.
 
+Katacoda is setting up a new application. Begin coding once the server starts and "Welcome to PatternFly" appears on the lower pane.
+
 1) <strong>Copy code into the `index.html` file.</strong>
 
 Click the `Copy to Editor` button below to add HTML for a `button` component to the `index.html` file.
