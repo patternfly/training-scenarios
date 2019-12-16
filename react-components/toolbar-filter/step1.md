@@ -1,5 +1,7 @@
 Toolbars consist of content rows of components. Most toolbars will only be a single row, but each row is required to be housed in a `DataToolbarContent` component.
 
+Katacoda is setting up a new React application. Begin coding once the server starts and "Welcome to PatternFly" appears on the lower pane.
+
 1) <strong>Navigate to the `src` folder and open</strong> `src/App.js`{{open}}.
 
 2) <strong>Set up the general structure of an empty toolbar and add the necessary imports.</strong>

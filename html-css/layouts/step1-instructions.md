@@ -2,6 +2,8 @@ The bullseye layout is designed to both horizontally and vertically center a sin
 
 Center the modal component inside of the page.
 
+Katacoda is setting up a new application. Begin coding once the server starts and "Welcome to PatternFly" appears on the lower pane.
+
 1) <strong>Copy code into the `index.html` file.</strong>
 
 Click the `Copy to Editor` button below to add a modal box component in the `index.html` file.

@@ -1,5 +1,7 @@
 Set up the general structure of the table and add the necessary imports.
 
+Katacoda is setting up a new React application. Begin coding once the server starts and "Welcome to PatternFly" appears on the lower pane.
+
 1) <strong>Navigate to the `src` folder and open `src/App.js`.</strong>
 
 2) <strong>Copy the following code into the `src/App.js` file.</strong>

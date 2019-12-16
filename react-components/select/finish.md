@@ -1,4 +1,6 @@
-Congratulations - you finished the getting started with PatternFly React Select course! 🥳
+Congratulations! You finished the "select component: beginner" course.
+
+[Please fill out a quick survey here](https://redhatdg.co1.qualtrics.com/jfe/form/SV_bIRZRHYJyGsKBSt?Module=select)
 
 > Learn more about PatternFly React:
 >
