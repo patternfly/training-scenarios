@@ -1,6 +1,4 @@
-Create a custom modifier class. First, choose which component to add a modifier class to and then select an element to be modified. Second, create a modifier class name that represents the new style. Third, add the new modifier class to the HTML. Fourth, add the new styles to the stylesheet.
-
-In this step, create a custom `warning` variation for the label component.
+In this step, create a custom `warning` variation for the label component. First, choose which component to add a modifier class to and then select an element to be modified. Second, create a modifier class name that represents the new style. Third, add the new modifier class to the HTML. Fourth, add the new styles to the stylesheet.
 
 1) <strong>Copy code to the `index.html` file.</strong>
 
@@ -27,7 +25,7 @@ Click the `Copy to Editor` button below to add the template for the new styles.
 
 3) <strong>Decide on which styles to override for the component.</strong>
 
-When adding new style overrides for a component, decide on which properties to change. For example, in the case of the label, overriding the background color is a suitable choice because the component already styles the background color.
+When adding new style overrides for a component, decide on which properties to change. For example, in the case of the label, you might choose to override the background color because the component already styles the background color.
 
 4) <strong>Write a custom property to target the warning variation.</strong>
 
@@ -39,7 +37,7 @@ In this case, it should be: `--pf-c-label--m-warning--BackgroundColor`
 
 5) <strong>Assign the custom property to a global variable.</strong>
 
-On the same line as the custom property added in step 5, assign the property to the global variable for `warning` color. It is: `--pf-global--warning-color--100`.
+On the same line as the custom property added in step 5, assign the property to the global variable for `warning` color, which is `--pf-global--warning-color--100`.
 
 The declaration inside of the `.pf-c-label{}` block should look like: `--pf-c-label--m-warning--BackgroundColor: var(--pf-global--warning-color--100);`
 
@@ -57,7 +55,7 @@ It should look like the following:
 
 7) <strong>Override the original background color variable by setting its value to the new modifier variable that was created. </strong>
 
-Add this line inside of `&.pf-m-warning{}`:
+Inside of `&.pf-m-warning{}` add this line:
 
 `--pf-c-label--BackgroundColor: var(--pf-c-label--m-warning--BackgroundColor);`
 
