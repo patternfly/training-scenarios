@@ -1,12 +1,12 @@
 One particular type of data toolbar group is called the toggle group. The `DataToolbarToggleGroup` collapses a set of items into an overlay panel at a specific breakpoint. The method allows complex toolbars with multiple items and groups of items to be responsive.
 
-A toggle group is useful for containing filter controls, for example. When the toolbar responds to adapt to a mobile viewport, the contents contained in a toggle group will collapse into an overlay panel that can be toggled by clicking the Filter icon.
+A toggle group is useful for containing filter controls, for example. When the toolbar responds to adapt to a mobile viewport, the contents contained in a toggle group will collapse into an overlay panel. This panel can be toggled by clicking the filter icon.
 
 Using a `DataToolbarToggleGroup` requires both a `toggleIcon` and `breakpoint` property. The `toggleIcon` is a ReactNode which is displayed instead of the children of `DataToolbarToggleGroup`. This occurs once the viewport width shrinks below the passed in breakpoint.
 
 1) <strong>Locate both the `DataToolbarItem` with `variant="search-filter"` and the `DataToolbarGroup` with `variant="filter-group"`.</strong>
 
-<strong>Hint:</strong> Both the `DataToolbarItem` and `DataToolbarGroup` to locate are siblings of each other.
+<strong>Hint:</strong> Both the `DataToolbarItem` and `DataToolbarGroup` are siblings of each other.
 
 <pre class="file">
 &lt;DataToolbarItem variant=&quot;search-filter&quot;&gt;
@@ -32,7 +32,7 @@ Using a `DataToolbarToggleGroup` requires both a `toggleIcon` and `breakpoint` p
 &lt;/DataToolbarGroup&gt;
 </pre>
 
-2) <strong>Wrap the `DataToolbarItem` and `DataToolbarGroup` located in step 1, in a `DataToolbarToggleGroup`<./strong>
+2) <strong>Wrap the `DataToolbarItem` and `DataToolbarGroup` located in step 1, in a `DataToolbarToggleGroup`.</strong>
 
 3) <strong>Add the `toggleIcon` property to the `DataToolbarToggleGroup` component.</strong>
 
