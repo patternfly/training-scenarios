@@ -1,6 +1,12 @@
 One particular type of data toolbar item is called the `DataToolbarFilter`. When used, selected filters are displayed in chip groups below the toolbar. Placing any `DataToolbarFilter` inside of a toggle group makes the toolbar responsive.
 
-Using a `DataToolbarFilter` requires three properties. First is a managed array of selected filters called `chips` as strings or ReactNodes. It also requires an `onDelete` callback function to be executed whenever the user deletes a selected filter chip. Lastly, it requires a `categoryName` which will be used to label the chip group.
+Using a `DataToolbarFilter` requires three properties:
+
+First is a managed array of selected filters called `chips` as strings or ReactNodes. 
+
+An `onDelete` callback function to be executed whenever the user deletes a selected filter chip.
+
+A `categoryName` which will be used to label the chip group.
 
 1) <strong>Define the required `onDelete` function to be passed to each `DataToolbarFilter`.</strong>
 
@@ -133,11 +139,11 @@ Once steps 4, 5, and 6 are completed, the contents of the `DataToolbarToggleGrou
 
 Two props can be optionally added to the top-level `DataToolbar` component when using a `DataToolbarFilter`.
 
-a) <strong>Pass a `clearAllFilters` event handler is passed to `DataToolbar`.</strong>
+a) <strong>Pass a `clearAllFilters` event handler to `DataToolbar`.</strong>
 
 A 'Clear All Filters' action will appear alongside the applied filters chip groups.
 
-b) <strong>If a `collapseListedFiltersBreakpoint` is passed to `DataToolbar`.</strong>
+b) <strong>Pass a `collapseListedFiltersBreakpoint` is passed to `DataToolbar`.</strong>
 
 The chip groups will collapse to a summary message at the passed in breakpoint, making the applied filters chip groups more responsive.
 
@@ -147,7 +153,7 @@ Add the following code to the `DataToolbar` to see optional props in action.
 clearAllFilters={this.onDelete} collapseListedFiltersBreakpoint=&quot;xl&quot;
 </pre>
 
-<strong> Note:</strong> Take some time to play with the toolbar to see how it responds to changes in viewport size and the number of filters applied.
+<strong> Note:</strong> Take some time to experiment with the toolbar to see how it responds to changes in viewport size and the number of filters applied.
 
 <img src="toolbar-filter/assets/wide-view-with-chip-groups.png" alt="Wide view of toolbar filter with applied filters in chip groups" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
 

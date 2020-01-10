@@ -94,7 +94,7 @@ const riskOptions = [&quot;Low&quot;, &quot;Medium&quot;, &quot;High&quot;];
 &lt;/DataToolbar&gt;
 </pre>
 
-6) <strong>Add `DataToolbarItems`</strong>
+6) <strong>Add `DataToolbarItems`.</strong>
 
 This `DataToolbar` will have one text input filter, two dropdown filters, three button icons, and an action menu hidden in a kebab.
 
@@ -142,6 +142,6 @@ Replace the stand in `Toolbar Demo` text in the `DataToolbarContent` with the fo
 
 <strong>Note:</strong> The first of the items added includes `variant='search-filter'`. Adding this variant adjusts some of the margins to comply with PatternFly design standards.
 
-Once the preview reloads - it should look like this:
+Once the preview reloads, it should look like this:
 
 <img src="toolbar-filter/assets/toolbar-items.png" alt="toolbar with data toolbar items" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />

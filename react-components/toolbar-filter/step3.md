@@ -1,4 +1,4 @@
-Toolbar groups are used to group sets of like items to create desired associations and to enable items to respond together to changes in viewport width. A `DataToolbarGroup` passes an optional prop `variant` to format particular types of groups of elements such as filter groups, button groups, or icon button groups.
+Toolbar groups are used to group sets of like items to create desired associations and to enable items to respond together to changes in viewport width. A `DataToolbarGroup` passes an optional prop `variant` to format particular types of element groups such as filter groups, button groups, or icon button groups.
 
 This step will group `DataToolbarItem` components into `DataToolbarGroup` components and apply appropriate `variant` props.
 
