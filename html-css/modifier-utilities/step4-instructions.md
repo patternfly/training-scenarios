@@ -47,7 +47,7 @@ The declaration inside of the `.pf-c-label{}` block should look like: `--pf-c-la
 
 In `myapp.scss` nest the block `&.pf-m-warning{}` inside of the `.pf-c-label{}` class, using the SCSS &.
 
-It should look like the following:
+It should look like this:
 
 ```
 &.pf-m-warning {

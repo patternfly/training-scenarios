@@ -33,7 +33,7 @@ legendOrientation=&quot;vertical&quot;
 
 Set the position for the `legendData` so that it behaves as expected when added in step 6 (there will still be no visible changes yet).
 
-The `legendPosition` property specifies whether the legend is rendered on the bottom or right of the chart. It should look like the following:
+The `legendPosition` property specifies whether the legend is rendered on the bottom or right of the chart. It should look like this:
 
 <pre class="file" data-target="clipboard">
 legendPosition=&quot;right&quot;
@@ -41,7 +41,7 @@ legendPosition=&quot;right&quot;
 
 6) <strong>Add the `legendData` property to the `<Chart>` component.</strong>
 
-Inside the `legendData` should be an object with names for the data. It should look like the following:
+Inside the `legendData` should be an object with names for the data. It should look like this:
 
 <pre class="file" data-target="clipboard">
 legendData={[

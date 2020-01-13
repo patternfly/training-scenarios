@@ -6,7 +6,7 @@ In the `index.html` file add the html markup for the separator element.
 
 Prefix the variable name with `my-app` so that it can be easily distinguished from the PatternFly codebase.
 
-The class name should look like the following:
+The class name should look like this:
  
 ```
 <div class="my-app-c-card__separator">
@@ -25,7 +25,7 @@ a) <strong>Add a variable for height.</strong>
 
 It should use PatternFly's global variable for small border width. Add it under the variable declarations inside the `.pf-c-card` block.
 
-The declaration should look like the following:
+The declaration should look like this:
  
 ```
 --my-app-c-card__separator--Height: var(--pf-global--BorderWidth--sm);
@@ -35,7 +35,7 @@ b) <strong>Add a variable for background color.</strong>
 
 It should use PatternFly's global variable for border color. Add it under the variable declarations inside the `.pf-c-card` block.
 
-The declaration should look like the following:
+The declaration should look like this:
  
 ```
 --my-app-c-card__separator--BackgroundColor: var(--pf-global--BorderColor--100);
@@ -45,7 +45,7 @@ c) <strong>Add a variable for the margin.</strong>
 
 It should use PatternFly's global variable for spacing. Add it under the variable declarations inside the `.pf-c-card` block.
 
-The declaration should look like the following:
+The declaration should this:
  
 ```
 --my-app-c-card__separator--Margin: var(--pf-global--spacer--lg);
