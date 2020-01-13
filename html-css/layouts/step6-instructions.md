@@ -1,4 +1,4 @@
-The grid layout is based on CSS Grid’s two-dimensional system of columns and rows. This layout styles the parent element and its children to achieve responsive column and row spans as well as gutters.
+The grid layout is based on CSS grid’s two-dimensional system of columns and rows. This layout styles the parent element and its children to achieve responsive column and row spans as well as gutters.
 
 Organize form components using grid.
 
@@ -45,37 +45,37 @@ Click the `Copy to Editor` button below to add code in the `index.html` file.
 
 2) <strong>Locate the form component.</strong>
 
-Look for `<form class="pf-c-form">`
+Look for `<form class="pf-c-form">`.
 
 3) <strong>Add the grid layout class to the form component identified in step 2.</strong>
 
 The grid layout uses the class: `pf-l-grid`.
 
-It should look like:
+It should look like this:
 `<form class="pf-c-form pf-l-grid">`.
 
 4) <strong>Locate the six form group classes.</strong>
 
-They will look like:
+They will look like this:
 `<div class="pf-c-form__group">`
 
 5) <strong>For every form group class identified in step 4, add a grid item class.</strong>
 
 Adding this class to each child means that the parent grid container has a relationship with all of its `grid__items`.
 
-It should look like:
+It should look like this:
 `<div class="pf-c-form__group pf-l-grid__item">`
 
 6) <strong>Change the widths of the `grid__items`.</strong>
 
-In order to change widths, use the modifier `pf-m-[0-12]-col`, where `0-12` represents the number of columns that a grid column spans.
+To change widths, use the modifier `pf-m-[0-12]-col`, where `0-12` represents the number of columns that a grid column spans.
 
 a) To the first two `form-groups` add `pf-m-6-col` next to `pf-l-grid__item`.
 
-It should look like:
+It should look like this:
 `<div class="pf-c-form__group pf-l-grid__item" pf-m-6-col>`
 
-b) To the last three `form-groups` add `pf-m-4-col` next to `pf-l-grid__item`.
+b) To the last three `form-groups`, add `pf-m-4-col` next to `pf-l-grid__item`.
 
-It should look like:
+It should look like this:
 `<div class="pf-c-form__group pf-l-grid__item" pf-m-4-col>`

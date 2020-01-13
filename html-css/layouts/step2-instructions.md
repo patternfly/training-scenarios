@@ -1,6 +1,6 @@
-The level layout distributes space between children evenly and center them on the x-axis. By default, the children are placed horizontally and wrap responsively.
+The level layout distributes space between children evenly and centers them on the x-axis. By default, the children are placed horizontally and wrap responsively.
 
-In this step, layout the title and button horizontally.
+In this step, lay out the title and button horizontally.
 
 1) <strong>Copy code into the `index.html` file.</strong>
 
@@ -27,7 +27,7 @@ The card has a title component and button component inside of it.
 
 The level layout class is `pf-l-level`.
 
-When added to the parent it should look like:
+When added to the parent it should look like this:
 `<div class="pf-c-card__body pf-l-level"`
 
 <strong>Note: </strong> The title and button should now align on the x-axis.

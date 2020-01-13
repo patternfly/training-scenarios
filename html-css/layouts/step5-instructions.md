@@ -1,6 +1,6 @@
-The gallery layout makes sure all of its children are of uniform size, display horizontally and wrap responsively.
+The gallery layout makes all of its children uniform in size. It also makes them display horizontally and wrap responsively.
 
-Layout cards using in the gallery format.
+Lay out cards using the gallery format.
 
 1) <strong>Copy code into the `index.html` file.</strong>
 
@@ -47,11 +47,11 @@ It will be the outermost `div`.
 
 3) <strong>Add the gallery layout to the parent container located in step 2.</strong>
 
-The `gallery` will structure any children inside of the gallery into a grid layout, whereby the columns don’t extend beyond 250px in width, and when this happens, they add more columns and wrap.
+The `gallery` will structure any children inside of the gallery into a grid layout, whereby the columns don’t extend beyond 250px in width. When this happens, they add more columns and wrap.
 
 The gallery layout class is `pf-l-gallery`.
 
-When added to the parent it should look like:
+When added to the parent it should look like this:
 `<div class="pf-l-gallery">`
 
 4) <strong>Add a modifier class to the gallery layout to add space.</strong>

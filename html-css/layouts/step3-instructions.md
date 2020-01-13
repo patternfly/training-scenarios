@@ -28,7 +28,7 @@ It will be the `<header>`.
 
 Add `pf-l-split` to `<header>`. 
 
-When added to the parent it should look like:
+When added to the parent it should look like this:
 `<header class="pf-l-split">`
 
 4) <strong>Locate the three children inside of the parent container.</strong>
