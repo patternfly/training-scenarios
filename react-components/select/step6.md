@@ -6,11 +6,11 @@ Typeahead variants support adding new options, based on the user entered input. 
 isCreatable
 </pre>
 
-<strong>Note:</strong> With this flag, when text is entered that does not match anything in the list, a new message is displayed prompting the user to create an option based on the input. This selectable message replaces the "no results found" message displayed when filtering would otherwise return nothing. This allows the current value to be used as a new selection, but does not persist the data - it will appear as selected, but will not appear in the overall list.
+<strong>Note:</strong> With this flag, when text is entered that does not match anything in the list, a new message is displayed prompting the user to create an option based on the input. This selectable message replaces the "no results found" message displayed when filtering would otherwise return nothing. This allows the current value to be used as a new selection, but does not persist the data. This means the option will appear as selected, but will not appear in the overall list.
 
 2) **Add a function to add a new value to the options array.**
 
-This function below adds custom entered options to the state's `options` property, allowing it to show up in the overall options list. Add this function in the constructor of the App class.
+This function below adds custom-entered options to the state's `options` property, allowing it to show up in the overall options list. Add this function in the constructor of the App class.
 
 <pre class="file" data-target="clipboard">
 this.onCreateOption = newValue => {
