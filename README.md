@@ -192,13 +192,3 @@ We suggest following (AP style)[https://en.wikipedia.org/wiki/AP_Stylebook] when
 ## Appendix
 
 https://www.katacoda.com/docs/scenarios/index-json
-
-
-
-
-
-
-
-
-
-
