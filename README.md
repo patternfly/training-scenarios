@@ -17,15 +17,15 @@ Include the following details in your submission:
 2. Goal (What will the user learn?)
 3. Description
 4. Category:
-  a. HTML/CSS: Introductary and high-level concepts
-  b. React: Basic: React principles and customization
-  c. React components: React components including select, table, and toolbar
-  d. React Charts: React chart components (area, bar, bullet, donut, donut utilization, line, pie, sparkline, and stack charts)
-  e. None of the above (Include a suggestion for a new category.)
+  - HTML/CSS: Introductary and high-level concepts
+  - React: Basic: React principles and customization
+  - React components: React components including select, table, and toolbar
+  - React Charts: React chart components (area, bar, bullet, donut, donut utilization, line, pie, sparkline, and stack charts)
+  - None of the above (Include a suggestion for a new category.)
 5. Approximate completion time
-    a. Short ( < 5 mins)
-    b. Medium  ( < 15 mins)
-    c. Long (> 30 mins)
+    - Short ( < 5 mins)
+    - Medium  ( < 15 mins)
+    - Long (> 30 mins)
 
 ## Set up development environment and plan out your scenario
 
@@ -37,15 +37,16 @@ Once your proposal is approved, it's time to start developing. We recommend foll
 4. Add the new module to the repository.
 5. Push up the addition and submit a Pull Request.
 6. Tag at least two members of the PatternFly team to review your Pull Request.
+
 To see your changes on Katacoda before they're merged:
 1. Submit a second Pull Request that merges changes from the new branch on your fork, to the master branch on your fork, and merge the changes.
 2. Create a (Katacoda profile)[https://katacoda.com/profile/settings ] if you don’t have one.
-    a. Update your Git Scenario Repository to be your forked training-scenarios repository (e.g., https://github.com/[username]/training-scenarios).
+    - Update your Git Scenario Repository to be your forked training-scenarios repository (e.g., https://github.com/[username]/training-scenarios).
 3. Copy the **Git Webhook Secret.**
 4. In your forked training-scenarios repository, navigate to **Settings** > **Webhooks**, and add a new Github Webhook.
-    a. Update the Payload URL to **https://editor.katacoda.com/scenarios/updated**.
-    b. Add your copied secret.
-    c. Click **Update webhook**.
+    - Update the Payload URL to **https://editor.katacoda.com/scenarios/updated**.
+    - Add your copied secret.
+    - Click **Update webhook**.
 5. Find more information at (Katacoda)[https://katacoda.com/teach/git-hosted-scenarios].
 
 ## File structure
