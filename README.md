@@ -1,58 +1,64 @@
 # PatternFly developer training
 
-The team at PatternFly has created developer training to teach PatternFly implementation best practices. We chose (Katacoda)[https://www.katacoda.com/patternfly] as the platform for delivering the training modules. Check out the (React)[https://www.patternfly.org/v4/documentation/react/overview/training] and (HTML/CSS)[https://www.patternfly.org/v4/documentation/core/overview/training] tutorials on PatternFly, and share your feedback by submitting a review on the final page of each module. You can also file an issue in this repository.
+PatternFly now features developer training to teach PatternFly implementation best practices. To access the training, check out the (React)[https://www.patternfly.org/v4/documentation/react/overview/training] and (HTML/CSS)[https://www.patternfly.org/v4/documentation/core/overview/training] tutorials. 
+And while you're at it, let us know what you think. Share your feedback by submitting a review on the final page of each module or by filing an issue in this repository.
 
 ## Submitting a proposal
 
-If you would like to add a new module to the current PatternFly developer training set, thoroughly familiarize yourself with the existing modules in the category you would like to add a module to, so there is no duplicate work created. Once that is accomplished, create a new issue for your proposal in this repository. Our team will review all submissions to make sure that modules align with the goals of training and to avoid overlap of content.
+We use (Katacoda)[https://www.katacoda.com/patternfly] as the platform for delivering the training modules—it's open source, and we want you to contribute! 
 
-Be sure to cover these points in your submission:
+But before you add a new module to the current PatternFly developer training set, check out the existing modules in the category first. This way, we avoid duplicate work and keep the training content streamlined and organized for all users. You should also verify that the module expands on the documentation that is already on (PatternFly)[https://www.patternfly.org/v4/].
 
-1. Title of module
-2. Goal of the module (what will the user learn)
-3. Verify module builds on the documentation that is already on (PatternFly)[https://www.patternfly.org/v4/].
-4. Description of the module
-5. Assign module to relevant category:
-  1. HTML/CSS: Introductary and high-level concepts
-  2. React: Basic: React principles and customization
-  3. React components: React components including select, table, and toolbar.
-  4. React Charts: Reat chart components including, Area, bar, bullet, donut, donut utilization, line, pie, sparkline and stack charts.
-  5. None of the above. Suggestion for a new category.
-6. Approximate length of the module
-    1. Short ( < 5 mins)
-    2. Medium  ( < 15 mins)
-    3. Long (> 30 mins)
+Once you've checked and confirmed the content you're looking to add doesn't already exist, create a new issue for your proposal in this repository. Our team will review all submissions before anything is added.
 
-## Setup development environment and plan out your scenario
+Include the following details in your submission:
 
-Once your proposal has been approved by our team you can start developing. We suggest following this order:
+1. Title
+2. Goal (What will the user learn?)
+3. Description
+4. Category:
+  a. HTML/CSS: Introductary and high-level concepts
+  b. React: Basic: React principles and customization
+  c. React components: React components including select, table, and toolbar
+  d. React Charts: React chart components (area, bar, bullet, donut, donut utilization, line, pie, sparkline, and stack charts)
+  e. None of the above (Include a suggestion for a new category.)
+5. Approximate completion time
+    a. Short ( < 5 mins)
+    b. Medium  ( < 15 mins)
+    c. Long (> 30 mins)
 
-1. Write the title, description and sub-steps for each step in a document. This will help to organize your thoughts.
-2. It is not possible to run your code locally when developing in Katacoda so we suggest using CodePen or CodeSandbox to test the working code for your example.
+## Set up development environment and plan out your scenario
+
+Once your proposal is approved, it's time to start developing. We recommend following these steps:
+
+1. Write the title, description, and sub-steps for each step in a document.
+2. Use CodePen or CodeSandbox to test the working code for your example. Note: It is not possible to run your code locally when developing in Katacoda.
 3. Once you feel confident in your steps and code examples, fork our repository: https://github.com/patternfly/training-scenarios.
 4. Add the new module to the repository.
 5. Push up the addition and submit a Pull Request.
 6. Tag at least two members of the PatternFly team to review your Pull Request.
-To see your changes live on Katacoda before being merged:
-7. Submit a second Pull Request that merges changes from the new branch on your fork, to the master branch on your fork, and merge the changes.
-8. Create a (Katacoda profile)[https://katacoda.com/profile/settings ] if you don’t have one.
-    1. Update your Git Scenario Repository to be your forked training-scenarios repository. E.g. https://github.com/[username]/training-scenarios
-9. Copy the “Git Webhook Secret”
-10. In your forked training-scenarios repository add a new Github Webhook. It is under Settings > Webhooks.
-    1. Update the Payload URL to be https://editor.katacoda.com/scenarios/updated
-    2. Add your copied secret
-    3. Click: “Update webhook”
-11. Find more information (here)[https://katacoda.com/teach/git-hosted-scenarios].
+To see your changes on Katacoda before they're merged:
+1. Submit a second Pull Request that merges changes from the new branch on your fork, to the master branch on your fork, and merge the changes.
+2. Create a (Katacoda profile)[https://katacoda.com/profile/settings ] if you don’t have one.
+    a. Update your Git Scenario Repository to be your forked training-scenarios repository (e.g., https://github.com/[username]/training-scenarios).
+3. Copy the **Git Webhook Secret.**
+4. In your forked training-scenarios repository, navigate to **Settings** > **Webhooks**, and add a new Github Webhook.
+    a. Update the Payload URL to **https://editor.katacoda.com/scenarios/updated**.
+    b. Add your copied secret.
+    c. Click **Update webhook**.
+5. Find more information at (Katacoda)[https://katacoda.com/teach/git-hosted-scenarios].
 
 ## File structure
 
 ### Update the category pathway
 
-Update the relevant `pathway.json` file so that the new module will be added to its category. Examples include: `html-css-pathway.json`, `react-components-pathway.json`, and `react-pathway.json`. You will need to add an ID, title, and description.
+Update the relevant `pathway.json` file to add the new module to its category. Examples of the different pathways include: `html-css-pathway.json`, `react-components-pathway.json`, and `react-pathway.json`. 
+
+Add an ID, title, and description.
 
 ### Add an index.json file for the module
 
-The `index.json` file is where the information about the module is defined and the structure is established. Below is a template `index.json` file that you should follow. (Katacoda provides more information)[https://www.katacoda.com/docs/scenarios/index-json].
+The `index.json` file is where the structure of the module is established. Below is a template `index.json` file that you should follow. (Katacoda provides more information)[https://www.katacoda.com/docs/scenarios/index-json].
 
 ```
 {
@@ -136,7 +142,7 @@ When writing out the steps for your tutorial please follow these guidelines:
 ### Step title
 
 * Purpose: To inform the user what step they are on within the module. Use sentence case, be clear and concise, be actionable, and use present tense.
-    * Incorrect: 1
+    * Incorrect: Step 1.
     * Correct: Add pagination component.
 
 ### Background step information
@@ -182,7 +188,7 @@ When writing out the steps for your tutorial please follow these guidelines:
 
 * Purpose: To gather feedback from users after completing a module.
     1. In the `finish.md` file, add a link to our module survey so that feedback can be recorded.
-    2. Use this link: https://redhatdg.co1.qualtrics.com/jfe/form/SV_bIRZRHYJyGsKBSt?Module=
+    2. Use this link **https://redhatdg.co1.qualtrics.com/jfe/form/SV_bIRZRHYJyGsKBSt?Module=**
     3. At the end of `Module=` add the title of the scenario so that we can target feedback.
 
 ## Style and grammar
