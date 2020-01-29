@@ -35,7 +35,8 @@
       "text": "finish.md"
     }
   },
-  "files": ["index.html", "myapp.scss"],
+  "files": ["myapp.scss"],
+  "asyncFiles": ["index.html"],
   "environment": {
     "showdashboard": true,
     "delayToSaveFileAfterStopTypingMilliseconds": 2000,
@@ -49,5 +50,8 @@
   "backend": {
     "imageid": "node",
     "port": 3000
+  },
+  "actions": {
+    "hideprogressbar": {}
   }
 }
