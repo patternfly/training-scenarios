@@ -32,4 +32,4 @@ It should look like: `<div class="pf-l-bullseye">`
 
 Once the preview reloads, the card should be centered in the middle of the page.
 
-<strong>Note: </strong>It’s important to follow the documentation for layouts because it demonstrates where to add the layout class. The [documentation for bullseye]((https://www.patternfly.org/v4/documentation/core/layouts/bullseye) specifies to add the class `pf-l-bullseye` to the parent container of its child.
+<strong>Note: </strong>It’s important to follow the documentation for layouts because it demonstrates where to add the layout class. The [documentation for bullseye](https://www.patternfly.org/v4/documentation/core/layouts/bullseye) specifies to add the class `pf-l-bullseye` to the parent container of its child.
