@@ -28,7 +28,7 @@ thresholds={[{ value: 60 }, { value: 90 }]}
 
 4) <strong>Locate the `data` and `title` properties in the `<ChartDonutUtilization>` component.</strong> 
 
-It will look like the following:
+It will look like this:
 
 <pre class="file">
 data={{ x: &#39;Storage capacity&#39;, y: 90 }}

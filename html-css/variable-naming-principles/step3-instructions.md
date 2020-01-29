@@ -1,4 +1,4 @@
-As seen in previous steps, in order to override variables its important to understand how BEM is used to name them. It’s just as important when creating variables.
+Its important to understand how BEM is used to override variables and also to create them.
 
 In this step, add a BEM element and custom styles with CSS custom properties to support an icon element in the label component. Assume there is a common use case for adding an icon to the left of text in the label component. When adding the custom icon element to the label component, also apply a margin-right of 8px.
 
@@ -14,7 +14,7 @@ Click the `Copy to Editor` button to add a label component to the `index.html` f
 
 2) <strong>Add an icon before the label text.</strong>
 
-Add markup for the icon: `<i class="fas fa-plus"></i>` above the text: "My custom label".
+Add markup for the icon above the text reading, "My custom label" (`<i class="fas fa-plus"></i>`).
 
 3) <strong>Add a new class to the icon added in step 2.</strong>
 
@@ -49,7 +49,7 @@ Click the `Copy to Editor` button below to add the stylesheet to `myapp.scss`.
 
 5) <strong>Create a new variable to represent the icon's margin.</strong>
 
-Within `myapp.scss`, in the `.pf-c-label{}` block, start by defining the beginning of the custom property, which is the name of the component.
+Within `myapp.scss`, in the `.pf-c-label{}` block, define the beginning of the custom property, which is the name of the component.
 
 It should look like: `--pf-c-label`
 
@@ -57,25 +57,25 @@ It should look like: `--pf-c-label`
 
 Add the element after the name of the component.
 
-The custom property should now be: `--pf-c-label__icon`
+The custom property should now be: `--pf-c-label__icon`.
 
 7) <strong>Add the property being applied to the icon.</strong>
 
 Add the property after the element.
 
-It should look like: `--pf-c-label__icon--MarginRight`
+It should look like this: `--pf-c-label__icon--MarginRight`
 
-8) <strong>Add a declaration using the new custom property created in steps 5-7.</strong>
+8) <strong>Add a declaration using the new custom property created in steps 5–7.</strong>
 
 PatternFly's global variable for 8px of space is `--pf-global--spacer--sm`.
 
-Assign the custom property name: `--pf-c-label__icon--MarginRight` that is already inside of the `.pf-c-label{}` block, to the global variable for 8px of space.
+Assign the custom property name `--pf-c-label__icon--MarginRight` that is already inside of the `.pf-c-label{}` block to the global variable for 8px of space.
 
-It should look like: `--pf-c-label__icon--MarginRight: var(--pf-global--spacer--sm);`
+It should look like this: `--pf-c-label__icon--MarginRight: var(--pf-global--spacer--sm);`
 
 9) <strong>Add a new selector block for the style assigned to the label icon.</strong>
 
-Create a new selector block for `pf-c-label__icon` in `myapp.scss`. It should be added to the global scope (outside of the existing `.pf-c-label` selector) to apply the margin styles to.
+Create a new selector block for `pf-c-label__icon` in `myapp.scss`. It should be added to the global scope (outside of the existing `.pf-c-label` selector) to apply the margin styles to it.
 
 It should look like this:
 ```

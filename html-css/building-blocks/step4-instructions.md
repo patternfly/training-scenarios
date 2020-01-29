@@ -25,7 +25,7 @@ a) <strong>Add one `<div>` wrapper around all of the code in the editor.</strong
 
 b) <strong>Add the layout class.</strong>
 
-It should look like this:
+It should look like this this:
 
 ```
 <div class="pf-l-grid">

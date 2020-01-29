@@ -1,18 +1,18 @@
 This step looks at how component variables are named.
 
-In PatternFly, component-level custom properties follow this general formula `--pf-c-block[__element][--modifier][--state][--breakpoint][--pseudo-element]--PropertyCamelCase.`
+In PatternFly, component-level custom properties follow this general formula: `--pf-c-block[__element][--modifier][--state][--breakpoint][--pseudo-element]--PropertyCamelCase.`
 
-* `--pf-c-block` refers to the block, usually the component or layout name (i.e. `--pf-c-alert`).
-* `__element` refers to the element inside of the block (i.e. `__title`).
-* `--modifier` refers to a modifier class such as `.pf-m-danger`, and is prefixed with m- in the component variable (i.e.`--m-danger`).
+* `--pf-c-block` refers to the block, usually the component or layout name (e.g. `--pf-c-alert`).
+* `__element` refers to the element inside of the block (e.g. `__title`).
+* `--modifier` refers to a modifier class such as `.pf-m-danger`, and is prefixed with m- in the component variable (e.g.`--m-danger`).
 * `--state` is something like hover or active.
 * `--breakpoint` is a media query breakpoint such as sm for $pf-global--breakpoint--sm.
 * `--pseudo-element` is one of either before or after.
 * `PropertyCamelCase` refers to the property that is being changed.
 
-In this step, override the title color custom property in the success variation of the alert component.
-
 Katacoda is setting up a new application. Begin coding once the server starts and "Welcome to PatternFly" appears on the lower pane.
+
+In this step, override the title color custom property in the success variation of the alert component.
 
 1) <strong>Add a success alert component to `index.html`.</strong>
 
@@ -43,9 +43,9 @@ Click the `Copy to Editor` button below to set up the stylesheet in the `myapp.s
 
 3) <strong>Write the block for the custom property name.</strong>
 
-Overriding the success variation’s title color, means overriding its custom property.
+Overriding the success variation’s title color means overriding its custom property.
 
-In the `myapp.scss` file, in the `.pf-c-alert{}`block, begin writing the custom property name.
+In the `myapp.scss` file, in the `.pf-c-alert{}`block, write the custom property name.
 
 In reference to the documentation above, it should be: `--pf-c-alert`
 
@@ -71,7 +71,7 @@ The custom property name should now be: `--pf-c-alert--m-success__title--Color`
 
 PatternFly's global danger color is: `--pf-global--danger-color--100`.
 
-Assign the custom property name: `--pf-c-alert--m-success__title--Color` that is already inside of the `.pf-c-alert{}` block, to the global danger color.
+Assign the custom property name (`--pf-c-alert--m-success__title--Color`) that is already inside of the `.pf-c-alert{}` block to the global danger color.
 
 It should look like this:
 `--pf-c-alert--m-success__title--Color: var(--pf-global--danger-color--100);`

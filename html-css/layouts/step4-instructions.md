@@ -22,7 +22,7 @@ Click the `Copy to Editor` button below to add a card component to the `index.ht
 &lt;/div&gt;
 </pre>
 
-2) <strong>Locate the parent container of the `pf-c-title` , `<div>` , `pf-c-button` classes.</strong>
+2) <strong>Locate the parent container of the `pf-c-title` , `<div>`, and `pf-c-button` classes.</strong>
 
 It will be `pf-c-card__body`.
 
@@ -30,23 +30,23 @@ It will be `pf-c-card__body`.
 
 The class for the stack layout is `pf-l-stack`.
 
-When added to the parent it should look like:
+When added to the parent it should look like this:
 `<div class="pf-c-card__body pf-l-stack">`
 
 4) <strong>Locate the three children inside of the parent container.</strong>
 
-The children of the `<div class="pf-c-card__body">` are `<h1 class="pf-c-title">` , `<div>` and `<button class="pf-c-button>`.
+The children of the `<div class="pf-c-card__body">` are `<h1 class="pf-c-title">` , `<div>`, and `<button class="pf-c-button>`.
 
 5) <strong>Add the class `pf-l-stack__item` to each child.</strong>
 
 Adding this class to each child means that the parent stack container has a relationship with all of its `stack__items`.
 
-It should look like:
+It should look like this:
 `<h1 class="pf-c-title pf-l-stack__item">` , `<div class="pf-l-stack__item">` , `<button class="pf-c-button pf-l-stack__item">`.
 
 6) <strong>Add a modifier class to the second child.</strong>
 
-In order for a child to fill the available vertical space, add `pf-m-fill` to just one of the children. In this case add it to the middle child.
+For a child to fill the available vertical space, add `pf-m-fill` to just one of the children. In this case add it to the middle child.
 
-It should look like:
+It should look like this:
 `<div class="pf-l-stack__item pf-m-fill">`

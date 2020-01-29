@@ -1,8 +1,8 @@
 The bullseye layout is designed to both horizontally and vertically center a single child element within its parent.
 
-Center the modal component inside of the page.
-
 Katacoda is setting up a new application. Begin coding once the server starts and "Welcome to PatternFly" appears on the lower pane.
+
+Center the modal component inside of the page.
 
 1) <strong>Copy code into the `index.html` file.</strong>
 

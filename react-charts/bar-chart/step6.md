@@ -46,7 +46,7 @@ legendPosition=&quot;right&quot;
 6) <strong>Add the `legendData` property to the `<Chart>` component.</strong>
 
 Inside the `legendData` should be an object with names for the data. It should
-look like the following:
+look like this:
 
 <pre class="file" data-target="clipboard">
 legendData={[
