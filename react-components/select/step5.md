@@ -8,7 +8,7 @@ To change what data is passed around, and passed back on selection, implement a 
 
 Add the class to the `App.js` file, outside of the App class.
 
-<strong>Note:</strong> This class may contain any amount of properties, and these will be passed back as data when an option is selected. The `toString` function tells the select component on how to display and compare the data as a string.
+<strong>Note:</strong> This class may contain any amount of properties, and these will be passed back as data when an option is selected. The `toString` function tells the select component how to display and compare the data as a string.
 
 <pre class="file" data-target="clipboard">
 class CustomDataState {

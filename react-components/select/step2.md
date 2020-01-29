@@ -43,7 +43,7 @@ Search for `(Add options here)` and replace this with the `{options}` object. Th
 
   a. <strong>Copy the following `onToggle` function into the constructor of the App class.</strong>
   
-  This function should go under the state declaration. This function controls the `isExpanded` property, and thereby when the select menu opens and closes.
+  This function should go under the state declaration. This function controls the `isExpanded` property, which opens and closes the select menu.
 
 <pre class="file" data-target="clipboard">
 this.onToggle = isExpanded => {
@@ -85,4 +85,4 @@ The `select` component should look like the following.
 </Select>
 ```
 
-Now the select is set up! It can be opened and closed, and options are selectable.
+Now the select is set up. It can be opened and closed, and options are selectable.
