@@ -1,4 +1,4 @@
-Add functionality for paginating the table's dataset. The functionality includes adding a new state property to track the dynamic rows and adding a few more handler functions to facilitate keeping the table and pagination in sync.
+Add functionality for paginating the table's dataset.
 
 1) <strong>Create a new state property to keep track of dynamic rows.</strong>
 
@@ -8,15 +8,15 @@ Add the following code just below the other state properties added in step 8. Se
 const [rows, setRows] = React.useState(defaultRows.slice(0, defaultPerPage));
 </pre>
 
-2) <strong>Update the `<Table />`'s `rows` prop to use the new `rows` state property.</strong>
+2) <strong>Update the `<Table />`'s `rows` property to use the new `rows` state property.</strong>
 
-Locate the code that sets the rows for the table `rows={defaultRows}`, and update it to reference the new rows state property you created in step 1.
+Locate the code that sets the rows for the table `rows={defaultRows}`, and update it to reference the new rows state property created in step 1.
 
 <pre class="file">
 rows={rows}
 </pre>
 
-<strong>Note: </strong> the `itemCount` prop for the pagination component will still reference the defaultRows constant as it needs to be aware of the total number of rows in the entire dataset, not the number of rows that are being shown for a given page within the dataset.
+<strong>Note: </strong> The `itemCount` property for the pagination component will still reference the defaultRows constant. Pagination's `itemCount` property needs to be aware of the total number of rows in the entire dataset, not the number of rows shown for a given page within the dataset.
 
 3) <strong>Create a function to handle updating the current page.</strong>
 
@@ -28,7 +28,7 @@ const handleSetPage = (_evt, newPage, perPage, startIdx, endIdx) => {
 }
 </pre>
 
-4) <strong>Set the `onSetPage` prop of the `<Pagination />` component to the `handleSetPage` handler function.</strong>
+4) <strong>Set the `onSetPage` property of the `<Pagination />` component to the `handleSetPage` handler function.</strong>
 
 <pre class="file">
 onSetPage={handleSetPage}
@@ -42,8 +42,10 @@ Copy the following statement into the `handlePerPageSelect` and `handleSetPage` 
 setRows(defaultRows.slice(startIdx, endIdx));
 </pre>
 
-The table should look like the following:
+The table should look like this:
 
 <img src="table-intro/assets/step-9-complete.png" alt="Image of what table looks like at the end of step 9." style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
 
 At this point, basic pagination of the table data should be in place. Nice!
+
+Still have questions? View the latest <a href="https://www.patternfly.org/v4/documentation/react/components/table/" target="_blank">Table documentation</a> for more information.

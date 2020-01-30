@@ -1,15 +1,15 @@
 
-1) <strong>Convert each <em>row</em> definition from a string array to an array of objects.</strong>
+1) <strong>Convert each <em>row</em> definition from a string array to an array of `IRow` objects.</strong>
 
 For each of the three row definitions, replace the string array with an object, and set the object's `cells` property to the string array.
 
-It should look like this:
+The three row definitions look like this:
 
 <pre class="file">
 ["Row 1 column 1", "Row 1 column 2", "Row 1 column 3"]
 </pre>
 
-becomes:
+After replacing the string array with an object, the code should look like this:
 
 <pre class="file">
 {
@@ -38,7 +38,7 @@ const defaultRows = [
 
 For each array item in each row's `cells` array, replace the string value with an object whose `title` property is the row cell value.
 
-It should look like this:
+Each array item in each row’s cells array looks like this:
 
 <pre class="file">
 {
@@ -46,7 +46,7 @@ It should look like this:
 }
 </pre>
 
-becomes
+After replacing the string value with an object whose title property is the row cell value, the code should look like this:
 
 <pre class="file">
 {
@@ -65,3 +65,5 @@ Apply this transformation to all of the row cell definitions.
 The table should appear exactly as it did before:
 
 <img src="table-intro/assets/step-4-complete.png" alt="Image of what table looks like at the end of step 4." style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
+
+Still have questions? View the latest <a href="https://www.patternfly.org/v4/documentation/react/components/table/" target="_blank">Table documentation</a> for more information.

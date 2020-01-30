@@ -1,4 +1,4 @@
-With the basic table structure and imports in place, this step will convert the columns definition into an array of objects.
+With the basic table structure and imports in place, convert the columns definition into an array of `ICell` objects.
 
 1) <strong>Locate the table columns definition.</strong>
 
@@ -13,3 +13,5 @@ Apply this transformation to all of the column definitions.
 <strong>Note: </strong> The table should appear exactly as it did before:
 
 <img src="table-intro/assets/step-3-complete.png" alt="Image of what table looks like at the end of step 3." style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
+
+Still have questions? View the latest <a href="https://www.patternfly.org/v4/documentation/react/components/table/" target="_blank">Table documentation</a> for more information.
