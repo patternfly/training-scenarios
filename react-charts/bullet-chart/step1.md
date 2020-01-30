@@ -15,4 +15,4 @@ Copy the following code into the `app.css` file, replacing all the content:
 }
 </pre>
 
-<strong>Note: </strong>Victory renders responsive containers, so the chart's width and height props do not determine the width and height of the chart in number of pixels. Instead, they define an aspect ratio for the chart. The exact number of pixels will depend on the size of the container the chart is rendered into. Typically, the parent container is set to the same width as the chart to maintain the aspect ratio and scale.
+<strong>Note: </strong>Victory renders responsive containers, so the chart's width and height properties do not determine the width and height of the chart in number of pixels. Instead, they define an aspect ratio for the chart. The exact number of pixels will depend on the size of the container the chart is rendered into. Typically, the parent container is set to the same width as the chart to maintain the aspect ratio and scale.
