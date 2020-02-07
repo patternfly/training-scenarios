@@ -1,4 +1,4 @@
-As mentioned in step 5, tables can be used to handle large datasets on the interaction side. To handle these large datasets, incorporate pagination controls, which give users more granular control over their view of the data. The pagination component is available via PatternFly React core package `@patternfly/react-core`.
+Another way to improve the experience of tables with large datasets is to allow for interactive pagination. The pagination controls give users granular control over their view of the data. The pagination component is available via PatternFly React core package `@patternfly/react-core`.
 
 1) <strong>Import the pagination component.</strong>
 
@@ -26,4 +26,4 @@ itemCount={defaultRows.length}
 
 <img src="table-intro/assets/step-7-complete.png" alt="Image of what table looks like at the end of step 7." style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
 
-Still have questions? View the latest <a href="https://www.patternfly.org/v4/documentation/react/components/table/" target="_blank">Table documentation</a> for more information.
+Still have questions? View the latest [Table documentation](https://www.patternfly.org/v4/documentation/react/components/table/) for more information.

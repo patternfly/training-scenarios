@@ -1,4 +1,4 @@
-In this step, add state properties to track how many rows per page the user can display and what current page the user is on within the dataset. Also, introduce a function to handle updating the number of rows per page to show when the user changes this value with the dropdown. IThis tutorial uses the React <a href="https://reactjs.org/docs/hooks-overview.html" target="_blank">hooks api</a>, however you can use a traditional class based approach to achieve the same thing.
+In this step, add state properties to track how many rows per page the user can display and what current page the user is on within the dataset. Also, introduce a function to handle updating the number of rows per page to show when the user changes this value with the dropdown. This tutorial uses the React <a href="https://reactjs.org/docs/hooks-overview.html" target="_blank">hooks api</a>, however you can use a traditional class based approach to achieve the same thing.
 
 1) <strong>Create a state property to track the number of rows to display per page.</strong>
 
@@ -65,4 +65,4 @@ The rendered output should look like this:
 
 <img src="table-intro/assets/step-8-complete.png" alt="Image of what table looks like at the end of step 8." style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
 
-Still have questions? View the latest <a href="https://www.patternfly.org/v4/documentation/react/components/table/" target="_blank">Table documentation</a> for more information.
+Still have questions? View the latest [Table documentation](https://www.patternfly.org/v4/documentation/react/components/table/) for more information.

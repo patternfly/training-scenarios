@@ -10,8 +10,10 @@ For each of the columns, set the object's `title` property to the string value u
 
 Apply this transformation to all of the column definitions.
 
-<strong>Note: </strong> The table should appear exactly as it did before:
+The table should visually appear exactly as it did before:
 
 <img src="table-intro/assets/step-3-complete.png" alt="Image of what table looks like at the end of step 3." style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
 
-Still have questions? View the latest <a href="https://www.patternfly.org/v4/documentation/react/components/table/" target="_blank">Table documentation</a> for more information.
+Now you can see that column cell definitions can be written as basic strings, or written in object form for more advanced cases. Using object notation here is useful when you need to attach and work with arbitrary data to achieve some custom or dynamic rendering of your column cells.
+
+Still have questions? View the latest [Table documentation](https://www.patternfly.org/v4/documentation/react/components/table/) for more information.
