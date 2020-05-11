@@ -1,6 +1,6 @@
-Toolbar groups are used to group sets of like items to create desired associations and to enable items to respond together to changes in viewport width. A `DataToolbarGroup` passes an optional prop `variant` to format particular types of element groups such as filter groups, button groups, or icon button groups.
+Toolbar groups are used to group sets of like items to create desired associations and to enable items to respond together to changes in viewport width. A `DataToolbarGroup` passes an optional property `variant` to format particular types of element groups such as filter groups, button groups, or icon button groups.
 
-This step will group `DataToolbarItem` components into `DataToolbarGroup` components and apply appropriate `variant` props.
+This step will group `DataToolbarItem` components into `DataToolbarGroup` components and apply appropriate `variant` properties.
 
 1) <strong>Locate the following two `DataToolbarItems` containing `CheckBoxSelect` components:</strong>
 
@@ -25,9 +25,9 @@ This step will group `DataToolbarItem` components into `DataToolbarGroup` compon
 
 2) <strong>Wrap both the `DataToolbarItem` components containing the `CheckboxSelect` filters in one `DataToolbarGroup` component.</strong>
 
-3) <strong>Add the prop `variant="filter-group"` to the `DataToolbarGroup` added in step 2.</strong>
+3) <strong>Add the property `variant="filter-group"` to the `DataToolbarGroup` added in step 2.</strong>
 
-This will space the two `CheckboxSelect` components according to the PatternFly design specifications. 
+This will space the two `CheckboxSelect` components according to the PatternFly design specifications.
 
 Once completed, the code should appear as below.
 
@@ -74,7 +74,7 @@ Once completed, the code should appear as below.
 
 5) <strong>Wrap the three adjacent `DataToolbarItem` components containing icons in one `DataToolbarGroup` component.</strong>
 
-6) <strong>Add the prop `variant="icon-button-group"` to the `DataToolbarGroup` component added in step 5.</strong>
+6) <strong>Add the property `variant="icon-button-group"` to the `DataToolbarGroup` component added in step 5.</strong>
 
 This will space the three icons according to the PatternFly design specifications. Once completed, the code should appear as below.
 

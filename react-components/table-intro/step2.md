@@ -1,6 +1,6 @@
-Set up the general structure of the table and add the necessary imports.
-
 Katacoda is setting up a new React application. Begin coding once the server starts and "Welcome to PatternFly" appears on the lower pane.
+
+Set up the general structure of the table and add the necessary imports.
 
 1) <strong>Navigate to the `src` folder and open `src/App.js`.</strong>
 
@@ -38,7 +38,7 @@ const defaultRows = [
 ];
 </pre>
 
-4) <strong>Set the `cells` and `rows` prop for the `<Table />` component.</strong>
+4) <strong>Set the `cells` and `rows` property for the `<Table />` component.</strong>
 
 Locate the `<Table />` component and locate the references to empty arrays (`cells={[]} rows={[]}`). Replace these empty arrays with the row/column definitions that were added in step 3.
 
@@ -49,3 +49,5 @@ cells={columns} rows={defaultRows}
 The table should now look like the image below:
 
 <img src="table-intro/assets/step-2-complete.png" alt="Image of what table looks like at the end of step 2." style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
+
+Still have questions? View the latest [Table documentation](https://www.patternfly.org/v4/documentation/react/components/table/) for more information.

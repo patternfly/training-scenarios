@@ -2,7 +2,7 @@ One particular type of data toolbar item is called the `DataToolbarFilter`. When
 
 Using a `DataToolbarFilter` requires three properties:
 
-First is a managed array of selected filters called `chips` as strings or ReactNodes. 
+First is a managed array of selected filters called `chips` as strings or ReactNodes.
 
 An `onDelete` callback function to be executed whenever the user deletes a selected filter chip.
 
@@ -91,7 +91,7 @@ Once completed, the contents of the `DataToolbarToggleGroup` should appear as fo
 
 4) <strong>Add a `chips` property to each of the `DataToolbarFilter` components.</strong>
 
-Each of the `DataToolbarFilter` components requires a `chips` property. In this case, the state managed filters array's properties can serve as the `chips` property for each `DataToolbarFilter`. 
+Each of the `DataToolbarFilter` components requires a `chips` property. In this case, the state managed filters array's properties can serve as the `chips` property for each `DataToolbarFilter`.
 
 a) <strong>For the first `DataToolbarFilter` (containing a text input) add the property `chips={filters.name}`.</strong>
 
@@ -137,7 +137,7 @@ Once steps 4, 5, and 6 are completed, the contents of the `DataToolbarToggleGrou
 
 7) <strong>Experiment with two optional properties passed to `DataToolbar`.</strong>
 
-Two props can be optionally added to the top-level `DataToolbar` component when using a `DataToolbarFilter`.
+Two properties can be optionally added to the top-level `DataToolbar` component when using a `DataToolbarFilter`.
 
 a) <strong>Pass a `clearAllFilters` event handler to `DataToolbar`.</strong>
 
@@ -147,7 +147,7 @@ b) <strong>Pass a `collapseListedFiltersBreakpoint` is passed to `DataToolbar`.<
 
 The chip groups will collapse to a summary message at the passed in breakpoint, making the applied filters chip groups more responsive.
 
-Add the following code to the `DataToolbar` to see optional props in action.
+Add the following code to the `DataToolbar` to see optional properties in action.
 
 <pre class="file" data-target="clipboard">
 clearAllFilters={this.onDelete} collapseListedFiltersBreakpoint=&quot;xl&quot;

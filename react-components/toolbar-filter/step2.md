@@ -1,4 +1,4 @@
-The individual components placed inside of a toolbar are each wrapped in a `DataToolbarItem` component. `DataToolbarItems` can be passed an optional `variant` prop to format a specific type of component it wraps. These particular components could be a search filter, a pagination component, a bulk select, or an overflow menu. 
+The individual components placed inside of a toolbar are each wrapped in a `DataToolbarItem` component. `DataToolbarItems` can be passed an optional `variant` property to format a specific type of component it wraps. These particular components could be a search filter, a pagination component, a bulk select, or an overflow menu.
 
 Wrapping components in the `DataToolbarItem` component and adding the proper variant ensures the components are spaced appropriately.
 

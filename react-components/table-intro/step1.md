@@ -7,7 +7,7 @@ The following is an example of what the table component structure looks like:
 &lt;/Table&gt;
 </pre>
 
-Columns can be expressed as an array of strings, or an array of objects which match the type "ICell". The columns definition is passed to the `cells` prop of the Table component which can take the form of `Array<ICell | string>`. Below is what an ICell looks like.
+Columns can be expressed as an array of strings or an array of objects which match the type "ICell". `ICell` is the name given to the TypeScript interface that represents a cell of the `<Table>`. The columns definition is passed to the `cells` property of the `<Table>` component which can take the form of `Array<ICell | string>`. Below is what the ICell interface looks like.
 
 <pre class="file">
 export interface ICell {
@@ -45,7 +45,7 @@ const columnsDefinition = [
 ];
 </pre>
 
-Rows can be expressed as a multidimensional array of strings, or as an array of objects which match the type "IRow". The rows definition is passed to the `rows` prop of the Table or TableBody component, and can take the form of `Array<IRow | string[]>`. Below is what an IRow should look like.
+Rows can be expressed as a multidimensional array of strings or as an array of objects which match the type "IRow". `IRow` is the name given to the TypeScript interface that represents a row of the `<Table>`. The rows definition is passed to the `rows` property of the `<Table>` or `<TableBody>` component, and can take the form of `Array<IRow | string[]>`. Below is what the IRow interface looks like.
 
 <pre class="file">
 export interface IRow extends RowType {
@@ -101,3 +101,5 @@ const rowsDefinition = [
   }
 ];
 </pre>
+
+Still have questions? View the latest [Table documentation](https://www.patternfly.org/v4/documentation/react/components/table/) for more information.

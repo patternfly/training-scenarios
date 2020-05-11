@@ -2,7 +2,7 @@ Next modify the cards.
 
 1) <strong>Add a hover effect to the `card` component.</strong>
 
-PatternFly components, including `card`, can be customized with props. Add a hover effect to the cards with the `isHoverable` prop.
+PatternFly components, including `card`, can be customized with properties. Add a hover effect to the cards with the `isHoverable` property.
 
 It should look like this:
 
@@ -14,7 +14,7 @@ It should look like this:
 
 Change the variant to achieve different types of buttons.
 
-Inside the `CardFooter` component, replace the current variant on the button with the `primary` variant, and remove the `isLine` prop.
+Inside the `CardFooter` component, replace the current variant on the button with the `primary` variant, and remove the `isLine` property.
 
 The code should look like the following:
 

@@ -21,7 +21,7 @@ Use a split layout to separate a pair of buttons in the footer of the card. The 
 
 2) <strong>Add a button to the first `SplitItem` component.</strong>
 
-Use the `link` variant of the button and add an `isInline` prop so that the buttons are inline rather than block elements.
+Use the `link` variant of the button and add an `isInline` property so that the buttons are inline rather than block elements.
 
 <pre class="file" data-target="clipboard">
 &lt;Button variant=&quot;link&quot; isInline>Link to PatternFly&lt;/Button&gt;
@@ -29,13 +29,13 @@ Use the `link` variant of the button and add an `isInline` prop so that the butt
 
 3) <strong>Add a button to the second `SplitItem` component.</strong>
 
-Use the same variant and props as step 2.
+Use the same variant and properties as step 2.
 
 <pre class="file" data-target="clipboard">
 &lt;Button variant=&quot;link&quot; isInline>Link to home&lt;/Button&gt;
 </pre>
 
-4) <strong>Add a gutter prop to the `Split` component to add more spacing between the buttons.</strong>
+4) <strong>Add a gutter property to the `Split` component to add more spacing between the buttons.</strong>
 
 The `Split` component should look like this with the gutter set to `md` (medium) spacing.
 

@@ -1,4 +1,4 @@
-In this step, move the row/column definitions to an external file and adds a few more rows of sample data to make the next part of the lesson more realistic.
+In this step, move the row/column definitions to an external file. Then add a few more rows of sample data.
 
 1) <strong>Navigate to the `src` folder and open `src/data.js`.</strong>
 
@@ -70,7 +70,7 @@ import { columns, defaultRows } from './data';
 
 2) <strong>Delete the rows and columns definitions in `App.js`.</strong>
 
-The table will now use the definitions imported from `data.js` instead. The code to delete looks like the following:
+The table will now use the definitions imported from `data.js` instead. Delete the following code:
 
 <pre class="file">
 const columns = [
@@ -106,3 +106,5 @@ const defaultRows = [
 The table should render the same as it did before, except with a few more rows:
 
 <img src="table-intro/assets/step-6-complete.png" alt="Image of what table looks like at the end of step 6." style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
+
+Still have questions? View the latest [Table documentation](https://www.patternfly.org/v4/documentation/react/components/table/) for more information.
