@@ -13,7 +13,7 @@ The class name should look like this:
 </div>
 ```
 
-Place it in `index.html` twice so that both separators are siblings to the `pf-c-card__body` element. Add this new code between `pf-c-card__header` and `pf-c-card__body` and `pf-c-card__body` and `pf-c-card__footer`.
+Place it in `index.html` twice so that both separators are siblings to the `pf-c-card__body` element. Add this new code between `pf-c-card__title` and `pf-c-card__body` and `pf-c-card__body` and `pf-c-card__footer`.
 
 <strong>Note: </strong>There will be no visible changes at this step.
  

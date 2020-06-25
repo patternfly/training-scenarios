@@ -8,15 +8,17 @@ Click the `Copy to Editor` button below to add markup for a card to the `index.h
  
 <pre class="file" data-filename="index.html" data-target="replace">
 &lt;div class=&quot;pf-c-card pf-m-hoverable&quot;&gt;
-  &lt;div class=&quot;pf-c-card__head&quot;&gt;
-    &lt;img class=&quot;pf-c-brand&quot; src=&quot;https://pf4.patternfly.org/assets/images/pf-logo-small.svg&quot; alt=&quot;PatternFly Logo&quot;&gt;
+  &lt;div class=&quot;pf-c-card__header&quot;&gt;
+    &lt;div class=&quot;pf-c-card__header-main&quot;&gt;
+      &lt;img class=&quot;pf-c-brand&quot; src=&quot;https://pf4.patternfly.org/assets/images/pf-logo-small.svg&quot; alt=&quot;PatternFly Logo&quot;/&gt;
+    &lt;/div&gt;
     &lt;div class=&quot;pf-c-card__actions&quot;&gt;
       &lt;button class=&quot;pf-c-button pf-m-plain&quot;&gt;
         &lt;i class=&quot;fas fa-times&quot;&gt;&lt;/i&gt;
       &lt;/button&gt;
     &lt;/div&gt;
    &lt;/div&gt;
-   &lt;div class=&quot;pf-c-card__header pf-c-title pf-m-md&quot;&gt;
+   &lt;div class=&quot;pf-c-card__title&quot;&gt;
     &lt;p&gt;PatternFly&lt;/p&gt;
     &lt;div class=&quot;pf-c-content&quot;&gt;
       &lt;small&gt;Provided by Red Hat&lt;/small&gt;
