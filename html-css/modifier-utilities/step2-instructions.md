@@ -9,10 +9,12 @@ Click the `Copy to Editor` button below to add HTML for a dropdown component.
 <pre class="file" data-filename="index.html" data-target="replace">
 &lt;div class=&quot;pf-c-dropdown&quot;&gt;
   &lt;button class=&quot;pf-c-dropdown__toggle&quot;&gt;
-  &lt;span class=&quot;pf-c-dropdown__toggle-text&quot;&gt;
-    Collapsed dropdown
-  &lt;/span&gt;
-  &lt;i class=&quot;fas fa-caret-down pf-c-dropdown__toggle-icon&quot;&gt;&lt;/i&gt;
+    &lt;span class=&quot;pf-c-dropdown__toggle-text&quot;&gt;
+      Collapsed dropdown
+    &lt;/span&gt;
+    &lt;span class=&quot;pf-c-dropdown__toggle-icon&quot;&gt;
+      &lt;i class=&quot;fas fa-caret-down&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
+    &lt;/span&gt;
   &lt;/button&gt;
   &lt;ul class=&quot;pf-c-dropdown__menu&quot;&gt;
     &lt;li&gt;
@@ -22,7 +24,7 @@ Click the `Copy to Editor` button below to add HTML for a dropdown component.
       &lt;a class=&quot;pf-c-dropdown__menu-item&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;button class=&quot;pf-c-dropdown__menu-item&quot; disabled&gt;Disabled action&lt;/button&gt;
+      &lt;button class=&quot;pf-c-dropdown__menu-item pf-m-disabled&quot; disabled&gt;Disabled action&lt;/button&gt;
     &lt;/li&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
