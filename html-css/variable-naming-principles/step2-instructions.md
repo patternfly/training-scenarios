@@ -12,12 +12,18 @@ In this step, override the global link color by setting it to the custom propert
 Click the `Copy to Editor` button below to add a button component and expandable component to the `index.html` file.
 
 <pre class="file" data-filename="index.html" data-target="replace">
-&lt;button class=&quot;pf-c-button pf-m-inline pf-m-link&quot; type=&quot;button&quot;&gt;Inline link&lt;/button&gt;
+&lt;button class=&quot;pf-c-button pf-m-inline pf-m-link&quot; type=&quot;button&quot;&gt;
+  Inline link
+&lt;/button&gt;
 
-&lt;div class=&quot;pf-c-expandable&quot;&gt;
-  &lt;button type=&quot;button&quot; class=&quot;pf-c-expandable__toggle&quot; aria-expanded=&quot;false&quot;&gt;
-    &lt;i class=&quot;fas fa-angle-right pf-c-expandable__toggle-icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
-    &lt;span&gt;Show more&lt;/span&gt;
+&lt;div class=&quot;pf-c-expandable-section&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;pf-c-expandable-section__toggle&quot; aria-expanded=&quot;false&quot;&gt;
+    &lt;span class=&quot;pf-c-expandable-section__toggle-icon&quot;&gt;
+      &lt;i class=&quot;fas fa-angle-right&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
+    &lt;/span&gt;
+    &lt;span class=&quot;pf-c-expandable-section__toggle-text&quot;&gt;
+      Show more
+    &lt;/span&gt;
   &lt;/button&gt;
 &lt;/div&gt;
 </pre>
