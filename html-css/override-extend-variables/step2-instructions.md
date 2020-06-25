@@ -24,15 +24,13 @@ Inside of the `.pf-c-card` block of `myapp.scss`, set the global variable `--pf-
 
 <strong>Note:</strong> Variable definitions declared for a component `.pf-c-[component name]` class selector are scoped to that component. So even though a new value is being assigned to the global variable, that value will only apply to the card component and not other components.
 
-3) <strong>Change the font size of the title in the card header.</strong> 
+3) <strong>Change the outline style of the card.</strong> 
 
-Not all changes require custom CSS. Many components include modifier classes that customize the component. For this update, use a modifier class for the title component.
+Not all changes require custom CSS. Many components include modifier classes that customize the component. For this update, use a modifier class for the card component.
  
-4) <strong>Search for the title component and update the modifier class.</strong>
+4) <strong>Search for the card wrapper component and update the modifier class.</strong>
 
-In `index.html` search for `<div class="pf-c-card__header pf-c-title pf-m-md">` and replace `pf-m-md` with `pf-m-xl`.
+In `index.html` search for `<div class="pf-c-card">` and replace `pf-m-hoverable` with `pf-m-flat`.
  
-<strong>Hint:</strong> `<div class="pf-c-card__header pf-c-title pf-m-xl">`
+<strong>Hint:</strong> `<div class="pf-c-card pf-m-flat">`
  
-When the preview reloads, it should look like this:
-<img src="override-extend-variables/assets/devconf-artboard-2.png" alt="card with new link color." style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
