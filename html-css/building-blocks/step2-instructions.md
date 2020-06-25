@@ -16,7 +16,7 @@ This is the default chip component that already has another component in it: the
     Chip
   &lt;/span&gt;
   &lt;button class=&quot;pf-c-button pf-m-plain&quot;&gt;
-  &lt;i class=&quot;fas fa-times-circle&quot;&gt;&lt;/i&gt;
+  &lt;i class=&quot;fas fa-times&quot;&gt;&lt;/i&gt;
   &lt;/button&gt;
 &lt;/div&gt;
 </pre>

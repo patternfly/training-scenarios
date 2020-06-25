@@ -9,8 +9,8 @@ Click the `Copy to Editor` button below to add HTML for a card component to the 
 <pre class="file" data-filename="index.html" data-target="replace">
 &lt;div&gt;
   &lt;div class=&quot;pf-c-card&quot;&gt;
-    &lt;div class=&quot;pf-c-card__header pf-c-title pf-m-md&quot;&gt;
-      Header
+    &lt;div class=&quot;pf-c-card__title&quot;&gt;
+      Title
     &lt;/div&gt;
     &lt;div class=&quot;pf-c-card__body&quot;&gt;
       Body

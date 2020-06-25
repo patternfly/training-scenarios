@@ -9,12 +9,16 @@ Use the `Copy to Clipboard` button to copy and paste this block of code five tim
 <pre class="file" data-target="clipboard">
   &lt;form class=&quot;pf-c-form&quot;&gt;
     &lt;div class=&quot;pf-c-form__group&quot;&gt;
-      &lt;label class=&quot;pf-c-form__label&quot;&gt;
-        &lt;span class=&quot;pf-c-form__label-text&quot;&gt;
-          Form label
-        &lt;/span&gt;
-      &lt;/label&gt;
-      &lt;input class=&quot;pf-c-form-control&quot;&gt;
+      &lt;div class=&quot;pf-c-form__group-label&quot;&gt;
+        &lt;label class=&quot;pf-c-form__label&quot;&gt;
+          &lt;span class=&quot;pf-c-form__label-text&quot;&gt;
+            Form label
+          &lt;/span&gt;
+        &lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;pf-c-form__group-control&quot;&gt;
+        &lt;input class=&quot;pf-c-form-control&quot;/&gt;
+      &lt;/div&gt;
     &lt;/div&gt;
   &lt;/form&gt;
 </pre>
