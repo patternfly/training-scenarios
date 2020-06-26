@@ -35,12 +35,12 @@ Use the same variant and properties as step 2.
 &lt;Button variant=&quot;link&quot; isInline>Link to home&lt;/Button&gt;
 </pre>
 
-4) <strong>Add a gutter property to the `Split` component to add more spacing between the buttons.</strong>
+4) <strong>Add a hasGutter property to the `Split` component to add more spacing between the buttons.</strong>
 
-The `Split` component should look like this with the gutter set to `md` (medium) spacing.
+The `Split` component should look like this with the hasGutter prop set set.
 
 <pre class="file" data-target="clipboard">
-&lt;Split gutter="md"&gt;
+&lt;Split hasGutter&gt;
 </pre>
 
 Once the preview reloads, it should look like this:

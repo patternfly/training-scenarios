@@ -1,23 +1,21 @@
-Add content to the `CardHead` component.
+Add content to the `CardHeaderMain` component.
 
-1) <strong>Add a brand to the `CardHead` component.</strong>
+1) <strong>Add a brand to the `CardHeaderMain` component.</strong>
 
-a) <strong>Locate the `<CardHead>` component.</strong>
+a) <strong>Locate the `<CardHeaderMain>` component.</strong>
 
 It will look like this:
 
 <pre class="file">
-&lt;CardHead&gt;
-  &lt;CardActions&gt;
-  &lt;/CardActions&gt;
-&lt;/CardHead&gt;
+&lt;CardHeaderMain&gt;
+&lt;/CardHeaderMain&gt;
 </pre>
 
 b) <strong>Add the `brand` component.</strong>
 
 The `brand` component is used to place a product logotype on a screen. All that is needed is the source image or SVG and alt text. Here the PatternFly logo is used.
 
-Insert the `brand` inside of the `CardHead` but before the `CardActions`.
+Insert the `brand` inside of the `CardHeaderMain` component.
 
 <pre class="file" data-target="clipboard">
   &lt;Brand src=&quot;https://pf4.patternfly.org/assets/images/pf-logo-small.svg&quot; alt=&quot;Patternfly Logo&quot; /&gt;
@@ -36,7 +34,7 @@ It will look like this:
 
 b) <strong>Add the `button` component.</strong>
 
-Buttons communicate and trigger actions a user can take in an application or website. They come in several variations, such as `primary`, `secondary`, `danger`, `plain`, and `link`.
+Buttons communicate and trigger actions a user can take in an application or website. They come in several variations, such as `primary`, `secondary`, `tertiary`, `danger`, `plain`, `link`, and `control`.
 
 Add a button using the `plain` variant.
 
