@@ -15,14 +15,14 @@ this.state = {
     &lt;SelectOption value="North Carolina" /&gt;
   ],
   selected: null,
-  isExpanded: false
+  isOpen: false
 };
 </pre>
 
 2) **Add the deconstructed state properties to the top of the App class's render function.** 
 
 <pre class="file" data-target="clipboard">
-const { options, selected, isExpanded } = this.state;
+const { options, selected, isOpen } = this.state;
 </pre>
 
 3) **Update the `Select` properties with values from the state that was added in step 2.** 
@@ -31,7 +31,7 @@ a. <strong>Assign the `selections` property to `selected`.</strong>
 
 This variable informs the component of what is currently selected.
 
-b. <strong>Assign the `isExpanded` property to `isExpanded`.</strong> 
+b. <strong>Assign the `isOpen` property to `isOpen`.</strong> 
 
 This boolean controls if the select menu is expanded.
 
@@ -43,12 +43,12 @@ Search for `(Add options here)` and replace this with the `{options}` object. Th
 
   a. <strong>Copy the following `onToggle` function into the constructor of the App class.</strong>
   
-  This function should go under the state declaration. This function controls the `isExpanded` property, which opens and closes the select menu.
+  This function should go under the state declaration. This function controls the `isOpen` property, which opens and closes the select menu.
 
 <pre class="file" data-target="clipboard">
-this.onToggle = isExpanded => {
+this.onToggle = isOpen => {
   this.setState({
-    isExpanded
+    isOpen
   });
 };
 </pre>
@@ -61,7 +61,7 @@ this.onToggle = isExpanded => {
 this.onSelect = (event, selection) => {
   this.setState({
     selected: selection,
-    isExpanded: false
+    isOpen: false
   });
 };
 </pre>
@@ -78,7 +78,7 @@ The `select` component should look like the following.
   onToggle={this.onToggle} 
   onSelect={this.onSelect} 
   selections={selected} 
-  isExpanded={isExpanded} 
+  isOpen={isOpen} 
   placeholderText="Select a state"
 >
   {options}
