@@ -5,7 +5,7 @@ class CheckboxSelect extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isExpanded: false
+      isOpen: false
     };
   }
 
@@ -13,8 +13,9 @@ class CheckboxSelect extends React.Component {
     this.props.onSelect(this.props.type, event, selection);
   };
 
-  onToggle = isExpanded => {
-    this.setState({ isExpanded });
+  onToggle = isOpen => {
+    this.setState({ isOpen });
+    console.log("what");
   };
 
   render() {
@@ -31,7 +32,7 @@ class CheckboxSelect extends React.Component {
         onToggle={this.onToggle}
         onSelect={this.onSelect}
         selections={selections}
-        isExpanded={this.state.isExpanded}
+        isOpen={this.state.isOpen}
         placeholderText={type}
       >
         {selectOptions}
