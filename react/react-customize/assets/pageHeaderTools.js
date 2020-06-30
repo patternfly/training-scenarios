@@ -7,16 +7,16 @@ import {
   DropdownItem,
   DropdownSeparator,
   KebabToggle,
-  Toolbar,
-  ToolbarGroup,
-  ToolbarItem
+  PageHeaderTools,
+  PageHeaderToolsGroup,
+  PageHeaderToolsItem
 } from '@patternfly/react-core';
 import accessibleStyles from '@patternfly/react-styles/css/utilities/Accessibility/accessibility';
 import spacingStyles from '@patternfly/react-styles/css/utilities/Spacing/spacing';
 import { css } from '@patternfly/react-styles';
 import { BellIcon, CogIcon } from '@patternfly/react-icons';
 
-class AppToolbar extends React.Component {
+class AppPageHeaderTools extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -73,21 +73,21 @@ class AppToolbar extends React.Component {
       <DropdownItem component="button">Separated Action</DropdownItem>
     ];
     return (
-      <Toolbar>
-        <ToolbarGroup className={css(accessibleStyles.screenReader, accessibleStyles.visibleOnLg)}>
-          <ToolbarItem>
+      <PageHeaderTools>
+        <PageHeaderToolsGroup className={css(accessibleStyles.screenReader, accessibleStyles.visibleOnLg)}>
+          <PageHeaderToolsItem>
             <Button id="simple-example-uid-01" aria-label="Notifications actions" variant={ButtonVariant.plain}>
               <BellIcon/>
             </Button>
-          </ToolbarItem>
-          <ToolbarItem>
+          </PageHeaderToolsItem>
+          <PageHeaderToolsItem>
             <Button id="simple-example-uid-02" aria-label="Settings actions" variant={ButtonVariant.plain}>
               <CogIcon/>
             </Button>
-          </ToolbarItem>
-        </ToolbarGroup>
-        <ToolbarGroup>
-          <ToolbarItem className={css(accessibleStyles.hiddenOnLg, spacingStyles.mr_0)}>
+          </PageHeaderToolsItem>
+        </PageHeaderToolsGroup>
+        <PageHeaderToolsGroup>
+          <PageHeaderToolsItem className={css(accessibleStyles.hiddenOnLg, spacingStyles.mr_0)}>
             <Dropdown
               isPlain
               position="right"
@@ -96,8 +96,8 @@ class AppToolbar extends React.Component {
               isOpen={isKebabDropdownOpen}
               dropdownItems={kebabDropdownItems}
             />
-          </ToolbarItem>
-          <ToolbarItem className={css(accessibleStyles.screenReader, accessibleStyles.visibleOnMd)}>
+          </PageHeaderToolsItem>
+          <PageHeaderToolsItem className={css(accessibleStyles.screenReader, accessibleStyles.visibleOnMd)}>
             <Dropdown
               isPlain
               position="right"
@@ -106,11 +106,11 @@ class AppToolbar extends React.Component {
               toggle={<DropdownToggle onToggle={this.onDropdownToggle}>Kyle Baker</DropdownToggle>}
               dropdownItems={userDropdownItems}
             />
-          </ToolbarItem>
-        </ToolbarGroup>
-      </Toolbar>
+          </PageHeaderToolsItem>
+        </PageHeaderToolsGroup>
+      </PageHeaderTools>
     )
   }
 }
 
-export default AppToolbar;
+export default AppPageHeaderTools;

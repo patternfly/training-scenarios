@@ -46,9 +46,9 @@ In this example, override the color for `--pf-global--link--Color` by assigning 
 
 This override will still happen in the `.pf-c-page.myPageClass` block.
 
-The variable for the background color of the page is `--pf-c-page--BackgroundColor`. Assign it to `purple`.
+The variable for the background color of the page is `--pf-c-page__header--BackgroundColor`. Assign it to `purple`.
 
-<strong>Hint:</strong> `--pf-c-page--BackgroundColor: purple;`
+<strong>Hint:</strong> `--pf-c-page__header--BackgroundColor: purple;`
 
 Once the preview reloads, the page should look like this:
 <img src="react-customize/assets/step4.png" alt="Completed custom page demo" style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />

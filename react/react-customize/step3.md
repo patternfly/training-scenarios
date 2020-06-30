@@ -1,8 +1,8 @@
 Next modify the cards.
 
-1) <strong>Add a hover effect to the `card` component.</strong>
+1) <strong>Add a hover effect to the `Card` component.</strong>
 
-PatternFly components, including `card`, can be customized with properties. Add a hover effect to the cards with the `isHoverable` property.
+PatternFly components, including `Card`, can be customized with properties. Add a hover effect to the cards with the `isHoverable` property.
 
 It should look like this:
 
@@ -10,18 +10,14 @@ It should look like this:
 &lt;Card isHoverable&gt;
 </pre>
 
-2) <strong>Change the button in the `CardFooter` element into a blue action button.</strong>
+2) <strong>Make the card selectable.</strong>
 
-Change the variant to achieve different types of buttons.
+Further extend the `Card` component by adding a new property `isSelectable` to allow selection of individual cards.
 
-Inside the `CardFooter` component, replace the current variant on the button with the `primary` variant, and remove the `isLine` property.
-
-The code should look like the following:
+The opening tag for the Card component should now look like the following:
 
 <pre class="file" data-target="clipboard">
-&lt;CardFooter&gt;
-  &lt;Button variant="primary"&gt;Link to PatternFly&lt;/Button&gt;
-&lt;/CardFooter&gt;
+&lt;Card isHoverable isSelectable&gt;
 </pre>
 
 Once the preview reloads, the page should look like this when hovering over a card:

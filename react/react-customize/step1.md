@@ -19,7 +19,8 @@ import {
   Button,
   Card,
   CardActions,
-  CardHead,
+  CardHeaderMain,
+  CardTitle,
   CardHeader,
   CardBody,
   CardFooter,
@@ -54,18 +55,18 @@ export default PageLayoutSimpleNav;
 
 3) <strong>Add a gallery of cards.</strong>
 
-The gallery is a PatternFly layout that applies a `minmax` width and a `gutter` between items. Here set the gutter to `md`.
+Gallery is a PatternFly layout that arranges content in a responsive grid. Set a gutter by adding a `hasGutter` property.
 
 Add the gallery inside of `<AppPage>`, it should look like this:
 
 ```
-<Gallery gutter="md">
+<Gallery hasGutter>
 </Gallery>
 ```
 
 4) <strong>Add multiple cards inside of the gallery.</strong>
 
-For the purpose of this example, make every card the same. Each `card` should be wrapped in a `<GalleryItem`.
+For the purpose of this example, make every card the same. Each `Card` should be wrapped in a `GalleryItem`.
 
 ```
 <GalleryItem>
@@ -75,7 +76,7 @@ For the purpose of this example, make every card the same. Each `card` should be
 </GalleryItem>
 ```
 
-To add cards efficiently use `Array.apply` and `Array.map` to add nine cards. The result should look like this:
+To add cards to the layout programatically, use `Array.apply` and `Array.map` to iterate over the collection and produce a GalleryItem for each item in the list. The result should look like this:
 
 <pre class="file" data-target="clipboard">
 {Array.apply(0, Array(9)).map((x, i) =&gt; (

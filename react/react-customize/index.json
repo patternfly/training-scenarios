@@ -25,13 +25,13 @@
     "assets": {
       "client": [
         {
-          "file": "header.js", "target": "~/tutorial/src/components/", "chmod": "+r"
+          "file": "header.js", "target": "/root/src/components/", "chmod": "+r"
         },
         {
-          "file": "toolbar.js", "target": "~/tutorial/src/components/", "chmod": "+r"
+          "file": "pageHeaderTools.js", "target": "/root/src/components/", "chmod": "+r"
         },
         {
-          "file": "page.js", "target": "~/tutorial/src/components/", "chmod": "+r"
+          "file": "page.js", "target": "/root/src/components/", "chmod": "+r"
         },
         {
           "file": "step1.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
