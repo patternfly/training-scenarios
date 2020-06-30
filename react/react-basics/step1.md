@@ -1,6 +1,6 @@
 A card is a flexible element for containing any type of content. Cards are used on dashboards, in data displays, or for positioning content on a page.
 
-In PatternFly, separate components are used to demarcate the different regions of a card so it can be fully customized. For example, images are placed in `CardHeaderMain`, actions in `CardActions`, and the header in `CardTitle`.
+In PatternFly, separate components are used to define the different regions of a card so it can be fully customized. For example, images are placed in `CardHeaderMain`, actions in `CardActions`, and the title in `CardTitle`.
 
 In this exercise, create a card with an image, action, header, body, and footer.
 
