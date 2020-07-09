@@ -29,7 +29,7 @@ Add the function below to the constructor of the App class.
 this.clearSelection = () => {
   this.setState({
     selected: null,
-    isExpanded: false
+    isOpen: false
   });
 };
 </pre>
