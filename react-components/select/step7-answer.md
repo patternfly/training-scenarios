@@ -5,7 +5,7 @@ The `select` component should look like the following.
   onToggle={this.onToggle}
   onSelect={this.onSelect}
   selections={selected}
-  isExpanded={isExpanded}
+  isOpen={isOpen}
   placeholderText="Select a state"
   variant={SelectVariant.typeahead}
   onClear={this.clearSelection}

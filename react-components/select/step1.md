@@ -24,7 +24,7 @@ class App extends React.Component {
           onToggle={Function.prototype} 
           onSelect={Function.prototype} 
           selections={null} 
-          isExpanded={false} 
+          isOpen={false} 
           placeholderText="Select a state"
         &gt;
           (Add options here)
