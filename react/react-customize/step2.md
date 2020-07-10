@@ -14,15 +14,17 @@ Add content to cards.
 
 <pre class="file" data-target="clipboard">
 &lt;Card&gt;
-  &lt;CardHead&gt;
-    &lt;Brand src="https://pf4.patternfly.org/assets/images/pf-logo-small.svg" alt="Patternfly Logo" /&gt;
-    &lt;CardActions&gt;
-    &lt;Button variant="plain"&gt;
-    &lt;TimesIcon /&gt;
-    &lt;/Button&gt;
-    &lt;/CardActions&gt;
-  &lt;/CardHead&gt;
   &lt;CardHeader&gt;
+    &lt;CardHeaderMain&gt;
+      &lt;Brand src=&quot;https://pf4.patternfly.org/assets/images/pf-logo-small.svg&quot; alt=&quot;Patternfly Logo&quot; /&gt;
+    &lt;/CardHeaderMain&gt;
+    &lt;CardActions&gt;
+      &lt;Button variant=&quot;plain&quot;&gt;
+        &lt;TimesIcon /&gt;
+      &lt;/Button&gt;
+    &lt;/CardActions&gt;
+  &lt;/CardHeader&gt;
+  &lt;CardTitle&gt;
     &lt;Text component={TextVariants.p}&gt;
       PatternFly
     &lt;/Text&gt;
@@ -31,12 +33,12 @@ Add content to cards.
         Provided by Red Hat
       &lt;/Text&gt;
     &lt;/TextContent&gt;
-  &lt;/CardHeader&gt;
+  &lt;/CardTitle&gt;
   &lt;CardBody&gt;
     PatternFly is an open source design system created to enable consistency and usability across a wide range of applications and use cases. PatternFly provides clear standards, guidance, and tools that help designers and developers work together more efficiently and build better user experiences.
   &lt;/CardBody&gt;
   &lt;CardFooter&gt;
-    &lt;Button variant="link" isInline>Link to PatternFly&lt;/Button&gt;
+    &lt;Button variant=&quot;link&quot; isInline&gt;Link to PatternFly&lt;/Button&gt;
   &lt;/CardFooter&gt;
 &lt;/Card&gt;
 </pre>
