@@ -10,7 +10,7 @@
     },
     "steps": [
       {
-        "title": "Setting up DataToolbar basics",
+        "title": "Setting up Toolbar basics",
         "text": "step1.md"
       },
       {
@@ -71,6 +71,18 @@
         },
         {
           "file": "toggle-group-narrow-view.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
+        },
+        {
+          "file": "checkboxSelect.js", "target": "/root/src/components/", "chmod": "+x"
+        },
+        {
+          "file": "input.js", "target": "/root/src/components/", "chmod": "+x"
+        },
+        {
+          "file": "kebab.js", "target": "/root/src/components/", "chmod": "+x"
+        },
+        {
+          "file": "table.js", "target": "/root/src/components/", "chmod": "+x"
         }
       ]
     },
