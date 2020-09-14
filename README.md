@@ -1,6 +1,6 @@
 # PatternFly developer training
 
-PatternFly now features developer training to teach PatternFly implementation best practices. To access the training, check out the (React)[https://www.patternfly.org/v4/documentation/react/overview/training] and (HTML/CSS)[https://www.patternfly.org/v4/documentation/core/overview/training] tutorials. 
+PatternFly now features developer training to teach PatternFly implementation best practices. To access the training, check out the (React)[https://www.patternfly.org/v4/documentation/react/overview/react-training] and (HTML/CSS)[https://www.patternfly.org/v4/documentation/core/overview/core-training] tutorials. 
 And while you're at it, let us know what you think. Share your feedback by submitting a review on the final page of each module or by filing an issue in this repository.
 
 ## Submitting a proposal
