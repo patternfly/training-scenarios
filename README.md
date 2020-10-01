@@ -1,13 +1,13 @@
 # PatternFly developer training
 
-PatternFly now features developer training to teach PatternFly implementation best practices. To access the training, check out the (React)[https://www.patternfly.org/v4/documentation/react/overview/training] and (HTML/CSS)[https://www.patternfly.org/v4/documentation/core/overview/training] tutorials. 
+PatternFly now features developer training to teach PatternFly implementation best practices. To access the training, check out the [React](https://www.patternfly.org/v4/documentation/react/overview/training) and [HTML/CSS](https://www.patternfly.org/v4/documentation/core/overview/training) tutorials. 
 And while you're at it, let us know what you think. Share your feedback by submitting a review on the final page of each module or by filing an issue in this repository.
 
 ## Submitting a proposal
 
-We use (Katacoda)[https://www.katacoda.com/patternfly] as the platform for delivering the training modules—it's open source, and we want you to contribute! 
+We use [Katacoda](https://www.katacoda.com/patternfly) as the platform for delivering the training modules—it's open source, and we want you to contribute! 
 
-But before you add a new module to the current PatternFly developer training set, check out the existing modules in the category first. This way, we avoid duplicate work and keep the training content streamlined and organized for all users. You should also verify that the module expands on the documentation that is already on (PatternFly)[https://www.patternfly.org/v4/].
+But before you add a new module to the current PatternFly developer training set, check out the existing modules in the category first. This way, we avoid duplicate work and keep the training content streamlined and organized for all users. You should also verify that the module expands on the documentation that is already on [PatternFly](https://www.patternfly.org/v4/).
 
 Once you've checked and confirmed the content you're looking to add doesn't already exist, create a new issue for your proposal in this repository. Our team will review all submissions before anything is added.
 
@@ -40,14 +40,14 @@ Once your proposal is approved, it's time to start developing. We recommend foll
 
 To see your changes on Katacoda before they're merged:
 1. Submit a second Pull Request that merges changes from the new branch on your fork, to the master branch on your fork, and merge the changes.
-2. Create a (Katacoda profile)[https://katacoda.com/profile/settings ] if you don’t have one.
+2. Create a [Katacoda profile](https://katacoda.com/profile/settings) if you don’t have one.
     - Update your Git Scenario Repository to be your forked training-scenarios repository (e.g., https://github.com/[username]/training-scenarios).
 3. Copy the **Git Webhook Secret.**
 4. In your forked training-scenarios repository, navigate to **Settings** > **Webhooks**, and add a new Github Webhook.
     - Update the Payload URL to **https://editor.katacoda.com/scenarios/updated**.
     - Add your copied secret.
     - Click **Update webhook**.
-5. Find more information at (Katacoda)[https://katacoda.com/teach/git-hosted-scenarios].
+5. Find more information at [Katacoda](https://katacoda.com/teach/git-hosted-scenarios).
 
 ## File structure
 
@@ -59,7 +59,7 @@ Add an ID, title, and description.
 
 ### Add an index.json file for the module
 
-The `index.json` file is where the structure of the module is established. Below is a template `index.json` file that you should follow. (Katacoda provides more information)[https://www.katacoda.com/docs/scenarios/index-json].
+The `index.json` file is where the structure of the module is established. Below is a template `index.json` file that you should follow. [Katacoda provides more information](https://www.katacoda.com/docs/scenarios/index-json).
 
 ```
 {
@@ -194,7 +194,7 @@ When writing out the steps for your tutorial please follow these guidelines:
 
 ## Style and grammar
 
-We suggest following (AP style)[https://en.wikipedia.org/wiki/AP_Stylebook] when writing content. PatternFly also has more information on (grammar and terminology)[https://www.patternfly.org/v4/design-guidelines/content/grammar-and-terminology] and (voice and tone)[https://www.patternfly.org/v4/design-guidelines/content/voice-and-tone].
+We suggest following [AP style](https://en.wikipedia.org/wiki/AP_Stylebook) when writing content. PatternFly also has more information on [grammar and terminology](https://www.patternfly.org/v4/design-guidelines/content/grammar-and-terminology) and [voice and tone](https://www.patternfly.org/v4/design-guidelines/content/voice-and-tone).
 
 ## Appendix
 
