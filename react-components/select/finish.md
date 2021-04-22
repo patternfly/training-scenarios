@@ -4,5 +4,5 @@ Congratulations! You finished the "select component: beginner" course.
 
 > Learn more about PatternFly React:
 >
-> - [Getting started with PatternFly](https://www.patternfly.org/v4/get-started/developers)
-> - [PatternFly React documentation](https://www.patternfly.org/v4/documentation/react/components/table/)
+> - [Getting started with PatternFly](https://www.patternfly.org/v4/get-started/develop)
+> - [PatternFly React documentation](https://www.patternfly.org/v4/components/select)

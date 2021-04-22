@@ -60,7 +60,7 @@ Add the class `pf-m-gutter` after `pf-l-grid` to the outermost wrapper, inside t
 
 It should look like: `<div class="pf-l-grid pf-m-gutter">`
 
-<strong>Note: </strong> Learn how modifier classes work with layout classes by looking at the [documentation](https://www.patternfly.org/v4/documentation/core/layouts/grid#usage) on the PatternFly website.
+<strong>Note: </strong> Learn how modifier classes work with layout classes by looking at the [documentation](https://www.patternfly.org/v4/layouts/grid/html#usage) on the PatternFly website.
 
 5) <strong>Add modifier classes to the grid item classes.</strong>
 

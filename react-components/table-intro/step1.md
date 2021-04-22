@@ -102,4 +102,4 @@ const rowsDefinition = [
 ];
 </pre>
 
-Still have questions? View the latest [Table documentation](https://www.patternfly.org/v4/documentation/react/components/table/) for more information.
+Still have questions? View the latest [Table documentation](https://www.patternfly.org/v4/components/table) for more information.
