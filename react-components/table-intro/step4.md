@@ -66,4 +66,4 @@ The table should visually appear exactly as it did before:
 
 Now you can see how row cell definitions can be written as basic strings, or written in object form for more advanced cases. Using object notation here is useful when you need to attach and work with arbitrary data to achieve some custom or dynamic rendering of your row cells.
 
-Still have questions? View the latest [Table documentation](https://www.patternfly.org/v4/documentation/react/components/table/) for more information.
+Still have questions? View the latest [Table documentation](https://www.patternfly.org/v4/components/table) for more information.

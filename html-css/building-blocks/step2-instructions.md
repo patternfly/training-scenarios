@@ -31,4 +31,4 @@ To do this add this block of code between `pf-c-chip__text` and `pf-c-button`.
 </span>
 ```
 
-<strong>Note: </strong> Remember this is a component and not a demo because the chip component includes styles that handle how the badge looks within the chip. For example, when the badge component is added to the chip, it receives styling that gives it a margin. You can read more in the documentation [here](https://www.patternfly.org/v4/documentation/core/components/chip)
+<strong>Note: </strong> Remember this is a component and not a demo because the chip component includes styles that handle how the badge looks within the chip. For example, when the badge component is added to the chip, it receives styling that gives it a margin. You can read more in the documentation [here](https://www.patternfly.org/v4/components/chip)

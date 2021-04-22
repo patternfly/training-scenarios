@@ -51,7 +51,7 @@ In reference to the documentation above, it should be: `--pf-c-alert`
 
 4) <strong>Add the modifier to the custom property name.</strong>
 
-Reference the [documentation](https://www.patternfly.org/v4/documentation/core/components/alert) by scrolling down to the bottom to view the alert component's documentation. Note that the success variation class `.pf-m-success` applies to `.pf-c-alert`. Add that modifier to the custom property.
+Reference the [documentation](https://www.patternfly.org/v4/components/alert/html) by scrolling down to the bottom to view the alert component's documentation. Note that the success variation class `.pf-m-success` applies to `.pf-c-alert`. Add that modifier to the custom property.
 
 The custom property name should now be: `--pf-c-alert--m-success`
 
