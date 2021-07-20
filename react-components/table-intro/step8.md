@@ -65,4 +65,4 @@ The rendered output should look like this:
 
 <img src="table-intro/assets/step-8-complete.png" alt="Image of what table looks like at the end of step 8." style="box-shadow: rgba(3, 3, 3, 0.2) 0px 1.25px 2.5px 0px;" />
 
-Still have questions? View the latest [Table documentation](https://www.patternfly.org/v4/documentation/react/components/table/) for more information.
+Still have questions? View the latest [Table documentation](https://www.patternfly.org/v4/components/table) for more information.
