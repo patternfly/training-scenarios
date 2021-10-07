@@ -101,7 +101,7 @@ The `index.json` file is where the structure of the module is established. Below
     "uisettings": html or javascript
   },
   "backend": {
-    "imageid": "node",
+    "imageid": "nodejs:12",
     "port": 3000
   }
 }
