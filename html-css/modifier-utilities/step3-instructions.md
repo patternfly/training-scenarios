@@ -53,6 +53,6 @@ Use the [documentation](https://www.patternfly.org/v4/components/alert/html) to 
 
 It should look like this: `<div class="pf-c-alert pf-m-info pf-m-danger">`
 
-<strong>Note: </strong> Notice that the color of the third alert changes to blue. It didn't change to read because the `pf-m-danger` modifier wasn't applied. The reason is that `pf-m-info` and `pf-m-danger` both modify the color of an alert, and `pf-m-info` comes before `pf-m-danger` in the codebase.
+<strong>Note: </strong> Notice that the color of the third alert changes to blue. It didn't change to red because the `pf-m-danger` modifier wasn't applied. The reason is that `pf-m-info` and `pf-m-danger` both modify the color of an alert, and `pf-m-info` comes before `pf-m-danger` in the codebase.
 
 <strong>Note: </strong>Only every apply one modifier class to an element class when two modifier classes change the same styles.
