@@ -70,7 +70,7 @@
     "hideHiddenFiles": true
   },
   "backend": {
-    "imageid": "node",
+    "imageid": "nodejs:12",
     "port": 3000
   }
 }
